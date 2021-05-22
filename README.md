@@ -8,3 +8,5 @@ A simple website about me!
 ## Licence
 
 This project is licensed under the [MIT License](https://solomonrajan.mit-license.org/). Copyright © Solomon Rajan
+
+This Website © 1996 by Solomon Rajan is licensed under CC BY-NC 4.0 
