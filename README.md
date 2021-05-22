@@ -5,11 +5,6 @@ A simple website about me!
 <br>
 [![Download Resume](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/solomonrajan-resume/files/)
 
-{
-  "copyright": "Solomon Rajan",
-  "email": "appsiuse@solomonrajan.com",
-  "format": "html",
-  "license": "mit",
-  "theme": "material",
-  "gravatar": false
-}
+## Licence
+
+This project is licensed under the [MIT License](https://solomonrajan.mit-license.org/). Copyright © Solomon Rajan
