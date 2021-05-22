@@ -4,3 +4,12 @@ A simple website about me!
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R12UF4S)
 <br>
 [![Download Resume](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/solomonrajan-resume/files/)
+
+{
+  "copyright": "Solomon Rajan",
+  "email": "appsiuse@solomonrajan.com",
+  "format": "html",
+  "license": "mit",
+  "theme": "material",
+  "gravatar": false
+}
