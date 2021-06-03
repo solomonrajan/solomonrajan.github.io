@@ -1,9 +1,9 @@
 /**
-* Glitche - CV/Resume/Portfolio Template (HTML)
-* Version: 1.3
-* Author: beshleyua
-* Author URL: http://themeforest.net/user/beshleyua
-* Copyright © Cvio by beshleyua. All Rights Reserved.
+* SolomonRajan - CV/Resume/Portfolio
+* Version: v13
+* Author: SoluCreations
+* Author URL: https://github.com/solomonrajan
+* Copyright © 1996 by SoluCreations. All Rights Reserved.
 **/
 
 /* TABLE OF CONTENTS
@@ -238,7 +238,8 @@ header .head-top .top-menu ul li.active .btn {
   line-height: 18px;
   font-size: 13px;
   color: #141414;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: none;
   letter-spacing: 0.04em;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -266,11 +267,11 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.started .started-content .h-title {
-  font-size: 68px;
-  font-family: 'Roboto Mono';
+  font-size: 80px;
+  font-family: 'Reenie Beanie';
   color: #141414;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.04em;
   margin: 10px 0 5px 0;
 }
@@ -433,7 +434,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .info-list ul li strong {
-  font-weight: 400;
+  font-weight: 600;
   color: #f26b38;
 }
 
@@ -505,7 +506,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .resume-items .resume-item .name {
-  font-weight: 500;
+  font-weight: 700;
   color: #141414;
   margin: 0 0 15px 0;
 }
@@ -632,7 +633,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .service-items .service-item .name {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 13px;
   color: #141414;
   margin: 6px 0 0 46px;
@@ -1181,7 +1182,7 @@ a.btn, .btn {
 
 .skills ul li .name {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 600;
   position: relative;
   margin: 0 0 9px 0;
 }

@@ -1,9 +1,9 @@
 /**
-*	Glitche - CV/Resume/Portfolio Template (HTML)
-*	Version: 1.3
-*	Author: beshleyua
-*	Author URL: http://themeforest.net/user/beshleyua
-*	Copyright © Cvio by beshleyua. All Rights Reserved.
+* SolomonRajan - CV/Resume/Portfolio
+* Version: v13
+* Author: SoluCreations
+* Author URL: https://github.com/solomonrajan
+* Copyright © 1996 by SoluCreations. All Rights Reserved.
 **/
 
 /* TABLE OF CONTENTS
@@ -12,58 +12,58 @@
 
 /* 1. Template Orange */
 .container .line {
-	background: #ffce00;
+	background: #FFFFFF;
 }
 
 a:hover {
-	color: #ffce00;
+	color: #600080;
 }
 
 a.btn.fill,
 .btn.fill {
-	background: #ffce00;
-	border-color: #ffce00;
+	background: #600080;
+	border-color: #600080;
 }
 
 a.btn:hover,
 .btn:hover {
-	background: #ffce00;
-	border-color: #ffce00;
+	background: #600080;
+	border-color: #600080;
 }
 
 .preloader .load {
-	color: #ffce00;
+	color: #600080;
 }
 
 .preloader .typed-load,
 .preloader .typed-cursor {
-	color: #ffce00;
+	color: #600080;
 }
 
 input:focus,
 textarea:focus,
 button:focus {
-	border-bottom-color: #ffce00;
+	border-bottom-color: #600080;
 }
 
 button:hover {
-	border-bottom-color: #ffce00;
+	border-bottom-color: #600080;
 }
 
 @media (min-width: 580px) {
 	.glitch-effect-white:before,
 	.glitch-effect-white:after {
-		background: #ffce00;
+		background: #600080;
 	}
 
 	.glitch-effect:after,
 	.glitch-effect-white:after {
-		text-shadow: -1px 0 #ffce00;
+		text-shadow: -1px 0 #600080;
 	}
 
 	.glitch-effect:before,
 	.glitch-effect-white:before {
-		text-shadow: 2px 0 #ffce00;
+		text-shadow: 2px 0 #600080;
 	}
 
 }
@@ -71,82 +71,82 @@ button:hover {
 header .head-top .menu-btn:hover:before,
 header .head-top .menu-btn:hover:after,
 header .head-top .menu-btn:hover span {
-  background: #ffce00;
+  background: #600080;
 }
 
 header .head-top .top-menu ul li.active a {
-  color: #ffce00;
+  color: #600080;
 }
 
 header .head-top .top-menu ul li.active .btn {
-  background: #ffce00;
-  border-color: #ffce00;
+  background: #600080;
+  border-color: #600080;
 }
 
 .section.started .mouse_btn {
-  color: #ffce00;
+  color: #600080;
 }
 
 .info-list ul li strong {
-  color: #ffce00;
+  color: #600080;
 }
 
 .resume-items .resume-item:before {
-  background: #ffce00;
+  background: #600080;
 }
 
 .resume-items .resume-item .date {
-  color: #ffce00;
-  border-color: #ffce00;
+  color: #600080;
+  border-color: #600080;
 }
 
 .resume-items .resume-item .date:before {
-  background: #ffce00;
+  background: #600080;
 }
 
 .skills ul li .progress .percentage {
-  background: #ffce00;
+  background: #600080;
 }
 
 .service-items .service-item .icon {
-  color: #ffce00;
+  color: #600080;
 }
 
 .section.works .filters label.glitch-effect {
-  color: #ffce00;
+  color: #600080;
 }
 
 .box-items .box-item:hover .desc .name {
-  color: #ffce00;
+  color: #600080;
 }
 
 .box-items .box-item .image .info .centrize {
-  background: #ffce00;
+  background: #600080;
 }
 
 .date {
-  color: #ffce00;
-  border-color: #ffce00;
+  color: #600080;
+  border-color: #600080;
 }
 
 footer .soc a:hover .ion {
-  color: #ffce00;
+  color: #600080;
 }
 
 .skills.dotted ul li .progress .da span {
-  background: #ffce00!important;
+  background: #600080!important;
 }
 
 .skills.list ul li .name:before {
-  color: #ffce00;
+  color: #600080;
 }
 
 .skills ul li .progress .percentage {
-  background: #ffce00;
+  background: #600080;
 }
 
 .skills.dotted ul li .progress .da span {
-  background: #ffce00;
+  background: #600080;
 }
 
 .skills.circles .progress .bar, 
@@ -200,5 +200,5 @@ footer .soc a:hover .ion {
 .skills.circles .progress.p98 .fill, 
 .skills.circles .progress.p99 .fill, 
 .skills.circles .progress.p100 .fill {
-  border-color: #ffce00;
+  border-color: #600080;
 }
