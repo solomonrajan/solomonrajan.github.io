@@ -23,11 +23,11 @@
 
 
 
-! function($) {
+! function ($) {
 
     "use strict";
 
-    var Typed = function(el, options) {
+    var Typed = function (el, options) {
 
         // chosen element to manipulate text
         this.el = $(el);
@@ -102,15 +102,15 @@
         constructor: Typed
 
         ,
-        init: function() {
+        init: function () {
             // begin the loop w/ first current string (global self.strings)
             // current string will be passed as an argument each time after this
             var self = this;
-            self.timeout = setTimeout(function() {
-                for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
+            self.timeout = setTimeout(function () {
+                for (var i = 0; i < self.strings.length; ++i) self.sequence[i] = i;
 
                 // shuffle the array if true
-                if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+                if (self.shuffle) self.sequence = self.shuffleArray(self.sequence);
 
                 // Start typing
                 self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
@@ -118,28 +118,27 @@
         }
 
         ,
-        build: function() {
-			var self = this;
-			// Insert cursor
-			if (this.showCursor === true) {
-				this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
-				this.el.after(this.cursor);
-			}
-			if (this.stringsElement) {
-				this.strings = [];
-				this.stringsElement.hide();
-				console.log(this.stringsElement.children());
-				var strings = this.stringsElement.children();
-				$.each(strings, function(key, value){
-					self.strings.push($(value).html());
-				});
-			}
-			this.init();
-		}
+        build: function () {
+            var self = this;
+            // Insert cursor
+            if (this.showCursor === true) {
+                this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+                this.el.after(this.cursor);
+            }
+            if (this.stringsElement) {
+                self.strings = [];
+                this.stringsElement.hide();
+                var strings = this.stringsElement.find('p');
+                $.each(strings, function (key, value) {
+                    self.strings.push($(value).html());
+                });
+            }
+            this.init();
+        }
 
         // pass current string state to each function, types 1 char per call
         ,
-        typewrite: function(curString, curStrPos) {
+        typewrite: function (curString, curStrPos) {
             // exit when stopped
             if (this.stop === true) {
                 return;
@@ -159,7 +158,7 @@
             // else{ self.backDelay = 500; }
 
             // contain typing function in a timeout humanize'd delay
-            self.timeout = setTimeout(function() {
+            self.timeout = setTimeout(function () {
                 // check for an escape character before a pause value
                 // format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
                 // single ^ are removed from string
@@ -198,7 +197,7 @@
                 }
 
                 // timeout for any pause after a character
-                self.timeout = setTimeout(function() {
+                self.timeout = setTimeout(function () {
                     if (curStrPos === curString.length) {
                         // fires callback function
                         self.options.onStringTyped(self.arrayPos);
@@ -215,7 +214,7 @@
                                 return;
                         }
 
-                        self.timeout = setTimeout(function() {
+                        self.timeout = setTimeout(function () {
                             self.backspace(curString, curStrPos);
                         }, self.backDelay);
                     } else {
@@ -253,7 +252,7 @@
         }
 
         ,
-        backspace: function(curString, curStrPos) {
+        backspace: function (curString, curStrPos) {
             // exit when stopped
             if (this.stop === true) {
                 return;
@@ -264,7 +263,7 @@
             var humanize = Math.round(Math.random() * (100 - 30)) + this.backSpeed;
             var self = this;
 
-            self.timeout = setTimeout(function() {
+            self.timeout = setTimeout(function () {
 
                 // ----- this part is optional ----- //
                 // check string array position
@@ -324,7 +323,7 @@
                         self.arrayPos = 0;
 
                         // Shuffle sequence again
-                        if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+                        if (self.shuffle) self.sequence = self.shuffleArray(self.sequence);
 
                         self.init();
                     } else
@@ -340,9 +339,9 @@
          * @param {Array} array
          * @returns {Array}
          */
-        ,shuffleArray: function(array) {
+        , shuffleArray: function (array) {
             var tmp, current, top = array.length;
-            if(top) while(--top) {
+            if (top) while (--top) {
                 current = Math.floor(Math.random() * (top + 1));
                 tmp = array[current];
                 array[current] = array[top];
@@ -371,7 +370,7 @@
 
         // Reset and rebuild the element
         ,
-        reset: function() {
+        reset: function () {
             var self = this;
             clearInterval(self.timeout);
             var id = this.el.attr('id');
@@ -386,8 +385,8 @@
 
     };
 
-    $.fn.typed = function(option) {
-        return this.each(function() {
+    $.fn.typed = function (option) {
+        return this.each(function () {
             var $this = $(this),
                 data = $this.data('typed'),
                 options = typeof option == 'object' && option;
@@ -422,13 +421,13 @@
         // either html or text
         contentType: 'html',
         // call when done callback function
-        callback: function() {},
+        callback: function () { },
         // starting callback function before each string
-        preStringTyped: function() {},
+        preStringTyped: function () { },
         //callback for every typed string
-        onStringTyped: function() {},
+        onStringTyped: function () { },
         // callback for reset
-        resetCallback: function() {}
+        resetCallback: function () { }
     };
 
 
