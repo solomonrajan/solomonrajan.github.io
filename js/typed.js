@@ -129,7 +129,7 @@
                 self.strings = [];
                 this.stringsElement.hide();
                 var strings = this.stringsElement.find('p');
-                $.each(strings, function (key, value) {
+                $.each(strings, function (_key, value) {
                     self.strings.push($(value).html());
                 });
             }
