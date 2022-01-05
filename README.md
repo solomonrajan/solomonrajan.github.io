@@ -3,6 +3,9 @@ A simple website about me!<br>
 <br>
 ![Website](https://img.shields.io/website?color=pink&down_color=lightgreen&label=solomonrajan.com&logo=solu&logoColor=green&style=flat-square&up_message=online&url=https%3A%2F%2Fsolomonrajan.com%2F)
 <br>
+<br>
+[![pages-build-deployment](https://github.com/solomonrajan/solomonrajan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/solomonrajan/solomonrajan.github.io/actions/workflows/pages/pages-build-deployment)
+<br>
 
 [![CodeQL](https://github.com/solomonrajan/solomonrajan.github.io/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/solomonrajan/solomonrajan.github.io/actions/workflows/codeql-analysis.yml)
 ![GitHub commit checks state](https://img.shields.io/github/checks-status/solomonrajan/solomonrajan.github.io/f4d84f4f26c0388f92e27fb7d9d9baf658fc56de?style=flat-square)   [![Sourceforge](https://img.shields.io/badge/Sourceforge-Build%20Success-green?style=flat-square)](https://sourceforge.net/projects/solomonrajan-resume/files/)<br>
