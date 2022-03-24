@@ -2,5 +2,6 @@
     "deepscan.enable": true,
     "cSpell.words": [
         "Metas"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
