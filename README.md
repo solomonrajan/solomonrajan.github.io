@@ -1,7 +1,10 @@
 # solomonrajan.github.io
 A simple website about me!<br>
 <br>
-![Website](https://img.shields.io/website?color=pink&down_color=lightgreen&label=solomonrajan.com&logo=solu&logoColor=green&style=flat-square&up_message=online&url=https%3A%2F%2Fsolomonrajan.com%2F)
+![Website](https://img.shields.io/website?color=pink&down_color=lightgreen&label=solomonrajan.com&logo=solu&logoColor=green&style=for-the-badge&up_message=online&url=https%3A%2F%2Fsolomonrajan.com%2F)
+<br>
+<br>
+![VisualStudio](https://img.shields.io/badge/-Made%20Using%20VisualStudio-007ACC?logo=visualstudio&logoColor=white&style=for-the-badge&up_message=tool)
 <br>
 <br>
 [![pages-build-deployment](https://github.com/solomonrajan/solomonrajan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/solomonrajan/solomonrajan.github.io/actions/workflows/pages/pages-build-deployment)
