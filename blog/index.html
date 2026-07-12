@@ -1,0 +1,130 @@
+<!-- ========================================== -->
+<!-- 1. DOCUMENT SETUP                          -->
+<!-- ========================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ========================================== -->
+<!-- 2. ANALYTICS & SECURITY POLICIES           -->
+<!-- ========================================== -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="681f1338-c995-4dde-b9fd-a738a5c5d55f"></script>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<!-- ========================================== -->
+<!-- 3. ANTI-CLICKJACK & ROUTING                -->
+<!-- ========================================== -->
+<style id="antiClickjack">body{display:none !important;}</style>
+<script type="text/javascript">
+   if (self === top) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+       top.location = self.location;
+   }
+</script>
+<script>
+  (function() {
+    var path = window.location.pathname;
+    if (path.endsWith('/index.html')) {
+      window.history.replaceState(null, '', path.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash);
+    } else if (path.endsWith('.html')) {
+      window.history.replaceState(null, '', path.replace(/\.html$/, '') + window.location.search + window.location.hash);
+    }
+  })();
+</script>
+<!-- ========================================== -->
+<!-- 4. SEO & META TAGS                         -->
+<!-- ========================================== -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<link rel="icon" href="/assets/favicon.png" type="image/png" />
+<title>Blog - Solomon Rajan</title>
+<meta name="description" content="Portfolio of Solomon Rajan, Personnel Executive & Welfare Officer. Managing employee relations, statutory compliance, and workforce welfare with a people-first approach." />
+<!-- ========================================== -->
+<!-- 5. FONTS & ICONS                           -->
+<!-- ========================================== -->
+<!-- Material Symbols Rounded (MD3 style) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+rel="stylesheet"
+/>
+<!-- Google Fonts: Google Sans Flex & Inter -->
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Google+Sans+Flex:wght@100..900&display=swap"
+rel="stylesheet"
+/>
+<!-- ========================================== -->
+<!-- 6. PAGE STATE                              -->
+<!-- ========================================== -->
+<script>
+  window.CURRENT_PAGE = "blog";
+</script>
+<!-- ========================================== -->
+<!-- 7. APPLICATION CORE (COMPILED REACT JS)    -->
+<!-- ========================================== -->
+<script type="module" crossorigin src="/assets/main.js"></script>
+
+<!-- ========================================== -->
+<!-- 8. APPLICATION STYLING (COMPILED CSS)      -->
+<!-- ========================================== -->
+<link rel="stylesheet" crossorigin href="/assets/main.css">
+
+<!-- ========================================== -->
+<!-- 9. CUSTOM PAGE-SPECIFIC STYLES             -->
+<!-- ========================================== -->
+        <style>
+      @media (min-width: 768px) {
+        html.is-home-page, html.is-home-page body, html.is-home-page #root {
+          height: 100vh;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+      }
+    </style>
+
+<!-- ========================================== -->
+<!-- 10. PAGE INITIALIZATION SCRIPT             -->
+<!-- ========================================== -->
+    <script>
+      if (window.CURRENT_PAGE === "home") {
+        document.documentElement.classList.add("is-home-page");
+      }
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="Solomon Rajan Blog RSS Feed" href="/blog/rss.xml" />
+</head>
+
+<!-- ========================================== -->
+<!-- 11. PAGE BODY                              -->
+<!-- ========================================== -->
+<body>
+<div id="root">
+</div>
+<script id="global-link-target">
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (a) {
+          var href = a.getAttribute('href');
+          if (href && href.startsWith('https://')) {
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+          }
+        }
+      });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

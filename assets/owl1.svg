@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bodyGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7B54" />
+      <stop offset="100%" style="stop-color:#E85A35" />
+    </linearGradient>
+    <linearGradient id="bellyGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD56B" />
+      <stop offset="100%" style="stop-color:#F5B33A" />
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .owl { animation: bob 2.5s ease-in-out infinite; transform-origin: center; }
+  </style>
+  <g class="owl">
+    <!-- Body -->
+    <rect x="25" y="30" width="50" height="55" rx="25" fill="url(#bodyGrad1)" />
+    <!-- Ears -->
+    <path d="M 25 45 Q 15 20 35 30 Z" fill="#E85A35" />
+    <path d="M 75 45 Q 85 20 65 30 Z" fill="#E85A35" />
+    <!-- Belly -->
+    <ellipse cx="50" cy="65" rx="18" ry="20" fill="url(#bellyGrad1)" />
+    <!-- Eyes base -->
+    <circle cx="35" cy="45" r="14" fill="#FFFFFF" />
+    <circle cx="65" cy="45" r="14" fill="#FFFFFF" />
+    <!-- Pupils -->
+    <circle cx="35" cy="45" r="6" fill="#2C3E50" />
+    <circle cx="65" cy="45" r="6" fill="#2C3E50" />
+    <!-- Eye Highlights -->
+    <circle cx="33" cy="43" r="2" fill="#FFFFFF" />
+    <circle cx="63" cy="43" r="2" fill="#FFFFFF" />
+    <!-- Beak -->
+    <polygon points="45,52 55,52 50,60" fill="#FFC300" />
+    <!-- Wings -->
+    <path d="M 25 50 Q 15 60 25 75 Z" fill="#E85A35" />
+    <path d="M 75 50 Q 85 60 75 75 Z" fill="#E85A35" />
+  </g>
+</svg>
