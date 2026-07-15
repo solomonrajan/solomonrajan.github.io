@@ -13272,7 +13272,7 @@ Error generating stack: ` +
         Md = [
           {
             role: "Personnel Executive & Welfare Officer",
-            company: "Poabs Enterprises Private Limited",
+            company: "Poabs Enterprises Private Limited, Kerala",
             period: "June 2023 - Present",
             bullets: [
               "Spearheaded employee relations and statutory compliance initiatives, ensuring 100% adherence to applicable labour laws and regulatory mandates across all departments.",
@@ -13282,9 +13282,9 @@ Error generating stack: ` +
             ],
           },
           {
-            role: "Full-Stack Developer",
-            company: "StartupXYZ",
-            period: "Mar 2020 â€“ Dec 2021",
+            role: "Child Welfare Officer",
+            company: "Reatching the Unreached, Tamil Nadu",
+            period: "December 2021 - March 2023",
             bullets: [
               "Built an end-to-end e-commerce platform serving 50,000+ monthly users.",
               "Designed RESTful APIs using Node.js and PostgreSQL, reducing query time by 35%.",
@@ -13292,9 +13292,9 @@ Error generating stack: ` +
             ],
           },
           {
-            role: "Junior Web Developer",
-            company: "Digital Agency Co.",
-            period: "Jun 2018 â€“ Feb 2020",
+            role: "Medical Social Worker",
+            company: "Covai Care Centre, Tamil Nadu",
+            period: "September 2020 - December 2021",
             bullets: [
               "Delivered 20+ responsive websites for clients across healthcare, retail, and finance.",
               "Collaborated with designers to implement pixel-perfect UI from Figma mockups.",
@@ -14444,6 +14444,7 @@ Error generating stack: ` +
                                         fontWeight: 600,
                                         color: "var(--md-sys-color-on-surface)",
                                         marginTop: "2px",
+                                        textAlign: "justify",
                                       },
                                       children: j.value,
                                     }),
@@ -15014,7 +15015,7 @@ Error generating stack: ` +
                             }),
                             o.jsx("div", { className: "md3-divider", style: { margin: "12px 0" } }),
                             o.jsx("p", {
-                              style: { margin: 0, fontSize: "14px", color: "var(--md-sys-color-on-surface-variant)", lineHeight: 1.6 },
+                              style: { margin: 0, fontSize: "14px", color: "var(--md-sys-color-on-surface-variant)", lineHeight: 1.6, textAlign: "justify" },
                               children: edu.description,
                             }),
                         ],
@@ -15243,6 +15244,7 @@ Error generating stack: ` +
                                         color:
                                           "var(--md-sys-color-on-surface-variant)",
                                         lineHeight: 1.6,
+                                        textAlign: "justify",
                                       },
                                       children: [
                                         o.jsx(vl, {
@@ -15256,7 +15258,10 @@ Error generating stack: ` +
                                             marginTop: "2px",
                                           },
                                         }),
-                                        B,
+                                        o.jsx("span", {
+                                          style: { flex: 1, textAlign: "justify" },
+                                          children: B,
+                                        }),
                                       ],
                                     },
                                     V,
