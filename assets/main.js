@@ -14757,10 +14757,10 @@ Error generating stack: ` +
                   o.jsxs(
                     "div",
                     {
-                      className: `md3-card ${H ? `animate-fade-up delay-${Math.min(m + 1, 5)}` : ""}`,
+                      className: `md3-card md3-project-card ${H ? `animate-fade-up delay-${Math.min(m + 1, 5)}` : ""}`,
                       style: {
                         padding: "0",
-                        overflow: "visible",
+                        overflow: "hidden",
                         display: "flex",
                         flexDirection: "column",
                         backgroundColor: "var(--md-sys-color-surface)",
