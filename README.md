@@ -44,7 +44,6 @@
 | Section                                                              | Description                                                       |
 | :------------------------------------------------------------------- | :---------------------------------------------------------------- |
 | [✨ Key Features](#-key-features)                                    | Highlights of the portfolio's functionality and design.           |
-| [📚 Wiki & Roadmap](#-wiki--roadmap)                                 | The project's local wiki, documentation, and development roadmap. |
 | [🎨 Material 3 Architecture](#-material-3-architecture)              | Design tokens and thematic configuration.                         |
 | [📄 Repository Structure](#-repository-structure--page-architecture) | Architecture and multi-page routing breakdown.                    |
 | [💻 Languages & Code](#-languages--code-types-used)                  | The core web technologies driving the frontend.                   |
@@ -61,19 +60,11 @@
 
 ## ✨ Key Features
 
-- **Dynamic Theme Engine:** Automated dark/light theme switching aligning with Material Design color systems.
-- **Grid Layouts & Panels:** Clean card-based visual structures utilizing standard elevation, padding, and roundness.
-- **Interactive Components:** Fluid feedback states, hover ripples, and micro-interactions.
-- **Accessibility First:** Fully semantic HTML markup and optimized color contrast ratios.
-
----
-
-## 📚 Wiki & Roadmap
-
-We believe in building and documenting software better, together.
-
-- **[Project Roadmap](docs/ROADMAP.md):** A detailed breakdown of our current status, short-term goals, and long-term vision.
-- **[Project Wiki](docs/WIKI.md):** The central hub for architectural documentation and community guidelines.
+- **Dynamic Theme Engine:** Automated dark/light theme switching aligning with Material Design 3 color systems and typography (`Inter` & `Google Sans Flex`).
+- **Multi-Entry Point & Performance Architecture:** Standalone HTML entry points (`home`, `about`, `projects`, `contact`, `blog`, and 7 dedicated article routes) sharing a compiled React application bundle for instant load times, clean URL normalization (`replaceState`), and OWASP anti-clickjack protection.
+- **Integrated Blog & RSS Syndication:** Comprehensive blog system with standalone routes (`blog/post-1` through `blog/post-7`) and an XML syndication feed (`blog/rss.xml`) covering employee welfare, HR technology, and leadership.
+- **Privacy-First Analytics & Automated Security Audits:** Built-in Umami cloud analytics alongside automated GitHub Actions security checks verifying strict security headers (`Content-Security-Policy`, HSTS, OWASP Framekiller, `X-Content-Type-Options`).
+- **Grid Layouts & Accessibility:** Clean card-based structures with fluid hover states, elevation tokens, fully semantic markup, and optimized color contrast ratios.
 
 ---
 
@@ -114,13 +105,21 @@ The currently rendered page is determined by a global flag initialized in the `<
 
 ### Page Reference Directory
 
-| HTML File                                      | Page Identifier (`window.CURRENT_PAGE`) | Description & Content Focus                                                                                   |
+| HTML / Asset Entry Point                       | Page Identifier (`window.CURRENT_PAGE`) | Description & Content Focus                                                                                   |
 | :--------------------------------------------- | :-------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| [`index.html`](./index.html)                   | `"home"`                                | **Home / Welcome Dashboard:** Executive summary, welfare officer highlights, quick navigation.                |
+| [`index.html`](./index.html)                   | `"home"`                                | **Home / Welcome Dashboard:** Executive summary, welfare officer highlights, and quick navigation.            |
 | [`about/index.html`](./about/index.html)       | `"about"`                               | **About Me:** Biography, education, philosophy, core values, work experience, and skills.                     |
-| [`projects/index.html`](./projects/index.html) | `"projects"`                            | **Projects Portfolio:** Key initiatives, welfare program implementations, workforce development case studies. |
+| [`projects/index.html`](./projects/index.html) | `"projects"`                            | **Projects Portfolio:** Key initiatives, welfare program implementations, and workforce development studies.  |
 | [`contact/index.html`](./contact/index.html)   | `"contact"`                             | **Contact Portal:** Inquiry forms, professional networking links, and communication channels.                 |
-| [`blog/index.html`](./blog/index.html)         | `"blog"`                                | **Blog:** Thoughts, articles, and insights on employee welfare and industry trends.                           |
+| [`blog/index.html`](./blog/index.html)         | `"blog"`                                | **Blog Index:** Overview of articles, thoughts, and insights on employee welfare and industry trends.         |
+| [`blog/post-1/index.html`](./blog/post-1/index.html) | `"blog/post-1"`                         | **Blog Post 1:** *Creating a Positive Workplace Culture* – Strategies for supportive work environments.       |
+| [`blog/post-2/index.html`](./blog/post-2/index.html) | `"blog/post-2"`                         | **Blog Post 2:** *Employee Welfare Programs That Matter* – Implementing impactful welfare initiatives.        |
+| [`blog/post-3/index.html`](./blog/post-3/index.html) | `"blog/post-3"`                         | **Blog Post 3:** *The Importance of Workplace Compliance* – Staying compliant with labor laws and ethics.     |
+| [`blog/post-4/index.html`](./blog/post-4/index.html) | `"blog/post-4"`                         | **Blog Post 4:** *Effective Communication in Remote Teams* – Best practices for distributed work cohesion.    |
+| [`blog/post-5/index.html`](./blog/post-5/index.html) | `"blog/post-5"`                         | **Blog Post 5:** *The Future of Work: Hybrid Models* – Preparing organizations for hybrid work transformations.|
+| [`blog/post-6/index.html`](./blog/post-6/index.html) | `"blog/post-6"`                         | **Blog Post 6:** *AI in Human Resources* – Streamlining recruitment, onboarding, and employee engagement.     |
+| [`blog/post-7/index.html`](./blog/post-7/index.html) | `"blog/post-7"`                         | **Blog Post 7:** *Mastering Employee Retention* – Proven strategies to motivate top performers.               |
+| [`blog/rss.xml`](./blog/rss.xml)               | *N/A (RSS Syndication Feed)*            | **RSS Feed:** XML syndication feed for automatic updates and feed readers.                                    |
 
 ### How to Modify Content or Add a Page
 
@@ -183,6 +182,7 @@ Open the specific HTML file for the page you want to edit in a code editor like 
 
 - For the Home Page: Open `index.html` at the root.
 - For the About Page: Open `about/index.html`.
+- For Blog Pages/Posts: Open `blog/index.html` or the respective post file (e.g., `blog/post-1/index.html`).
 
 #### Step 2: Use "Find" to Locate Content
 
@@ -227,20 +227,20 @@ When you locate the content, it will look like minified JavaScript. Here is a ch
 
 Once you have modified your text or links, save the file and refresh your web browser to instantly view your changes!
 
-**How to add a new page:**
+**How to add a new page or blog post:**
 
-1. Create a new folder in the root directory (e.g., `my-new-page`).
-2. Copy an existing `index.html` file (for example, from the `about/` folder) and paste it into your new folder.
+1. Create a new folder in the appropriate directory (e.g., `my-new-page` at the root, or `blog/post-8` inside the `blog` directory).
+2. Copy an existing `index.html` file (for example, from `about/` or `blog/post-1/`) and paste it into your new folder.
 3. Open the newly copied `index.html` file.
 4. Locate the configuration script at the top, inside the `<head>` tag:
    ```html
    <script>
-     window.CURRENT_PAGE = "my-new-page";
+     window.CURRENT_PAGE = "my-new-page"; // or "blog/post-8"
    </script>
    ```
-5. Update `window.CURRENT_PAGE` to a unique identifier for your new page.
-6. Using the search method described above, find and replace the text content in the JavaScript bundle to fit your new page.
-7. Update navigation menus in the other HTML files to link to your new `/my-new-page/` directory.
+5. Update `window.CURRENT_PAGE` to a unique identifier for your new page or post.
+6. Using the search method described above, find and replace the text content in the JavaScript bundle (`assets/main.js`) or within local custom components to fit your new view.
+7. If adding a blog post, add a new entry for your post inside `blog/rss.xml` and update navigation or blog index links accordingly.
 
 ### 4. Deploy to GitHub Pages
 
