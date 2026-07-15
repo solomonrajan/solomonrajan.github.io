@@ -13271,14 +13271,14 @@ Error generating stack: ` +
         ],
         Md = [
           {
-            role: "Senior Frontend Engineer",
-            company: "TechCorp Inc.",
-            period: "Jan 2022 â€“ Present",
+            role: "Personnel Executive & Welfare Officer",
+            company: "Poabs Enterprises Private Limited",
+            period: "June 2023 - Present",
             bullets: [
-              "Led redesign of the main dashboard, improving load time by 40% and boosting user engagement.",
-              "Architected a reusable component library used across 5 product teams.",
-              "Mentored 4 junior developers through code reviews and 1-on-1 sessions.",
-              "Integrated WebSocket-based real-time notifications reducing support tickets by 25%.",
+              "Spearheaded employee relations and statutory compliance initiatives, ensuring 100% adherence to applicable labour laws and regulatory mandates across all departments.",
+              "Managed end-to-end workforce welfare programs and grievance redressal mechanisms, fostering a positive workplace culture and boosting employee satisfaction.",
+              "Administered payroll management, performance appraisals, and HRIS data operations with high accuracy and confidentiality for a diverse organizational workforce.",
+              "Coordinated structured training and professional development sessions, improving employee skill acquisition and overall operational efficiency.",
             ],
           },
           {
