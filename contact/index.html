@@ -3,83 +3,110 @@
 <!-- ========================================== -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- ========================================== -->
-<!-- 2. ANALYTICS & SECURITY POLICIES           -->
-<!-- ========================================== -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="681f1338-c995-4dde-b9fd-a738a5c5d55f"></script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<!-- ========================================== -->
-<!-- 3. ANTI-CLICKJACK & ROUTING                -->
-<!-- ========================================== -->
-<style id="antiClickjack">body{display:none !important;}</style>
-<script type="text/javascript">
-   if (self === top) {
-       var antiClickjack = document.getElementById("antiClickjack");
-       antiClickjack.parentNode.removeChild(antiClickjack);
-   } else {
-       top.location = self.location;
-   }
-</script>
-<script>
-  (function() {
-    var path = window.location.pathname;
-    if (path.endsWith('/index.html')) {
-      window.history.replaceState(null, '', path.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash);
-    } else if (path.endsWith('.html')) {
-      window.history.replaceState(null, '', path.replace(/\.html$/, '') + window.location.search + window.location.hash);
-    }
-  })();
-</script>
-<!-- ========================================== -->
-<!-- 4. SEO & META TAGS                         -->
-<!-- ========================================== -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;" />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-<link rel="icon" href="/assets/favicon.png" type="image/png" />
-<title>Contact Me - Solomon Rajan</title>
-<meta name="description" content="Portfolio of Solomon Rajan, Personnel Executive & Welfare Officer. Managing employee relations, statutory compliance, and workforce welfare with a people-first approach." />
-<!-- ========================================== -->
-<!-- 5. FONTS & ICONS                           -->
-<!-- ========================================== -->
-<!-- Material Symbols Rounded (MD3 style) -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-<link
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
-rel="stylesheet"
-/>
-<!-- Google Fonts: Google Sans Flex & Inter -->
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Google+Sans+Flex:wght@100..900&display=swap"
-rel="stylesheet"
-/>
-<!-- ========================================== -->
-<!-- 6. PAGE STATE                              -->
-<!-- ========================================== -->
-<script>
-  window.CURRENT_PAGE = "contact";
-</script>
-<!-- ========================================== -->
-<!-- 7. APPLICATION CORE (COMPILED REACT JS)    -->
-<!-- ========================================== -->
-<script type="module" crossorigin src="/assets/main.js"></script>
+  <head>
+    <!-- ========================================== -->
+    <!-- 2. ANALYTICS & SECURITY POLICIES           -->
+    <!-- ========================================== -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="681f1338-c995-4dde-b9fd-a738a5c5d55f"
+    ></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
-<!-- ========================================== -->
-<!-- 8. APPLICATION STYLING (COMPILED CSS)      -->
-<!-- ========================================== -->
-<link rel="stylesheet" crossorigin href="/assets/main.css">
+    <!-- ========================================== -->
+    <!-- 3. ANTI-CLICKJACK & ROUTING                -->
+    <!-- ========================================== -->
+    <style id="antiClickjack">
+      body {
+        display: none !important;
+      }
+    </style>
+    <script>
+      if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+        top.location = self.location;
+      }
+    </script>
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        if (path.endsWith("/index.html")) {
+          window.history.replaceState(
+            null,
+            "",
+            path.replace(/\/index\.html$/, "/") +
+              window.location.search +
+              window.location.hash
+          );
+        } else if (path.endsWith(".html")) {
+          window.history.replaceState(
+            null,
+            "",
+            path.replace(/\.html$/, "") +
+              window.location.search +
+              window.location.hash
+          );
+        }
+      })();
+    </script>
+    <!-- ========================================== -->
+    <!-- 4. SEO & META TAGS                         -->
+    <!-- ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+    <title>Contact Me - Solomon Rajan</title>
+    <meta
+      name="description"
+      content="Portfolio of Solomon Rajan, Personnel Executive &amp; Welfare Officer. Managing employee relations, statutory compliance, and workforce welfare with a people-first approach.">
+    <!-- ========================================== -->
+    <!-- 5. FONTS & ICONS                           -->
+    <!-- ========================================== -->
+    <!-- Material Symbols Rounded (MD3 style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+      rel="stylesheet">
+    <!-- Google Fonts: Google Sans Flex & Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Google+Sans+Flex:wght@100..900&display=swap"
+      rel="stylesheet">
+    <!-- ========================================== -->
+    <!-- 6. PAGE STATE                              -->
+    <!-- ========================================== -->
+    <script>
+      window.CURRENT_PAGE = "contact";
+    </script>
+    <!-- ========================================== -->
+    <!-- 7. APPLICATION CORE (COMPILED REACT JS)    -->
+    <!-- ========================================== -->
+    <script type="module" crossorigin src="/assets/main.js"></script>
 
-<!-- ========================================== -->
-<!-- 9. CUSTOM PAGE-SPECIFIC STYLES             -->
-<!-- ========================================== -->
-        <style>
+    <!-- ========================================== -->
+    <!-- 8. APPLICATION STYLING (COMPILED CSS)      -->
+    <!-- ========================================== -->
+    <link rel="stylesheet" crossorigin href="/assets/main.css">
+
+    <!-- ========================================== -->
+    <!-- 9. CUSTOM PAGE-SPECIFIC STYLES             -->
+    <!-- ========================================== -->
+    <style>
       @media (min-width: 768px) {
-        html.is-home-page, html.is-home-page body, html.is-home-page #root {
+        html.is-home-page,
+        html.is-home-page body,
+        html.is-home-page #root {
           height: 100vh;
           width: 100vw;
           margin: 0;
@@ -87,102 +114,225 @@ rel="stylesheet"
           overflow: hidden;
         }
       }
+
+      /* Support My Work Section */
+      #support-my-work {
+        max-width: 600px;
+        margin: 48px auto 0;
+        padding: 32px;
+        text-align: center;
+        width: calc(100% - 48px);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      #support-my-work .support-title {
+        font-family: 'Google Sans Flex', system-ui, sans-serif;
+        color: var(--md-sys-color-on-surface);
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      #support-my-work .support-desc {
+        font-family: 'Inter', system-ui, sans-serif;
+        color: var(--md-sys-color-on-surface-variant);
+        margin: 0;
+        font-size: 15px;
+        max-width: 480px;
+        line-height: 1.6;
+      }
+
+      #support-my-work .support-actions {
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      #support-my-work .support-btn {
+        text-decoration: none;
+        padding-left: 16px;
+        background-color: var(--md-sys-color-primary);
+      }
+
+      #support-my-work .support-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+      }
+
+      /* Page Footer */
+      .site-footer {
+        background-color: var(--md-sys-color-surface-container);
+        padding: 32px 24px;
+        text-align: center;
+        border-top: 1px solid var(--md-sys-color-outline-variant);
+        margin-top: 48px;
+      }
+
+      .site-footer .footer-signature-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      .site-footer .footer-signature {
+        height: 56px;
+        width: 164px;
+        background-color: var(--md-sys-color-on-surface);
+        -webkit-mask: url('/assets/Signature.svg') no-repeat center / contain;
+        mask: url('/assets/Signature.svg') no-repeat center / contain;
+      }
+
+      .site-footer .footer-copyright {
+        margin: 0 0 12px 0;
+        color: var(--md-sys-color-on-surface);
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Google Sans Flex', system-ui, sans-serif;
+      }
+
+      .site-footer .footer-licensing {
+        margin: 0;
+        color: var(--md-sys-color-on-surface-variant);
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: 'Google Sans Flex', system-ui, sans-serif;
+      }
+
+      .site-footer .footer-link {
+        color: var(--md-sys-color-primary);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .site-footer #commits-footer-info {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid var(--md-sys-color-outline-variant);
+        color: var(--md-sys-color-on-surface-variant);
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .site-footer .commits-label {
+        color: var(--md-sys-color-primary);
+      }
+
+      .site-footer #commits-count {
+        font-weight: bold;
+        color: var(--md-sys-color-on-surface);
+      }
+
+      .site-footer .commits-last-update {
+        font-style: italic;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+
+      .site-footer .commits-update-icon {
+        font-size: 16px;
+      }
     </style>
 
-<!-- ========================================== -->
-<!-- 10. PAGE INITIALIZATION SCRIPT             -->
-<!-- ========================================== -->
+    <!-- ========================================== -->
+    <!-- 10. PAGE INITIALIZATION SCRIPT             -->
+    <!-- ========================================== -->
     <script>
       if (window.CURRENT_PAGE === "home") {
         document.documentElement.classList.add("is-home-page");
       }
     </script>
-</head>
+  </head>
 
-<!-- ========================================== -->
-<!-- 11. PAGE BODY                              -->
-<!-- ========================================== -->
-<body>
-<div id="root">
-</div>
-  <section id="support-my-work" class="md3-card" style="max-width: 600px; margin: 48px auto 0; padding: 32px; text-align: center; width: calc(100% - 48px); box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
-    <h2 style="font-family: 'Google Sans Flex', system-ui, sans-serif; color: var(--md-sys-color-on-surface); margin: 0; font-size: 22px; font-weight: 600;">Support My Work</h2>
-    <p style="font-family: 'Inter', system-ui, sans-serif; color: var(--md-sys-color-on-surface-variant); margin: 0; font-size: 15px; max-width: 480px; line-height: 1.6;">If you find my content and projects valuable, consider making a donation. Your support helps me keep building and sharing.</p>
-    <div style="margin-top: 16px; display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap;">
-      <a href="https://liberapay.com/solomon.rajan" target="_blank" rel="noopener noreferrer" class="md3-btn-filled assistant-glow" style="text-decoration: none; padding-left: 16px; background-color: var(--md-sys-color-primary);">
-        <img src="/assets/liberapay_logo_black-on-yellow.svg" alt="Liberapay" style="width: 24px; height: 24px; border-radius: 4px;" />
-        Support on Liberapay
-      </a>
-    </div>
-  </section>
-<footer style="background-color: var(--md-sys-color-surface-container); padding: 32px 24px; text-align: center; border-top: 1px solid var(--md-sys-color-outline-variant); margin-top: 48px;">
-  <div style="display: flex; justify-content: center; margin-bottom: 24px;">
-    <div aria-label="Solomon Rajan Signature" style="height: 56px; width: 164px; background-color: var(--md-sys-color-on-surface); -webkit-mask: url('/assets/Signature.svg') no-repeat center / contain; mask: url('/assets/Signature.svg') no-repeat center / contain;"></div>
-  </div>
-  <p style="margin: 0 0 12px 0; color: var(--md-sys-color-on-surface); font-size: 15px; font-weight: 500; font-family: 'Google Sans Flex', system-ui, sans-serif;">
-    &copy; 2026 Solomon Rajan
-  </p>
-  <p style="margin: 0; color: var(--md-sys-color-on-surface-variant); font-size: 14px; line-height: 1.6; font-family: 'Google Sans Flex', system-ui, sans-serif;">
-    <strong>Licensing:</strong> Software & Code are under the <a href="https://github.com/solomonrajan/solomonrajan.github.io/blob/main/LICENSE" target="_blank" style="color: var(--md-sys-color-primary); text-decoration: none; font-weight: 500;">MIT License</a>.<br>
-    Media, design, and assets are <a href="https://github.com/solomonrajan/solomonrajan.github.io/blob/main/LICENSE-ALL-RIGHTS-RESERVED.md" target="_blank" style="color: var(--md-sys-color-primary); text-decoration: none; font-weight: 500;">All Rights Reserved</a> and cannot be used.
-  </p>
-  <div id="commits-footer-info" style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--md-sys-color-outline-variant); color: var(--md-sys-color-on-surface-variant); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
-    <div><strong style="color: var(--md-sys-color-primary);">Commits Made:</strong> <span id="commits-count" style="font-weight: bold; color: var(--md-sys-color-on-surface);">...</span></div>
-    <div style="font-style: italic; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 6px;">
-      <span class="material-symbols-rounded" style="font-size: 16px;">update</span>
-      <span id="commits-last-updated">Last updated: ...</span>
-    </div>
-  </div>
-</footer>
-<script>
-  (async function() {
-    try {
-      const res = await fetch("https://api.github.com/repos/solomonrajan/solomonrajan.github.io/commits?per_page=1");
-      let count = "150+";
-      let commitDate = new Date();
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.length > 0) {
-          commitDate = new Date(data[0].commit.committer.date);
-        }
-        const linkHeader = res.headers.get("Link");
-        if (linkHeader) {
-          const match = linkHeader.match(/page=(\d+)>; rel="last"/);
-          if (match) {
-            count = match[1];
+  <!-- ========================================== -->
+  <!-- 11. PAGE BODY                              -->
+  <!-- ========================================== -->
+  <body>
+    <div id="root"></div>
+    <section id="support-my-work" class="md3-card">
+      <h2 class="support-title">Support My Work</h2>
+      <p class="support-desc">If you find my content and projects valuable, consider making a donation. Your support helps me keep building and sharing.</p>
+      <div class="support-actions">
+        <a href="https://liberapay.com/solomon.rajan" target="_blank" rel="noopener noreferrer" class="md3-btn-filled assistant-glow support-btn">
+          <img src="/assets/liberapay_logo_black-on-yellow.svg" alt="Liberapay" class="support-icon" width="24" height="24">
+          Support on Liberapay
+        </a>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-signature-wrap">
+        <div class="footer-signature" role="img" aria-label="Solomon Rajan Signature"></div>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 Solomon Rajan
+      </p>
+      <p class="footer-licensing">
+        <strong>Licensing:</strong> Software &amp; Code are under the <a href="https://github.com/solomonrajan/solomonrajan.github.io/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="footer-link">MIT License</a>.<br>
+        Media, design, and assets are <a href="https://github.com/solomonrajan/solomonrajan.github.io/blob/main/LICENSE-ALL-RIGHTS-RESERVED.md" target="_blank" rel="noopener noreferrer" class="footer-link">All Rights Reserved</a> and cannot be used.
+      </p>
+      <div id="commits-footer-info">
+        <div><strong class="commits-label">Commits Made:</strong> <span id="commits-count">...</span></div>
+        <div class="commits-last-update">
+          <span class="material-symbols-rounded commits-update-icon" aria-hidden="true">update</span>
+          <span id="commits-last-updated">Last updated: ...</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (async function() {
+        try {
+          const res = await fetch("https://api.github.com/repos/solomonrajan/solomonrajan.github.io/commits?per_page=1");
+          let count = "150+";
+          let commitDate = new Date();
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.length > 0) {
+              commitDate = new Date(data[0].commit.committer.date);
+            }
+            const linkHeader = res.headers.get("Link");
+            if (linkHeader) {
+              const match = linkHeader.match(/page=(\d+)>; rel="last"/);
+              if (match) {
+                count = match[1];
+              }
+            } else {
+              count = data.length.toString();
+            }
           }
-        } else {
-          count = data.length.toString();
+          const dateString = commitDate.toLocaleDateString("en-US", { day: "2-digit", month: "short", year: "numeric" });
+          const timeString = commitDate.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+          document.getElementById("commits-count").textContent = count;
+          document.getElementById("commits-last-updated").textContent = "Last updated: " + dateString + " " + timeString;
+        } catch (err) {
+          console.error("Failed to fetch commits", err);
         }
-      }
-      const dateString = commitDate.toLocaleDateString("en-US", { day: "2-digit", month: "short", year: "numeric" });
-      const timeString = commitDate.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
-      document.getElementById("commits-count").textContent = count;
-      document.getElementById("commits-last-updated").textContent = "Last updated: " + dateString + " " + timeString;
-    } catch (err) {
-      console.error("Failed to fetch commits", err);
-    }
-  })();
-</script>
-<script id="global-link-target">
-      document.addEventListener('click', function(e) {
-        var a = e.target.closest('a');
+      })();
+    </script>
+    <script id="global-link-target">
+      document.addEventListener("click", function (e) {
+        var a = e.target.closest("a");
         if (a) {
-          var href = a.getAttribute('href');
-          if (href && href.startsWith('https://')) {
-            a.target = '_blank';
-            a.rel = 'noopener noreferrer';
+          var href = a.getAttribute("href");
+          if (href && href.startsWith("https://")) {
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
           }
         }
       });
     </script>
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-
-
