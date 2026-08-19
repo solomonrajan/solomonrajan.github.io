@@ -14055,7 +14055,7 @@ Error generating stack: ` +
                         color: "var(--md-sys-color-primary)",
                         marginBottom: "16px",
                       },
-                      children: "Personnel Executive & Welfare Officer",
+                      children: "Officer, Labour Relations",
                     }),
                     o.jsx("p", {
                       className: "animate-fade-up delay-3",
