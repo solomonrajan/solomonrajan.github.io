@@ -80,6 +80,10 @@ body {
   letter-spacing: var(--md-sys-typescale-body-large-tracking);
   color: var(--md-sys-color-on-background);
   background-color: var(--md-sys-color-background);
+  background-image: 
+    radial-gradient(circle at 15% 50%, color-mix(in srgb, var(--md-sys-color-primary) 8%, transparent), transparent 50%),
+    radial-gradient(circle at 85% 30%, color-mix(in srgb, var(--md-sys-color-tertiary) 8%, transparent), transparent 50%);
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -165,7 +169,7 @@ strong, b {
   width: 460px;
   height: 460px;
   color: var(--md-sys-color-primary-container);
-  opacity: 0.40;
+  opacity: 0.60;
   animation: m3ShapeFloat1 20s ease-in-out infinite;
 }
 
@@ -177,7 +181,7 @@ strong, b {
   height: 140px;
   border-radius: var(--md-sys-shape-corner-full);
   background-color: var(--md-sys-color-secondary-container);
-  opacity: 0.35;
+  opacity: 0.55;
   transform: rotate(-28deg);
   animation: m3ShapeFloat2 24s ease-in-out infinite;
 }
@@ -189,7 +193,7 @@ strong, b {
   width: 380px;
   height: 380px;
   color: var(--md-sys-color-tertiary-container);
-  opacity: 0.36;
+  opacity: 0.55;
   animation: m3ShapeFloat3 22s ease-in-out infinite;
 }
 
@@ -202,7 +206,7 @@ strong, b {
   border-radius: 46% 54% 60% 40% / 48% 42% 58% 52%;
   background-color: var(--md-sys-color-surface-container-high);
   border: 1.5px solid var(--md-sys-color-outline-variant);
-  opacity: 0.32;
+  opacity: 0.50;
   animation: m3ShapeFloat4 18s ease-in-out infinite;
 }
 
@@ -213,16 +217,16 @@ strong, b {
   width: 300px;
   height: 300px;
   color: var(--md-sys-color-primary-container);
-  opacity: 0.30;
+  opacity: 0.50;
   animation: m3ShapeFloat1 28s ease-in-out infinite reverse;
 }
 
 /* Dark Mode Opacity Balancing for M3 Contrast */
-[data-theme="dark"] .m3-shape--bloom { opacity: 0.20; }
-[data-theme="dark"] .m3-shape--pill { opacity: 0.18; }
-[data-theme="dark"] .m3-shape--starburst { opacity: 0.18; }
-[data-theme="dark"] .m3-shape--pebble { opacity: 0.15; }
-[data-theme="dark"] .m3-shape--diamond { opacity: 0.16; }
+[data-theme="dark"] .m3-shape--bloom { opacity: 0.40; }
+[data-theme="dark"] .m3-shape--pill { opacity: 0.35; }
+[data-theme="dark"] .m3-shape--starburst { opacity: 0.35; }
+[data-theme="dark"] .m3-shape--pebble { opacity: 0.30; }
+[data-theme="dark"] .m3-shape--diamond { opacity: 0.30; }
 
 /* Responsive Scale for Mobile Devices */
 @media (max-width: 768px) {
@@ -675,26 +679,25 @@ main {
 
 /* Glassmorphism Button */
 .md-btn-glass {
-  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 35%, transparent);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 70%, transparent);
   color: var(--md-sys-color-on-surface);
-  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 50%, transparent);
-  border-top: 1px solid color-mix(in srgb, var(--md-sys-color-outline) 40%, transparent);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   font-weight: 700;
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
 }
 
 .md-btn-glass:hover {
-  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 50%, transparent);
-  border-color: color-mix(in srgb, var(--md-sys-color-outline) 60%, transparent);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 85%, transparent);
+  border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 80%, transparent);
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
 
 .md-btn-glass:active {
-  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 65%, transparent);
+  background-color: var(--md-sys-color-surface-container-highest);
   transform: translateY(0);
 }
 
@@ -3547,3 +3550,4 @@ main {
 .site-footer .commits-update-icon {
   font-size: 16px;
 }
+
