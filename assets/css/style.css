@@ -703,8 +703,11 @@ main {
 
 /* Filled Button - Flat */
 .md-btn-filled {
-  background-color: var(--md-sys-color-primary);
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-on-primary);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-primary) 60%, transparent);
   box-shadow: none;
   font-weight: 600;
 }
@@ -723,9 +726,11 @@ main {
 
 /* Elevated Button - Flat */
 .md-btn-elevated {
-  background-color: var(--md-sys-color-surface-container-high);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-high) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-primary);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: none;
 }
 
@@ -741,8 +746,11 @@ main {
 
 /* Tonal Button - Flat */
 .md-btn-tonal {
-  background-color: var(--md-sys-color-secondary-container);
+  background-color: color-mix(in srgb, var(--md-sys-color-secondary-container) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-on-secondary-container);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-secondary-container) 60%, transparent);
   box-shadow: none;
 }
 
@@ -758,6 +766,8 @@ main {
 /* Outlined Button - Flat */
 .md-btn-outlined {
   background-color: transparent;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-primary);
   border: 1.5px solid var(--md-sys-color-outline);
   box-shadow: none;
@@ -829,9 +839,11 @@ main {
   height: 56px;
   padding: 0 1.75rem;
   border-radius: var(--md-sys-shape-corner-xl);
-  background-color: var(--md-sys-color-primary-container);
+  background-color: color-mix(in srgb, var(--md-sys-color-primary-container) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-on-primary-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: none;
   font-weight: 600;
   text-decoration: none;
@@ -873,20 +885,26 @@ main {
 }
 
 .md-card-elevated {
-  background-color: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-low) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: none;
 }
 
 .md-card-filled {
-  background-color: var(--md-sys-color-surface-container-highest);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: none;
 }
 
 .md-card-outlined {
-  background-color: var(--md-sys-color-surface);
-  border: 1.5px solid var(--md-sys-color-outline-variant);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1.5px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: none;
 }
 
@@ -937,9 +955,11 @@ main {
 
 .md-chip.active,
 .md-chip--selected {
-  background-color: var(--md-sys-color-secondary-container);
+  background-color: color-mix(in srgb, var(--md-sys-color-secondary-container) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-on-secondary-container);
-  border-color: transparent;
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-secondary-container) 60%, transparent);
   font-weight: 700;
   box-shadow: none;
 }
@@ -967,8 +987,10 @@ main {
   font-family: inherit;
   font-size: 1rem;
   color: var(--md-sys-color-on-surface);
-  background-color: transparent;
-  border: 1.5px solid var(--md-sys-color-outline);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container) 20%, transparent);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1.5px solid color-mix(in srgb, var(--md-sys-color-outline) 60%, transparent);
   border-radius: var(--md-sys-shape-corner-md);
   padding: 1rem 1.15rem;
   outline: none;
@@ -2351,11 +2373,13 @@ main {
   bottom: 2rem;
   left: 50%;
   transform: translate3d(-50%, 40px, 0) scale(0.95);
-  background-color: var(--md-sys-color-inverse-surface);
+  background-color: color-mix(in srgb, var(--md-sys-color-inverse-surface) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-inverse-on-surface);
   padding: 0.95rem 1.65rem;
   border-radius: var(--md-sys-shape-corner-full);
-  border: 1px solid var(--md-sys-color-outline-variant);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: none;
   display: flex;
   align-items: center;
@@ -2420,9 +2444,11 @@ main {
 }
 
 .md-dialog {
-  background-color: var(--md-sys-color-surface-container-high);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-high) 35%, transparent);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   color: var(--md-sys-color-on-surface);
-  border: 1.5px solid var(--md-sys-color-outline-variant);
+  border: 1.5px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   border-radius: var(--md-sys-shape-corner-xxl);
   max-width: 680px;
   width: 100%;
