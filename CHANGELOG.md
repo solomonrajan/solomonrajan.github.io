@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.3.0...v0.4.0) (2026-09-04)
+
+
+### Features
+
+* Removed the manual light/dark mode toggle button across all pages. The website now strictly and exclusively adapts to the system-level color scheme preferences, creating a more seamless and automated viewing experience without relying on local storage overrides. ([c3dd490](https://github.com/solomonrajan/solomonrajan.github.io/commit/c3dd490ebfc05b116fcf9118e0d60890bdc66cb9))
+
+
+
 # [0.3.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.2.0...v0.3.0) (2026-09-04)
 
 
