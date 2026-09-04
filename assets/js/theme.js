@@ -87,6 +87,16 @@
     themeButtons.forEach(btn => {
       btn.addEventListener('click', toggleTheme);
     });
+
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', e => {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          applyTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    }
   });
 
   // Global Snackbar Utility
