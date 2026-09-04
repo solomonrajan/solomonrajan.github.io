@@ -1,4 +1,13 @@
-# 0.1.0 (2026-09-04)
+# [0.2.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.1.0...v0.2.0) (2026-09-04)
+
+
+### Features
+
+* add new changelog.html page documenting portfolio architectural updates and feature history ([eee53ec](https://github.com/solomonrajan/solomonrajan.github.io/commit/eee53ecacf5b9780886f90f55938999111d1bc09))
+
+
+
+# [0.1.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/c87ce34226322ee38146a2eb9505b023f3342410...v0.1.0) (2026-09-04)
 
 
 ### Bug Fixes
