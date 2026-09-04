@@ -1,3 +1,12 @@
+# [0.15.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.14.0...v0.15.0) (2026-09-04)
+
+
+### Features
+
+* implement design changelog page and modernize global theme with refined glassmorphism and vibrant color palette ([3d68639](https://github.com/solomonrajan/solomonrajan.github.io/commit/3d6863902c662d0719a2a20283d75dad6d6d3209))
+
+
+
 # [0.14.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.13.0...v0.14.0) (2026-09-04)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog page and update site styles for improved glassmorphism aesthetics ([2f2fc19](https://github.com/solomonrajan/solomonrajan.github.io/commit/2f2fc194e312cc4de22b775b4c22372101bf59d8))
-
-
-
-# [0.10.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.9.0...v0.10.0) (2026-09-04)
-
-
-### Features
-
-* add site changelog page and implement glassmorphism design improvements ([55dc657](https://github.com/solomonrajan/solomonrajan.github.io/commit/55dc65775a978994731f0ceb16a9d8923b0ea8f1))
 
 
 
