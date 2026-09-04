@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.4.0...v0.5.0) (2026-09-04)
+
+
+### Features
+
+* implement project changelog, legal documentation, and repository README ([b12d68b](https://github.com/solomonrajan/solomonrajan.github.io/commit/b12d68bbcd190b55730057ada8668f02af6f899f))
+
+
+
 # [0.4.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.3.0...v0.4.0) (2026-09-04)
 
 
