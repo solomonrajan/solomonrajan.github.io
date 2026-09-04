@@ -1,3 +1,12 @@
+# [0.17.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.16.0...v0.17.0) (2026-09-04)
+
+
+### Features
+
+* implement Google Material Design 3 stylesheet and add changelog page structure ([f04c59e](https://github.com/solomonrajan/solomonrajan.github.io/commit/f04c59e6133e8f0b0f90cce62d11c6eb9e5a2616))
+
+
+
 # [0.16.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.15.0...v0.16.0) (2026-09-04)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Material Design 3 Expressive tokens and add changelog page ([41f3ec8](https://github.com/solomonrajan/solomonrajan.github.io/commit/41f3ec832ef7c31bdce456e7d09b673d38ce593c))
-
-
-
-# [0.12.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.11.0...v0.12.0) (2026-09-04)
-
-
-### Features
-
-* add Material Design 3 system tokens and changelog template ([320216f](https://github.com/solomonrajan/solomonrajan.github.io/commit/320216f7f798d08f3d7204380bf109d64defedc8))
 
 
 
