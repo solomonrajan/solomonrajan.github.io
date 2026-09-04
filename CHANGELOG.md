@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.8.0...v0.9.0) (2026-09-04)
+
+
+### Features
+
+* add project changelog page and new glassmorphism utility classes to styles ([d93b6f4](https://github.com/solomonrajan/solomonrajan.github.io/commit/d93b6f4df3767a7a4dfc926822bb6e5618795d4a))
+
+
+
 # [0.8.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.7.0...v0.8.0) (2026-09-04)
 
 
@@ -15,15 +24,6 @@
 * implement Material Design 3 global styles and create base changelog page ([7213925](https://github.com/solomonrajan/solomonrajan.github.io/commit/72139257782b4755dfc93e718c2f6413955e0e45))
 * implement project changelog, legal documentation, and repository README ([b12d68b](https://github.com/solomonrajan/solomonrajan.github.io/commit/b12d68bbcd190b55730057ada8668f02af6f899f))
 * implement system theme switching and clean up navigation URL paths ([4ba9c11](https://github.com/solomonrajan/solomonrajan.github.io/commit/4ba9c112fba969a4b2fe173a2394b91f553b95e8))
-
-
-
-# [0.4.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.3.0...v0.4.0) (2026-09-04)
-
-
-### Features
-
-* Removed the manual light/dark mode toggle button across all pages. The website now strictly and exclusively adapts to the system-level color scheme preferences, creating a more seamless and automated viewing experience without relying on local storage overrides. ([c3dd490](https://github.com/solomonrajan/solomonrajan.github.io/commit/c3dd490ebfc05b116fcf9118e0d60890bdc66cb9))
 
 
 
