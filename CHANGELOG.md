@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.2.0...v0.3.0) (2026-09-04)
+
+
+### Features
+
+* implement Material Design 3 theme system and add comprehensive site changelog page ([0c91e21](https://github.com/solomonrajan/solomonrajan.github.io/commit/0c91e211f07f5ba5190b2dcb99d6cd37f58649f5))
+
+
+
 # [0.2.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.1.0...v0.2.0) (2026-09-04)
 
 
