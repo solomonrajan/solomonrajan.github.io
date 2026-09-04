@@ -1,3 +1,12 @@
+# [0.12.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.11.0...v0.12.0) (2026-09-04)
+
+
+### Features
+
+* add Material Design 3 system tokens and changelog template ([320216f](https://github.com/solomonrajan/solomonrajan.github.io/commit/320216f7f798d08f3d7204380bf109d64defedc8))
+
+
+
 # [0.11.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.10.0...v0.11.0) (2026-09-04)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add project changelog page, implement glassmorphism styling, and optimize mobile responsiveness ([4dc639f](https://github.com/solomonrajan/solomonrajan.github.io/commit/4dc639f8e3279bf70f7c3b8c964d92b7af12c5bd))
-
-
-
-# [0.7.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.6.0...v0.7.0) (2026-09-04)
-
-
-### Features
-
-* implement Material Design 3 global styles and create base changelog page ([7213925](https://github.com/solomonrajan/solomonrajan.github.io/commit/72139257782b4755dfc93e718c2f6413955e0e45))
 
 
 
