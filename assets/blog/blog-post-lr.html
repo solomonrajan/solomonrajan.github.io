@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navigating Modern Labour Relations: Strategies for Conflict Resolution">
+  <title>Navigating Modern Labour Relations | Solomon Rajan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:GRAD,opsz,ROND,wdth,wght@0..100,6..144,0..100,25..151,1..1000&family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <link rel="stylesheet" href="../css/material-tokens.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="md-app-bar">
+    <div class="container md-app-bar__container">
+      <a href="../../index.html" class="md-brand" aria-label="Solomon Rajan - Home">
+        <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Owl" width="28" height="28" crossorigin="anonymous"></span>
+        <span class="md-brand-text">Solomon Rajan</span>
+      </a>
+      <div class="md-app-bar__actions" style="display: flex; gap: 1rem; align-items: center;">
+        <a href="../../blog.html" class="md-btn md-btn-tonal">
+          <span class="material-symbols-outlined">arrow_back</span> Back to Blog
+        </a>
+        <button type="button" class="md-icon-btn theme-toggle-btn" aria-label="Toggle theme">
+          <span class="material-symbols-outlined theme-toggle-icon theme-toggle-icon--dark">dark_mode</span>
+          <span class="material-symbols-outlined theme-toggle-icon theme-toggle-icon--light">light_mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: 120px; padding-bottom: 80px;">
+    <article class="container blog-post-content" style="max-width: 800px; margin: 0 auto;">
+
+      <header class="blog-post-header">
+        <div class="blog-post-meta">
+          <span class="material-symbols-outlined icon-small">schedule</span>
+          <strong>6 min read</strong>
+          <span class="blog-meta-dot"></span>
+          <time datetime="2026-05-20">May 20, 2026</time>
+          <span class="blog-meta-dot"></span>
+          <span class="blog-meta-category">Labour Relations</span>
+        </div>
+        <h1 class="page-title" style="text-align: left; font-size: 2.5rem; margin-bottom: 2rem;">Navigating Modern Labour Relations: Strategies for Conflict Resolution</h1>
+      </header>
+
+      <section>
+        <p>Healthy labour relations form the bedrock of organizational stability and employee satisfaction. In modern workplaces, conflicts are inevitable, but they do not have to be destructive. By employing strategic, proactive measures, HR professionals can transform disputes into opportunities for organizational growth.</p>
+
+        <h3>1. Proactive Communication</h3>
+        <p>Establish transparent channels between management and union representatives long before disputes escalate. Regular town halls, anonymous feedback mechanisms, and joint labor-management committees build the trust necessary to weather inevitable storms.</p>
+        
+        <h3>2. Mediation and Code Automation</h3>
+        <p>To reduce human error and perceived bias during disciplinary escalations, modern HR departments are increasingly turning to automated policy scripts that ensure standard procedures are strictly followed. Below is a conceptual example of a script used to standardize conflict escalation pathways:</p>
+
+        <div class="blog-code-wrapper">
+          <button class="btn-copy-code" aria-label="Copy code snippet">
+            <span class="material-symbols-outlined">content_copy</span> Copy
+          </button>
+          <pre><code>def evaluate_conflict_escalation(incident_severity, prior_warnings):
+    """
+    Standardizes HR disciplinary and mediation pathways.
+    """
+    if incident_severity == "Critical" or prior_warnings >= 3:
+        return "Escalate to Formal Arbitration"
+        
+    elif incident_severity == "Moderate" and prior_warnings < 3:
+        return "Initiate Neutral Mediation Process"
+        
+    else:
+        return "Schedule Supervisor-Employee Counseling"
+
+# Execute evaluation
+next_step = evaluate_conflict_escalation("Moderate", 1)
+print(f"Action Required: {next_step}")</code></pre>
+        </div>
+
+        <h3>3. Compliance & Fairness</h3>
+        <p>Ensure all disciplinary actions adhere strictly to collective bargaining agreements (CBAs) and federal labor laws. A perceived lack of fairness is the primary driver of formal grievances. By utilizing principled negotiation techniques, HR practitioners can focus on underlying interests rather than entrenched positions, driving mutually beneficial resolutions.</p>
+      </section>
+    </article>
+  </main>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.querySelectorAll('.btn-copy-code').forEach(button => {
+      button.addEventListener('click', () => {
+        const pre = button.nextElementSibling;
+        navigator.clipboard.writeText(pre.innerText).then(() => {
+          const originalHTML = button.innerHTML;
+          button.innerHTML = '<span class="material-symbols-outlined">check</span> Copied!';
+          setTimeout(() => {
+            button.innerHTML = originalHTML;
+          }, 2000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
