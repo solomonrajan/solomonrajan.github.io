@@ -427,7 +427,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-easing-standard);
 }
 
-.md-brand:hover {
+.md-brand:disabled-hover {
   color: var(--md-sys-color-primary);
 }
 
@@ -524,7 +524,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-easing-standard);
 }
 
-.md-nav-link:hover:not(.active) {
+.md-nav-link:disabled-hover:not(.active) {
   color: var(--md-sys-color-on-surface);
 }
 
@@ -568,7 +568,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.theme-toggle-btn:hover {
+.theme-toggle-btn:disabled-hover {
   background-color: var(--md-sys-color-surface-container-high);
   border-color: var(--md-sys-color-outline);
   color: var(--md-sys-color-on-surface);
@@ -689,7 +689,7 @@ main {
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
 }
 
-.md-btn-glass:hover {
+.md-btn-glass:disabled-hover {
   background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 45%, transparent);
   border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 80%, transparent);
   box-shadow: 0 6px 35px rgba(0, 0, 0, 0.08);
@@ -709,7 +709,7 @@ main {
   font-weight: 600;
 }
 
-.md-btn-filled:hover {
+.md-btn-filled:disabled-hover {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
   filter: brightness(1.08);
@@ -729,7 +729,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-elevated:hover {
+.md-btn-elevated:disabled-hover {
   background-color: var(--md-sys-color-surface-container-highest);
   border-color: var(--md-sys-color-outline);
   box-shadow: none;
@@ -746,7 +746,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-tonal:hover {
+.md-btn-tonal:disabled-hover {
   background-color: var(--md-sys-color-surface-container-highest);
   box-shadow: none;
 }
@@ -763,7 +763,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-outlined:hover {
+.md-btn-outlined:disabled-hover {
   background-color: var(--md-sys-color-surface-container-low);
   border-color: var(--md-sys-color-primary);
   box-shadow: none;
@@ -781,7 +781,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-text:hover {
+.md-btn-text:disabled-hover {
   background-color: var(--md-sys-color-surface-container-low);
 }
 
@@ -811,7 +811,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-icon-btn:hover {
+.md-icon-btn:disabled-hover {
   background-color: var(--md-sys-color-surface-container-highest);
   color: var(--md-sys-color-on-surface);
 }
@@ -844,7 +844,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-fab:hover {
+.md-fab:disabled-hover {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
   transform: scale(1.02);
@@ -925,7 +925,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-chip:hover {
+.md-chip:disabled-hover {
   background-color: var(--md-sys-color-surface-container-high);
   color: var(--md-sys-color-on-surface);
   border-color: var(--md-sys-color-outline);
@@ -1094,7 +1094,7 @@ main {
   user-select: none;
 }
 
-.hero-badge--employed:hover {
+.hero-badge--employed:disabled-hover {
   border-color: #0061a4;
 }
 
@@ -1104,7 +1104,7 @@ main {
   border: 1px solid color-mix(in srgb, #005faf 60%, transparent);
 }
 
-[data-theme="dark"] .hero-badge--employed:hover {
+[data-theme="dark"] .hero-badge--employed:disabled-hover {
   border-color: #9ecaff;
 }
 
@@ -1171,7 +1171,7 @@ main {
   letter-spacing: 0.01em;
 }
 
-.hero-badge--employed:hover .hero-badge-tooltip,
+.hero-badge--employed:disabled-hover .hero-badge-tooltip,
 .hero-badge--employed:focus-visible .hero-badge-tooltip {
   opacity: 1;
   visibility: visible;
@@ -1439,7 +1439,7 @@ main {
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
 }
 
-.liberapay-badge-btn:hover {
+.liberapay-badge-btn:disabled-hover {
   background: linear-gradient(135deg, color-mix(in srgb, var(--md-sys-color-surface-container-highest) 70%, transparent) 0%, color-mix(in srgb, var(--md-sys-color-surface-container-highest) 30%, transparent) 100%);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
@@ -1868,7 +1868,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.bento-card__action-row .md-btn-text:hover {
+.bento-card__action-row .md-btn-text:disabled-hover {
   color: var(--md-sys-color-on-surface);
 }
 
@@ -1881,7 +1881,7 @@ main {
   transition: transform var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.bento-card__action-row .md-btn-text:hover .icon-arrow {
+.bento-card__action-row .md-btn-text:disabled-hover .icon-arrow {
   transform: translate3d(4px, 0, 0);
 }
 
@@ -2304,7 +2304,7 @@ main {
               border-color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.contact-info-item:hover {
+.contact-info-item:disabled-hover {
   background-color: var(--md-sys-color-surface-container);
   border-color: var(--md-sys-color-outline);
 }
@@ -2389,7 +2389,7 @@ main {
   transition: opacity var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-snackbar__action:hover {
+.md-snackbar__action:disabled-hover {
   opacity: 0.8;
 }
 
@@ -2498,7 +2498,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.footer-link:hover {
+.footer-link:disabled-hover {
   color: var(--md-sys-color-primary);
 }
 
@@ -2609,7 +2609,7 @@ main {
                 color var(--md-sys-motion-spring-duration-snappy) ease;
   }
 
-  .mobile-menu-btn:hover {
+  .mobile-menu-btn:disabled-hover {
     background-color: var(--md-sys-color-surface-container-high);
     border-color: var(--md-sys-color-outline);
     color: var(--md-sys-color-on-surface);
@@ -2718,7 +2718,7 @@ main {
                 color var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-easing-standard);
   }
 
-  .mobile-drawer-link:hover {
+  .mobile-drawer-link:disabled-hover {
     background-color: var(--md-sys-color-surface-container-high);
   }
 
@@ -2843,7 +2843,7 @@ main {
   transition: border-color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.changelog-entry:hover {
+.changelog-entry:disabled-hover {
   border-color: var(--md-sys-color-outline);
 }
 
@@ -3347,7 +3347,7 @@ main {
   transition: background-color 0.2s ease;
 }
 
-.btn-copy-code:hover {
+.btn-copy-code:disabled-hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -3550,4 +3550,5 @@ main {
 .site-footer .commits-update-icon {
   font-size: 16px;
 }
+
 
