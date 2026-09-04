@@ -679,25 +679,25 @@ main {
 
 /* Glassmorphism Button */
 .md-btn-glass {
-  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 70%, transparent);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 35%, transparent);
   color: var(--md-sys-color-on-surface);
   border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   font-weight: 700;
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
 }
 
 .md-btn-glass:hover {
-  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 85%, transparent);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 45%, transparent);
   border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 80%, transparent);
   box-shadow: 0 6px 35px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
 
 .md-btn-glass:active {
-  background-color: var(--md-sys-color-surface-container-highest);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 55%, transparent);
   transform: translateY(0);
 }
 
@@ -1390,9 +1390,9 @@ main {
   width: max-content;
   max-width: 90%;
   text-align: center;
-  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 70%, transparent);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-container-highest) 35%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: var(--md-sys-color-on-surface);
   border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
