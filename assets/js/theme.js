@@ -5,30 +5,6 @@
 (function () {
   'use strict';
 
-  // Strip .html and /index from browser address bar
-  (function cleanBrowserUrl() {
-    if (typeof window === 'undefined' || !window.location || window.location.protocol === 'file:') return;
-    try {
-      let path = window.location.pathname;
-      let clean = path;
-
-      if (clean.endsWith('/index.html')) {
-        clean = clean.slice(0, -11) || '/';
-      } else if (clean.endsWith('/index')) {
-        clean = clean.slice(0, -6) || '/';
-      } else if (clean === '/index.html' || clean === 'index.html') {
-        clean = '/';
-      } else if (clean.endsWith('.html')) {
-        clean = clean.slice(0, -5);
-      }
-
-      if (clean !== path) {
-        const newUrl = clean + window.location.search + window.location.hash;
-        window.history.replaceState(null, '', newUrl);
-      }
-    } catch (e) {}
-  })();
-
   function getSystemTheme() {
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
