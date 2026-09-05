@@ -70,9 +70,11 @@ html {
   font-size: 16px;
   -webkit-tap-highlight-color: transparent;
   scrollbar-width: none;
+  overscroll-behavior-y: none;
 }
 
 body {
+  overscroll-behavior-y: none;
   font-family: var(--md-sys-typescale-body-large-font);
   font-size: var(--md-sys-typescale-body-large-size);
   line-height: var(--md-sys-typescale-body-large-line-height);
@@ -170,6 +172,8 @@ strong, b {
   height: 460px;
   color: var(--md-sys-color-primary-container);
   opacity: 0.15;
+  will-change: transform;
+  transform: translateZ(0);
   animation: m3ShapeFloat1 20s ease-in-out infinite;
 }
 
@@ -182,7 +186,8 @@ strong, b {
   border-radius: var(--md-sys-shape-corner-full);
   background-color: var(--md-sys-color-secondary-container);
   opacity: 0.15;
-  transform: rotate(-28deg);
+  will-change: transform;
+  transform: rotate(-28deg) translateZ(0);
   animation: m3ShapeFloat2 24s ease-in-out infinite;
 }
 
@@ -194,6 +199,8 @@ strong, b {
   height: 380px;
   color: var(--md-sys-color-tertiary-container);
   opacity: 0.15;
+  will-change: transform;
+  transform: translateZ(0);
   animation: m3ShapeFloat3 22s ease-in-out infinite;
 }
 
@@ -207,6 +214,8 @@ strong, b {
   background-color: var(--md-sys-color-surface-container-high);
   border: 1.5px solid var(--md-sys-color-outline-variant);
   opacity: 0.15;
+  will-change: transform;
+  transform: translateZ(0);
   animation: m3ShapeFloat4 18s ease-in-out infinite;
 }
 
@@ -218,6 +227,8 @@ strong, b {
   height: 300px;
   color: var(--md-sys-color-primary-container);
   opacity: 0.15;
+  will-change: transform;
+  transform: translateZ(0);
   animation: m3ShapeFloat1 28s ease-in-out infinite reverse;
 }
 
@@ -425,7 +436,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-easing-standard);
 }
 
-.md-brand:disabled-hover {
+.md-brand:hover {
   color: var(--md-sys-color-primary);
 }
 
@@ -520,7 +531,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-easing-standard);
 }
 
-.md-nav-link:disabled-hover:not(.active) {
+.md-nav-link:hover:not(.active) {
   color: var(--md-sys-color-on-surface);
 }
 
@@ -564,7 +575,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.theme-toggle-btn:disabled-hover {
+.theme-toggle-btn:hover {
   background-color: var(--md-sys-color-surface-container-high);
   border-color: var(--md-sys-color-outline);
   color: var(--md-sys-color-on-surface);
@@ -683,7 +694,7 @@ main {
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
 }
 
-.md-btn-glass:disabled-hover {
+.md-btn-glass:hover {
   background-color: var(--md-sys-color-surface-container-highest);
   border-color: var(--md-sys-color-outline-variant);
   box-shadow: 0 6px 35px rgba(0, 0, 0, 0.08);
@@ -704,7 +715,7 @@ main {
   font-weight: 600;
 }
 
-.md-btn-filled:disabled-hover {
+.md-btn-filled:hover {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
   filter: brightness(1.08);
@@ -724,7 +735,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-elevated:disabled-hover {
+.md-btn-elevated:hover {
   background-color: var(--md-sys-color-surface-container-highest);
   border-color: var(--md-sys-color-outline);
   box-shadow: none;
@@ -742,7 +753,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-tonal:disabled-hover {
+.md-btn-tonal:hover {
   background-color: var(--md-sys-color-surface-container-highest);
   box-shadow: none;
 }
@@ -759,7 +770,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-outlined:disabled-hover {
+.md-btn-outlined:hover {
   background-color: var(--md-sys-color-surface-container-low);
   border-color: var(--md-sys-color-primary);
   box-shadow: none;
@@ -777,7 +788,7 @@ main {
   box-shadow: none;
 }
 
-.md-btn-text:disabled-hover {
+.md-btn-text:hover {
   background-color: var(--md-sys-color-surface-container-low);
 }
 
@@ -807,7 +818,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-icon-btn:disabled-hover {
+.md-icon-btn:hover {
   background-color: var(--md-sys-color-surface-container-highest);
   color: var(--md-sys-color-on-surface);
 }
@@ -840,7 +851,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-fab:disabled-hover {
+.md-fab:hover {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
   transform: scale(1.02);
@@ -919,7 +930,7 @@ main {
               transform var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-chip:disabled-hover {
+.md-chip:hover {
   background-color: var(--md-sys-color-surface-container-high);
   color: var(--md-sys-color-on-surface);
   border-color: var(--md-sys-color-outline);
@@ -1121,7 +1132,7 @@ main {
   user-select: none;
 }
 
-.hero-badge--employed:disabled-hover {
+.hero-badge--employed:hover {
   border-color: #0061a4;
 }
 
@@ -1131,7 +1142,7 @@ main {
   border: 1px solid #005faf;
 }
 
-[data-theme="dark"] .hero-badge--employed:disabled-hover {
+[data-theme="dark"] .hero-badge--employed:hover {
   border-color: #9ecaff;
 }
 
@@ -1198,7 +1209,7 @@ main {
   letter-spacing: 0.01em;
 }
 
-.hero-badge--employed:disabled-hover .hero-badge-tooltip,
+.hero-badge--employed:hover .hero-badge-tooltip,
 .hero-badge--employed:focus-visible .hero-badge-tooltip {
   opacity: 1;
   visibility: visible;
@@ -1460,7 +1471,7 @@ main {
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
 }
 
-.liberapay-badge-btn:disabled-hover {
+.liberapay-badge-btn:hover {
   background: linear-gradient(135deg, var(--md-sys-color-surface-container-highest) 0%, var(--md-sys-color-surface-container-highest) 100%);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
@@ -1883,7 +1894,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.bento-card__action-row .md-btn-text:disabled-hover {
+.bento-card__action-row .md-btn-text:hover {
   color: var(--md-sys-color-on-surface);
 }
 
@@ -1896,7 +1907,7 @@ main {
   transition: transform var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.bento-card__action-row .md-btn-text:disabled-hover .icon-arrow {
+.bento-card__action-row .md-btn-text:hover .icon-arrow {
   transform: translate3d(4px, 0, 0);
 }
 
@@ -2319,7 +2330,7 @@ main {
               border-color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.contact-info-item:disabled-hover {
+.contact-info-item:hover {
   background-color: var(--md-sys-color-surface-container);
   border-color: var(--md-sys-color-outline);
 }
@@ -2404,7 +2415,7 @@ main {
   transition: opacity var(--md-sys-motion-spring-duration-instant) var(--md-sys-motion-easing-standard);
 }
 
-.md-snackbar__action:disabled-hover {
+.md-snackbar__action:hover {
   opacity: 0.8;
 }
 
@@ -2513,7 +2524,7 @@ main {
   transition: color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.footer-link:disabled-hover {
+.footer-link:hover {
   color: var(--md-sys-color-primary);
 }
 
@@ -2624,7 +2635,7 @@ main {
                 color var(--md-sys-motion-spring-duration-snappy) ease;
   }
 
-  .mobile-menu-btn:disabled-hover {
+  .mobile-menu-btn:hover {
     background-color: var(--md-sys-color-surface-container-high);
     border-color: var(--md-sys-color-outline);
     color: var(--md-sys-color-on-surface);
@@ -2731,7 +2742,7 @@ main {
                 color var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-easing-standard);
   }
 
-  .mobile-drawer-link:disabled-hover {
+  .mobile-drawer-link:hover {
     background-color: var(--md-sys-color-surface-container-high);
   }
 
@@ -2856,7 +2867,7 @@ main {
   transition: border-color var(--md-sys-motion-spring-duration-snappy) ease;
 }
 
-.changelog-entry:disabled-hover {
+.changelog-entry:hover {
   border-color: var(--md-sys-color-outline);
 }
 
@@ -3365,7 +3376,7 @@ main {
   transition: background-color 0.2s ease;
 }
 
-.btn-copy-code:disabled-hover {
+.btn-copy-code:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -3568,4 +3579,24 @@ main {
 }
 
 
+
+
+
+/* Native App UX: Tactile Spring Hover Scaling */
+.md-btn, .bento-card, .md-nav-link, .md-fab, .md-icon-btn {
+  will-change: transform;
+  transition: transform var(--md-sys-motion-spring-duration-expressive) var(--md-sys-motion-easing-emphasized), background-color 200ms ease, color 200ms ease;
+}
+
+.md-btn:hover, .md-fab:hover, .md-icon-btn:hover {
+  transform: scale(1.03);
+}
+
+.bento-card:hover {
+  transform: scale(1.01);
+}
+
+.md-nav-link:hover:not(.active) {
+  transform: scale(1.05);
+}
 

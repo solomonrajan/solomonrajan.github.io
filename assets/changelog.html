@@ -4,6 +4,30 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 3.1.0 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">animation</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.1.0</span>
+            <span class="changelog-tag changelog-tag--feat">Performance</span>
+          </div>
+          <time class="changelog-date">05 Sep 2026, 09:35 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Native App UX Architecture:</strong> Completely upgraded the website's interaction physics and rendering engine to mimic a fluent native application.</li>
+          <li><strong>View Transitions API:</strong> Enabled cross-document view transitions (SPA-like navigation) to eliminate page-load flashing.</li>
+          <li><strong>GPU Hardware Acceleration:</strong> Forced ambient background elements to render on the GPU (<code>will-change: transform</code>, <code>translateZ(0)</code>) ensuring perfectly locked 60fps/120fps animations without layout jitter.</li>
+          <li><strong>Tactile Spring Physics:</strong> Restored interactive hover states across all buttons, cards, and navigation links. Elements now scale fluidly (e.g. <code>scale(1.03)</code>) using ultra-realistic M3 Emphasized Decelerate physics curves, providing a physical "push-back" feel on touch.</li>
+          <li><strong>Overscroll Lock:</strong> Applied <code>overscroll-behavior-y: none</code> to prevent browser rubber-banding, locking the viewport in like a dedicated native app window.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 3.0.2 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
