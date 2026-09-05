@@ -1,3 +1,12 @@
+# [0.25.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.24.0...v0.25.0) (2026-09-05)
+
+
+### Features
+
+* add site changelog page with corresponding styles and M3 button updates ([9fad9a1](https://github.com/solomonrajan/solomonrajan.github.io/commit/9fad9a1e3e675bf6f996a2adee37359baba8a529))
+
+
+
 # [0.24.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.23.0...v0.24.0) (2026-09-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add project changelog page, refine Material Design 3 theme, and formalize agent documentation protocols ([07bf7d4](https://github.com/solomonrajan/solomonrajan.github.io/commit/07bf7d40880e46ce69c4047f2d37d6cd04b227d0))
-
-
-
-# [0.20.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.19.0...v0.20.0) (2026-09-05)
-
-
-### Features
-
-* implement architectural changelog and unify Material Design 3 tokens and styles ([6119355](https://github.com/solomonrajan/solomonrajan.github.io/commit/61193550bc4280c7c03f5a8babfde89f31951039))
 
 
 
