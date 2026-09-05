@@ -1,3 +1,12 @@
+# [0.18.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.17.0...v0.18.0) (2026-09-05)
+
+
+### Features
+
+* implement Material Design 3 Expressive styling and create changelog page ([2eb6c96](https://github.com/solomonrajan/solomonrajan.github.io/commit/2eb6c964c32ba1877b11e66ca5e75f68f332f918))
+
+
+
 # [0.17.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.16.0...v0.17.0) (2026-09-04)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Material Design 3 Expressive styling and create changelog page ([a49a0ae](https://github.com/solomonrajan/solomonrajan.github.io/commit/a49a0aefeb517a40361969de9a1a494e7c9c2457))
-
-
-
-# [0.13.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.12.0...v0.13.0) (2026-09-04)
-
-
-### Features
-
-* implement Material Design 3 Expressive tokens and add changelog page ([41f3ec8](https://github.com/solomonrajan/solomonrajan.github.io/commit/41f3ec832ef7c31bdce456e7d09b673d38ce593c))
 
 
 
