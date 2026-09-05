@@ -1,3 +1,12 @@
+# [0.21.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.20.0...v0.21.0) (2026-09-05)
+
+
+### Features
+
+* add project changelog page, refine Material Design 3 theme, and formalize agent documentation protocols ([07bf7d4](https://github.com/solomonrajan/solomonrajan.github.io/commit/07bf7d40880e46ce69c4047f2d37d6cd04b227d0))
+
+
+
 # [0.20.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.19.0...v0.20.0) (2026-09-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Google Material Design 3 stylesheet and add changelog page structure ([f04c59e](https://github.com/solomonrajan/solomonrajan.github.io/commit/f04c59e6133e8f0b0f90cce62d11c6eb9e5a2616))
-
-
-
-# [0.16.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.15.0...v0.16.0) (2026-09-04)
-
-
-### Features
-
-* implement Material Design 3 styling and add changelog page structure ([870ec87](https://github.com/solomonrajan/solomonrajan.github.io/commit/870ec8778558aa535af30c69f920b5d408df11c0))
 
 
 
