@@ -1,3 +1,12 @@
+# [0.23.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.22.0...v0.23.0) (2026-09-05)
+
+
+### Features
+
+* add site changelog page and update contact page icons ([fa82dc9](https://github.com/solomonrajan/solomonrajan.github.io/commit/fa82dc95edd596c8cf7f1ec59c2fda3d279031c0))
+
+
+
 # [0.22.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.21.0...v0.22.0) (2026-09-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add dedicated changelog page and update site styling documentation ([64ae7a2](https://github.com/solomonrajan/solomonrajan.github.io/commit/64ae7a2774f7b008ac7b6a23068a9c17253e889f))
-
-
-
-# [0.18.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.17.0...v0.18.0) (2026-09-05)
-
-
-### Features
-
-* implement Material Design 3 Expressive styling and create changelog page ([2eb6c96](https://github.com/solomonrajan/solomonrajan.github.io/commit/2eb6c964c32ba1877b11e66ca5e75f68f332f918))
 
 
 
