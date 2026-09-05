@@ -1,3 +1,12 @@
+# [0.26.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.25.0...v0.26.0) (2026-09-05)
+
+
+### Features
+
+* implement flat design system and M3-compliant components with architectural changelog tracking ([0a62e25](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a62e25cd9b9b539de786033adeea74933998392))
+
+
+
 # [0.25.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.24.0...v0.25.0) (2026-09-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Material Design 3 Expressive styling and create changelog page ([a5f3496](https://github.com/solomonrajan/solomonrajan.github.io/commit/a5f3496a8b293d33d52af1577c5c233f2dfdef3e))
-
-
-
-# [0.21.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.20.0...v0.21.0) (2026-09-05)
-
-
-### Features
-
-* add project changelog page, refine Material Design 3 theme, and formalize agent documentation protocols ([07bf7d4](https://github.com/solomonrajan/solomonrajan.github.io/commit/07bf7d40880e46ce69c4047f2d37d6cd04b227d0))
 
 
 
