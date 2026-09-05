@@ -1,3 +1,12 @@
+# [0.19.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.18.0...v0.19.0) (2026-09-05)
+
+
+### Features
+
+* add dedicated changelog page and update site styling documentation ([64ae7a2](https://github.com/solomonrajan/solomonrajan.github.io/commit/64ae7a2774f7b008ac7b6a23068a9c17253e889f))
+
+
+
 # [0.18.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.17.0...v0.18.0) (2026-09-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement design changelog page and modernize global theme with refined glassmorphism and vibrant color palette ([3d68639](https://github.com/solomonrajan/solomonrajan.github.io/commit/3d6863902c662d0719a2a20283d75dad6d6d3209))
-
-
-
-# [0.14.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.13.0...v0.14.0) (2026-09-04)
-
-
-### Features
-
-* implement Material Design 3 Expressive styling and create changelog page ([a49a0ae](https://github.com/solomonrajan/solomonrajan.github.io/commit/a49a0aefeb517a40361969de9a1a494e7c9c2457))
 
 
 
