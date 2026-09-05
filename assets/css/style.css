@@ -1065,6 +1065,41 @@ main {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero-position {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-badges-wrapper {
+    justify-content: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .hero-media {
+    justify-content: center;
+  }
+}
+
 .hero-content {
   width: 100%;
   max-width: 580px;
@@ -1368,7 +1403,7 @@ main {
   position: relative;
   width: 100%;
   max-width: 380px;
-  aspect-ratio: 1 / 1.15;
+  aspect-ratio: auto;
   border-radius: var(--md-sys-shape-corner-xxl);
   background-color: color-mix(in srgb, var(--md-sys-color-surface-container) 35%, transparent);
   backdrop-filter: blur(20px) saturate(180%);
