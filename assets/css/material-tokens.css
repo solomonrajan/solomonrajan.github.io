@@ -149,22 +149,22 @@
      Raw Token Definitions (M3 Expressive Color System)
      ========================================================================== */
   /* Light Theme - Vibrant Glass */
-  --md-sys-color-primary-light: #6750A4;
+  --md-sys-color-primary-light: #785A00;
   --md-sys-color-onprimary-light: #FFFFFF;
-  --md-sys-color-primarycontainer-light: #EADDFF;
-  --md-sys-color-onprimarycontainer-light: #21005D;
-  --md-sys-color-secondary-light: #006874;
+  --md-sys-color-primarycontainer-light: #FFDF9E;
+  --md-sys-color-onprimarycontainer-light: #261A00;
+  --md-sys-color-secondary-light: #7E5700;
   --md-sys-color-onsecondary-light: #FFFFFF;
-  --md-sys-color-secondarycontainer-light: #97F0FF;
-  --md-sys-color-onsecondarycontainer-light: #001F24;
-  --md-sys-color-tertiary-light: #E7C700;
-  --md-sys-color-ontertiary-light: #000000;
-  --md-sys-color-tertiarycontainer-light: #FFF08A;
-  --md-sys-color-ontertiarycontainer-light: #3F3600;
-  --md-sys-color-quaternary-light: #315DA8;
+  --md-sys-color-secondarycontainer-light: #FFDDAF;
+  --md-sys-color-onsecondarycontainer-light: #281800;
+  --md-sys-color-tertiary-light: #1C6C30;
+  --md-sys-color-ontertiary-light: #FFFFFF;
+  --md-sys-color-tertiarycontainer-light: #A6F5A9;
+  --md-sys-color-ontertiarycontainer-light: #002107;
+  --md-sys-color-quaternary-light: #0061A4;
   --md-sys-color-onquaternary-light: #FFFFFF;
-  --md-sys-color-quaternarycontainer-light: #D8E2FF;
-  --md-sys-color-onquaternarycontainer-light: #001A41;
+  --md-sys-color-quaternarycontainer-light: #D1E4FF;
+  --md-sys-color-onquaternarycontainer-light: #001D36;
   --md-sys-color-error-light: #B3261E;
   --md-sys-color-onerror-light: #FFFFFF;
   --md-sys-color-errorcontainer-light: #F9DEDC;
@@ -200,22 +200,22 @@
   --md-sys-color-shadow-light: #000000;
 
   /* Dark Theme - Vibrant Glass */
-  --md-sys-color-primary-dark: #D0BCFF;
-  --md-sys-color-onprimary-dark: #381E72;
-  --md-sys-color-primarycontainer-dark: #4F378B;
-  --md-sys-color-onprimarycontainer-dark: #EADDFF;
-  --md-sys-color-secondary-dark: #4FD8EB;
-  --md-sys-color-onsecondary-dark: #00363D;
-  --md-sys-color-secondarycontainer-dark: #004F58;
-  --md-sys-color-onsecondarycontainer-dark: #97F0FF;
-  --md-sys-color-tertiary-dark: #FFE15E;
-  --md-sys-color-ontertiary-dark: #3F3600;
-  --md-sys-color-tertiarycontainer-dark: #5C4F00;
-  --md-sys-color-ontertiarycontainer-dark: #FFF08A;
-  --md-sys-color-quaternary-dark: #ADC6FF;
-  --md-sys-color-onquaternary-dark: #002E69;
-  --md-sys-color-quaternarycontainer-dark: #12448F;
-  --md-sys-color-onquaternarycontainer-dark: #D8E2FF;
+  --md-sys-color-primary-dark: #F3C012;
+  --md-sys-color-onprimary-dark: #3F2E00;
+  --md-sys-color-primarycontainer-dark: #5B4300;
+  --md-sys-color-onprimarycontainer-dark: #FFDF9E;
+  --md-sys-color-secondary-dark: #F9BD49;
+  --md-sys-color-onsecondary-dark: #432C00;
+  --md-sys-color-secondarycontainer-dark: #604100;
+  --md-sys-color-onsecondarycontainer-dark: #FFDDAF;
+  --md-sys-color-tertiary-dark: #8BD88F;
+  --md-sys-color-ontertiary-dark: #003913;
+  --md-sys-color-tertiarycontainer-dark: #00521F;
+  --md-sys-color-ontertiarycontainer-dark: #A6F5A9;
+  --md-sys-color-quaternary-dark: #9ECAFF;
+  --md-sys-color-onquaternary-dark: #003258;
+  --md-sys-color-quaternarycontainer-dark: #00497D;
+  --md-sys-color-onquaternarycontainer-dark: #D1E4FF;
   --md-sys-color-error-dark: #F2B8B5;
   --md-sys-color-onerror-dark: #601410;
   --md-sys-color-errorcontainer-dark: #8C1D18;
@@ -420,3 +420,4 @@
   --md-sys-elevation-level4: 0px 12px 32px 0px rgba(0, 0, 0, 0.50), 0px 4px 12px 0px rgba(0, 0, 0, 0.55);
   --md-sys-elevation-level5: 0px 16px 40px 0px rgba(0, 0, 0, 0.55), 0px 6px 16px 0px rgba(0, 0, 0, 0.60);
 }
+
