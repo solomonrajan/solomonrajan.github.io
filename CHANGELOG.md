@@ -1,3 +1,12 @@
+# [0.34.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.33.0...v0.34.0) (2026-09-06)
+
+
+### Features
+
+* add site changelog page and update styling tokens for donate buttons and layout components ([5ed0f26](https://github.com/solomonrajan/solomonrajan.github.io/commit/5ed0f267b28141bc34eb1c0ad668a646767a3f4d))
+
+
+
 # [0.33.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.32.0...v0.33.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add project changelog page and remove unused hosting configuration files ([2677015](https://github.com/solomonrajan/solomonrajan.github.io/commit/2677015ea36fd420a722e5c66b2db329487c4353))
-
-
-
-# [0.29.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.28.0...v0.29.0) (2026-09-06)
-
-
-### Features
-
-* implement Material Design 3 Expressive styling with custom typography, ambient backgrounds, and a changelog page ([2591b50](https://github.com/solomonrajan/solomonrajan.github.io/commit/2591b50b96f45e33cab8d4a4fd1b7b3f000cae8b))
 
 
 
