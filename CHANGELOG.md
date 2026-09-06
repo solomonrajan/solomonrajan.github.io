@@ -1,3 +1,12 @@
+# [0.29.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.28.0...v0.29.0) (2026-09-06)
+
+
+### Features
+
+* implement Material Design 3 Expressive styling with custom typography, ambient backgrounds, and a changelog page ([2591b50](https://github.com/solomonrajan/solomonrajan.github.io/commit/2591b50b96f45e33cab8d4a4fd1b7b3f000cae8b))
+
+
+
 # [0.28.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.27.0...v0.28.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add site changelog page with corresponding styles and M3 button updates ([9fad9a1](https://github.com/solomonrajan/solomonrajan.github.io/commit/9fad9a1e3e675bf6f996a2adee37359baba8a529))
-
-
-
-# [0.24.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.23.0...v0.24.0) (2026-09-05)
-
-
-### Features
-
-* implement M3 design system with material-tokens, new styling, and a site-wide changelog page ([fc48cb0](https://github.com/solomonrajan/solomonrajan.github.io/commit/fc48cb024f46849db93375ceecabe0506dc10f13))
 
 
 
