@@ -1,3 +1,12 @@
+# [0.33.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.32.0...v0.33.0) (2026-09-06)
+
+
+### Features
+
+* add site changelog page, update Liberapay button styling, and perform repository cleanup ([86b3407](https://github.com/solomonrajan/solomonrajan.github.io/commit/86b340790c43d2a837a33783c45d5acc95ba47ca))
+
+
+
 # [0.32.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.31.0...v0.32.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Material Design 3 Expressive styling with custom typography, ambient backgrounds, and a changelog page ([2591b50](https://github.com/solomonrajan/solomonrajan.github.io/commit/2591b50b96f45e33cab8d4a4fd1b7b3f000cae8b))
-
-
-
-# [0.28.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.27.0...v0.28.0) (2026-09-06)
-
-
-### Features
-
-* implement Material Design 3 styling and add changelog page structure ([fec2067](https://github.com/solomonrajan/solomonrajan.github.io/commit/fec20678a5ffe3e7e29d2f200b61f992abf29e8a))
 
 
 
