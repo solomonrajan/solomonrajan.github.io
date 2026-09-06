@@ -1473,6 +1473,42 @@ main {
 }
 
 /* =========================================
+   Kottayam Map Component
+   ========================================= */
+.kottayam-map-wrapper {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.kottayam-map-container {
+  height: 250px;
+  width: 100%;
+  border-radius: var(--md-sys-shape-corner-xl);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  z-index: 1; /* Keep leaflet controls below dialogs */
+  background-color: var(--md-sys-color-surface-container-highest);
+}
+
+.custom-map-marker {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Leaflet Dark Mode / General Overrides */
+.leaflet-popup-content-wrapper {
+  background-color: var(--md-sys-color-surface) !important;
+  color: var(--md-sys-color-on-surface) !important;
+  border-radius: var(--md-sys-shape-corner-md) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+.leaflet-popup-tip {
+  background-color: var(--md-sys-color-surface) !important;
+}
+
+/* =========================================
    M3 Journey Shapes (MSW to HR)
    ========================================= */
 .m3-journey-composition {

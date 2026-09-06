@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 8. Live Indian Standard Time (IST) Clock
   initLiveISTClock();
+
+  // 9. Location Map (About Page)
+  initMap();
 });
 
 function normalizePageName(url) {
@@ -658,3 +661,34 @@ function initLiveISTClock() {
   setInterval(fetchKottayamWeather, 30000);
 }
 
+function initMap() {
+  const mapContainer = document.getElementById('kottayam-map');
+  if (mapContainer && typeof L !== 'undefined') {
+    const kottayamCoords = [9.5916, 76.5222];
+    const map = L.map('kottayam-map', {
+      center: kottayamCoords,
+      zoom: 11,
+      scrollWheelZoom: false,
+      zoomControl: false // Keep interface incredibly minimal
+    });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 20
+    }).addTo(map);
+    
+    const customIcon = L.divIcon({
+      className: 'custom-map-marker',
+      html: '<span class="material-symbols-outlined" style="color: var(--md-sys-color-primary); font-size: 36px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); font-variation-settings: \'FILL\' 1;">location_on</span>',
+      iconSize: [36, 36],
+      iconAnchor: [18, 36]
+    });
+    
+    L.marker(kottayamCoords, {icon: customIcon}).addTo(map)
+      .bindPopup('<strong style="font-family: \'Google Sans Flex\', sans-serif; font-size: 1rem; color: var(--md-sys-color-on-surface);">Kottayam, Kerala</strong><br>Primary Location', {
+        closeButton: false,
+        autoPanPadding: [20, 20]
+      })
+      .openPopup();
+  }
+}

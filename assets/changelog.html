@@ -4,6 +4,46 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 3.2.30 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">security</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.30</span>
+            <span class="changelog-tag changelog-tag--fix">Bug Fix</span>
+          </div>
+          <time class="changelog-date">06 Sep 2026, 02:07 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Map CSP Bug Fix:</strong> Fixed a bug where the newly added map was completely invisible. The strict Content Security Policy (CSP) was correctly blocking the inline initialization script. To maintain strict security protocols while restoring map functionality, the entire map bootstrapping logic was refactored and extracted into the core `main.js` bundle.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 3.2.29 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">map</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.29</span>
+            <span class="changelog-tag changelog-tag--feature">Feature</span>
+          </div>
+          <time class="changelog-date">06 Sep 2026, 02:04 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Location Map Integration:</strong> Added a highly optimized interactive map to the About page to fill empty layout space and highlight Kottayam as the primary location. Utilized Leaflet.js with the CartoDB Positron tile layer to achieve a clean, minimalist, greyscale style identical to SnazzyMaps "wy", perfectly conforming to the existing Material Design 3 aesthetic without requiring external API keys. A custom Material Symbol (`location_on`) was injected as the pinpoint marker.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 3.2.28 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
