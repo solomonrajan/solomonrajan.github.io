@@ -71,7 +71,6 @@ html {
   -webkit-tap-highlight-color: transparent;
   scrollbar-width: none;
   overscroll-behavior-y: none;
-  overflow-x: hidden;
 }
 
 body {

@@ -4,6 +4,46 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 3.2.12 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">palette</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.12</span>
+            <span class="changelog-tag changelog-tag--fix">Theming</span>
+          </div>
+          <time class="changelog-date">06 Sep 2026, 12:14 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Restored Technical Skills Theme:</strong> Fixed an issue where the background of the "Technical Skills &amp; Proficiencies" section was missing or rendering incorrectly. This was caused by the missing definition of the <code>quaternary</code> color tokens in the core material design variables. I have injected the correct Sapphire/Ocean Tech Blue scale (<code>--md-sys-color-quaternary</code>) into both the light and dark mode profiles in <code>material-tokens.css</code>.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 3.2.11 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">swipe_vertical</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.11</span>
+            <span class="changelog-tag changelog-tag--fix">Interaction</span>
+          </div>
+          <time class="changelog-date">06 Sep 2026, 12:11 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Vertical Scroll Restored:</strong> Fixed a critical interaction bug where vertical scrolling was completely locked on certain mobile browsers (like iOS Safari). This was caused by an aggressive <code>overflow-x: hidden</code> rule on the root HTML element conflicting with <code>overscroll-behavior-y: none</code>. The rule was removed, relying instead on the flexible <code>minmax</code> grid layout and body constraints to prevent horizontal overflow.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 3.2.10 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
