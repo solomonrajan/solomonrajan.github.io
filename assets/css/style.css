@@ -71,6 +71,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   scrollbar-width: none;
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -2069,7 +2070,7 @@ main {
 /* Skills Category Layout */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 1.75rem;
 }
 
@@ -2132,7 +2133,7 @@ main {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
   gap: 1.5rem;
 }
 
@@ -2232,7 +2233,7 @@ main {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
   gap: 1.5rem;
 }
 
@@ -3043,7 +3044,7 @@ main {
 
 .edu-cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 1.5rem;
 }
 

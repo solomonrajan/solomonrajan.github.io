@@ -4,6 +4,26 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 3.2.9 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">zoom_out_map</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.9</span>
+            <span class="changelog-tag changelog-tag--fix">Responsive Layout</span>
+          </div>
+          <time class="changelog-date">06 Sep 2026, 11:55 AM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Mobile Viewport &amp; Zoom:</strong> Fixed a horizontal overflow issue causing mobile browsers to incorrectly zoom out. Applied <code>overflow-x: hidden</code> to the root HTML element and updated all CSS grid templates to use <code>minmax(min(100%, [px]), 1fr)</code>, ensuring components naturally wrap to the viewport ratio without breaking layout constraints.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 3.2.8 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
