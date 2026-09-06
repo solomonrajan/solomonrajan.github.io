@@ -1,3 +1,12 @@
+# [0.32.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.31.0...v0.32.0) (2026-09-06)
+
+
+### Features
+
+* implement Material Design 3 styling and add changelog page ([48e833a](https://github.com/solomonrajan/solomonrajan.github.io/commit/48e833af9aa616db0e12875a0f062e96a5b0dc07))
+
+
+
 # [0.31.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.30.0...v0.31.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Material Design 3 styling and add changelog page structure ([fec2067](https://github.com/solomonrajan/solomonrajan.github.io/commit/fec20678a5ffe3e7e29d2f200b61f992abf29e8a))
-
-
-
-# [0.27.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.26.0...v0.27.0) (2026-09-06)
-
-
-### Features
-
-* add portfolio changelog and implement flat 2D design system with responsive viewport fixes ([504242e](https://github.com/solomonrajan/solomonrajan.github.io/commit/504242e820f9bb4fac862a610ab16a9fd180fe2f))
 
 
 
