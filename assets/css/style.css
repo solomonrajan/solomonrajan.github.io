@@ -689,7 +689,7 @@ main {
 .md-btn-elevated {
   background-color: var(--md-sys-color-tertiary-container);
   color: var(--md-sys-color-on-tertiary-container);
-  border: none;
+  border: 1px solid var(--md-sys-color-tertiary);
   box-shadow: none;
 }
 
@@ -706,7 +706,7 @@ main {
 .md-btn-filled {
   background-color: var(--md-sys-color-tertiary);
   color: var(--md-sys-color-on-tertiary);
-  border: none;
+  border: 1px solid currentColor;
   box-shadow: none;
   font-weight: 600;
 }
@@ -724,7 +724,7 @@ main {
 .md-btn-tonal {
   background-color: var(--md-sys-color-secondary-container);
   color: var(--md-sys-color-on-secondary-container);
-  border: none;
+  border: 1px solid var(--md-sys-color-secondary);
   box-shadow: none;
 }
 
@@ -774,7 +774,7 @@ main {
 .md-btn-glass {
   background-color: var(--md-sys-color-tertiary-container);
   color: var(--md-sys-color-on-tertiary-container);
-  border: none;
+  border: 1px solid var(--md-sys-color-tertiary);
   box-shadow: none;
 }
 
