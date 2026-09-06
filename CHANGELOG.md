@@ -1,9 +1,10 @@
-# [0.37.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.36.0...v0.37.0) (2026-09-06)
+# [0.38.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.37.0...v0.38.0) (2026-09-06)
 
 
 ### Features
 
 * implement global Material Design 3 stylesheet and add project changelog page ([f23c39e](https://github.com/solomonrajan/solomonrajan.github.io/commit/f23c39eb511be9edba7e5ccc1b8577a2f4122a35))
+* implement site changelog and optimize global layout spacing with consolidated stylesheet refinements. ([baed008](https://github.com/solomonrajan/solomonrajan.github.io/commit/baed008b3eb9445ed4420c7fdc3b552f758983ee))
 
 
 
@@ -31,15 +32,6 @@
 ### Features
 
 * add Material Design 3 Expressive styles and initialize changelog page ([44c02f1](https://github.com/solomonrajan/solomonrajan.github.io/commit/44c02f1343baf019e5d249fdec39c3244a385c37))
-
-
-
-# [0.34.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.33.0...v0.34.0) (2026-09-06)
-
-
-### Features
-
-* add site changelog page and update styling tokens for donate buttons and layout components ([5ed0f26](https://github.com/solomonrajan/solomonrajan.github.io/commit/5ed0f267b28141bc34eb1c0ad668a646767a3f4d))
 
 
 
