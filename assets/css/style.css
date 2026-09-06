@@ -705,7 +705,7 @@ main {
 .md-btn-filled {
   background-color: var(--md-sys-color-tertiary);
   color: var(--md-sys-color-on-tertiary);
-  border: 1px solid currentColor;
+  border: 1px solid transparent;
   box-shadow: none;
   font-weight: 600;
 }
@@ -2987,6 +2987,9 @@ main {
 
 .about-action-row {
   margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .stats-grid {
