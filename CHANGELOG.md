@@ -1,3 +1,12 @@
+# [0.36.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.35.1...v0.36.0) (2026-09-06)
+
+
+### Features
+
+* implement project changelog and optimize global layout spacing and card styling ([2ed7ded](https://github.com/solomonrajan/solomonrajan.github.io/commit/2ed7ded6baa69a33fa03d552895a0049dd924288))
+
+
+
 ## [0.35.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.35.0...v0.35.1) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add site changelog page, update Liberapay button styling, and perform repository cleanup ([86b3407](https://github.com/solomonrajan/solomonrajan.github.io/commit/86b340790c43d2a837a33783c45d5acc95ba47ca))
-
-
-
-# [0.32.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.31.0...v0.32.0) (2026-09-06)
-
-
-### Features
-
-* implement Material Design 3 styling and add changelog page ([48e833a](https://github.com/solomonrajan/solomonrajan.github.io/commit/48e833af9aa616db0e12875a0f062e96a5b0dc07))
 
 
 
