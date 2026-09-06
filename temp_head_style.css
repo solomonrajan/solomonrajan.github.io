@@ -858,20 +858,6 @@ main {
   transform: translate3d(0, 0, 0);
   will-change: transform;
   backface-visibility: hidden;
-  transition: transform var(--md-sys-motion-spring-duration-spatial) var(--md-sys-motion-physics-spring-spatial),
-              background-color var(--md-sys-motion-duration-long2) var(--md-sys-motion-easing-emphasized),
-              border-color var(--md-sys-motion-duration-long2) var(--md-sys-motion-easing-emphasized);
-}
-
-.md-card-elevated {
-  background-color: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  box-shadow: none;
-}
-
-.md-card-filled {
-  background-color: var(--md-sys-color-surface-container-highest);
-  border: 1px solid var(--md-sys-color-outline-variant);
   box-shadow: none;
 }
 
@@ -2993,10 +2979,6 @@ main {
   border-radius: var(--md-sys-shape-corner-xl);
   border: 1px solid var(--md-sys-color-outline-variant);
   box-shadow: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   transition: border-color var(--md-sys-motion-spring-duration-snappy) ease,
               background-color var(--md-sys-motion-spring-duration-snappy) ease;
 }
