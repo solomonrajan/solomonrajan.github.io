@@ -1467,6 +1467,11 @@ main {
   border-bottom: 1px solid var(--md-sys-color-outline-variant);
 }
 
+.icon-heart-filled {
+  font-variation-settings: 'FILL' 1;
+  color: #d50000; /* Material Deep Red */
+}
+
 /* =========================================
    M3 Journey Shapes (MSW to HR)
    ========================================= */
