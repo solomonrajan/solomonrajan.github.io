@@ -1,3 +1,12 @@
+# [0.40.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.39.0...v0.40.0) (2026-09-06)
+
+
+### Features
+
+* integrate interactive Leaflet map, update CSP, and add site changelog page ([c3c8338](https://github.com/solomonrajan/solomonrajan.github.io/commit/c3c83386bae85d876c648a6f4e936b58b9d1c022))
+
+
+
 # [0.39.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.38.0...v0.39.0) (2026-09-06)
 
 
@@ -23,15 +32,6 @@
 ### Features
 
 * implement project changelog and optimize global layout spacing and card styling ([2ed7ded](https://github.com/solomonrajan/solomonrajan.github.io/commit/2ed7ded6baa69a33fa03d552895a0049dd924288))
-
-
-
-## [0.35.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.35.0...v0.35.1) (2026-09-06)
-
-
-### Bug Fixes
-
-* optimize global layout spacing and update Liberapay button styling ([ff39fc1](https://github.com/solomonrajan/solomonrajan.github.io/commit/ff39fc14175c161622976ddb3df53f4c7661f8c6))
 
 
 
