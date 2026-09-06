@@ -1,3 +1,12 @@
+# [0.35.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.34.0...v0.35.0) (2026-09-06)
+
+
+### Features
+
+* add Material Design 3 Expressive styles and initialize changelog page ([44c02f1](https://github.com/solomonrajan/solomonrajan.github.io/commit/44c02f1343baf019e5d249fdec39c3244a385c37))
+
+
+
 # [0.34.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.33.0...v0.34.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement chronological changelog page and refactor global UI to a flat, 2D-only design system ([11a3eb6](https://github.com/solomonrajan/solomonrajan.github.io/commit/11a3eb666da82d2bda787199f466cf902f55c8e5))
-
-
-
-# [0.30.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.29.0...v0.30.0) (2026-09-06)
-
-
-### Features
-
-* add project changelog page and remove unused hosting configuration files ([2677015](https://github.com/solomonrajan/solomonrajan.github.io/commit/2677015ea36fd420a722e5c66b2db329487c4353))
 
 
 
