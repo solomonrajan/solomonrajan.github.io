@@ -1579,7 +1579,7 @@ main {
   width: 56px;
   background-color: var(--md-sys-color-tertiary-container);
   color: var(--md-sys-color-on-tertiary-container);
-  border-radius: 24px;
+  border-radius: 50%;
   z-index: 1;
   border: 1px solid var(--md-sys-color-tertiary);
 }
@@ -1608,7 +1608,7 @@ main {
   width: 56px;
   background-color: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
-  border-radius: 24px;
+  border-radius: 50%;
   z-index: 1;
   border: 1px solid var(--md-sys-color-primary);
 }
@@ -1708,8 +1708,21 @@ main {
   margin-bottom: 0.4rem;
 }
 
-.section-title .material-symbols-outlined {
-  font-size: 1.15em;
+.section-title .material-symbols-outlined,
+.md-card-header .material-symbols-outlined,
+.location-banner__header .material-symbols-outlined {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+  border-radius: 50%;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  font-size: 22px;
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  flex-shrink: 0;
 }
 
 .section-subtitle {
@@ -1729,7 +1742,9 @@ main {
 }
 
 .section-header--about .section-title .material-symbols-outlined {
-  color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary-container);
+  background-color: var(--md-sys-color-primary-container);
+  border-color: var(--md-sys-color-primary);
 }
 
 /* 2. Professional Experience: Secondary Emerald/Forest Green */
@@ -1739,7 +1754,9 @@ main {
 }
 
 .section-header--experience .section-title .material-symbols-outlined {
-  color: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary-container);
+  background-color: var(--md-sys-color-secondary-container);
+  border-color: var(--md-sys-color-secondary);
 }
 
 .timeline-node--secondary {
@@ -1755,7 +1772,9 @@ main {
 }
 
 .section-header--education .section-title .material-symbols-outlined {
-  color: var(--md-sys-color-tertiary);
+  color: var(--md-sys-color-on-tertiary-container);
+  background-color: var(--md-sys-color-tertiary-container);
+  border-color: var(--md-sys-color-tertiary);
 }
 
 /* 4. Technical Skills & Proficiencies: Quaternary Sapphire/Ocean Tech Blue */
@@ -1765,7 +1784,9 @@ main {
 }
 
 .section-header--skills .section-title .material-symbols-outlined {
-  color: var(--md-sys-color-quaternary);
+  color: var(--md-sys-color-on-quaternary-container);
+  background-color: var(--md-sys-color-quaternary-container);
+  border-color: var(--md-sys-color-quaternary);
 }
 
 .skill-icon--quaternary {
