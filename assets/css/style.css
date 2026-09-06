@@ -2080,6 +2080,10 @@ main {
   color: var(--md-sys-color-on-surface);
 }
 
+.skill-card__title .material-symbols-outlined {
+  font-size: 1.35rem; /* Exactly proportioned to text */
+}
+
 .skill-list {
   display: flex;
   flex-direction: column;
