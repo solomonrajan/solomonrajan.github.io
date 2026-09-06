@@ -1,3 +1,12 @@
+# [0.30.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.29.0...v0.30.0) (2026-09-06)
+
+
+### Features
+
+* add project changelog page and remove unused hosting configuration files ([2677015](https://github.com/solomonrajan/solomonrajan.github.io/commit/2677015ea36fd420a722e5c66b2db329487c4353))
+
+
+
 # [0.29.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.28.0...v0.29.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement flat design system and M3-compliant components with architectural changelog tracking ([0a62e25](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a62e25cd9b9b539de786033adeea74933998392))
-
-
-
-# [0.25.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.24.0...v0.25.0) (2026-09-05)
-
-
-### Features
-
-* add site changelog page with corresponding styles and M3 button updates ([9fad9a1](https://github.com/solomonrajan/solomonrajan.github.io/commit/9fad9a1e3e675bf6f996a2adee37359baba8a529))
 
 
 
