@@ -1,3 +1,12 @@
+# [0.37.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.36.0...v0.37.0) (2026-09-06)
+
+
+### Features
+
+* implement global Material Design 3 stylesheet and add project changelog page ([f23c39e](https://github.com/solomonrajan/solomonrajan.github.io/commit/f23c39eb511be9edba7e5ccc1b8577a2f4122a35))
+
+
+
 # [0.36.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.35.1...v0.36.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add site changelog page and update styling tokens for donate buttons and layout components ([5ed0f26](https://github.com/solomonrajan/solomonrajan.github.io/commit/5ed0f267b28141bc34eb1c0ad668a646767a3f4d))
-
-
-
-# [0.33.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.32.0...v0.33.0) (2026-09-06)
-
-
-### Features
-
-* add site changelog page, update Liberapay button styling, and perform repository cleanup ([86b3407](https://github.com/solomonrajan/solomonrajan.github.io/commit/86b340790c43d2a837a33783c45d5acc95ba47ca))
 
 
 
