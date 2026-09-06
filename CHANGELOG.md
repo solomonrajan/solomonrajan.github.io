@@ -1,3 +1,12 @@
+# [0.28.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.27.0...v0.28.0) (2026-09-06)
+
+
+### Features
+
+* implement Material Design 3 styling and add changelog page structure ([fec2067](https://github.com/solomonrajan/solomonrajan.github.io/commit/fec20678a5ffe3e7e29d2f200b61f992abf29e8a))
+
+
+
 # [0.27.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.26.0...v0.27.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement M3 design system with material-tokens, new styling, and a site-wide changelog page ([fc48cb0](https://github.com/solomonrajan/solomonrajan.github.io/commit/fc48cb024f46849db93375ceecabe0506dc10f13))
-
-
-
-# [0.23.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.22.0...v0.23.0) (2026-09-05)
-
-
-### Features
-
-* add site changelog page and update contact page icons ([fa82dc9](https://github.com/solomonrajan/solomonrajan.github.io/commit/fa82dc95edd596c8cf7f1ec59c2fda3d279031c0))
 
 
 
