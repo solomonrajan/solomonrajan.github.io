@@ -1,3 +1,12 @@
+# [0.39.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.38.0...v0.39.0) (2026-09-06)
+
+
+### Features
+
+* relocate changelog to About page, add version history modal, and perform global UI/UX spacing optimizations. ([62334bd](https://github.com/solomonrajan/solomonrajan.github.io/commit/62334bdf9899c4fb42b9ca51b38ed4510faa70ae))
+
+
+
 # [0.38.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.37.0...v0.38.0) (2026-09-06)
 
 
@@ -23,15 +32,6 @@
 ### Bug Fixes
 
 * optimize global layout spacing and update Liberapay button styling ([ff39fc1](https://github.com/solomonrajan/solomonrajan.github.io/commit/ff39fc14175c161622976ddb3df53f4c7661f8c6))
-
-
-
-# [0.35.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.34.0...v0.35.0) (2026-09-06)
-
-
-### Features
-
-* add Material Design 3 Expressive styles and initialize changelog page ([44c02f1](https://github.com/solomonrajan/solomonrajan.github.io/commit/44c02f1343baf019e5d249fdec39c3244a385c37))
 
 
 
