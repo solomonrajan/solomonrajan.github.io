@@ -1,3 +1,12 @@
+# [0.31.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.30.0...v0.31.0) (2026-09-06)
+
+
+### Features
+
+* implement chronological changelog page and refactor global UI to a flat, 2D-only design system ([11a3eb6](https://github.com/solomonrajan/solomonrajan.github.io/commit/11a3eb666da82d2bda787199f466cf902f55c8e5))
+
+
+
 # [0.30.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.29.0...v0.30.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add portfolio changelog and implement flat 2D design system with responsive viewport fixes ([504242e](https://github.com/solomonrajan/solomonrajan.github.io/commit/504242e820f9bb4fac862a610ab16a9fd180fe2f))
-
-
-
-# [0.26.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.25.0...v0.26.0) (2026-09-05)
-
-
-### Features
-
-* implement flat design system and M3-compliant components with architectural changelog tracking ([0a62e25](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a62e25cd9b9b539de786033adeea74933998392))
 
 
 
