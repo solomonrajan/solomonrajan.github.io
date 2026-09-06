@@ -858,20 +858,6 @@ main {
   transform: translate3d(0, 0, 0);
   will-change: transform;
   backface-visibility: hidden;
-  transition: transform var(--md-sys-motion-spring-duration-spatial) var(--md-sys-motion-physics-spring-spatial),
-              background-color var(--md-sys-motion-duration-long2) var(--md-sys-motion-easing-emphasized),
-              border-color var(--md-sys-motion-duration-long2) var(--md-sys-motion-easing-emphasized);
-}
-
-.md-card-elevated {
-  background-color: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  box-shadow: none;
-}
-
-.md-card-filled {
-  background-color: var(--md-sys-color-surface-container-highest);
-  border: 1px solid var(--md-sys-color-outline-variant);
   box-shadow: none;
 }
 
@@ -1441,9 +1427,9 @@ main {
   justify-content: center;
   gap: 0.5rem;
   white-space: nowrap;
-  background-color: var(--md-sys-color-surface-container-highest);
-  color: var(--md-sys-color-on-surface);
-  border: 1px solid #f6c915; /* Liberapay Brand Yellow */
+  background-color: #f6c915;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0.65rem 1.25rem;
   border-radius: var(--md-sys-shape-corner-full);
   font-size: 0.95rem;
@@ -1451,12 +1437,6 @@ main {
   text-decoration: none;
   box-shadow: none;
   transition: all var(--md-sys-motion-spring-duration-snappy) var(--md-sys-motion-physics-spring-spatial);
-}
-
-.liberapay-badge-btn:hover {
-  background-color: color-mix(in srgb, #f6c915 10%, var(--md-sys-color-surface-container-highest));
-  box-shadow: none;
-  transform: translateY(-2px);
 }
 
 .support-card-glass {
