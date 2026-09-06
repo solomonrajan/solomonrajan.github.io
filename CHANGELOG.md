@@ -1,3 +1,12 @@
+## [0.35.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.35.0...v0.35.1) (2026-09-06)
+
+
+### Bug Fixes
+
+* optimize global layout spacing and update Liberapay button styling ([ff39fc1](https://github.com/solomonrajan/solomonrajan.github.io/commit/ff39fc14175c161622976ddb3df53f4c7661f8c6))
+
+
+
 # [0.35.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.34.0...v0.35.0) (2026-09-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Material Design 3 styling and add changelog page ([48e833a](https://github.com/solomonrajan/solomonrajan.github.io/commit/48e833af9aa616db0e12875a0f062e96a5b0dc07))
-
-
-
-# [0.31.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.30.0...v0.31.0) (2026-09-06)
-
-
-### Features
-
-* implement chronological changelog page and refactor global UI to a flat, 2D-only design system ([11a3eb6](https://github.com/solomonrajan/solomonrajan.github.io/commit/11a3eb666da82d2bda787199f466cf902f55c8e5))
 
 
 
