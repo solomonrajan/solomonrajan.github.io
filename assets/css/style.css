@@ -2066,7 +2066,7 @@ main {
 }
 
 .skill-card {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: var(--md-sys-shape-corner-xl);
 }
 
