@@ -1,3 +1,12 @@
+# [0.44.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.43.0...v0.44.0) (2026-09-08)
+
+
+### Features
+
+* implement Google-official design system and color palette with a new changelog page ([ebd7fd9](https://github.com/solomonrajan/solomonrajan.github.io/commit/ebd7fd914765cd9bfb2ed71d728f2256ec730f6f))
+
+
+
 # [0.43.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.42.0...v0.43.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * integrate interactive Leaflet map, update CSP, and add site changelog page ([c3c8338](https://github.com/solomonrajan/solomonrajan.github.io/commit/c3c83386bae85d876c648a6f4e936b58b9d1c022))
-
-
-
-# [0.39.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.38.0...v0.39.0) (2026-09-06)
-
-
-### Features
-
-* relocate changelog to About page, add version history modal, and perform global UI/UX spacing optimizations. ([62334bd](https://github.com/solomonrajan/solomonrajan.github.io/commit/62334bdf9899c4fb42b9ca51b38ed4510faa70ae))
 
 
 
