@@ -1,3 +1,12 @@
+# [0.46.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.45.0...v0.46.0) (2026-09-08)
+
+
+### Features
+
+* implement architectural changelog and introduce design system improvements aligned with official Google color palettes. ([17c8eb7](https://github.com/solomonrajan/solomonrajan.github.io/commit/17c8eb787a99c7d03d29721359084b915246af60))
+
+
+
 # [0.45.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.44.0...v0.45.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * integrate interactive location map and add comprehensive site changelog UI ([06e4e0b](https://github.com/solomonrajan/solomonrajan.github.io/commit/06e4e0b742d627f0394ebc7aa5384d4a1373177f))
-
-
-
-# [0.41.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.40.0...v0.41.0) (2026-09-06)
-
-
-### Features
-
-* add site changelog page, integrate interactive location map, and refine design system components ([a26492a](https://github.com/solomonrajan/solomonrajan.github.io/commit/a26492ab4eb57d4c3f33771ba2695452339d0a95))
 
 
 
