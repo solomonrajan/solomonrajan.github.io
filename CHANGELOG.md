@@ -1,3 +1,12 @@
+# [0.47.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.46.0...v0.47.0) (2026-09-08)
+
+
+### Features
+
+* introduce design system changelog and enforce official Google color and layout standards ([8226b6a](https://github.com/solomonrajan/solomonrajan.github.io/commit/8226b6a8900dce4d263c5399031d11d00b97e989))
+
+
+
 # [0.46.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.45.0...v0.46.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add project changelog page and refine site-wide Google-inspired minimalist light theme ([eac52d7](https://github.com/solomonrajan/solomonrajan.github.io/commit/eac52d7b2af2d362588eb53920ea314d8419f348))
-
-
-
-# [0.42.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.41.0...v0.42.0) (2026-09-08)
-
-
-### Features
-
-* integrate interactive location map and add comprehensive site changelog UI ([06e4e0b](https://github.com/solomonrajan/solomonrajan.github.io/commit/06e4e0b742d627f0394ebc7aa5384d4a1373177f))
 
 
 
