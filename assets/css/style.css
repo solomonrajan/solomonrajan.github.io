@@ -2868,7 +2868,7 @@ main {
   display: grid;
   grid-template-columns: 42px 1fr;
   gap: 1.25rem;
-  align-items: flex-start;
+  align-items: stretch;
   position: relative;
 }
 
