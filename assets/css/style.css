@@ -1008,14 +1008,14 @@ main {
    Page Headers & Hero Sections (Flat Material 3 Design)
    ========================================================================== */
 .hero-section {
-  padding: 2.75rem 0 2rem;
+  padding: 1.5rem 0;
   position: relative;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -1024,7 +1024,7 @@ main {
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 1.5rem;
     text-align: center;
   }
   
@@ -1854,7 +1854,7 @@ main {
 .bento-card--featured {
   grid-column: span 12;
   background-color: var(--md-sys-color-surface-container-low);
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 
 .bento-card__badge-row {
@@ -1882,10 +1882,10 @@ main {
 }
 
 .bento-card__headline {
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--md-sys-color-on-surface);
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.5rem;
   line-height: 1.3;
 }
 
@@ -1898,21 +1898,21 @@ main {
 }
 
 .bento-card__icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
   background-color: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   flex-shrink: 0;
   box-shadow: none;
 }
 
 .bento-card__icon .material-symbols-outlined {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1;
 }
 
@@ -1929,25 +1929,25 @@ main {
 }
 
 .bento-card__title {
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--md-sys-color-on-surface);
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   line-height: 1.35;
 }
 
 .bento-card__title--compact {
-  font-size: 1.3rem;
+  font-size: 1.125rem;
 }
 
 .bento-card__desc {
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   color: var(--md-sys-color-on-surface-variant);
   line-height: 1.65;
 }
 
 .bento-card__action-row {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   width: 100%;
