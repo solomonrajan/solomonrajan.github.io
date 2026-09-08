@@ -1,3 +1,12 @@
+# [0.48.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.47.0...v0.48.0) (2026-09-08)
+
+
+### Features
+
+* implement global Material Design 3 stylesheet with expressive typography and animated background shapes ([683e715](https://github.com/solomonrajan/solomonrajan.github.io/commit/683e715237272dad7dda8b2be5b0b4cc9d58636c))
+
+
+
 # [0.47.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.46.0...v0.47.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Google-official design system and color palette with a new changelog page ([ebd7fd9](https://github.com/solomonrajan/solomonrajan.github.io/commit/ebd7fd914765cd9bfb2ed71d728f2256ec730f6f))
-
-
-
-# [0.43.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.42.0...v0.43.0) (2026-09-08)
-
-
-### Features
-
-* add project changelog page and refine site-wide Google-inspired minimalist light theme ([eac52d7](https://github.com/solomonrajan/solomonrajan.github.io/commit/eac52d7b2af2d362588eb53920ea314d8419f348))
 
 
 
