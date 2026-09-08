@@ -1143,7 +1143,9 @@ main {
   font-size: 0.8125rem;
   font-weight: 600;
   line-height: 1.4;
-  white-space: nowrap;
+  white-space: normal;
+  width: max-content;
+  max-width: calc(100vw - 3rem);
   padding: 0.65rem 1.1rem;
   border-radius: var(--md-sys-shape-corner-lg);
   border: 1px solid var(--md-sys-color-outline-variant);
