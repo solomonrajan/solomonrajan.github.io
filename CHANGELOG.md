@@ -1,3 +1,12 @@
+# [0.43.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.42.0...v0.43.0) (2026-09-08)
+
+
+### Features
+
+* add project changelog page and refine site-wide Google-inspired minimalist light theme ([eac52d7](https://github.com/solomonrajan/solomonrajan.github.io/commit/eac52d7b2af2d362588eb53920ea314d8419f348))
+
+
+
 # [0.42.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.41.0...v0.42.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * relocate changelog to About page, add version history modal, and perform global UI/UX spacing optimizations. ([62334bd](https://github.com/solomonrajan/solomonrajan.github.io/commit/62334bdf9899c4fb42b9ca51b38ed4510faa70ae))
-
-
-
-# [0.38.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.37.0...v0.38.0) (2026-09-06)
-
-
-### Features
-
-* implement site changelog and optimize global layout spacing with consolidated stylesheet refinements. ([baed008](https://github.com/solomonrajan/solomonrajan.github.io/commit/baed008b3eb9445ed4420c7fdc3b552f758983ee))
 
 
 
