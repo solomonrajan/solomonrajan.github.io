@@ -82,9 +82,6 @@ body {
   letter-spacing: var(--md-sys-typescale-body-large-tracking);
   color: var(--md-sys-color-on-background);
   background-color: var(--md-sys-color-background);
-  background-image: 
-    radial-gradient(circle at 15% 50%, color-mix(in srgb, var(--md-sys-color-primary) 10%, transparent), transparent 50%),
-    radial-gradient(circle at 85% 30%, color-mix(in srgb, var(--md-sys-color-tertiary) 10%, transparent), transparent 50%);
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
@@ -140,15 +137,7 @@ strong, b {
    Google Material Design 3 Expressive Ambient Background Shapes
    ========================================================================== */
 .m3-bg-shapes {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-  contain: strict;
+  display: none;
 }
 
 .m3-shape {
