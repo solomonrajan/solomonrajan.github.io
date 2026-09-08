@@ -1,3 +1,12 @@
+# [0.45.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.44.0...v0.45.0) (2026-09-08)
+
+
+### Features
+
+* introduce official Google brand color palette and dedicated changelog tracking system ([7404328](https://github.com/solomonrajan/solomonrajan.github.io/commit/7404328310c895c1f621de1967d5a70703cdebbd))
+
+
+
 # [0.44.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.43.0...v0.44.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add site changelog page, integrate interactive location map, and refine design system components ([a26492a](https://github.com/solomonrajan/solomonrajan.github.io/commit/a26492ab4eb57d4c3f33771ba2695452339d0a95))
-
-
-
-# [0.40.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.39.0...v0.40.0) (2026-09-06)
-
-
-### Features
-
-* integrate interactive Leaflet map, update CSP, and add site changelog page ([c3c8338](https://github.com/solomonrajan/solomonrajan.github.io/commit/c3c83386bae85d876c648a6f4e936b58b9d1c022))
 
 
 
