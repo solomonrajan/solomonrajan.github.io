@@ -672,7 +672,7 @@ function initMap() {
       zoomControl: false // Keep interface incredibly minimal
     });
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      attribution: '&copy; OpenStreetMap &copy; CARTO | <strong>Kottayam, Kerala - Primary Location</strong>',
       subdomains: 'abcd',
       maxZoom: 20
     }).addTo(map);
@@ -684,11 +684,6 @@ function initMap() {
       iconAnchor: [18, 36]
     });
     
-    L.marker(kottayamCoords, {icon: customIcon}).addTo(map)
-      .bindPopup('<strong style="font-family: \'Google Sans Flex\', sans-serif; font-size: 1rem; color: var(--md-sys-color-on-surface);">Kottayam, Kerala</strong><br>Primary Location', {
-        closeButton: false,
-        autoPanPadding: [20, 20]
-      })
-      .openPopup();
+    L.marker(kottayamCoords, {icon: customIcon}).addTo(map);
   }
 }
