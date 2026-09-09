@@ -70,7 +70,10 @@ function initThemeToggle() {
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     html.setAttribute('data-theme', newTheme);
-    toggleBtn.innerHTML = `<span class="material-symbols-outlined">${newTheme === 'dark' ? 'light_mode' : 'dark_mode'}</span>`;
+    toggleBtn.innerHTML = `
+      <span class="material-symbols-outlined">${newTheme === 'dark' ? 'light_mode' : 'dark_mode'}</span>
+      ${newTheme === 'dark' ? 'Light mode' : 'Dark mode'}
+    `;
   });
 }
 

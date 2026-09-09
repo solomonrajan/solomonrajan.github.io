@@ -347,8 +347,24 @@ a:hover {
 
 /* 8. Mobile Responsiveness */
 @media (max-width: 900px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    display: block;
+  }
+  .google-app-bar {
+    position: sticky;
+    top: 0;
+  }
+  .google-layout {
+    display: block;
+    overflow: visible;
+  }
   .google-sidebar {
-    position: absolute;
+    position: fixed;
+    top: var(--google-appbar-height);
+    height: calc(100vh - var(--google-appbar-height));
     z-index: 1000;
     transform: translateX(-100%);
     box-shadow: 2px 0 8px rgba(0,0,0,0.1);
@@ -357,6 +373,7 @@ a:hover {
     transform: translateX(0);
   }
   .google-main-content {
+    overflow-y: visible;
     padding: 16px 16px 80px 16px;
   }
   .google-page-header {
