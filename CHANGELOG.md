@@ -1,3 +1,12 @@
+# [0.54.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.53.0...v0.54.0) (2026-09-09)
+
+
+### Features
+
+* implement interactive changelog page with version history, search, and navigation enhancements ([d5f163f](https://github.com/solomonrajan/solomonrajan.github.io/commit/d5f163fa7bd9ffc564d03be928d4443abc204a3e))
+
+
+
 # [0.53.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.52.0...v0.53.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add Material Design 3 stylesheet and changelog page layout ([ea7234b](https://github.com/solomonrajan/solomonrajan.github.io/commit/ea7234bcbbcabb6b594ed0aa0c8e2eb11c0abf1c))
-
-
-
-# [0.49.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.48.0...v0.49.0) (2026-09-08)
-
-
-### Features
-
-* add project changelog page and implement strict Material Design 3 and Google color system updates. ([527cb9c](https://github.com/solomonrajan/solomonrajan.github.io/commit/527cb9c64bdf823fc6322f63195e6a1e2820c652))
 
 
 
