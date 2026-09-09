@@ -90,13 +90,6 @@ a:hover {
   background-color: var(--google-hover-bg);
 }
 
-/* Hide sidebar toggle on desktop */
-@media (min-width: 901px) {
-  #sidebar-toggle {
-    display: none;
-  }
-}
-
 .google-logo {
   display: flex;
   align-items: center;
@@ -117,18 +110,6 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-@media (max-width: 600px) {
-  .google-logo span:last-child {
-    display: none; /* Hide "Account" text on mobile to prevent overflow */
-  }
-  .google-app-bar__left {
-    gap: 4px;
-  }
-  .google-app-bar__right {
-    gap: 4px;
-  }
 }
 
 .google-avatar {
