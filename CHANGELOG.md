@@ -1,3 +1,12 @@
+# [0.59.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.58.0...v0.59.0) (2026-09-09)
+
+
+### Features
+
+* implement Google Premium animated avatar ring and add site changelog page ([1924d00](https://github.com/solomonrajan/solomonrajan.github.io/commit/1924d00510294ebf3e57a1c90ea8b5f3b3b4cf22))
+
+
+
 # [0.58.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.57.0...v0.58.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement searchable changelog history and apply global typography and UI refinements ([0a97ec6](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a97ec6811d2d70a17cc01ba66a7d370cef80099))
-
-
-
-# [0.54.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.53.0...v0.54.0) (2026-09-09)
-
-
-### Features
-
-* implement interactive changelog page with version history, search, and navigation enhancements ([d5f163f](https://github.com/solomonrajan/solomonrajan.github.io/commit/d5f163fa7bd9ffc564d03be928d4443abc204a3e))
 
 
 
