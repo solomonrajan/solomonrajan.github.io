@@ -1,3 +1,12 @@
+# [0.50.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.49.0...v0.50.0) (2026-09-09)
+
+
+### Features
+
+* add Material Design 3 stylesheet and changelog page layout ([ea7234b](https://github.com/solomonrajan/solomonrajan.github.io/commit/ea7234bcbbcabb6b594ed0aa0c8e2eb11c0abf1c))
+
+
+
 # [0.49.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.48.0...v0.49.0) (2026-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement architectural changelog and introduce design system improvements aligned with official Google color palettes. ([17c8eb7](https://github.com/solomonrajan/solomonrajan.github.io/commit/17c8eb787a99c7d03d29721359084b915246af60))
-
-
-
-# [0.45.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.44.0...v0.45.0) (2026-09-08)
-
-
-### Features
-
-* introduce official Google brand color palette and dedicated changelog tracking system ([7404328](https://github.com/solomonrajan/solomonrajan.github.io/commit/7404328310c895c1f621de1967d5a70703cdebbd))
 
 
 
