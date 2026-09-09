@@ -412,3 +412,82 @@ a:hover {
 }
 .google-markdown h2 { font-size: 20px; font-weight: 400; margin: 24px 0 16px; }
 .google-markdown p { margin-bottom: 16px; color: var(--google-text-secondary); }
+
+/* 9. Modals / Dialogs */
+.google-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(32, 33, 36, 0.6);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  padding: 16px;
+}
+.google-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.google-modal {
+  background: var(--google-bg-color);
+  border-radius: 28px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  transform: translateY(20px) scale(0.95);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+.google-modal-overlay.active .google-modal {
+  transform: translateY(0) scale(1);
+}
+.google-modal-header {
+  padding: 24px 24px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.google-modal-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--google-text-primary);
+}
+.google-modal-close {
+  background: none;
+  border: none;
+  color: var(--google-text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -8px -8px 0 0;
+}
+.google-modal-close:hover {
+  background-color: var(--google-hover-bg);
+}
+.google-modal-body {
+  padding: 0 24px 24px;
+  color: var(--google-text-secondary);
+  font-size: 16px;
+}
+.google-modal-body h3 {
+  font-size: 18px;
+  color: var(--google-text-primary);
+  margin: 16px 0 8px;
+  font-weight: 500;
+}
+.google-modal-body ul {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+.google-modal-body li {
+  margin-bottom: 8px;
+}
