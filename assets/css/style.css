@@ -443,11 +443,17 @@ a:hover {
   padding: 16px 24px;
   background-color: var(--google-bg-color);
   border-top: 1px solid var(--google-border-color);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 /* 7. Buttons */
 .google-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 10px 24px;
   border-radius: 24px; /* Modern pill shape */
   font-size: 14px;
@@ -466,11 +472,18 @@ a:hover {
   text-decoration: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
-.google-btn--primary {
-  /* Alias for backward compatibility if used anywhere */
+.google-btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
-.google-btn--primary:hover {
-  /* Alias */
+.google-btn--yellow {
+  background-color: #fbbc04 !important; /* Google yellow */
+  color: #202124 !important; /* Dark text for contrast */
+}
+.google-btn--yellow:hover {
+  background-color: #f2a900 !important;
+  color: #202124 !important;
 }
 
 /* 8. Mobile Responsiveness */
