@@ -306,9 +306,6 @@
     <div class="google-modal" role="dialog" aria-modal="true" aria-labelledby="info-modal-title">
       <div class="google-modal-header">
         <h2 class="google-modal-title" id="info-modal-title">Details</h2>
-        <button class="google-modal-close" id="info-modal-close" aria-label="Close modal">
-          <span class="material-symbols-outlined">close</span>
-        </button>
       </div>
       <div class="google-modal-body" id="info-modal-body">
         <div id="info-modal-subtitle" style="font-weight: 500; color: var(--google-text-primary); margin-bottom: 8px;"></div>
@@ -321,7 +318,6 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const modalOverlay = document.getElementById('info-modal-overlay');
-      const modalCloseBtn = document.getElementById('info-modal-close');
       const modalTitle = document.getElementById('info-modal-title');
       const modalSubtitle = document.getElementById('info-modal-subtitle');
       const modalDesc = document.getElementById('info-modal-desc');
@@ -337,10 +333,6 @@
           
           modalOverlay.classList.add('active');
         });
-      });
-      
-      modalCloseBtn.addEventListener('click', () => {
-        modalOverlay.classList.remove('active');
       });
       
       modalOverlay.addEventListener('click', (e) => {

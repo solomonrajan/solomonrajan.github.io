@@ -183,9 +183,6 @@ function initProfileModal() {
       <div class="google-profile-modal">
         <div class="google-profile-modal-header">
           <h2>Solomon Rajan</h2>
-          <button class="google-menu-btn" id="close-profile-modal" aria-label="Close">
-            <span class="material-symbols-outlined">close</span>
-          </button>
         </div>
         <div class="google-profile-modal-body">
           <img src="${avatarImg.src}" alt="Profile" class="google-profile-modal-img">
@@ -197,16 +194,11 @@ function initProfileModal() {
   document.body.insertAdjacentHTML('beforeend', modalHTML);
 
   const modal = document.getElementById('profile-modal');
-  const closeBtn = document.getElementById('close-profile-modal');
 
   avatarRing.style.cursor = 'pointer';
   avatarRing.addEventListener('click', (e) => {
     e.stopPropagation();
     modal.style.display = 'flex';
-  });
-
-  closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
   });
 
   modal.addEventListener('click', (e) => {
