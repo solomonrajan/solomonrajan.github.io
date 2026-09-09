@@ -43,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -356,7 +357,17 @@ a:hover {
     transform: translateX(0);
   }
   .google-main-content {
-    padding: 16px;
+    padding: 16px 16px 80px 16px;
+  }
+  .google-page-header {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .google-page-header h1 {
+    font-size: 28px;
+  }
+  .google-page-header p {
+    font-size: 16px;
   }
 }
 
