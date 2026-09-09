@@ -421,6 +421,7 @@ a:hover {
   letter-spacing: 0.5px;
   width: 30%;
   min-width: 150px;
+  white-space: nowrap;
 }
 .google-list-item-value {
   font-size: 16px;
