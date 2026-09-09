@@ -1,3 +1,12 @@
+# [0.62.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.61.0...v0.62.0) (2026-09-09)
+
+
+### Features
+
+* replace external logo URLs with local SVG assets and add new project icons ([8ce7fb2](https://github.com/solomonrajan/solomonrajan.github.io/commit/8ce7fb2050ae510ade22b4823fb5a8c7586de597))
+
+
+
 # [0.61.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.60.0...v0.61.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog page with version history and improve mobile scrolling and UI polish ([d6f73e6](https://github.com/solomonrajan/solomonrajan.github.io/commit/d6f73e62213a83b9c38ff9a96e9176d23e44ebea))
-
-
-
-# [0.57.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.56.0...v0.57.0) (2026-09-09)
-
-
-### Features
-
-* add dynamic changelog page with version history, search, and autocomplete functionality ([23822de](https://github.com/solomonrajan/solomonrajan.github.io/commit/23822deae88d293b11efb16885476e50cbc71e89))
 
 
 
