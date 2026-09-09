@@ -151,8 +151,9 @@ a:hover {
   align-items: center;
   gap: 16px;
   height: 48px;
-  padding: 0 16px 0 24px;
-  border-radius: 0 24px 24px 0;
+  padding: 0 16px;
+  margin: 0 12px;
+  border-radius: 9999px;
   color: var(--google-text-secondary);
   font-weight: 500;
   font-size: 14px;
@@ -198,10 +199,10 @@ a:hover {
   color: var(--google-text-secondary);
 }
 
-/* 6. Google Cards */
+/* 6. Google Cards (M3) */
 .google-card {
   border: 1px solid var(--google-border-color);
-  border-radius: 8px;
+  border-radius: 24px;
   margin-bottom: 24px;
   background: var(--google-bg-color);
   overflow: hidden;
@@ -233,28 +234,55 @@ a:hover {
   align-items: center;
   padding: 16px 24px;
   border-bottom: 1px solid var(--google-border-color);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s;
 }
 .google-list-item:last-child {
   border-bottom: none;
 }
+.google-list-item--clickable {
+  cursor: pointer;
+}
+.google-list-item--clickable:hover {
+  background-color: var(--google-hover-bg);
+  text-decoration: none;
+}
 
 .google-list-item-content {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+@media (max-width: 600px) {
+  .google-list-item-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .google-list-item-title {
   font-size: 12px;
   font-weight: 500;
   color: var(--google-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  width: 30%;
+  min-width: 150px;
 }
 .google-list-item-value {
   font-size: 16px;
   color: var(--google-text-primary);
+  flex: 1;
 }
 
 .google-list-item-icon {
+  margin-left: 16px;
+  color: var(--google-text-secondary);
+  font-size: 24px;
+}
+.google-list-item-chevron {
   margin-left: 16px;
   color: var(--google-text-secondary);
   font-size: 24px;
