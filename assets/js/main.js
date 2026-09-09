@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Live Indian Standard Time (IST) Clock & Weather
   initLiveISTClock();
+
+  // 5. Apps Dropdown Toggle
+  if (typeof initAppsDropdown === 'function') {
+    initAppsDropdown();
+  }
 });
 
 function normalizePageName(url) {
@@ -153,4 +158,12 @@ function initLiveISTClock() {
   setInterval(updateClock, 1000);
   fetchKottayamWeather();
   setInterval(fetchKottayamWeather, 300000); // 5 mins
+}
+
+function initAppsDropdown() {
+  const toggleBtn = document.getElementById('google-apps-toggle');
+  const dropdown = document.getElementById('google-apps-dropdown');
+  if (!toggleBtn || !dropdown) return;
+  toggleBtn.addEventListener('click', (e) => { e.stopPropagation(); dropdown.classList.toggle('active'); });
+  document.addEventListener('click', (e) => { if (dropdown.classList.contains('active') && !dropdown.contains(e.target) && !toggleBtn.contains(e.target)) { dropdown.classList.remove('active'); } });
 }

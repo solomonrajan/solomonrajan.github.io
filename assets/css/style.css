@@ -177,7 +177,6 @@ a:hover {
   100% { transform: rotate(360deg); }
 }
 
-/* 3. The actual image on top */
 .google-avatar-ring .google-avatar {
   position: relative;
   width: 100%;
@@ -186,6 +185,90 @@ a:hover {
   object-fit: cover;
   z-index: 2;
 }
+
+/* Google Apps Dropdown */
+.google-apps-container {
+  position: relative;
+}
+
+.google-apps-dropdown {
+  position: absolute;
+  top: 56px;
+  right: 0;
+  width: 320px;
+  background-color: var(--google-bg-color);
+  border: 1px solid var(--google-border-color);
+  border-radius: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.google-apps-dropdown.active {
+  display: flex;
+}
+
+[data-theme="dark"] .google-apps-dropdown {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.google-apps-header {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--google-text-secondary);
+  margin-bottom: 16px;
+  padding: 0 8px;
+  text-align: left;
+}
+
+.google-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 4px;
+}
+
+.google-app-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--google-text-primary);
+  padding: 12px 8px;
+  border-radius: 16px;
+  transition: background-color 0.2s;
+}
+
+.google-app-item:hover {
+  background-color: var(--google-blue-bg);
+  text-decoration: none;
+}
+
+.google-app-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.google-app-item span {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .google-apps-dropdown {
+    right: -40px;
+  }
+}
+
 
 /* 3. Main Layout Area (Sidebar + Content) */
 .google-layout {
