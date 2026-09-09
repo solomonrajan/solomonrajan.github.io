@@ -1,3 +1,12 @@
+# [0.63.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.62.0...v0.63.0) (2026-09-09)
+
+
+### Features
+
+* add contact form subject field, dynamic height resizing, and comprehensive site changelog tracking ([e576e16](https://github.com/solomonrajan/solomonrajan.github.io/commit/e576e1675e74f4f39978aaa962d2d16a7e9b871d))
+
+
+
 # [0.62.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.61.0...v0.62.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Google Premium animated avatar ring and add site changelog page ([1924d00](https://github.com/solomonrajan/solomonrajan.github.io/commit/1924d00510294ebf3e57a1c90ea8b5f3b3b4cf22))
-
-
-
-# [0.58.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.57.0...v0.58.0) (2026-09-09)
-
-
-### Features
-
-* add changelog page with version history and improve mobile scrolling and UI polish ([d6f73e6](https://github.com/solomonrajan/solomonrajan.github.io/commit/d6f73e62213a83b9c38ff9a96e9176d23e44ebea))
 
 
 
