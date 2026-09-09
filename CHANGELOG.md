@@ -1,3 +1,12 @@
+# [0.52.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.51.0...v0.52.0) (2026-09-09)
+
+
+### Features
+
+* add changelog page, implement centralized dashboard styling, and update navigation menus ([5793c80](https://github.com/solomonrajan/solomonrajan.github.io/commit/5793c80fb61b20bca98c2b69a883327ced2cc3c4))
+
+
+
 # [0.51.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.50.0...v0.51.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement global Material Design 3 stylesheet with expressive typography and animated background shapes ([683e715](https://github.com/solomonrajan/solomonrajan.github.io/commit/683e715237272dad7dda8b2be5b0b4cc9d58636c))
-
-
-
-# [0.47.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.46.0...v0.47.0) (2026-09-08)
-
-
-### Features
-
-* introduce design system changelog and enforce official Google color and layout standards ([8226b6a](https://github.com/solomonrajan/solomonrajan.github.io/commit/8226b6a8900dce4d263c5399031d11d00b97e989))
 
 
 
