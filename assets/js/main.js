@@ -66,10 +66,24 @@ function initThemeToggle() {
   
   const html = document.documentElement;
   
-  toggleBtn.addEventListener('click', () => {
+  // Load saved theme or default to light
+  const savedTheme = localStorage.getItem('solomon-theme') || 'light';
+  html.setAttribute('data-theme', savedTheme);
+  
+  // Set initial button text/icon
+  toggleBtn.innerHTML = `
+    <span class="material-symbols-outlined">${savedTheme === 'dark' ? 'light_mode' : 'dark_mode'}</span>
+    ${savedTheme === 'dark' ? 'Light mode' : 'Dark mode'}
+  `;
+  
+  toggleBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
     html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('solomon-theme', newTheme);
+    
     toggleBtn.innerHTML = `
       <span class="material-symbols-outlined">${newTheme === 'dark' ? 'light_mode' : 'dark_mode'}</span>
       ${newTheme === 'dark' ? 'Light mode' : 'Dark mode'}
