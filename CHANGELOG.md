@@ -1,3 +1,12 @@
+# [0.66.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.65.0...v0.66.0) (2026-09-09)
+
+
+### Features
+
+* standardize global button styling, add changelog page, and prevent date line-breaks on mobile. ([f24866f](https://github.com/solomonrajan/solomonrajan.github.io/commit/f24866f5280a2dbe69f59835335e75c5c9704fe2))
+
+
+
 # [0.65.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.64.0...v0.65.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * replace external logo URLs with local SVG assets and add new project icons ([8ce7fb2](https://github.com/solomonrajan/solomonrajan.github.io/commit/8ce7fb2050ae510ade22b4823fb5a8c7586de597))
-
-
-
-# [0.61.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.60.0...v0.61.0) (2026-09-09)
-
-
-### Features
-
-* add interactive Google-style apps drawer menu with custom dropdown and JavaScript-controlled toggling. ([2b99f56](https://github.com/solomonrajan/solomonrajan.github.io/commit/2b99f563ccd69b7946784ba137fb1bad5d1d3e04))
 
 
 
