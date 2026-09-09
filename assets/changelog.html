@@ -4,6 +4,66 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 3.2.45 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">contrast</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.45</span>
+            <span class="changelog-tag changelog-tag--fix">Bug Fix</span>
+          </div>
+          <time class="changelog-date">09 Sep 2026, 06:50 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Weather Icon Contrast:</strong> Fixed an issue where the fallback weather icon (such as during nighttime when specific colors aren't applied) became invisible because it shared the exact same default color (`--md-sys-color-tertiary`) as the badge background (`--md-sys-color-tertiary-container`). Changed the default fallback color to `inherit` so it correctly uses the contrasting text color.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 3.2.44 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">contrast</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.44</span>
+            <span class="changelog-tag changelog-tag--fix">Bug Fix</span>
+          </div>
+          <time class="changelog-date">09 Sep 2026, 06:45 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Time Badge Icon Contrast:</strong> Fixed an issue where the clock icon inside the time badge was invisible because it shared the exact same color (`--md-sys-color-tertiary`) as its background (`--md-sys-color-tertiary-container`). Changed the icon color to `inherit` so it correctly uses the contrasting text color of the badge.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 3.2.43 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">bug_report</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v3.2.43</span>
+            <span class="changelog-tag changelog-tag--fix">Bug Fix</span>
+          </div>
+          <time class="changelog-date">09 Sep 2026, 06:40 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Icon Visibility Fix:</strong> Forced the Material Symbols Outlined font family and ligatures on icon classes using <code>!important</code> to prevent them from being overridden by tabular number settings applied to parent date, time, and weather containers. This restores the visibility of the clock and weather icons.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 3.2.42 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">

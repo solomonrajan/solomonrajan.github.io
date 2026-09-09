@@ -343,7 +343,7 @@ strong, b {
 
 /* Material Symbols Icon helper */
 .material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
+  font-family: 'Material Symbols Outlined' !important;
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -353,8 +353,8 @@ strong, b {
   display: inline-block;
   white-space: nowrap;
   word-wrap: normal;
-  -webkit-font-feature-settings: 'liga';
-  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga' !important;
+  font-feature-settings: 'liga' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
@@ -1199,7 +1199,7 @@ main {
 
 .hero-badge--time .hero-badge__icon {
   font-size: 18px !important;
-  color: var(--md-sys-color-tertiary);
+  color: inherit;
 }
 
 [data-theme="dark"] .hero-badge--time {
@@ -1209,7 +1209,7 @@ main {
 }
 
 [data-theme="dark"] .hero-badge--time .hero-badge__icon {
-  color: var(--md-sys-color-tertiary);
+  color: inherit;
 }
 
 .hero-badge__icon {
@@ -1245,7 +1245,7 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--md-sys-color-tertiary);
+  color: inherit;
 }
 
 .hero-badge__temp {
