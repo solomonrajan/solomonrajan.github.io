@@ -182,7 +182,7 @@ function initProfileModal() {
     <div class="google-profile-modal-overlay" id="profile-modal" style="display: none;">
       <div class="google-profile-modal">
         <div class="google-profile-modal-header">
-          <h2>Profile picture</h2>
+          <h2>Solomon Rajan</h2>
           <button class="google-menu-btn" id="close-profile-modal" aria-label="Close">
             <span class="material-symbols-outlined">close</span>
           </button>
