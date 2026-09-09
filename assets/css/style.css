@@ -46,6 +46,10 @@ body {
   overflow: hidden;
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   color: var(--google-blue);
   text-decoration: none;
