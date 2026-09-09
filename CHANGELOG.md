@@ -1,3 +1,12 @@
+# [0.58.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.57.0...v0.58.0) (2026-09-09)
+
+
+### Features
+
+* add changelog page with version history and improve mobile scrolling and UI polish ([d6f73e6](https://github.com/solomonrajan/solomonrajan.github.io/commit/d6f73e62213a83b9c38ff9a96e9176d23e44ebea))
+
+
+
 # [0.57.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.56.0...v0.57.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement interactive changelog page with version history, search, and navigation enhancements ([d5f163f](https://github.com/solomonrajan/solomonrajan.github.io/commit/d5f163fa7bd9ffc564d03be928d4443abc204a3e))
-
-
-
-# [0.53.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.52.0...v0.53.0) (2026-09-09)
-
-
-### Features
-
-* implement changelog system with search functionality, UI styling, and updated profile welcome messaging ([88b7e85](https://github.com/solomonrajan/solomonrajan.github.io/commit/88b7e8558b52fcb2cacd66a8f13cae91613283aa))
 
 
 
