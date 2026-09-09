@@ -26,6 +26,11 @@
       margin-bottom: 24px;
       transition: border-color 0.2s;
     }
+    textarea.google-input {
+      resize: none;
+      overflow-y: hidden;
+      min-height: 120px;
+    }
     .google-input:focus {
       outline: none;
       border-color: var(--google-blue);
@@ -168,46 +173,8 @@
           <p>Reach out for professional inquiries, consulting, or collaborations</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div style="max-width: 680px; margin: 0 auto;">
           
-          <!-- Contact Info Card -->
-          <div class="google-card">
-            <div class="google-card-header">
-              <h2>Contact Information</h2>
-              <p>Direct ways to reach me</p>
-            </div>
-            <div class="google-card-body">
-              <a href="#" class="google-list-item google-list-item--clickable">
-                <div class="google-list-item-content">
-                  <div class="google-list-item-title">Location</div>
-                  <div class="google-list-item-value">Kottayam, Kerala, India</div>
-                </div>
-                <span class="material-symbols-outlined google-list-item-chevron">keyboard_arrow_right</span>
-              </a>
-              <a href="#" class="google-list-item google-list-item--clickable">
-                <div class="google-list-item-content">
-                  <div class="google-list-item-title">Email</div>
-                  <div class="google-list-item-value">77dss3dv@duck.com</div>
-                </div>
-                <span class="material-symbols-outlined google-list-item-chevron">keyboard_arrow_right</span>
-              </a>
-              <a href="#" class="google-list-item google-list-item--clickable">
-                <div class="google-list-item-content">
-                  <div class="google-list-item-title">GitHub</div>
-                  <div class="google-list-item-value">github.com/solomonrajan</div>
-                </div>
-                <span class="material-symbols-outlined google-list-item-chevron">keyboard_arrow_right</span>
-              </a>
-              <a href="#" class="google-list-item google-list-item--clickable">
-                <div class="google-list-item-content">
-                  <div class="google-list-item-title">LinkedIn</div>
-                  <div class="google-list-item-value">linkedin.com/in/solomonrajan</div>
-                </div>
-                <span class="material-symbols-outlined google-list-item-chevron">keyboard_arrow_right</span>
-              </a>
-            </div>
-          </div>
-
           <!-- Contact Form Card -->
           <div class="google-card">
             <div class="google-card-header">
@@ -227,6 +194,9 @@
                 <label class="google-label" for="email">Email</label>
                 <input type="email" id="email" name="email" class="google-input" required placeholder="Your email address">
                 
+                <label class="google-label" for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="google-input" required placeholder="What is this regarding?">
+                
                 <label class="google-label" for="message">Message</label>
                 <textarea id="message" name="message" class="google-input" required rows="4" placeholder="How can I help you?"></textarea>
                 
@@ -241,6 +211,17 @@
     </main>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tx = document.getElementById('message');
+      if (tx) {
+        tx.addEventListener('input', function() {
+          this.style.height = 'auto';
+          this.style.height = (this.scrollHeight) + 'px';
+        });
+      }
+    });
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
