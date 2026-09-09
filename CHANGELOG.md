@@ -1,3 +1,12 @@
+# [0.60.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.59.0...v0.60.0) (2026-09-09)
+
+
+### Features
+
+* implement comprehensive project changelog page with associated styling updates ([b039dfa](https://github.com/solomonrajan/solomonrajan.github.io/commit/b039dfa2426f0549e50ea9170e8015015bf9833a))
+
+
+
 # [0.59.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.58.0...v0.59.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement comprehensive changelog page with version search and optimize mobile UI/typography across all pages. ([1dc6ff8](https://github.com/solomonrajan/solomonrajan.github.io/commit/1dc6ff8beddc6a6bcc16652c57550ae9724e4919))
-
-
-
-# [0.55.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.54.0...v0.55.0) (2026-09-09)
-
-
-### Features
-
-* implement searchable changelog history and apply global typography and UI refinements ([0a97ec6](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a97ec6811d2d70a17cc01ba66a7d370cef80099))
 
 
 
