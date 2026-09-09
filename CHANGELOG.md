@@ -1,3 +1,12 @@
+# [0.68.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.67.0...v0.68.0) (2026-09-09)
+
+
+### Features
+
+* implement profile picture modal and add automated changelog tracking page ([9dbe729](https://github.com/solomonrajan/solomonrajan.github.io/commit/9dbe729c4b041649237ddc900f4be946da80dc19))
+
+
+
 # [0.67.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.66.0...v0.67.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog page, standardize global button styles, and refine contact form and apps drawer UI. ([84640ef](https://github.com/solomonrajan/solomonrajan.github.io/commit/84640ef168479fbe149fbce392b054c896130d74))
-
-
-
-# [0.63.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.62.0...v0.63.0) (2026-09-09)
-
-
-### Features
-
-* add contact form subject field, dynamic height resizing, and comprehensive site changelog tracking ([e576e16](https://github.com/solomonrajan/solomonrajan.github.io/commit/e576e1675e74f4f39978aaa962d2d16a7e9b871d))
 
 
 
