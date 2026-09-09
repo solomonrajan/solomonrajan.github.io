@@ -1,3 +1,12 @@
+# [0.55.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.54.0...v0.55.0) (2026-09-09)
+
+
+### Features
+
+* implement searchable changelog history and apply global typography and UI refinements ([0a97ec6](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a97ec6811d2d70a17cc01ba66a7d370cef80099))
+
+
+
 # [0.54.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.53.0...v0.54.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * refactor experience and education lists with interactive Material Design 3 chevron rows and introduce site changelog page. ([3640b9b](https://github.com/solomonrajan/solomonrajan.github.io/commit/3640b9b6ff27b2c716c9c7bc06dcf558e564efe7))
-
-
-
-# [0.50.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.49.0...v0.50.0) (2026-09-09)
-
-
-### Features
-
-* add Material Design 3 stylesheet and changelog page layout ([ea7234b](https://github.com/solomonrajan/solomonrajan.github.io/commit/ea7234bcbbcabb6b594ed0aa0c8e2eb11c0abf1c))
 
 
 
