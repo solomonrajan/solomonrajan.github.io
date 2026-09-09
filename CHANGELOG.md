@@ -1,3 +1,12 @@
+# [0.69.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.68.0...v0.69.0) (2026-09-09)
+
+
+### Features
+
+* implement global dashboard logic, refine modal interactions, and add a detailed changelog page. ([f2ee3c4](https://github.com/solomonrajan/solomonrajan.github.io/commit/f2ee3c4d3203763bacb4455371f98fadc481170d))
+
+
+
 # [0.68.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.67.0...v0.68.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add project changelog page, standardize UI button components, and optimize contact form UX. ([9831c68](https://github.com/solomonrajan/solomonrajan.github.io/commit/9831c68eb1a8e66c485ab44fc5d1cd2dda28527d))
-
-
-
-# [0.64.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.63.0...v0.64.0) (2026-09-09)
-
-
-### Features
-
-* add changelog page, standardize global button styles, and refine contact form and apps drawer UI. ([84640ef](https://github.com/solomonrajan/solomonrajan.github.io/commit/84640ef168479fbe149fbce392b054c896130d74))
 
 
 
