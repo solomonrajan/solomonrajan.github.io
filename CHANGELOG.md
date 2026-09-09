@@ -1,3 +1,12 @@
+# [0.67.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.66.0...v0.67.0) (2026-09-09)
+
+
+### Features
+
+* implement Google dashboard-style UI with responsive sidebar, theme support, and profile modal functionality ([7892cac](https://github.com/solomonrajan/solomonrajan.github.io/commit/7892cac79f44ccc930e7c4f53bf42e811b719eab))
+
+
+
 # [0.66.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.65.0...v0.66.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add contact form subject field, dynamic height resizing, and comprehensive site changelog tracking ([e576e16](https://github.com/solomonrajan/solomonrajan.github.io/commit/e576e1675e74f4f39978aaa962d2d16a7e9b871d))
-
-
-
-# [0.62.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.61.0...v0.62.0) (2026-09-09)
-
-
-### Features
-
-* replace external logo URLs with local SVG assets and add new project icons ([8ce7fb2](https://github.com/solomonrajan/solomonrajan.github.io/commit/8ce7fb2050ae510ade22b4823fb5a8c7586de597))
 
 
 
