@@ -1,3 +1,12 @@
+# [0.64.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.63.0...v0.64.0) (2026-09-09)
+
+
+### Features
+
+* add changelog page, standardize global button styles, and refine contact form and apps drawer UI. ([84640ef](https://github.com/solomonrajan/solomonrajan.github.io/commit/84640ef168479fbe149fbce392b054c896130d74))
+
+
+
 # [0.63.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.62.0...v0.63.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement comprehensive project changelog page with associated styling updates ([b039dfa](https://github.com/solomonrajan/solomonrajan.github.io/commit/b039dfa2426f0549e50ea9170e8015015bf9833a))
-
-
-
-# [0.59.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.58.0...v0.59.0) (2026-09-09)
-
-
-### Features
-
-* implement Google Premium animated avatar ring and add site changelog page ([1924d00](https://github.com/solomonrajan/solomonrajan.github.io/commit/1924d00510294ebf3e57a1c90ea8b5f3b3b4cf22))
 
 
 
