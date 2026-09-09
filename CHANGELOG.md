@@ -1,3 +1,12 @@
+# [0.65.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.64.0...v0.65.0) (2026-09-09)
+
+
+### Features
+
+* add project changelog page, standardize UI button components, and optimize contact form UX. ([9831c68](https://github.com/solomonrajan/solomonrajan.github.io/commit/9831c68eb1a8e66c485ab44fc5d1cd2dda28527d))
+
+
+
 # [0.64.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.63.0...v0.64.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add interactive Google-style apps drawer menu with custom dropdown and JavaScript-controlled toggling. ([2b99f56](https://github.com/solomonrajan/solomonrajan.github.io/commit/2b99f563ccd69b7946784ba137fb1bad5d1d3e04))
-
-
-
-# [0.60.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.59.0...v0.60.0) (2026-09-09)
-
-
-### Features
-
-* implement comprehensive project changelog page with associated styling updates ([b039dfa](https://github.com/solomonrajan/solomonrajan.github.io/commit/b039dfa2426f0549e50ea9170e8015015bf9833a))
 
 
 
