@@ -3,232 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Technical blog by Solomon Rajan covering Google Material Design 3 Expressive, HTML5 architecture, CSS tokens, and web performance.">
-  <meta name="author" content="Solomon Rajan">
-  <title>Blog | Solomon Rajan</title>
+  <meta name="description" content="Technical blog by Solomon Rajan covering Human Resources, Labour Relations, and Medical Social Work.">
+  <title>Blog | Google Account</title>
 
-  <!-- Core HTML5 Security & Policy Meta Tags -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' data: https://raw.githubusercontent.com; connect-src 'self' https://api.open-meteo.com; frame-ancestors 'self'; form-action 'self'; base-uri 'self';">
-
-  <!-- Preconnect & Fonts to eliminate FOUT and layout shift shutter -->
+  <!-- Google Fonts (Strict Google Sans & Material Symbols) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:GRAD,opsz,ROND,wdth,wght@0..100,6..144,0..100,25..151,1..1000&family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
-  <!-- Material 3 & Style Sheets -->
-  <link rel="stylesheet" href="assets/css/material-tokens.css">
+  <!-- Core Google Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .google-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+  </style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Material 3 Top App Bar -->
-  <header class="md-app-bar">
-    <div class="container md-app-bar__container">
-      <!-- Brand Logo / Name -->
-      <a href="/" class="md-brand" aria-label="Solomon Rajan - Home">
-        <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Owl" width="28" height="28" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" decoding="async"></span>
-        <span class="md-brand-text">Solomon Rajan</span>
+  <!-- Top App Bar -->
+  <header class="google-app-bar">
+    <div class="google-app-bar__left">
+      <button class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="index.html" class="google-logo">
+        <span style="color: #4285f4; font-weight: 500;">Solomon</span>
+        <span style="color: #ea4335; font-weight: 500;">Rajan</span>
+        <span style="color: var(--google-text-secondary); font-size: 20px; margin-left: 4px;">Account</span>
       </a>
-
-      <!-- Desktop Navigation Bar -->
-      <nav class="md-nav" aria-label="Main Navigation">
-        <ul class="md-nav-list">
-          <li class="md-nav-item"><a href="/" class="md-nav-link"><span class="material-symbols-outlined">home</span>Home</a></li>
-          <li class="md-nav-item"><a href="about" class="md-nav-link"><span class="material-symbols-outlined">person</span>About</a></li>
-          <li class="md-nav-item"><a href="portfolio" class="md-nav-link"><span class="material-symbols-outlined">work</span>Portfolio</a></li>
-          <li class="md-nav-item"><a href="blog" class="md-nav-link active"><span class="material-symbols-outlined">article</span>Blog</a></li>
-          <li class="md-nav-item"><a href="contact" class="md-nav-link"><span class="material-symbols-outlined">mail</span>Contact Me</a></li>
-        </ul>
-      </nav>
-
-      <!-- App Bar Actions -->
-      <div class="md-app-bar__actions">
-
-        <button type="button" class="md-icon-btn mobile-menu-btn" aria-label="Open mobile navigation menu">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
+    </div>
+    
+    <div class="google-app-bar__right">
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+      <a href="#" class="google-menu-btn" aria-label="Google apps">
+        <span class="material-symbols-outlined">apps</span>
+      </a>
+      <img src="assets/images/profile.png" alt="Profile" class="google-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Solomon+Rajan&background=1a73e8&color=fff'">
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer-backdrop">
-    <aside class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-      <div class="mobile-drawer-header">
-        <span class="md-brand md-brand--drawer">
-          <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Solomon Rajan Owl Logo" width="32" height="32" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" decoding="async"></span>
-          Solomon Rajan
-        </span>
-      </div>
-      <ul class="mobile-drawer-list">
-        <li><a href="/" class="mobile-drawer-link"><span class="material-symbols-outlined">home</span>Home</a></li>
-        <li><a href="about" class="mobile-drawer-link"><span class="material-symbols-outlined">person</span>About</a></li>
-        <li><a href="portfolio" class="mobile-drawer-link"><span class="material-symbols-outlined">work</span>Portfolio</a></li>
-        <li><a href="blog" class="mobile-drawer-link active"><span class="material-symbols-outlined">article</span>Blog</a></li>
-        <li><a href="contact" class="mobile-drawer-link"><span class="material-symbols-outlined">mail</span>Contact Me</a></li>
+  <!-- Main Layout -->
+  <div class="google-layout">
+    
+    <!-- Sidebar -->
+    <aside class="google-sidebar" id="google-sidebar">
+      <ul class="google-nav-list">
+        <li class="google-nav-item">
+          <a href="index.html" class="google-nav-link">
+            <span class="material-symbols-outlined">account_circle</span>
+            Home
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="about.html" class="google-nav-link">
+            <span class="material-symbols-outlined">badge</span>
+            Personal info
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="portfolio.html" class="google-nav-link">
+            <span class="material-symbols-outlined">work</span>
+            Portfolio
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="blog.html" class="google-nav-link active">
+            <span class="material-symbols-outlined">article</span>
+            Blog
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="contact.html" class="google-nav-link">
+            <span class="material-symbols-outlined">contact_page</span>
+            Contact
+          </a>
+        </li>
       </ul>
     </aside>
-  </div>
 
-  <!-- Page Banner -->
-  <section class="page-banner" aria-labelledby="blog-page-title">
-    <div class="container">
-      <h1 id="blog-page-title" class="page-title">Articles &amp; Professional Insights</h1>
-      <p class="page-subtitle">Thoughts on Human Resources, Labour Relations, and Medical Social Work.</p>
-    </div>
-  </section>
+    <!-- Content Area -->
+    <main class="google-main-content">
+      <div class="google-content-container">
+        
+        <div class="google-page-header">
+          <h1>Articles &amp; Insights</h1>
+          <p>Thoughts on Human Resources, Labour Relations, and Social Work</p>
+        </div>
 
-  <!-- Main Content -->
-  <main id="main-content">
-    <section class="section" aria-label="Blog Articles">
-      <div class="container">
-        <!-- Search & Filter Chips Bar -->
-        <div class="blog-controls-wrapper">
-          <!-- Search input with M3 styling -->
-          <div class="blog-search-container">
-            <div class="m3-outlined-text-field">
-              <span class="material-symbols-outlined m3-outlined-text-field__icon">search</span>
-              <input type="search" id="blog-search-input" class="m3-outlined-text-field__input" placeholder=" " aria-label="Search blog posts">
-              <label for="blog-search-input" class="m3-outlined-text-field__label">Search articles by keyword...</label>
-              <fieldset class="m3-outlined-text-field__outline" aria-hidden="true">
-                <legend class="m3-outlined-text-field__legend">
-                  <span>Search articles by keyword...</span>
-                </legend>
-              </fieldset>
-            </div>
+        <!-- Featured Post -->
+        <div class="google-card">
+          <div class="google-card-header">
+            <h2>The Intersection of Healthcare and Social Support</h2>
+            <p>June 15, 2026 • 8 min read • Medical Social Work</p>
           </div>
-
-          <!-- Tag Chips -->
-          <div class="md-chip-group" role="group" aria-label="Filter blog posts by topic">
-            <button type="button" class="md-chip blog-tag-chip active md-chip--selected" data-tag="all">
-              <span class="material-symbols-outlined">dataset</span> All Articles
-            </button>
-            <button type="button" class="md-chip blog-tag-chip" data-tag="hr">
-              <span class="material-symbols-outlined">groups</span> Human Resources
-            </button>
-            <button type="button" class="md-chip blog-tag-chip" data-tag="labour-relations">
-              <span class="material-symbols-outlined">handshake</span> Labour Relations
-            </button>
-            <button type="button" class="md-chip blog-tag-chip" data-tag="medical-social-work">
-              <span class="material-symbols-outlined">health_and_safety</span> Medical Social Work
-            </button>
-            <button type="button" class="md-chip blog-tag-chip" data-tag="case-management">
-              <span class="material-symbols-outlined">assignment</span> Case Management
-            </button>
+          <div class="google-card-body" style="padding: 24px;">
+            <p style="color: var(--google-text-secondary);">An in-depth look at how medical social workers bridge the gap between clinical treatment and holistic patient well-being, focusing on crisis intervention, discharge planning, and psychosocial assessments.</p>
+          </div>
+          <div class="google-card-footer">
+            <a href="assets/blog/blog-post-msw.html" class="google-btn">Read Full Article</a>
           </div>
         </div>
 
-        <!-- Featured Post Section -->
-        <div class="blog-featured">
-          <article class="md-card md-card-elevated featured-card">
-            <div>
-              <span class="hero-badge hero-badge--spaced">
-                <span class="material-symbols-outlined icon-small">star</span>
-                Featured Deep Dive
-              </span>
-              <div class="blog-meta">
-                <time datetime="2026-06-15">June 15, 2026</time>
-                <span class="blog-meta-dot"></span>
-                <span>8 min read</span>
-                <span class="blog-meta-dot"></span>
-                <span class="blog-meta-category">Medical Social Work</span>
-              </div>
-              <h2 class="featured-card__title">
-                The Intersection of Healthcare and Social Support: A Medical Social Worker's Perspective
-              </h2>
-              <p class="featured-card__desc">
-                An in-depth look at how medical social workers bridge the gap between clinical treatment and holistic patient well-being, focusing on crisis intervention, discharge planning, and psychosocial assessments.
-              </p>
-              <a href="assets/blog/blog-post-msw.html" class="md-btn md-btn-filled">
-                <span class="material-symbols-outlined">auto_stories</span> Read Full Article
-              </a>
-            </div>
-            <div class="featured-card__visual">
-              <span class="material-symbols-outlined featured-card__visual-icon">health_and_safety</span>
-            </div>
-          </article>
-        </div>
-
-        <!-- Blog Posts Grid -->
-        <div class="blog-grid">
+        <div class="google-grid-2">
+          
           <!-- Post 1 -->
-          <div class="blog-card-wrapper" data-tags="hr labour-relations">
-            <article class="md-card md-card-elevated blog-card">
-              <div class="blog-meta">
-                <time datetime="2026-05-20">May 20, 2026</time>
-                <span class="blog-meta-dot"></span>
-                <span>6 min read</span>
-              </div>
-              <h2 class="blog-card__title">Navigating Modern Labour Relations: Strategies for Conflict Resolution</h2>
-              <p class="blog-card__excerpt">
-                Effective dispute resolution techniques and proactive strategies to foster positive employee-management relations in contemporary workplaces.
-              </p>
-              <div>
-                <a href="assets/blog/blog-post-lr.html" class="md-btn md-btn-tonal">
-                  Read Article →
-                </a>
-              </div>
-            </article>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>Navigating Modern Labour Relations</h2>
+              <p>May 20, 2026 • 6 min read</p>
+            </div>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary);">Effective dispute resolution techniques and proactive strategies to foster positive employee-management relations in contemporary workplaces.</p>
+            </div>
+            <div class="google-card-footer">
+              <a href="assets/blog/blog-post-lr.html" class="google-btn">Read Article</a>
+            </div>
           </div>
 
           <!-- Post 2 -->
-          <div class="blog-card-wrapper" data-tags="hr case-management">
-            <article class="md-card md-card-elevated blog-card">
-              <div class="blog-meta">
-                <time datetime="2026-04-12">April 12, 2026</time>
-                <span class="blog-meta-dot"></span>
-                <span>5 min read</span>
-              </div>
-              <h2 class="blog-card__title">Streamlining Employee Case Management with Digital HRIS Tools</h2>
-              <p class="blog-card__excerpt">
-                How leveraging modern Human Resources Information Systems (HRIS) can significantly improve tracking, confidentiality, and resolution times for complex employee cases.
-              </p>
-              <div>
-                <a href="assets/blog/blog-post-case-management.html" class="md-btn md-btn-tonal">
-                  Read Article →
-                </a>
-              </div>
-            </article>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>Streamlining Employee Case Management</h2>
+              <p>April 12, 2026 • 5 min read</p>
+            </div>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary);">How leveraging modern HRIS can significantly improve tracking, confidentiality, and resolution times for complex employee cases.</p>
+            </div>
+            <div class="google-card-footer">
+              <a href="assets/blog/blog-post-case-management.html" class="google-btn">Read Article</a>
+            </div>
           </div>
 
           <!-- Post 3 -->
-          <div class="blog-card-wrapper" data-tags="medical-social-work hr">
-            <article class="md-card md-card-elevated blog-card">
-              <div class="blog-meta">
-                <time datetime="2026-03-05">March 5, 2026</time>
-                <span class="blog-meta-dot"></span>
-                <span>7 min read</span>
-              </div>
-              <h2 class="blog-card__title">Employee Well-being Programs: Applying Social Work Principles in HR</h2>
-              <p class="blog-card__excerpt">
-                Translating clinical empathy, active listening, and holistic assessment skills from medical social work into effective corporate employee assistance programs (EAP).
-              </p>
-              <div>
-                <a href="assets/blog/blog-post-wellbeing.html" class="md-btn md-btn-tonal">
-                  Read Article →
-                </a>
-              </div>
-            </article>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>Employee Well-being Programs</h2>
+              <p>March 5, 2026 • 7 min read</p>
+            </div>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary);">Translating clinical empathy, active listening, and holistic assessment skills from medical social work into effective corporate EAP.</p>
+            </div>
+            <div class="google-card-footer">
+              <a href="assets/blog/blog-post-wellbeing.html" class="google-btn">Read Article</a>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <!-- Scripts -->
-  <script src="assets/js/theme.js"></script>
-    <script src="assets/js/main.js"></script>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-

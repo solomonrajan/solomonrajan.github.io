@@ -3,144 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Solomon Rajan - Officer, Labour Relations. Portfolio website built with Google Material Design 3 Expressive guidelines.">
-  <meta name="author" content="Solomon Rajan">
-  <title>Solomon Rajan | Home</title>
+  <meta name="description" content="Solomon Rajan - Officer, Labour Relations">
+  <title>Solomon Rajan | Google Account</title>
 
-  <!-- Core HTML5 Security & Policy Meta Tags -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="view-transition" content="same-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' data: https://raw.githubusercontent.com; connect-src 'self' https://api.open-meteo.com; frame-ancestors 'self'; form-action 'self'; base-uri 'self';">
-
-  <!-- Preconnect & Fonts to eliminate FOUT and layout shift shutter -->
+  <!-- Google Fonts (Strict Google Sans & Material Symbols) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:GRAD,opsz,ROND,wdth,wght@0..100,6..144,0..100,25..151,1..1000&family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
-  <!-- Material 3 & Style Sheets -->
-  <link rel="stylesheet" href="assets/css/material-tokens.css">
+  <!-- Core Google Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Material 3 Top App Bar -->
-  <header class="md-app-bar">
-    <div class="container md-app-bar__container">
-      <!-- Brand Logo / Name -->
-      <a href="/" class="md-brand" aria-label="Solomon Rajan - Home">
-        <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Owl" width="28" height="28" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" decoding="async"></span>
-        <span class="md-brand-text">Solomon Rajan</span>
+  <!-- Top App Bar -->
+  <header class="google-app-bar">
+    <div class="google-app-bar__left">
+      <button class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="index.html" class="google-logo">
+        <!-- Using text as logo with Google colors -->
+        <span style="color: #4285f4; font-weight: 500;">Solomon</span>
+        <span style="color: #ea4335; font-weight: 500;">Rajan</span>
+        <span style="color: var(--google-text-secondary); font-size: 20px; margin-left: 4px;">Account</span>
       </a>
-
-      <!-- Desktop Navigation Bar -->
-      <nav class="md-nav" aria-label="Main Navigation">
-        <ul class="md-nav-list">
-          <li class="md-nav-item"><a href="/" class="md-nav-link active"><span class="material-symbols-outlined">home</span>Home</a></li>
-          <li class="md-nav-item"><a href="about" class="md-nav-link"><span class="material-symbols-outlined">person</span>About</a></li>
-          <li class="md-nav-item"><a href="portfolio" class="md-nav-link"><span class="material-symbols-outlined">work</span>Portfolio</a></li>
-          <li class="md-nav-item"><a href="blog" class="md-nav-link"><span class="material-symbols-outlined">article</span>Blog</a></li>
-          <li class="md-nav-item"><a href="contact" class="md-nav-link"><span class="material-symbols-outlined">mail</span>Contact Me</a></li>
-        </ul>
-      </nav>
-
-      <!-- App Bar Actions -->
-      <div class="md-app-bar__actions">
-
-        <button type="button" class="md-icon-btn mobile-menu-btn" aria-label="Open mobile navigation menu">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
+    </div>
+    
+    <div class="google-app-bar__right">
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+      <a href="#" class="google-menu-btn" aria-label="Google apps">
+        <span class="material-symbols-outlined">apps</span>
+      </a>
+      <img src="assets/images/profile.png" alt="Profile" class="google-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Solomon+Rajan&background=1a73e8&color=fff'">
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer-backdrop">
-    <aside class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-      <div class="mobile-drawer-header">
-        <span class="md-brand md-brand--drawer">
-          <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Solomon Rajan Owl Logo" width="32" height="32" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" decoding="async"></span>
-          Solomon Rajan
-        </span>
-      </div>
-      <ul class="mobile-drawer-list">
-        <li><a href="/" class="mobile-drawer-link active"><span class="material-symbols-outlined">home</span>Home</a></li>
-        <li><a href="about" class="mobile-drawer-link"><span class="material-symbols-outlined">person</span>About</a></li>
-        <li><a href="portfolio" class="mobile-drawer-link"><span class="material-symbols-outlined">work</span>Portfolio</a></li>
-        <li><a href="blog" class="mobile-drawer-link"><span class="material-symbols-outlined">article</span>Blog</a></li>
-        <li><a href="contact" class="mobile-drawer-link"><span class="material-symbols-outlined">mail</span>Contact Me</a></li>
+  <!-- Main Layout -->
+  <div class="google-layout">
+    
+    <!-- Sidebar -->
+    <aside class="google-sidebar" id="google-sidebar">
+      <ul class="google-nav-list">
+        <li class="google-nav-item">
+          <a href="index.html" class="google-nav-link active">
+            <span class="material-symbols-outlined">account_circle</span>
+            Home
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="about.html" class="google-nav-link">
+            <span class="material-symbols-outlined">badge</span>
+            Personal info
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="portfolio.html" class="google-nav-link">
+            <span class="material-symbols-outlined">work</span>
+            Portfolio
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="blog.html" class="google-nav-link">
+            <span class="material-symbols-outlined">article</span>
+            Blog
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="contact.html" class="google-nav-link">
+            <span class="material-symbols-outlined">contact_page</span>
+            Contact
+          </a>
+        </li>
       </ul>
     </aside>
-  </div>
 
-  <!-- Main Content -->
-  <main id="main-content">
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-badges-wrapper">
-              <div class="hero-badge hero-badge--employed" tabindex="0" aria-label="Fully Employed: Open to selected freelance projects in my free time.">
-                <span class="pulse-dot"></span>
-                <span>Fully Employed</span>
-                <div class="hero-badge-tooltip" role="tooltip">
-                  <span class="material-symbols-outlined hero-badge-tooltip__icon">laptop_mac</span>
-                  <span class="hero-badge-tooltip__text">Open to selected freelance projects in my free time.</span>
-                </div>
-              </div>
-              <div class="hero-badge hero-badge--time">
-                <span class="material-symbols-outlined hero-badge__icon">schedule</span>
-                <span id="ist-live-clock" class="hero-badge__time" aria-live="polite">--:--:-- IST &bull; Kottayam</span>
-                <span id="kottayam-weather" class="hero-badge__weather" aria-live="polite"></span>
-              </div>
-            </div>
+    <!-- Content Area -->
+    <main class="google-main-content">
+      <div class="google-content-container">
+        
+        <div class="google-page-header">
+          <h1>Welcome, Solomon Rajan</h1>
+          <p>Manage your info, privacy, and security to make Google work better for you.</p>
+        </div>
 
-            <h1 id="hero-title" class="hero-title">
-              Hi, I'm<br>
-              <span class="name-highlight">Solomon Rajan</span>
-            </h1>
-
-            <p class="hero-position">Officer, Labour Relations</p>
-
-            <p class="hero-intro">
-              I am a dedicated HR professional and Labour Welfare Officer committed to fostering positive industrial relations and ensuring statutory labour compliance. My expertise spans across contract labour management, payroll administration, employee welfare, and driving people-centric organizational growth.
-            </p>
-
-            <div class="hero-actions">
-              <a href="assets/resume.pdf" class="md-btn md-btn-glass md-btn-lg js-download-resume" id="download-resume-btn">
-                <span class="material-symbols-outlined">download</span>
-                Download Resume
-              </a>
-            </div>
+        <!-- Personal Info Card -->
+        <div class="google-card">
+          <div class="google-card-header">
+            <h2>Current Status</h2>
+            <p>Info about your employment and availability</p>
           </div>
-
-          <div class="hero-media">
-            <div class="hero-profile-card">
-              <div class="hero-profile-avatar-wrapper">
-                <img src="assets/images/profile.png" alt="Solomon Rajan - Officer, Labour Relations" class="hero-profile-img" width="380" height="420">
+          <div class="google-card-body">
+            
+            <div class="google-list-item">
+              <div class="google-list-item-content">
+                <div class="google-list-item-title">Title</div>
+                <div class="google-list-item-value">Officer, Labour Relations</div>
               </div>
-              <div class="hero-profile-badge">
-                <span class="material-symbols-outlined">verified</span>
-                <span>Certified Labour Welfare Officer</span>
-              </div>
+              <span class="material-symbols-outlined google-list-item-icon">work</span>
             </div>
+
+            <div class="google-list-item">
+              <div class="google-list-item-content">
+                <div class="google-list-item-title">Availability</div>
+                <div class="google-list-item-value">Fully Employed (Open to selected freelance)</div>
+              </div>
+              <span class="material-symbols-outlined google-list-item-icon">event_available</span>
+            </div>
+
+          </div>
+          <div class="google-card-footer">
+            <a href="assets/resume.pdf" class="google-btn">Download Resume</a>
           </div>
         </div>
+
+        <!-- Local Time / Weather Card -->
+        <div class="google-card">
+          <div class="google-card-header">
+            <h2>Local Information</h2>
+            <p>Kottayam, Kerala, India</p>
+          </div>
+          <div class="google-card-body">
+            
+            <div class="google-list-item">
+              <div class="google-list-item-content">
+                <div class="google-list-item-title">Current Time</div>
+                <div class="google-list-item-value" id="ist-live-clock">--:--:-- IST</div>
+              </div>
+              <span class="material-symbols-outlined google-list-item-icon">schedule</span>
+            </div>
+
+            <div class="google-list-item">
+              <div class="google-list-item-content">
+                <div class="google-list-item-title">Weather</div>
+                <div class="google-list-item-value" id="kottayam-weather">Loading...</div>
+              </div>
+              <span class="material-symbols-outlined google-list-item-icon">partly_cloudy_day</span>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-    </section>
-  </main>
+    </main>
 
-  <!-- Modal moved to About page -->
+  </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/theme.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-
-

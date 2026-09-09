@@ -3,318 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Solomon Rajan - Explore featured initiatives and case studies built with Google Material Design 3 Expressive.">
-  <meta name="author" content="Solomon Rajan">
-  <title>Portfolio | Solomon Rajan</title>
+  <meta name="description" content="Portfolio of Solomon Rajan - Explore featured initiatives and case studies.">
+  <title>Portfolio | Google Account</title>
 
-  <!-- Core HTML5 Security & Policy Meta Tags -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' data: https://raw.githubusercontent.com; connect-src 'self' https://api.open-meteo.com; frame-ancestors 'self'; form-action 'self'; base-uri 'self';">
-
-  <!-- Preconnect & Fonts to eliminate FOUT and layout shift shutter -->
+  <!-- Google Fonts (Strict Google Sans & Material Symbols) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:GRAD,opsz,ROND,wdth,wght@0..100,6..144,0..100,25..151,1..1000&family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
-  <!-- Material 3 & Style Sheets -->
-  <link rel="stylesheet" href="assets/css/material-tokens.css">
+  <!-- Core Google Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .google-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+  </style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Material 3 Top App Bar -->
-  <header class="md-app-bar">
-    <div class="container md-app-bar__container">
-      <!-- Brand Logo / Name -->
-      <a href="/" class="md-brand" aria-label="Solomon Rajan - Home">
-        <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Owl" width="28" height="28" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" decoding="async"></span>
-        <span class="md-brand-text">Solomon Rajan</span>
+  <!-- Top App Bar -->
+  <header class="google-app-bar">
+    <div class="google-app-bar__left">
+      <button class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="index.html" class="google-logo">
+        <span style="color: #4285f4; font-weight: 500;">Solomon</span>
+        <span style="color: #ea4335; font-weight: 500;">Rajan</span>
+        <span style="color: var(--google-text-secondary); font-size: 20px; margin-left: 4px;">Account</span>
       </a>
-
-      <!-- Desktop Navigation Bar -->
-      <nav class="md-nav" aria-label="Main Navigation">
-        <ul class="md-nav-list">
-          <li class="md-nav-item"><a href="/" class="md-nav-link"><span class="material-symbols-outlined">home</span>Home</a></li>
-          <li class="md-nav-item"><a href="about" class="md-nav-link"><span class="material-symbols-outlined">person</span>About</a></li>
-          <li class="md-nav-item"><a href="portfolio" class="md-nav-link active"><span class="material-symbols-outlined">work</span>Portfolio</a></li>
-          <li class="md-nav-item"><a href="blog" class="md-nav-link"><span class="material-symbols-outlined">article</span>Blog</a></li>
-          <li class="md-nav-item"><a href="contact" class="md-nav-link"><span class="material-symbols-outlined">mail</span>Contact Me</a></li>
-        </ul>
-      </nav>
-
-      <!-- App Bar Actions -->
-      <div class="md-app-bar__actions">
-
-        <button type="button" class="md-icon-btn mobile-menu-btn" aria-label="Open mobile navigation menu">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
+    </div>
+    
+    <div class="google-app-bar__right">
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+      <a href="#" class="google-menu-btn" aria-label="Google apps">
+        <span class="material-symbols-outlined">apps</span>
+      </a>
+      <img src="assets/images/profile.png" alt="Profile" class="google-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Solomon+Rajan&background=1a73e8&color=fff'">
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer-backdrop">
-    <aside class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-      <div class="mobile-drawer-header">
-        <span class="md-brand md-brand--drawer">
-          <span class="md-brand-icon"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Owl.png" alt="Solomon Rajan Owl Logo" width="32" height="32" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" decoding="async"></span>
-          Solomon Rajan
-        </span>
-      </div>
-      <ul class="mobile-drawer-list">
-        <li><a href="/" class="mobile-drawer-link"><span class="material-symbols-outlined">home</span>Home</a></li>
-        <li><a href="about" class="mobile-drawer-link"><span class="material-symbols-outlined">person</span>About</a></li>
-        <li><a href="portfolio" class="mobile-drawer-link active"><span class="material-symbols-outlined">work</span>Portfolio</a></li>
-        <li><a href="blog" class="mobile-drawer-link"><span class="material-symbols-outlined">article</span>Blog</a></li>
-        <li><a href="contact" class="mobile-drawer-link"><span class="material-symbols-outlined">mail</span>Contact Me</a></li>
+  <!-- Main Layout -->
+  <div class="google-layout">
+    
+    <!-- Sidebar -->
+    <aside class="google-sidebar" id="google-sidebar">
+      <ul class="google-nav-list">
+        <li class="google-nav-item">
+          <a href="index.html" class="google-nav-link">
+            <span class="material-symbols-outlined">account_circle</span>
+            Home
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="about.html" class="google-nav-link">
+            <span class="material-symbols-outlined">badge</span>
+            Personal info
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="portfolio.html" class="google-nav-link active">
+            <span class="material-symbols-outlined">work</span>
+            Portfolio
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="blog.html" class="google-nav-link">
+            <span class="material-symbols-outlined">article</span>
+            Blog
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="contact.html" class="google-nav-link">
+            <span class="material-symbols-outlined">contact_page</span>
+            Contact
+          </a>
+        </li>
       </ul>
     </aside>
-  </div>
 
-  <!-- Page Banner -->
-  <section class="page-banner" aria-labelledby="portfolio-page-title">
-    <div class="container">
-      <h1 id="portfolio-page-title" class="page-title">Featured Projects &amp; Portfolio</h1>
-      <p class="page-subtitle">A showcase of enterprise applications, open-source libraries, and Material Design systems.</p>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <main id="main-content">
-    <section class="section" aria-label="Portfolio Projects">
-      <div class="container">
-        <!-- Filter Controls -->
-        <div class="portfolio-controls">
-          <div class="md-chip-group" role="group" aria-label="Filter projects by category">
-            <button type="button" class="md-chip portfolio-filter-chip active md-chip--selected" data-category="all">
-              <span class="material-symbols-outlined">grid_view</span> All Repositories
-            </button>
-            <button type="button" class="md-chip portfolio-filter-chip" data-category="open-source">
-              <span class="material-symbols-outlined">code_blocks</span> Open Source
-            </button>
-            <button type="button" class="md-chip portfolio-filter-chip" data-category="android-apps">
-              <span class="material-symbols-outlined">smartphone</span> Android Apps
-            </button>
-            <button type="button" class="md-chip portfolio-filter-chip" data-category="web-apps">
-              <span class="material-symbols-outlined">web</span> Web / HTML
-            </button>
-          </div>
+    <!-- Content Area -->
+    <main class="google-main-content">
+      <div class="google-content-container">
+        
+        <div class="google-page-header">
+          <h1>Portfolio</h1>
+          <p>Featured repositories, applications, and design systems</p>
         </div>
 
-        <!-- Projects Grid -->
-        <div class="projects-grid">
+        <div class="google-grid-2">
+          
           <!-- Repo 1 -->
-          <article class="md-card md-card-elevated project-card portfolio-item" data-category="web-apps">
-            <div class="project-card__visual">
-              <span class="material-symbols-outlined project-card__visual-icon">language</span>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>solomonrajan.github.io</h2>
+              <p>HTML • Personal Portfolio</p>
             </div>
-            <div class="project-card__content">
-              <span class="project-card__category">HTML • Personal Portfolio</span>
-              <h2 class="project-card__title">solomonrajan.github.io</h2>
-              <p class="project-card__desc">
-                Personal portfolio and knowledge hub of Solomon Rajan, showcasing HR expertise, open-source projects, web development, and technology insights.
-              </p>
-              <div class="project-card__tags">
-                <span class="project-tag">HTML</span>
-                <span class="project-tag">CSS</span>
-                <span class="project-tag">JavaScript</span>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/solomonrajan/solomonrajan.github.io" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
-                  <span class="material-symbols-outlined">code</span> View Repository
-                </a>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">Personal portfolio and knowledge hub of Solomon Rajan, showcasing HR expertise, open-source projects, web development, and technology insights.</p>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">HTML</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">CSS</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">JS</span>
               </div>
             </div>
-          </article>
+            <div class="google-card-footer">
+              <a href="https://github.com/solomonrajan/solomonrajan.github.io" target="_blank" class="google-btn">View Repository</a>
+            </div>
+          </div>
 
           <!-- Repo 2 -->
-          <article class="md-card md-card-elevated project-card portfolio-item" data-category="open-source android-apps">
-            <div class="project-card__visual">
-              <span class="material-symbols-outlined project-card__visual-icon">account_balance_wallet</span>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>moneywallet</h2>
+              <p>Java • Open Source Fork</p>
             </div>
-            <div class="project-card__content">
-              <span class="project-card__category">Java • Open Source Fork</span>
-              <h2 class="project-card__title">moneywallet</h2>
-              <p class="project-card__desc">
-                Maintained community fork of MoneyWallet: a private, offline-first Android expense and budget tracker. No account, no trackers, backups to your own WebDAV server.
-              </p>
-              <div class="project-card__tags">
-                <span class="project-tag">Java</span>
-                <span class="project-tag">Android</span>
-                <span class="project-tag">Finance</span>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/solomonrajan/moneywallet" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
-                  <span class="material-symbols-outlined">code</span> View Repository
-                </a>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">Maintained community fork of MoneyWallet: a private, offline-first Android expense tracker. Backups to your own WebDAV server.</p>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Java</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Android</span>
               </div>
             </div>
-          </article>
+            <div class="google-card-footer">
+              <a href="https://github.com/solomonrajan/moneywallet" target="_blank" class="google-btn">View Repository</a>
+            </div>
+          </div>
 
           <!-- Repo 3 -->
-          <article class="md-card md-card-elevated project-card portfolio-item" data-category="open-source android-apps">
-            <div class="project-card__visual">
-              <span class="material-symbols-outlined project-card__visual-icon">receipt_long</span>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>Expense-Manager</h2>
+              <p>Kotlin • Android Application</p>
             </div>
-            <div class="project-card__content">
-              <span class="project-card__category">Kotlin • Android Application</span>
-              <h2 class="project-card__title">Expense-Manager</h2>
-              <p class="project-card__desc">
-                This is how I'm planning to track my expenses. A minimal and effective expense tracking solution built natively with Kotlin.
-              </p>
-              <div class="project-card__tags">
-                <span class="project-tag">Kotlin</span>
-                <span class="project-tag">Android</span>
-                <span class="project-tag">Expense Tracking</span>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/solomonrajan/Expense-Manager" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
-                  <span class="material-symbols-outlined">code</span> View Repository
-                </a>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">A minimal and effective expense tracking solution built natively with Kotlin for tracking personal expenses efficiently.</p>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Kotlin</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Android</span>
               </div>
             </div>
-          </article>
+            <div class="google-card-footer">
+              <a href="https://github.com/solomonrajan/Expense-Manager" target="_blank" class="google-btn">View Repository</a>
+            </div>
+          </div>
 
           <!-- Repo 4 -->
-          <article class="md-card md-card-elevated project-card portfolio-item" data-category="open-source android-apps">
-            <div class="project-card__visual">
-              <span class="material-symbols-outlined project-card__visual-icon">payments</span>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>Cash_Ledger</h2>
+              <p>Kotlin • Android Application</p>
             </div>
-            <div class="project-card__content">
-              <span class="project-card__category">Kotlin • Android Application</span>
-              <h2 class="project-card__title">Cash_Ledger</h2>
-              <p class="project-card__desc">
-                A streamlined cash ledger application for personal finance management, written in Kotlin for the Android platform.
-              </p>
-              <div class="project-card__tags">
-                <span class="project-tag">Kotlin</span>
-                <span class="project-tag">Android</span>
-                <span class="project-tag">Ledger</span>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/solomonrajan/Cash_Ledger" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
-                  <span class="material-symbols-outlined">code</span> View Repository
-                </a>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">A streamlined cash ledger application for personal finance management, written in Kotlin for the Android platform.</p>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Kotlin</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Android</span>
               </div>
             </div>
-          </article>
+            <div class="google-card-footer">
+              <a href="https://github.com/solomonrajan/Cash_Ledger" target="_blank" class="google-btn">View Repository</a>
+            </div>
+          </div>
 
           <!-- Repo 5 -->
-          <article class="md-card md-card-elevated project-card portfolio-item" data-category="open-source">
-            <div class="project-card__visual">
-              <span class="material-symbols-outlined project-card__visual-icon">match_case</span>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>mozilla-type-family</h2>
+              <p>Design • Typography</p>
             </div>
-            <div class="project-card__content">
-              <span class="project-card__category">Design • Typography</span>
-              <h2 class="project-card__title">mozilla-type-family</h2>
-              <p class="project-card__desc">
-                A collection of custom fonts for Mozilla. Maintained as an open-source repository for typography and design system assets.
-              </p>
-              <div class="project-card__tags">
-                <span class="project-tag">Typography</span>
-                <span class="project-tag">Fonts</span>
-                <span class="project-tag">Open Source</span>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/solomonrajan/mozilla-type-family" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
-                  <span class="material-symbols-outlined">code</span> View Repository
-                </a>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">A collection of custom fonts for Mozilla. Maintained as an open-source repository for typography and design system assets.</p>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Typography</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Fonts</span>
               </div>
             </div>
-          </article>
+            <div class="google-card-footer">
+              <a href="https://github.com/solomonrajan/mozilla-type-family" target="_blank" class="google-btn">View Repository</a>
+            </div>
+          </div>
 
           <!-- Repo 6 -->
-          <article class="md-card md-card-elevated project-card portfolio-item" data-category="open-source">
-            <div class="project-card__visual">
-              <span class="material-symbols-outlined project-card__visual-icon">person_book</span>
+          <div class="google-card" style="margin-bottom: 0;">
+            <div class="google-card-header">
+              <h2>solomonrajan</h2>
+              <p>Profile • Documentation</p>
             </div>
-            <div class="project-card__content">
-              <span class="project-card__category">Profile • Documentation</span>
-              <h2 class="project-card__title">solomonrajan</h2>
-              <p class="project-card__desc">
-                A short description about me! This repository houses my GitHub profile README and serves as the landing page for my open-source work.
-              </p>
-              <div class="project-card__tags">
-                <span class="project-tag">Markdown</span>
-                <span class="project-tag">Profile</span>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/solomonrajan/solomonrajan" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
-                  <span class="material-symbols-outlined">code</span> View Repository
-                </a>
+            <div class="google-card-body" style="padding: 24px;">
+              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">A short description about me! This repository houses my GitHub profile README and serves as the landing page.</p>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Markdown</span>
+                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Profile</span>
               </div>
             </div>
-          </article>
-        </div>      </div>
-    </section>
-  </main>
+            <div class="google-card-footer">
+              <a href="https://github.com/solomonrajan/solomonrajan" target="_blank" class="google-btn">View Repository</a>
+            </div>
+          </div>
 
-  <!-- Case Study Templates for Modal -->
-  <template id="modal-pulse-details">
-    <p><strong>Overview:</strong> Pulse is an enterprise-grade analytics suite engineered to aggregate streaming event metrics across distributed microservices.</p>
-    <p class="case-study-heading"><strong>Key Architecture:</strong></p>
-    <ul class="case-study-list">
-      <li>Dynamic M3 tonal color engine adapting to system theme preferences.</li>
-      <li>Custom WebGL/Canvas rendering pipeline handling 60fps graph updates.</li>
-      <li>Sub-100ms end-to-end WebSocket telemetry stream.</li>
-    </ul>
-  </template>
+        </div>
 
-  <template id="modal-omnigen-details">
-    <p><strong>Overview:</strong> OmniGen AI Creative Studio provides generative media workflows for design and marketing organizations.</p>
-    <p class="case-study-heading"><strong>Key Architecture:</strong></p>
-    <ul class="case-study-list">
-      <li>Integrated WebGPU shaders for client-side image processing.</li>
-      <li>Optimized asynchronous queue worker system on Google Cloud Run.</li>
-      <li>Compliant with WCAG 2.1 AAA keyboard navigation standards.</li>
-    </ul>
-  </template>
-
-  <template id="modal-aura-details">
-    <p><strong>Overview:</strong> Aura M3 is a pure CSS &amp; Web Components library adhering to the official Material 3 specification.</p>
-    <p class="case-study-heading"><strong>Key Architecture:</strong></p>
-    <ul class="case-study-list">
-      <li>Zero external runtime dependencies; strictly vanilla CSS and HTML5 custom elements.</li>
-      <li>Full support for light/dark theme switching and dynamic color palettes.</li>
-      <li>Over 15,000 monthly downloads on npm.</li>
-    </ul>
-  </template>
-
-  <template id="modal-kubelens-details">
-    <p><strong>Overview:</strong> KubeLens gives DevOps and site reliability engineers an instant overview of pod status and cluster metrics.</p>
-    <p class="case-study-heading"><strong>Key Architecture:</strong></p>
-    <ul class="case-study-list">
-      <li>Real-time log filtering and regex anomaly detection.</li>
-      <li>Compact M3 data density layout optimized for desktop displays.</li>
-    </ul>
-  </template>
-
-  <!-- Material 3 Dialog Modal -->
-  <div id="dialog-backdrop" class="md-dialog-backdrop" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
-    <div class="md-dialog">
-      <div class="md-dialog__header">
-        <h2 id="dialog-title" class="md-dialog__title">Project Case Study</h2>
       </div>
-      <div id="dialog-content" class="md-dialog__body"></div>
-      <div class="md-dialog__actions">
-        <button type="button" class="md-btn md-btn-tonal" data-dialog-close>
-          Close
-        </button>
-      </div>
-    </div>
+    </main>
   </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/theme.js"></script>
-    <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
