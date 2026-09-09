@@ -1,3 +1,12 @@
+# [0.51.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.50.0...v0.51.0) (2026-09-09)
+
+
+### Features
+
+* refactor experience and education lists with interactive Material Design 3 chevron rows and introduce site changelog page. ([3640b9b](https://github.com/solomonrajan/solomonrajan.github.io/commit/3640b9b6ff27b2c716c9c7bc06dcf558e564efe7))
+
+
+
 # [0.50.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.49.0...v0.50.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * introduce design system changelog and enforce official Google color and layout standards ([8226b6a](https://github.com/solomonrajan/solomonrajan.github.io/commit/8226b6a8900dce4d263c5399031d11d00b97e989))
-
-
-
-# [0.46.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.45.0...v0.46.0) (2026-09-08)
-
-
-### Features
-
-* implement architectural changelog and introduce design system improvements aligned with official Google color palettes. ([17c8eb7](https://github.com/solomonrajan/solomonrajan.github.io/commit/17c8eb787a99c7d03d29721359084b915246af60))
 
 
 
