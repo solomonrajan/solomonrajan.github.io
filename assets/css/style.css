@@ -146,13 +146,11 @@ a:hover {
   justify-content: center;
 }
 
+/* 1. The spinning gradient disk (outermost) */
 .google-avatar-ring::before {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
   border-radius: 50%;
   background: conic-gradient(
     #4285F4 0deg,
@@ -165,18 +163,28 @@ a:hover {
   animation: googleProRingSpin 4s linear infinite;
 }
 
+/* 2. The solid background color disk to punch a perfect hole */
+.google-avatar-ring::after {
+  content: "";
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  border-radius: 50%;
+  background: var(--google-bg-color); /* matches navbar to look like a gap */
+  z-index: 1;
+}
+
 @keyframes googleProRingSpin {
   100% { transform: rotate(360deg); }
 }
 
+/* 3. The actual image on top */
 .google-avatar-ring .google-avatar {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  z-index: 1;
-  /* Optional: Add a border here if a gap is desired, e.g. border: 2px solid var(--google-bg-color); */
+  z-index: 2;
 }
 
 /* 3. Main Layout Area (Sidebar + Content) */
