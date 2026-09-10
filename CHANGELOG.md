@@ -1,3 +1,12 @@
+# [0.82.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.81.0...v0.82.0) (2026-09-10)
+
+
+### Features
+
+* implement automated static blog generation workflow with MDX support ([7220eff](https://github.com/solomonrajan/solomonrajan.github.io/commit/7220eff417cdf0922fbd666c24ce24a540303cc1))
+
+
+
 # [0.81.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.80.0...v0.81.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Progressive Web App capabilities and add a dedicated changelog page. ([810e696](https://github.com/solomonrajan/solomonrajan.github.io/commit/810e696a5f5e9e63049fb5ee205bb4bb3f51b9d3))
-
-
-
-# [0.77.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.76.0...v0.77.0) (2026-09-10)
-
-
-### Features
-
-* add dedicated changelog page and update site-wide stylesheet with improved UI polish and performance optimizations ([6463004](https://github.com/solomonrajan/solomonrajan.github.io/commit/64630049b023c1e7c65d1759ce8da7749fb35ceb))
 
 
 
