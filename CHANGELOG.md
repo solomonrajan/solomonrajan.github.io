@@ -1,3 +1,12 @@
+# [0.70.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.69.0...v0.70.0) (2026-09-10)
+
+
+### Features
+
+* implement fluid Material Design 3 segmented theme switcher with persistent system preference support. ([32c5dd7](https://github.com/solomonrajan/solomonrajan.github.io/commit/32c5dd7cefe93d4c47ff8c9282baa2ab056eb74a))
+
+
+
 # [0.69.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.68.0...v0.69.0) (2026-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * standardize global button styling, add changelog page, and prevent date line-breaks on mobile. ([f24866f](https://github.com/solomonrajan/solomonrajan.github.io/commit/f24866f5280a2dbe69f59835335e75c5c9704fe2))
-
-
-
-# [0.65.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.64.0...v0.65.0) (2026-09-09)
-
-
-### Features
-
-* add project changelog page, standardize UI button components, and optimize contact form UX. ([9831c68](https://github.com/solomonrajan/solomonrajan.github.io/commit/9831c68eb1a8e66c485ab44fc5d1cd2dda28527d))
 
 
 
