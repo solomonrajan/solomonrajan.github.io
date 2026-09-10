@@ -23,15 +23,18 @@
 
 ## 📖 Table of Contents
 
-- [About the Author](#-about-the-author)
-- [Design Language & Aesthetics](#-design-language--aesthetics)
-- [Technical Stack & Apps Used](#-technical-stack--apps-used)
-- [Automation & GitHub Workflows](#-automation--github-workflows)
-- [How to Run & Build Locally](#-how-to-run--build-locally)
-- [How to Edit & Update Content](#-how-to-edit--update-content)
-- [Forking, Contributing, & Credits](#-forking-contributing--credits)
-- [Credits & Acknowledgments](#-credits--acknowledgments)
-- [Licensing](#-licensing)
+| Section | Description |
+| :--- | :--- |
+| [📖 About the Author](#-about-the-author) | Professional background and expertise of Solomon Rajan. |
+| [🎨 Design Language & Aesthetics](#-design-language--aesthetics) | Details on Material Design 3, typography, dynamic themes, and UI. |
+| [💻 Technical Stack & Apps Used](#-technical-stack--apps-used) | Overview of the frontend technologies, hosting, and development tools. |
+| [🏗️ Project Architecture & Blueprint](#%EF%B8%8F-project-architecture--blueprint) | Structural overview of the repository and data pipelines. |
+| [⚙️ Automation & GitHub Workflows](#%EF%B8%8F-automation--github-workflows) | Information on GitHub Actions and automated changelog generation. |
+| [🚀 How to Run & Build Locally](#-how-to-run--build-locally) | Instructions for cloning, serving, and testing the project locally. |
+| [📝 How to Edit & Update Content](#-how-to-edit--update-content) | Guide to modifying text, creating blog posts, and updating the changelog. |
+| [🤝 Forking, Contributing, & Credits](#-forking-contributing--credits) | Guidelines for forking the repository, attribution, and contributing. |
+| [🙌 Credits & Acknowledgments](#-credits--acknowledgments) | Special thanks to tools, open-source projects, and resources utilized. |
+| [📜 Licensing](#-licensing) | Dual-licensing information covering source code and personal content. |
 
 ---
 
