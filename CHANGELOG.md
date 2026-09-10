@@ -1,3 +1,12 @@
+# [0.84.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.83.0...v0.84.0) (2026-09-10)
+
+
+### Features
+
+* add multiple blog posts and update site navigation with new content and pages ([7a02790](https://github.com/solomonrajan/solomonrajan.github.io/commit/7a027906c09752449cca9a23dbf6a15ab37828f3))
+
+
+
 # [0.83.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.82.0...v0.83.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement PWA functionality and reorganize project assets structure ([72848aa](https://github.com/solomonrajan/solomonrajan.github.io/commit/72848aa77671d6c67c5296f724e6112de9e61db7))
-
-
-
-# [0.79.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.78.0...v0.79.0) (2026-09-10)
-
-
-### Features
-
-* add PWA support with manifest, meta tags, and install button to all pages ([cc16ddb](https://github.com/solomonrajan/solomonrajan.github.io/commit/cc16ddbf329a81c0c70b82ded7a5a02d4a6203d5))
 
 
 
