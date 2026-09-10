@@ -1,3 +1,12 @@
+# [0.78.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.77.0...v0.78.0) (2026-09-10)
+
+
+### Features
+
+* implement Progressive Web App capabilities and add a dedicated changelog page. ([810e696](https://github.com/solomonrajan/solomonrajan.github.io/commit/810e696a5f5e9e63049fb5ee205bb4bb3f51b9d3))
+
+
+
 # [0.77.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.76.0...v0.77.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement chronological changelog page with associated styles and update documentation. ([2105c68](https://github.com/solomonrajan/solomonrajan.github.io/commit/2105c680a96349bb73733e62da8086ebad7df599))
-
-
-
-# [0.73.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.72.0...v0.73.0) (2026-09-10)
-
-
-### Features
-
-* implement interactive changelog and refine Technical Skills UI with Material Design 3 updates. ([de9454d](https://github.com/solomonrajan/solomonrajan.github.io/commit/de9454dfff84a74c348574f8b81287230e234f49))
 
 
 
