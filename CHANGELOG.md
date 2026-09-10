@@ -1,3 +1,12 @@
+# [0.72.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.71.0...v0.72.0) (2026-09-10)
+
+
+### Features
+
+* add comprehensive changelog page and implement Material Design 3 UI enhancements for technical skills and theme transitions ([d4dc64c](https://github.com/solomonrajan/solomonrajan.github.io/commit/d4dc64c10de741605f278d97f0246c2b758deb0f))
+
+
+
 # [0.71.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.70.0...v0.71.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement profile picture modal and add automated changelog tracking page ([9dbe729](https://github.com/solomonrajan/solomonrajan.github.io/commit/9dbe729c4b041649237ddc900f4be946da80dc19))
-
-
-
-# [0.67.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.66.0...v0.67.0) (2026-09-09)
-
-
-### Features
-
-* implement Google dashboard-style UI with responsive sidebar, theme support, and profile modal functionality ([7892cac](https://github.com/solomonrajan/solomonrajan.github.io/commit/7892cac79f44ccc930e7c4f53bf42e811b719eab))
 
 
 
