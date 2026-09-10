@@ -1,3 +1,12 @@
+# [0.75.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.74.0...v0.75.0) (2026-09-10)
+
+
+### Features
+
+* implement and style global changelog page with floating back-to-top functionality ([38089f3](https://github.com/solomonrajan/solomonrajan.github.io/commit/38089f34e267184c0767d606989ac8bda632582f))
+
+
+
 # [0.74.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.73.0...v0.74.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add detailed project changelog and enhance theme switcher with fluid animations and technical skills visualizations. ([1f56cf4](https://github.com/solomonrajan/solomonrajan.github.io/commit/1f56cf49153a0f705c7f3736d5931694e7fa0dae))
-
-
-
-# [0.70.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.69.0...v0.70.0) (2026-09-10)
-
-
-### Features
-
-* implement fluid Material Design 3 segmented theme switcher with persistent system preference support. ([32c5dd7](https://github.com/solomonrajan/solomonrajan.github.io/commit/32c5dd7cefe93d4c47ff8c9282baa2ab056eb74a))
 
 
 
