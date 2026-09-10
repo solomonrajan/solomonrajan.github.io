@@ -1,3 +1,12 @@
+# [0.77.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.76.0...v0.77.0) (2026-09-10)
+
+
+### Features
+
+* add dedicated changelog page and update site-wide stylesheet with improved UI polish and performance optimizations ([6463004](https://github.com/solomonrajan/solomonrajan.github.io/commit/64630049b023c1e7c65d1759ce8da7749fb35ceb))
+
+
+
 # [0.76.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.75.0...v0.76.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement interactive changelog and refine Technical Skills UI with Material Design 3 updates. ([de9454d](https://github.com/solomonrajan/solomonrajan.github.io/commit/de9454dfff84a74c348574f8b81287230e234f49))
-
-
-
-# [0.72.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.71.0...v0.72.0) (2026-09-10)
-
-
-### Features
-
-* add comprehensive changelog page and implement Material Design 3 UI enhancements for technical skills and theme transitions ([d4dc64c](https://github.com/solomonrajan/solomonrajan.github.io/commit/d4dc64c10de741605f278d97f0246c2b758deb0f))
 
 
 
