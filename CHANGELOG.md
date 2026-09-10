@@ -1,3 +1,12 @@
+# [0.71.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.70.0...v0.71.0) (2026-09-10)
+
+
+### Features
+
+* add detailed project changelog and enhance theme switcher with fluid animations and technical skills visualizations. ([1f56cf4](https://github.com/solomonrajan/solomonrajan.github.io/commit/1f56cf49153a0f705c7f3736d5931694e7fa0dae))
+
+
+
 # [0.70.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.69.0...v0.70.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Google dashboard-style UI with responsive sidebar, theme support, and profile modal functionality ([7892cac](https://github.com/solomonrajan/solomonrajan.github.io/commit/7892cac79f44ccc930e7c4f53bf42e811b719eab))
-
-
-
-# [0.66.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.65.0...v0.66.0) (2026-09-09)
-
-
-### Features
-
-* standardize global button styling, add changelog page, and prevent date line-breaks on mobile. ([f24866f](https://github.com/solomonrajan/solomonrajan.github.io/commit/f24866f5280a2dbe69f59835335e75c5c9704fe2))
 
 
 
