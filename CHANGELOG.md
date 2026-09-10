@@ -1,3 +1,12 @@
+# [0.76.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.75.0...v0.76.0) (2026-09-10)
+
+
+### Features
+
+* add four new blog posts and update global font loading configurations ([5988f49](https://github.com/solomonrajan/solomonrajan.github.io/commit/5988f4919a1fbd5e77effd06fe1e188228bd3a7f))
+
+
+
 # [0.75.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.74.0...v0.75.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add comprehensive changelog page and implement Material Design 3 UI enhancements for technical skills and theme transitions ([d4dc64c](https://github.com/solomonrajan/solomonrajan.github.io/commit/d4dc64c10de741605f278d97f0246c2b758deb0f))
-
-
-
-# [0.71.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.70.0...v0.71.0) (2026-09-10)
-
-
-### Features
-
-* add detailed project changelog and enhance theme switcher with fluid animations and technical skills visualizations. ([1f56cf4](https://github.com/solomonrajan/solomonrajan.github.io/commit/1f56cf49153a0f705c7f3736d5931694e7fa0dae))
 
 
 
