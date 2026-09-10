@@ -262,6 +262,11 @@
           <p>Loading changelog...</p>
         </div>
 
+        <!-- Back to Top FAB -->
+        <button id="back-to-top-btn" class="google-fab" aria-label="Back to top" title="Back to top">
+          <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+
       </div>
     </main>
   </div>
@@ -392,6 +397,29 @@
     searchInput.addEventListener('blur', () => {
       searchInput.style.boxShadow = 'none';
     });
+
+    // Back to top functionality
+    const mainContent = document.querySelector('.google-main-content');
+    const backToTopBtn = document.getElementById('back-to-top-btn');
+
+    if (mainContent && backToTopBtn) {
+      const toggleVisibility = () => {
+        const scrollY = window.scrollY || document.documentElement.scrollTop || mainContent.scrollTop;
+        if (scrollY > 300) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      };
+
+      mainContent.addEventListener('scroll', toggleVisibility);
+      window.addEventListener('scroll', toggleVisibility);
+
+      backToTopBtn.addEventListener('click', () => {
+        mainContent.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   </script>
 </body>
 </html>
