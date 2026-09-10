@@ -1,3 +1,12 @@
+# [0.80.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.79.0...v0.80.0) (2026-09-10)
+
+
+### Features
+
+* implement PWA functionality and reorganize project assets structure ([72848aa](https://github.com/solomonrajan/solomonrajan.github.io/commit/72848aa77671d6c67c5296f724e6112de9e61db7))
+
+
+
 # [0.79.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.78.0...v0.79.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add four new blog posts and update global font loading configurations ([5988f49](https://github.com/solomonrajan/solomonrajan.github.io/commit/5988f4919a1fbd5e77effd06fe1e188228bd3a7f))
-
-
-
-# [0.75.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.74.0...v0.75.0) (2026-09-10)
-
-
-### Features
-
-* implement and style global changelog page with floating back-to-top functionality ([38089f3](https://github.com/solomonrajan/solomonrajan.github.io/commit/38089f34e267184c0767d606989ac8bda632582f))
 
 
 
