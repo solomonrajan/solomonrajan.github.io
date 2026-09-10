@@ -9,10 +9,15 @@
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
+  function getPreferredTheme() {
+    return localStorage.getItem('solomon-theme-preference') || 'system';
+  }
+
   let themeTransitionTimer = null;
-  function applyTheme(theme) {
+  function applyTheme(theme, preference = 'system') {
     document.documentElement.classList.add('theme-transitioning');
     document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-theme-preference', preference);
 
     if (themeTransitionTimer) clearTimeout(themeTransitionTimer);
     themeTransitionTimer = setTimeout(() => {
@@ -21,14 +26,18 @@
   }
 
   // Apply immediately before DOM render to prevent flash
-  applyTheme(getSystemTheme());
+  const pref = getPreferredTheme();
+  applyTheme(pref === 'system' ? getSystemTheme() : pref, pref);
 
   document.addEventListener('DOMContentLoaded', () => {
     // Listen for system theme changes
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     if (mediaQuery.addEventListener) {
       mediaQuery.addEventListener('change', e => {
-        applyTheme(e.matches ? 'dark' : 'light');
+        const currentPref = localStorage.getItem('solomon-theme-preference') || 'system';
+        if (currentPref === 'system') {
+          applyTheme(e.matches ? 'dark' : 'light', 'system');
+        }
       });
     }
   });

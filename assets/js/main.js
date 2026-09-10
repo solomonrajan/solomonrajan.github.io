@@ -69,33 +69,65 @@ function initSidebarToggle() {
 }
 
 function initThemeToggle() {
-  const toggleBtn = document.getElementById('theme-toggle');
-  if (!toggleBtn) return;
+  const themeGroup = document.getElementById('theme-toggle-group');
+  if (!themeGroup) return;
   
+  const buttons = themeGroup.querySelectorAll('.theme-btn');
   const html = document.documentElement;
   
-  // Load saved theme or default to light
-  const savedTheme = localStorage.getItem('solomon-theme') || 'light';
-  html.setAttribute('data-theme', savedTheme);
+  function updateActiveButton(preference) {
+    let activeIndex = 0;
+    buttons.forEach((btn, index) => {
+      if (btn.getAttribute('data-theme-value') === preference) {
+        btn.classList.add('active');
+        activeIndex = index;
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+    themeGroup.style.setProperty('--active-index', activeIndex);
+  }
+
+  const savedPreference = localStorage.getItem('solomon-theme-preference') || 'system';
+  updateActiveButton(savedPreference);
   
-  // Set initial button text/icon
-  toggleBtn.innerHTML = `
-    <span class="material-symbols-outlined">${savedTheme === 'dark' ? 'light_mode' : 'dark_mode'}</span>
-    ${savedTheme === 'dark' ? 'Light mode' : 'Dark mode'}
-  `;
+  // Apply initial theme based on preference
+  let initialTheme = savedPreference;
+  if (savedPreference === 'system') {
+    initialTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  html.setAttribute('data-theme', initialTheme);
+  html.setAttribute('data-theme-preference', savedPreference);
+
+  // Listen for system theme changes if set to system
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  if (mediaQuery.addEventListener) {
+    mediaQuery.addEventListener('change', e => {
+      const currentPref = localStorage.getItem('solomon-theme-preference') || 'system';
+      if (currentPref === 'system') {
+        html.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      }
+    });
+  }
   
-  toggleBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('solomon-theme', newTheme);
-    
-    toggleBtn.innerHTML = `
-      <span class="material-symbols-outlined">${newTheme === 'dark' ? 'light_mode' : 'dark_mode'}</span>
-      ${newTheme === 'dark' ? 'Light mode' : 'Dark mode'}
-    `;
+  buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const value = btn.getAttribute('data-theme-value');
+      localStorage.setItem('solomon-theme-preference', value);
+      
+      let themeToApply = value;
+      if (value === 'system') {
+        themeToApply = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      html.classList.add('theme-transitioning');
+      html.setAttribute('data-theme', themeToApply);
+      html.setAttribute('data-theme-preference', value);
+      updateActiveButton(value);
+
+      setTimeout(() => html.classList.remove('theme-transitioning'), 380);
+    });
   });
 }
 

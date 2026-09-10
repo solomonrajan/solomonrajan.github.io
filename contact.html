@@ -155,11 +155,18 @@
           </a>
         </li>
         <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 8px 0;">
-        <li class="google-nav-item">
-          <a href="javascript:void(0)" class="google-nav-link" id="theme-toggle" aria-label="Toggle dark mode">
-            <span class="material-symbols-outlined">dark_mode</span>
-            Dark mode
-          </a>
+        <li class="google-nav-item google-theme-control-container">
+          <div class="google-theme-segmented-control" id="theme-toggle-group">
+            <button class="theme-btn" data-theme-value="system" aria-label="System theme" title="System Theme">
+              <span class="material-symbols-outlined">monitor</span>
+            </button>
+            <button class="theme-btn" data-theme-value="light" aria-label="Light theme" title="Light Theme">
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button class="theme-btn" data-theme-value="dark" aria-label="Dark theme" title="Dark Theme">
+              <span class="material-symbols-outlined">dark_mode</span>
+            </button>
+          </div>
         </li>
       </ul>
     </aside>

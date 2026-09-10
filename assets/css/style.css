@@ -34,6 +34,19 @@
   padding: 0;
 }
 
+/* Smooth Theme Transition (Material Design 3) */
+html.theme-transitioning,
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition: background-color 380ms cubic-bezier(0.2, 0, 0, 1), 
+              color 380ms cubic-bezier(0.2, 0, 0, 1), 
+              border-color 380ms cubic-bezier(0.2, 0, 0, 1), 
+              fill 380ms cubic-bezier(0.2, 0, 0, 1), 
+              stroke 380ms cubic-bezier(0.2, 0, 0, 1), 
+              box-shadow 380ms cubic-bezier(0.2, 0, 0, 1) !important;
+}
+
 body {
   font-family: var(--google-font-family);
   background-color: var(--google-bg-color);
@@ -580,11 +593,42 @@ a:hover {
   }
 }
 
-/* Theme Toggle button */
-.theme-toggle-btn {
-  background: none;
+/* Segmented Theme Control */
+.google-theme-control-container {
+  padding: 8px 16px 8px 14px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.google-theme-segmented-control {
+  display: flex;
+  align-items: center;
+  background-color: var(--google-hover-bg);
+  border-radius: 24px;
+  padding: 4px;
+  gap: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fluid Sliding Background Indicator */
+.google-theme-segmented-control::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--google-blue-bg);
+  z-index: -1;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), background-color 0.4s ease;
+  transform: translateX(calc(var(--active-index, 0) * 44px));
+}
+
+.theme-btn {
+  background: transparent;
   border: none;
-  color: var(--google-text-secondary);
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -592,9 +636,27 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--google-text-secondary);
+  transition: color 0.3s ease;
 }
-.theme-toggle-btn:hover {
-  background-color: var(--google-hover-bg);
+
+.theme-btn:hover {
+  /* Removed background-color hover so it doesn't conflict with fluid indicator */
+  color: var(--google-text-primary);
+}
+
+.theme-btn.active {
+  background-color: transparent;
+  color: var(--google-blue);
+}
+
+.theme-btn.active .material-symbols-outlined {
+  font-variation-settings: 'FILL' 1;
+}
+
+.theme-btn .material-symbols-outlined {
+  font-size: 20px;
+  transition: font-variation-settings 0.2s ease;
 }
 
 /* Markdown Content Styling for Blog/Terms */
