@@ -762,7 +762,7 @@ a:hover {
 }
 .md3-linear-progress {
   width: 100%;
-  height: 8px;
+  height: 4px;
   background-color: var(--google-border-color); /* fallback */
   background-color: rgba(26, 115, 232, 0.12); /* md3 surface variant approximation for blue */
   border-radius: 4px;
@@ -775,16 +775,4 @@ a:hover {
   border-radius: 4px;
   transition: width 1s ease-in-out;
 }
-.md3-linear-progress.wavy {
-  border-radius: 4px;
-  background-color: rgba(26, 115, 232, 0.12);
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8" viewBox="0 0 20 8"><path d="M0 4 Q 5 0, 10 4 T 20 4" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/></svg>');
-  -webkit-mask-repeat: repeat-x;
-  -webkit-mask-size: 20px 8px;
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="8" viewBox="0 0 20 8"><path d="M0 4 Q 5 0, 10 4 T 20 4" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/></svg>');
-  mask-repeat: repeat-x;
-  mask-size: 20px 8px;
-}
-.md3-linear-progress.wavy .md3-linear-progress-bar {
-  border-radius: 4px;
-}
+
