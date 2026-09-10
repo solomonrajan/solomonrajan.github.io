@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. Profile Picture Modal
   initProfileModal();
+
+  // 7. PWA Install Logic
+  initPWA();
 });
 
 function normalizePageName(url) {
@@ -239,3 +242,43 @@ function initProfileModal() {
     }
   });
 }
+
+function initPWA() {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(err => {
+        console.warn('SW registration failed: ', err);
+      });
+    });
+  }
+
+  let deferredPrompt;
+  const installContainer = document.getElementById('install-app-container');
+  const installBtn = document.getElementById('install-app-btn');
+
+  if (installContainer && installBtn) {
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      installContainer.style.display = 'block';
+    });
+
+    installBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+          installContainer.style.display = 'none';
+        }
+        deferredPrompt = null;
+      }
+    });
+
+    window.addEventListener('appinstalled', () => {
+      installContainer.style.display = 'none';
+      deferredPrompt = null;
+    });
+  }
+}
+

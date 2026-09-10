@@ -84,8 +84,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--google-appbar-height);
-  padding: 0 16px;
+  height: calc(var(--google-appbar-height) + env(safe-area-inset-top, 0px));
+  padding: env(safe-area-inset-top, 0px) 16px 0 16px;
   border-bottom: 1px solid var(--google-border-color);
   background-color: var(--google-bg-color);
   flex-shrink: 0;
@@ -354,7 +354,7 @@ a:hover {
   border-right: 1px solid var(--google-border-color);
   background-color: var(--google-bg-color);
   overflow-y: auto;
-  padding: 12px 12px 12px 0;
+  padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px)) 0;
   transition: transform 0.2s ease;
   flex-shrink: 0;
 }
@@ -396,7 +396,7 @@ a:hover {
 .google-main-content {
   flex: 1;
   overflow-y: auto;
-  padding: 32px;
+  padding: 32px 32px calc(32px + env(safe-area-inset-bottom, 0px)) 32px;
   background-color: var(--google-bg-color);
 }
 
@@ -587,7 +587,7 @@ a:hover {
   }
   .google-main-content {
     overflow-y: visible;
-    padding: 16px 16px 80px 16px;
+    padding: 16px 16px calc(80px + env(safe-area-inset-bottom, 0px)) 16px;
   }
   .google-page-header {
     text-align: center;
