@@ -91,6 +91,42 @@ This website operates without any heavy frameworks, build steps, or package bund
 
 ---
 
+## 🏗️ Project Architecture & Blueprint
+
+Here is a structural overview of the repository's source code and compiled assets.
+
+```text
+/
+├── .agents/                 # AI configuration and workspace rules
+├── .github/                 # GitHub workflows (e.g., changelog generation)
+├── assets/                  # Compiled output and static assets
+│   ├── blog/                # Compiled HTML files for blog posts
+│   │   └── template.html    # Template file used to inject markdown content
+│   ├── css/                 # Stylesheets
+│   │   ├── material-tokens.css # Design system tokens
+│   │   ├── style.css        # Main stylesheet
+│   │   └── old_style.css    # Legacy styles
+│   ├── docs/                # Documents (e.g., resume PDF)
+│   ├── images/              # Image assets (photos, icons)
+│   ├── js/                  # JavaScript files (theme, interactivity)
+│   ├── logos/               # Logo assets
+│   ├── changelog.html       # Auto-generated changelog output
+│   └── manifest.json        # PWA manifest
+├── content/                 # Source content
+│   └── blog/                # Markdown (.md / .mdx) blog posts
+├── *.html                   # Core website pages (index, about, blog, etc.)
+├── build-blog.js            # Node script that builds markdown to HTML
+├── package.json             # NPM dependencies and scripts (`npm run build:blog`)
+├── README.md                # Project overview and documentation
+└── CHANGELOG.md             # Auto-generated changelog markdown
+```
+
+### Data Pipelines
+- **Blog Content**: `content/blog/*.mdx` + `assets/blog/template.html` ➔ `node build-blog.js` ➔ `assets/blog/*.html`
+- **Changelog Updates**: `git commits` ➔ `.github/workflows/changelog.yml` ➔ `CHANGELOG.md` & `assets/changelog.html`
+
+---
+
 ## ⚙️ Automation & GitHub Workflows
 
 The repository leverages **GitHub Actions** to fully automate administrative tasks, located in `.github/workflows/changelog.yml`:
