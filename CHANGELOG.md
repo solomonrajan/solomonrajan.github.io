@@ -1,3 +1,12 @@
+# [0.79.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.78.0...v0.79.0) (2026-09-10)
+
+
+### Features
+
+* add PWA support with manifest, meta tags, and install button to all pages ([cc16ddb](https://github.com/solomonrajan/solomonrajan.github.io/commit/cc16ddbf329a81c0c70b82ded7a5a02d4a6203d5))
+
+
+
 # [0.78.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.77.0...v0.78.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement and style global changelog page with floating back-to-top functionality ([38089f3](https://github.com/solomonrajan/solomonrajan.github.io/commit/38089f34e267184c0767d606989ac8bda632582f))
-
-
-
-# [0.74.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.73.0...v0.74.0) (2026-09-10)
-
-
-### Features
-
-* implement chronological changelog page with associated styles and update documentation. ([2105c68](https://github.com/solomonrajan/solomonrajan.github.io/commit/2105c680a96349bb73733e62da8086ebad7df599))
 
 
 
