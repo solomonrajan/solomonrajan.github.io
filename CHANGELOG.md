@@ -1,3 +1,12 @@
+# [0.81.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.80.0...v0.81.0) (2026-09-10)
+
+
+### Features
+
+* implement PWA support, unify blog layouts with Google design system, and add a comprehensive changelog page. ([07d1572](https://github.com/solomonrajan/solomonrajan.github.io/commit/07d1572cddc6ddb8b8366482570f06f5044f5ab5))
+
+
+
 # [0.80.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.79.0...v0.80.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add dedicated changelog page and update site-wide stylesheet with improved UI polish and performance optimizations ([6463004](https://github.com/solomonrajan/solomonrajan.github.io/commit/64630049b023c1e7c65d1759ce8da7749fb35ceb))
-
-
-
-# [0.76.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.75.0...v0.76.0) (2026-09-10)
-
-
-### Features
-
-* add four new blog posts and update global font loading configurations ([5988f49](https://github.com/solomonrajan/solomonrajan.github.io/commit/5988f4919a1fbd5e77effd06fe1e188228bd3a7f))
 
 
 
