@@ -667,13 +667,194 @@ a:hover {
   transition: font-variation-settings 0.2s ease;
 }
 
-/* Markdown Content Styling for Blog/Terms */
+/* Markdown Content Styling for Blog/Terms (Premium UX Patterns Style) */
 .google-markdown {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.75;
+  color: var(--google-text-secondary);
+  word-wrap: break-word;
 }
-.google-markdown h2 { font-size: 20px; font-weight: 400; margin: 24px 0 16px; }
-.google-markdown p { margin-bottom: 16px; color: var(--google-text-secondary); }
+.google-markdown > *:first-child { margin-top: 0; }
+.google-markdown > *:last-child { margin-bottom: 0; }
+
+.google-markdown h1,
+.google-markdown h2,
+.google-markdown h3,
+.google-markdown h4,
+.google-markdown h5,
+.google-markdown h6 {
+  color: var(--google-text-primary);
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+.google-markdown h1 { font-size: 2.25rem; font-weight: 700; margin-bottom: 0.8888889em; }
+.google-markdown h2 { font-size: 1.5rem; border-bottom: 1px solid var(--google-border-color); padding-bottom: 0.3em; }
+.google-markdown h3 { font-size: 1.25rem; }
+.google-markdown h4 { font-size: 1rem; }
+.google-markdown h5 { font-size: 0.875rem; }
+.google-markdown h6 { font-size: 0.875rem; color: var(--google-text-secondary); }
+
+.google-markdown p { margin-top: 0; margin-bottom: 1.25em; }
+
+.google-markdown a {
+  color: var(--google-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(26, 115, 232, 0.4);
+  font-weight: 500;
+  transition: text-decoration-color 0.2s;
+}
+.google-markdown a:hover { text-decoration-color: var(--google-blue); }
+[data-theme="dark"] .google-markdown a {
+  text-decoration-color: rgba(138, 180, 248, 0.4);
+}
+[data-theme="dark"] .google-markdown a:hover {
+  text-decoration-color: var(--google-blue);
+}
+
+.google-markdown strong { font-weight: 600; color: var(--google-text-primary); }
+
+.google-markdown blockquote {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--google-text-primary);
+  border-left: 4px solid var(--google-border-color);
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  background-color: var(--google-hover-bg);
+  padding: 1rem 1rem 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+.google-markdown blockquote p { margin-bottom: 0; }
+
+.google-markdown ul, .google-markdown ol {
+  margin-top: 0;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+.google-markdown li { margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.google-markdown hr {
+  height: 1px;
+  padding: 0;
+  margin: 3em 0;
+  background-color: var(--google-border-color);
+  border: 0;
+}
+
+.google-markdown table {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.google-markdown table th, .google-markdown table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--google-border-color);
+}
+.google-markdown table th {
+  background-color: var(--google-hover-bg);
+  font-weight: 600;
+  color: var(--google-text-primary);
+  text-align: left;
+}
+.google-markdown table tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+[data-theme="dark"] .google-markdown table tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.google-markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Inline code */
+.google-markdown code {
+  font-family: 'JetBrains Mono', 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
+  padding: 0.2em 0.4em;
+  background-color: var(--google-hover-bg);
+  border-radius: 6px;
+  color: var(--google-text-primary);
+  border: 1px solid var(--google-border-color);
+}
+
+/* Code blocks (with wrapper support) */
+.blog-code-wrapper {
+  position: relative;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--google-border-color);
+  background-color: #0d1117; /* GitHub Dark style for code blocks */
+}
+[data-theme="dark"] .blog-code-wrapper {
+  background-color: #161b22;
+}
+
+.btn-copy-code {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #c9d1d9;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--google-font-family);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  z-index: 10;
+}
+.btn-copy-code:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.btn-copy-code .material-symbols-outlined {
+  font-size: 14px;
+}
+
+.google-markdown pre {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  background-color: transparent; /* Wrapper handles bg */
+  border: none;
+}
+/* When pre is directly used without wrapper */
+.google-markdown > pre {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  border-radius: 12px;
+  border: 1px solid var(--google-border-color);
+  background-color: #0d1117;
+}
+
+.google-markdown pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.875em;
+  color: #c9d1d9; /* Light text for dark code block */
+  border: none;
+  font-family: 'JetBrains Mono', 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
 
 /* 9. Modals / Dialogs */
 .google-modal-overlay {
