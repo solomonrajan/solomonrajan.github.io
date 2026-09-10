@@ -1,3 +1,12 @@
+# [0.74.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.73.0...v0.74.0) (2026-09-10)
+
+
+### Features
+
+* implement chronological changelog page with associated styles and update documentation. ([2105c68](https://github.com/solomonrajan/solomonrajan.github.io/commit/2105c680a96349bb73733e62da8086ebad7df599))
+
+
+
 # [0.73.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.72.0...v0.73.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement fluid Material Design 3 segmented theme switcher with persistent system preference support. ([32c5dd7](https://github.com/solomonrajan/solomonrajan.github.io/commit/32c5dd7cefe93d4c47ff8c9282baa2ab056eb74a))
-
-
-
-# [0.69.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.68.0...v0.69.0) (2026-09-09)
-
-
-### Features
-
-* implement global dashboard logic, refine modal interactions, and add a detailed changelog page. ([f2ee3c4](https://github.com/solomonrajan/solomonrajan.github.io/commit/f2ee3c4d3203763bacb4455371f98fadc481170d))
 
 
 
