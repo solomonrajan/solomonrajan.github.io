@@ -1,3 +1,12 @@
+# [0.73.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.72.0...v0.73.0) (2026-09-10)
+
+
+### Features
+
+* implement interactive changelog and refine Technical Skills UI with Material Design 3 updates. ([de9454d](https://github.com/solomonrajan/solomonrajan.github.io/commit/de9454dfff84a74c348574f8b81287230e234f49))
+
+
+
 # [0.72.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.71.0...v0.72.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement global dashboard logic, refine modal interactions, and add a detailed changelog page. ([f2ee3c4](https://github.com/solomonrajan/solomonrajan.github.io/commit/f2ee3c4d3203763bacb4455371f98fadc481170d))
-
-
-
-# [0.68.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.67.0...v0.68.0) (2026-09-09)
-
-
-### Features
-
-* implement profile picture modal and add automated changelog tracking page ([9dbe729](https://github.com/solomonrajan/solomonrajan.github.io/commit/9dbe729c4b041649237ddc900f4be946da80dc19))
 
 
 
