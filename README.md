@@ -47,26 +47,33 @@ I am a dedicated HR professional and Labour Welfare Officer based in Kottayam, K
 
 ## 🎨 Design Language & Aesthetics
 
-This project is meticulously crafted using **Google's Material Design 3 (M3)** specifications, focusing on readability, dynamic color, and responsive geometry.
+This project is meticulously crafted using a Strict Minimalist Google Dashboard aesthetic combined with **Google's Material Design 3 (M3)** specifications, focusing on readability, dynamic color, and responsive geometry.
 
 ### 1. Typography & Fonts
-- **Inter:** Used for general body text and clean UI legibility.
-- **Google Sans Flex:** Used for headers, display text, and branding.
-- **Google Material Symbols (Rounded):** Used for iconography across navigation, cards, and buttons.
+- **Google Sans Family:** `Google Sans`, `Google Sans Flex`, and `Roboto` are used for clean UI legibility, headers, and display text.
+- **Monospace:** `Google Sans Code` or `JetBrains Mono` for inline code and blocks.
+- **Text Sizing:** 
+  - `h1`: 2.25rem (36px)
+  - `h2`: 1.5rem (24px)
+  - `h3`: 1.25rem (20px)
+  - Paragraphs: 1rem (16px) with a `1.5` to `1.75` line-height.
+- **Formatting:** Paragraphs (`<p>`) are globally set to `text-align: justify;`. Bold (`**` or `<b>`) and Italics (`*` or `<i>`) follow standard markdown/HTML conventions to emphasize text.
 
 ### 2. Color Palettes & Dynamic Theming
-The website features a zero-config, native JavaScript theme engine (`assets/js/theme.js`) that automatically adapts to the user's operating system preference using the `prefers-color-scheme` media query. 
+The website features a dynamic theme system supporting both light and dark modes based on system preferences.
 
-| System Role   | Light Theme | Dark Theme | Usage                                         |
-| :------------ | :---------- | :--------- | :-------------------------------------------- |
-| **Primary**   | `#915500`   | `#FFB951`  | Primary actions, branding, key accents        |
-| **Secondary** | `#6D5D3E`   | `#DAC49F`  | Auxiliary highlights, tags, and status states |
-| **Surface**   | `#FDF7EC`   | `#17130A`  | Backdrops, container fills, and cards         |
+| System Role   | Light Theme | Dark Theme |
+| :------------ | :---------- | :--------- |
+| **Primary (Blue)** | `#1a73e8`   | `#8ab4f8`  |
+| **Background**| `#ffffff`   | `#202124`  |
+| **Text Primary**| `#202124` | `#e8eaed`  |
+| **Text Secondary**| `#5f6368`| `#9aa0a6`  |
+| **Border**    | `#dadce0`   | `#3c4043`  |
 
 ### 3. UI Elements
-- **Cards & Grids:** Content is organized using elevated Material 3 surface containers.
-- **Micro-Animations:** CSS transitions (`380ms ease`) are applied to hovering, theme switching, and modal dialogs.
-- **Modals:** A custom modal engine is used to dynamically inject HTML content (such as the changelog timeline) without navigating away from the page.
+- **Cards:** Content is organized using Google dashboard-style cards with a `24px` border-radius and a `1px solid` border.
+- **Buttons:** Modern pill-shaped buttons with `24px` border-radius.
+- **Micro-Animations:** Fluid transitions (`380ms cubic-bezier(0.2, 0, 0, 1)`) are applied to theme switching, hovering, and modals.
 
 ---
 
@@ -120,6 +127,25 @@ All content is hardcoded directly into standard `.html` files.
 - Open the relevant file (e.g., `index.html`, `about.html`, `blog.html`).
 - Edit the text inside the HTML tags (`<h1>`, `<p>`, etc.).
 - Save and refresh your browser.
+
+### Creating a Blog Post
+1. Create a new markdown file (e.g., `my-new-post.mdx`) inside the `content/blog/` directory.
+2. Add the required frontmatter at the top of the file:
+   ```yaml
+   ---
+   title: "Your Post Title"
+   description: "A short summary of the post."
+   date: "YYYY-MM-DD"
+   readTime: "5 min read"
+   category: "Blog"
+   ---
+   ```
+3. Write your blog content in markdown format below the frontmatter.
+4. Run the build script to compile the markdown into HTML:
+   ```bash
+   npm run build:blog
+   ```
+5. The generated HTML will be saved in `assets/blog/` and will be accessible via your blog index.
 
 ### Updating the Changelog
 To update the "Learn More" modal on the homepage:
