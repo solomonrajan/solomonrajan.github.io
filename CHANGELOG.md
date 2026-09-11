@@ -1,9 +1,10 @@
-# [0.90.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.89.0...v0.90.0) (2026-09-11)
+# [0.91.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.90.0...v0.91.0) (2026-09-11)
 
 
 ### Features
 
 * add comprehensive project changelog page to track architectural and design updates ([b371c44](https://github.com/solomonrajan/solomonrajan.github.io/commit/b371c44700d5392ed3384237e30d4338ef0489fe))
+* add local Umami script, implement blog post templates, and create new blog entries ([aa2ca66](https://github.com/solomonrajan/solomonrajan.github.io/commit/aa2ca6621522cc4b66edc73ae0647b46f22e8634))
 
 
 
@@ -31,15 +32,6 @@
 ### Features
 
 * implement site-wide updates including new blog posts, a central changelog, and dynamic UI scripts ([ddcbff0](https://github.com/solomonrajan/solomonrajan.github.io/commit/ddcbff0de2c5fc5432c274b22c1f75c5e3140b52))
-
-
-
-# [0.86.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.85.0...v0.86.0) (2026-09-11)
-
-
-### Features
-
-* add core JS functionality for dashboard, update site assets, and remove service worker files ([6f8ef12](https://github.com/solomonrajan/solomonrajan.github.io/commit/6f8ef128eac1ddc4c531461f3e9d93df3ef033b5))
 
 
 
