@@ -1,3 +1,12 @@
+# [0.87.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.86.0...v0.87.0) (2026-09-11)
+
+
+### Features
+
+* implement site-wide updates including new blog posts, a central changelog, and dynamic UI scripts ([ddcbff0](https://github.com/solomonrajan/solomonrajan.github.io/commit/ddcbff0de2c5fc5432c274b22c1f75c5e3140b52))
+
+
+
 # [0.86.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.85.0...v0.86.0) (2026-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add blog posts and template, and update site navigation ([8e739f6](https://github.com/solomonrajan/solomonrajan.github.io/commit/8e739f66ae8f635c5e7b4c1b67408d696e3ba90a))
-
-
-
-# [0.82.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.81.0...v0.82.0) (2026-09-10)
-
-
-### Features
-
-* implement automated static blog generation workflow with MDX support ([7220eff](https://github.com/solomonrajan/solomonrajan.github.io/commit/7220eff417cdf0922fbd666c24ce24a540303cc1))
 
 
 
