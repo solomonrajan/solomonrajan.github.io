@@ -1,3 +1,12 @@
+# [0.85.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.84.0...v0.85.0) (2026-09-11)
+
+
+### Features
+
+* create persistent changelog page and update site structure ([21da98d](https://github.com/solomonrajan/solomonrajan.github.io/commit/21da98d58fd611d4bdf1ac2011e0786c5d343f57))
+
+
+
 # [0.84.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.83.0...v0.84.0) (2026-09-10)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement PWA support, unify blog layouts with Google design system, and add a comprehensive changelog page. ([07d1572](https://github.com/solomonrajan/solomonrajan.github.io/commit/07d1572cddc6ddb8b8366482570f06f5044f5ab5))
-
-
-
-# [0.80.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.79.0...v0.80.0) (2026-09-10)
-
-
-### Features
-
-* implement PWA functionality and reorganize project assets structure ([72848aa](https://github.com/solomonrajan/solomonrajan.github.io/commit/72848aa77671d6c67c5296f724e6112de9e61db7))
 
 
 
