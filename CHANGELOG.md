@@ -1,3 +1,12 @@
+# [0.89.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.88.0...v0.89.0) (2026-09-11)
+
+
+### Features
+
+* add complete project history page with detailed changelog records ([a48feea](https://github.com/solomonrajan/solomonrajan.github.io/commit/a48feea2e81daa042d54d27790f3335194adbd0b))
+
+
+
 # [0.88.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.87.0...v0.88.0) (2026-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * create persistent changelog page and update site structure ([21da98d](https://github.com/solomonrajan/solomonrajan.github.io/commit/21da98d58fd611d4bdf1ac2011e0786c5d343f57))
-
-
-
-# [0.84.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.83.0...v0.84.0) (2026-09-10)
-
-
-### Features
-
-* add multiple blog posts and update site navigation with new content and pages ([7a02790](https://github.com/solomonrajan/solomonrajan.github.io/commit/7a027906c09752449cca9a23dbf6a15ab37828f3))
 
 
 
