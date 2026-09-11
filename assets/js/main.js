@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. Profile Picture Modal
   initProfileModal();
 
+  // 7. Force Uninstall PWA (Crucial for users with cached PWA)
+  uninstallPWA();
+
 });
 
 function normalizePageName(url) {
@@ -239,5 +242,29 @@ function initProfileModal() {
       modal.style.display = 'none';
     }
   });
+}
+
+function uninstallPWA() {
+  // Unregister all service workers
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        registration.unregister().then(function(boolean) {
+          console.log('Service worker unregistered:', boolean);
+        });
+      }
+    });
+  }
+
+  // Clear all caches
+  if ('caches' in window) {
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        return caches.delete(key).then(function(boolean) {
+          console.log('Cache deleted:', key, boolean);
+        });
+      }));
+    });
+  }
 }
 
