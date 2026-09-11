@@ -1,3 +1,12 @@
+# [0.88.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.87.0...v0.88.0) (2026-09-11)
+
+
+### Features
+
+* add site changelog page and deploy service worker to remove legacy PWA caching ([5ec5d9b](https://github.com/solomonrajan/solomonrajan.github.io/commit/5ec5d9bbb5488c585ac9d9b1600a9750446a624e))
+
+
+
 # [0.87.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.86.0...v0.87.0) (2026-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add multiple blog posts and update site navigation with new content and pages ([7a02790](https://github.com/solomonrajan/solomonrajan.github.io/commit/7a027906c09752449cca9a23dbf6a15ab37828f3))
-
-
-
-# [0.83.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.82.0...v0.83.0) (2026-09-10)
-
-
-### Features
-
-* add blog posts and template, and update site navigation ([8e739f6](https://github.com/solomonrajan/solomonrajan.github.io/commit/8e739f66ae8f635c5e7b4c1b67408d696e3ba90a))
 
 
 
