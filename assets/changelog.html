@@ -20,7 +20,7 @@
           <time class="changelog-date">11 Sep 2026, 09:07 PM IST</time>
         </div>
         <ul class="changelog-list">
-          <li><strong>PWA Force Removal:</strong> Completely removed Progressive Web App (PWA) functionality due to persistent caching issues. Additionally, injected an active uninstallation script into `main.js` that forcibly unregisters any lingering service workers and clears old caches in the user's browser to guarantee real-time UI updates. Removed all iOS PWA meta tags.</li>
+          <li><strong>PWA Force Removal:</strong> Completely removed Progressive Web App (PWA) functionality due to persistent caching issues. Because deleting the Service Worker file causes browsers to permanently cache the old site, a "self-destructing" `sw.js` script was deployed. This new script forces the browser to wipe its PWA cache and unregister itself instantly, guaranteeing real-time UI updates for all returning users. Removed all iOS PWA meta tags.</li>
         </ul>
       </article>
     </div>
