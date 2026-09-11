@@ -1,3 +1,12 @@
+# [0.86.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.85.0...v0.86.0) (2026-09-11)
+
+
+### Features
+
+* add core JS functionality for dashboard, update site assets, and remove service worker files ([6f8ef12](https://github.com/solomonrajan/solomonrajan.github.io/commit/6f8ef128eac1ddc4c531461f3e9d93df3ef033b5))
+
+
+
 # [0.85.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.84.0...v0.85.0) (2026-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement automated static blog generation workflow with MDX support ([7220eff](https://github.com/solomonrajan/solomonrajan.github.io/commit/7220eff417cdf0922fbd666c24ce24a540303cc1))
-
-
-
-# [0.81.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.80.0...v0.81.0) (2026-09-10)
-
-
-### Features
-
-* implement PWA support, unify blog layouts with Google design system, and add a comprehensive changelog page. ([07d1572](https://github.com/solomonrajan/solomonrajan.github.io/commit/07d1572cddc6ddb8b8366482570f06f5044f5ab5))
 
 
 
