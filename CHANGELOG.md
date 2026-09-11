@@ -1,3 +1,12 @@
+# [0.90.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.89.0...v0.90.0) (2026-09-11)
+
+
+### Features
+
+* add comprehensive project changelog page to track architectural and design updates ([b371c44](https://github.com/solomonrajan/solomonrajan.github.io/commit/b371c44700d5392ed3384237e30d4338ef0489fe))
+
+
+
 # [0.89.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.88.0...v0.89.0) (2026-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add core JS functionality for dashboard, update site assets, and remove service worker files ([6f8ef12](https://github.com/solomonrajan/solomonrajan.github.io/commit/6f8ef128eac1ddc4c531461f3e9d93df3ef033b5))
-
-
-
-# [0.85.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.84.0...v0.85.0) (2026-09-11)
-
-
-### Features
-
-* create persistent changelog page and update site structure ([21da98d](https://github.com/solomonrajan/solomonrajan.github.io/commit/21da98d58fd611d4bdf1ac2011e0786c5d343f57))
 
 
 
