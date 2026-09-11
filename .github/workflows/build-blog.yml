@@ -6,8 +6,8 @@ on:
       - main
       - master
     paths:
-      - 'content/blog/**'
-      - 'build-blog.js'
+      - 'assets/blog/content/**'
+      - 'assets/scripts/build-blog.js'
       - 'assets/blog/template.html'
 
 jobs:

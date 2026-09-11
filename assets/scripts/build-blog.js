@@ -3,8 +3,8 @@ const path = require('path');
 const { marked } = require('marked');
 const matter = require('gray-matter');
 
-const CONTENT_DIR = path.join(__dirname, 'content', 'blog');
-const OUTPUT_DIR = path.join(__dirname, 'assets', 'blog');
+const CONTENT_DIR = path.join(__dirname, '..', 'blog', 'content');
+const OUTPUT_DIR = path.join(__dirname, '..', 'blog');
 const TEMPLATE_PATH = path.join(OUTPUT_DIR, 'template.html');
 
 // Read the template

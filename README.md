@@ -103,7 +103,11 @@ Here is a structural overview of the repository's source code and compiled asset
 ├── .agents/                 # AI configuration and workspace rules
 ├── .github/                 # GitHub workflows (e.g., changelog generation)
 ├── assets/                  # Compiled output and static assets
-│   ├── blog/                # Compiled HTML files for blog posts
+│   ├── scripts/             # Build scripts and automation
+│   │   ├── build-blog.js    # Node script that builds markdown to HTML
+│   │   └── fix-urls.ps1     # Utilities
+│   ├── blog/                # Blog content and compiled files
+│   │   ├── content/         # Markdown (.md / .mdx) blog posts
 │   │   └── template.html    # Template file used to inject markdown content
 │   ├── css/                 # Stylesheets
 │   │   ├── material-tokens.css # Design system tokens
@@ -115,17 +119,13 @@ Here is a structural overview of the repository's source code and compiled asset
 │   ├── logos/               # Logo assets
 │   ├── changelog.html       # Auto-generated changelog output
 │   └── manifest.json        # PWA manifest
-├── content/                 # Source content
-│   └── blog/                # Markdown (.md / .mdx) blog posts
-├── *.html                   # Core website pages (index, about, blog, etc.)
-├── build-blog.js            # Node script that builds markdown to HTML
 ├── package.json             # NPM dependencies and scripts (`npm run build:blog`)
 ├── README.md                # Project overview and documentation
 └── CHANGELOG.md             # Auto-generated changelog markdown
 ```
 
 ### Data Pipelines
-- **Blog Content**: `content/blog/*.mdx` + `assets/blog/template.html` ➔ `node build-blog.js` ➔ `assets/blog/*.html`
+- **Blog Content**: `assets/blog/content/*.mdx` + `assets/blog/template.html` ➔ `npm run build:blog` ➔ `assets/blog/*.html`
 - **Changelog Updates**: `git commits` ➔ `.github/workflows/changelog.yml` ➔ `CHANGELOG.md` & `assets/changelog.html`
 
 ---
