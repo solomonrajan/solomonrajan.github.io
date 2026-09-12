@@ -218,10 +218,14 @@ function initProfileModal() {
     <div class="google-profile-modal-overlay" id="profile-modal" style="display: none;">
       <div class="google-profile-modal">
         <div class="google-profile-modal-header">
-          <h2>Solomon Rajan</h2>
+          <h2 style="display: flex; align-items: center; justify-content: center; gap: 4px;">
+            Solomon Rajan
+            <span class="material-symbols-outlined" style="color: #0f9d58; font-size: 24px;">verified</span>
+          </h2>
         </div>
-        <div class="google-profile-modal-body">
+        <div class="google-profile-modal-body" style="display: flex; flex-direction: column; align-items: center;">
           <img src="${avatarImg.src}" alt="Profile" class="google-profile-modal-img">
+          <p style="margin-top: 12px; color: var(--google-text-secondary); font-size: 14px; text-align: center; font-weight: 500;">Certified Labour Welfare Officer</p>
         </div>
       </div>
     </div>
