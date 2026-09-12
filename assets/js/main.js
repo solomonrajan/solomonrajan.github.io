@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Force Uninstall PWA (Crucial for users with cached PWA)
   uninstallPWA();
 
+  // 8. Floating Stickers
+  initFloatingStickers();
+
 });
 
 function normalizePageName(url) {
@@ -270,5 +273,87 @@ function uninstallPWA() {
       }));
     });
   }
+}
+
+function initFloatingStickers() {
+  const stickers = ['🦉', '☁️', '☀️', '🍌', '🐱', '👔', '🤝', '📋', '👨🏻‍💻', '🗂️', '📌', '💡', '💵', '💰', '⚖️'];
+  const numStickers = 4 + Math.floor(Math.random() * 3); // 4 to 6 stickers
+  
+  for (let i = 0; i < numStickers; i++) {
+    const sticker = document.createElement('div');
+    sticker.classList.add('floating-sticker');
+    const emoji = stickers[Math.floor(Math.random() * stickers.length)];
+    sticker.textContent = emoji;
+    sticker.dataset.emoji = emoji; // For smooth CSS outline
+    
+    // Random initial position (avoid edges)
+    const posX = 20 + Math.random() * (window.innerWidth - 100);
+    const posY = 100 + Math.random() * (window.innerHeight - 200);
+    const rotation = -30 + Math.random() * 60;
+    
+    sticker.style.left = `${posX}px`;
+    sticker.style.top = `${posY}px`;
+    sticker.style.transform = `rotate(${rotation}deg)`;
+    
+    // Custom data attribute to store rotation for drag transform
+    sticker.dataset.rotation = rotation;
+
+    document.body.appendChild(sticker);
+    
+    makeStickerDraggable(sticker);
+  }
+}
+
+function makeStickerDraggable(sticker) {
+  let isDragging = false;
+  let startX, startY, initialLeft, initialTop;
+
+  const onDown = (e) => {
+    isDragging = true;
+    const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+    
+    startX = clientX;
+    startY = clientY;
+    
+    const rect = sticker.getBoundingClientRect();
+    initialLeft = rect.left;
+    initialTop = rect.top;
+    
+    sticker.style.transition = 'none';
+    sticker.style.transform = `rotate(${sticker.dataset.rotation}deg) scale(1.1)`;
+    sticker.style.zIndex = 10000;
+  };
+
+  const onMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault(); // Prevent scrolling on mobile
+    
+    const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+    
+    const dx = clientX - startX;
+    const dy = clientY - startY;
+    
+    sticker.style.left = `${initialLeft + dx}px`;
+    sticker.style.top = `${initialTop + dy}px`;
+  };
+
+  const onUp = () => {
+    if (!isDragging) return;
+    isDragging = false;
+    sticker.style.transition = 'transform 0.2s ease-in-out';
+    sticker.style.transform = `rotate(${sticker.dataset.rotation}deg) scale(1)`;
+    sticker.style.zIndex = 9999;
+  };
+
+  sticker.addEventListener('mousedown', onDown);
+  sticker.addEventListener('touchstart', onDown, { passive: false });
+  
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('touchmove', onMove, { passive: false });
+  
+  document.addEventListener('mouseup', onUp);
+  document.addEventListener('touchend', onUp);
 }
 

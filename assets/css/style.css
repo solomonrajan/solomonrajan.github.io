@@ -1011,3 +1011,39 @@ a:hover {
 [data-theme="dark"] .google-fab:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.7);
 }
+
+/* ==========================================================================
+   Stickers Feature
+   ========================================================================== */
+.floating-sticker {
+  position: fixed;
+  font-size: 50px;
+  cursor: grab;
+  user-select: none;
+  z-index: 9999;
+  transition: transform 0.2s ease-in-out;
+  touch-action: none; /* for better mobile dragging */
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.floating-sticker::before {
+  content: attr(data-emoji);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-text-stroke: 8px white;
+  z-index: -1;
+}
+
+.floating-sticker:active {
+  cursor: grabbing;
+  transform: scale(1.1) !important;
+}
+
+[data-theme="dark"] .floating-sticker {
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+}
+
+[data-theme="dark"] .floating-sticker::before {
+  -webkit-text-stroke: 8px #fff;
+}
