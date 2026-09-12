@@ -1,3 +1,12 @@
+# [0.96.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.95.0...v0.96.0) (2026-09-12)
+
+
+### Features
+
+* add changelog page and stylesheet with index updates ([e8fc178](https://github.com/solomonrajan/solomonrajan.github.io/commit/e8fc178296492c296abc4b9b863a4f0a0e673446))
+
+
+
 # [0.95.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.94.0...v0.95.0) (2026-09-12)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog component and update updates page ([a5854cb](https://github.com/solomonrajan/solomonrajan.github.io/commit/a5854cbb679520776cb829ec73df34dbee20ca33))
-
-
-
-# [0.91.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.90.0...v0.91.0) (2026-09-11)
-
-
-### Features
-
-* add local Umami script, implement blog post templates, and create new blog entries ([aa2ca66](https://github.com/solomonrajan/solomonrajan.github.io/commit/aa2ca6621522cc4b66edc73ae0647b46f22e8634))
 
 
 
