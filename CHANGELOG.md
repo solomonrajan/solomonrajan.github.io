@@ -1,3 +1,12 @@
+# [0.97.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.96.0...v0.97.0) (2026-09-12)
+
+
+### Features
+
+* add changelog page and custom SVG favicon with site-wide UI updates ([90288c4](https://github.com/solomonrajan/solomonrajan.github.io/commit/90288c4f347f7f8de0891e18f7bc42d1f3562b3a))
+
+
+
 # [0.96.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.95.0...v0.96.0) (2026-09-12)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog component and main JavaScript script for tracking site updates ([2d86628](https://github.com/solomonrajan/solomonrajan.github.io/commit/2d866282e009908f5b14e3ef1025370f746c87e6))
-
-
-
-# [0.92.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.91.0...v0.92.0) (2026-09-12)
-
-
-### Features
-
-* add changelog component and update updates page ([a5854cb](https://github.com/solomonrajan/solomonrajan.github.io/commit/a5854cbb679520776cb829ec73df34dbee20ca33))
 
 
 
