@@ -1047,3 +1047,39 @@ a:hover {
 [data-theme="dark"] .floating-sticker::before {
   -webkit-text-stroke: 8px #fff;
 }
+
+/* ==========================================================================
+   Highlight Wavy Underline
+   ========================================================================== */
+.highlight-wavy {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  z-index: 1; /* Creates a stacking context so it doesn't hide behind page background */
+}
+.highlight-wavy::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 12px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Cpath d='M0 15 Q 25 25 50 15 T 100 15' fill='none' stroke='%231a73e8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 30px 12px;
+  background-position: left bottom;
+  z-index: -1;
+  animation: drawWavy 0.6s ease-in-out 0.3s forwards;
+}
+[data-theme="dark"] .highlight-wavy::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Cpath d='M0 15 Q 25 25 50 15 T 100 15' fill='none' stroke='%238ab4f8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+@keyframes drawWavy {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
