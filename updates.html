@@ -369,6 +369,11 @@
         const query = e.target.value.toLowerCase().trim();
         if (!query) return;
         
+        if (query === 'solu') {
+          triggerEasterEgg();
+          return;
+        }
+
         // If exact match exists, scroll to it
         if (!scrollToVersion(query)) {
           // Else scroll to first suggestion
@@ -381,6 +386,119 @@
         }
       }
     });
+
+    function triggerEasterEgg() {
+      if (window.easterEggTriggered) return;
+      window.easterEggTriggered = true;
+      
+      const btn = document.getElementById('back-to-top-btn');
+      if (btn) btn.style.display = 'none';
+
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js';
+      script.onload = () => {
+        initFloatingSpace();
+      };
+      document.head.appendChild(script);
+    }
+
+    function initFloatingSpace() {
+      const Engine = Matter.Engine,
+            Runner = Matter.Runner,
+            Bodies = Matter.Bodies,
+            Composite = Matter.Composite,
+            Mouse = Matter.Mouse,
+            MouseConstraint = Matter.MouseConstraint;
+
+      const engine = Engine.create();
+      engine.world.gravity.y = 0;
+      engine.world.gravity.x = 0;
+
+      const domBodies = [];
+      // Select all items without a limit
+      const items = Array.from(document.querySelectorAll('.changelog-item'));
+      
+      const elements = [
+        document.querySelector('.google-app-bar'),
+        document.querySelector('.google-page-header'),
+        document.querySelector('.changelog-search-container'),
+        document.querySelector('.google-sidebar'),
+        document.querySelector('#back-to-top-btn'),
+        document.querySelector('.changelog-intro'),
+        ...items
+      ].filter(Boolean);
+      
+      // Keep background color consistent with theme
+      document.body.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--google-bg-color') || getComputedStyle(document.body).backgroundColor;
+
+      // Pass 1: Gather dimensions
+      const rects = elements.map(el => el.getBoundingClientRect());
+
+      // Pass 2: Setup physics bodies and styles
+      elements.forEach((el, i) => {
+        const rect = rects[i];
+        if (rect.width === 0 || rect.height === 0) return;
+
+        const body = Bodies.rectangle(
+          rect.left + rect.width / 2, 
+          rect.top + rect.height / 2, 
+          rect.width, 
+          rect.height, 
+          { restitution: 0.8, frictionAir: 0.02 }
+        );
+        
+        Matter.Body.setVelocity(body, {
+          x: (Math.random() - 0.5) * 15,
+          y: (Math.random() - 0.5) * 15
+        });
+        
+        Matter.Body.setAngularVelocity(body, (Math.random() - 0.5) * 0.05);
+        Composite.add(engine.world, body);
+        
+        // Save initial transform if any
+        el.style.position = 'fixed';
+        el.style.margin = '0';
+        el.style.zIndex = '9999';
+        el.style.width = rect.width + 'px';
+        el.style.height = rect.height + 'px';
+        el.style.transition = 'none'; // stop css transitions
+
+        domBodies.push({ body: body, elem: el });
+      });
+
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const wallOptions = { isStatic: true, restitution: 1 };
+      Composite.add(engine.world, [
+        Bodies.rectangle(vw/2, -50, vw, 100, wallOptions),
+        Bodies.rectangle(vw/2, vh+50, vw, 100, wallOptions),
+        Bodies.rectangle(-50, vh/2, 100, vh, wallOptions),
+        Bodies.rectangle(vw+50, vh/2, 100, vh, wallOptions)
+      ]);
+
+      const mouse = Mouse.create(document.body);
+      const mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: { stiffness: 0.2, render: { visible: false } }
+      });
+      Composite.add(engine.world, mouseConstraint);
+
+      (function update() {
+        domBodies.forEach(db => {
+          db.elem.style.left = (db.body.position.x - db.elem.offsetWidth / 2) + 'px';
+          db.elem.style.top = (db.body.position.y - db.elem.offsetHeight / 2) + 'px';
+          db.elem.style.transform = 'rotate(' + db.body.angle + 'rad)';
+        });
+        requestAnimationFrame(update);
+      })();
+
+      const runner = Runner.create();
+      Runner.run(runner, engine);
+      
+      document.body.style.overflow = 'hidden';
+      const layout = document.querySelector('.google-layout');
+      if (layout) layout.style.display = 'block';
+    }
 
     // Hide suggestions when clicking outside
     document.addEventListener('click', (e) => {
