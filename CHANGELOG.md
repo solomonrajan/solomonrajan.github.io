@@ -1,3 +1,12 @@
+# [0.92.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.91.0...v0.92.0) (2026-09-12)
+
+
+### Features
+
+* add changelog component and update updates page ([a5854cb](https://github.com/solomonrajan/solomonrajan.github.io/commit/a5854cbb679520776cb829ec73df34dbee20ca33))
+
+
+
 # [0.91.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.90.0...v0.91.0) (2026-09-11)
 
 
@@ -23,15 +32,6 @@
 ### Features
 
 * add site changelog page and deploy service worker to remove legacy PWA caching ([5ec5d9b](https://github.com/solomonrajan/solomonrajan.github.io/commit/5ec5d9bbb5488c585ac9d9b1600a9750446a624e))
-
-
-
-# [0.87.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.86.0...v0.87.0) (2026-09-11)
-
-
-### Features
-
-* implement site-wide updates including new blog posts, a central changelog, and dynamic UI scripts ([ddcbff0](https://github.com/solomonrajan/solomonrajan.github.io/commit/ddcbff0de2c5fc5432c274b22c1f75c5e3140b52))
 
 
 
