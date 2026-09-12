@@ -1,3 +1,12 @@
+# [0.95.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.94.0...v0.95.0) (2026-09-12)
+
+
+### Features
+
+* add changelog page, custom styling, and interactive UI elements ([06527dc](https://github.com/solomonrajan/solomonrajan.github.io/commit/06527dca22b8faa8e7747a59b9cf2341ac8af251))
+
+
+
 # [0.94.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.93.0...v0.94.0) (2026-09-12)
 
 
@@ -30,7 +39,6 @@
 
 ### Features
 
-* add comprehensive project changelog page to track architectural and design updates ([b371c44](https://github.com/solomonrajan/solomonrajan.github.io/commit/b371c44700d5392ed3384237e30d4338ef0489fe))
 * add local Umami script, implement blog post templates, and create new blog entries ([aa2ca66](https://github.com/solomonrajan/solomonrajan.github.io/commit/aa2ca6621522cc4b66edc73ae0647b46f22e8634))
 
 
