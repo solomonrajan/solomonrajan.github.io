@@ -1,3 +1,12 @@
+# [0.112.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.111.0...v0.112.0) (2026-09-13)
+
+
+### Features
+
+* implement core dashboard JavaScript, anti-clickjacking protection script, and update site pages ([6b17431](https://github.com/solomonrajan/solomonrajan.github.io/commit/6b17431fbee24aa9886e0950223368b46708452e))
+
+
+
 # [0.111.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.110.0...v0.111.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add core JavaScript functionality for portfolio dashboard ([69f5a5d](https://github.com/solomonrajan/solomonrajan.github.io/commit/69f5a5daff3654d226807e63e50e8e7c0a8cf1a1))
-
-
-
-# [0.107.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.106.0...v0.107.0) (2026-09-13)
-
-
-### Features
-
-* add core dashboard logic, changelog automation, and portfolio pages ([65f4329](https://github.com/solomonrajan/solomonrajan.github.io/commit/65f43292ebe27a08575c40770fb890caa92a813e))
 
 
 
