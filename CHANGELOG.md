@@ -1,3 +1,12 @@
+# [0.113.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.112.0...v0.113.0) (2026-09-13)
+
+
+### Features
+
+* add blog template, new blog posts, changelog page, and update workspace branding ([fb6e552](https://github.com/solomonrajan/solomonrajan.github.io/commit/fb6e552f4f4e3f363630567aebb057042d526d43))
+
+
+
 # [0.112.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.111.0...v0.112.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add new blog posts, changelog, and content security policy headers ([22ba73e](https://github.com/solomonrajan/solomonrajan.github.io/commit/22ba73e7ad9a1255e4885528bce3ca70f637a39f))
-
-
-
-# [0.108.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.107.0...v0.108.0) (2026-09-13)
-
-
-### Features
-
-* add core JavaScript functionality for portfolio dashboard ([69f5a5d](https://github.com/solomonrajan/solomonrajan.github.io/commit/69f5a5daff3654d226807e63e50e8e7c0a8cf1a1))
 
 
 
