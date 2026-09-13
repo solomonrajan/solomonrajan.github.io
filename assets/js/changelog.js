@@ -12,7 +12,10 @@
     const backdrop = document.getElementById('dialog-backdrop');
     if (dialogContent && backdrop && backdrop.classList.contains('open')) {
       dialogContent.textContent = '';
-      dialogContent.insertAdjacentHTML('beforeend', html);
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      while (doc.body.firstChild) {
+        dialogContent.appendChild(doc.body.firstChild);
+      }
     }
   } catch (error) {
     console.error('Error in automated changelog updation:', error);

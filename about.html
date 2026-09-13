@@ -389,7 +389,10 @@
           modalTitle.textContent = trigger.getAttribute('data-title');
           modalSubtitle.textContent = trigger.getAttribute('data-subtitle');
           modalDesc.textContent = '';
-          modalDesc.insertAdjacentHTML('beforeend', trigger.getAttribute('data-desc'));
+          const doc = new DOMParser().parseFromString(trigger.getAttribute('data-desc'), 'text/html');
+          while (doc.body.firstChild) {
+            modalDesc.appendChild(doc.body.firstChild);
+          }
           
           modalOverlay.classList.add('active');
         });

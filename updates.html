@@ -285,13 +285,18 @@
         const html = await response.text();
         const wrapper = document.getElementById('changelog-wrapper');
         wrapper.textContent = '';
-        wrapper.insertAdjacentHTML('beforeend', html);
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        while (doc.body.firstChild) {
+          wrapper.appendChild(doc.body.firstChild);
+        }
       } catch (error) {
         console.error('Error fetching changelog:', error);
         const wrapperErr = document.getElementById('changelog-wrapper');
         if (wrapperErr) {
           wrapperErr.textContent = '';
-          wrapperErr.insertAdjacentHTML('beforeend', '<p>Could not load the changelog at this time.</p>');
+          const p = document.createElement('p');
+          p.textContent = 'Could not load the changelog at this time.';
+          wrapperErr.appendChild(p);
         }
       }
     })();
@@ -357,7 +362,12 @@
           const div = document.createElement('div');
           div.style.cssText = suggestionStyle;
           div.textContent = '';
-          div.insertAdjacentHTML('beforeend', `<span class="material-symbols-outlined" style="font-size: 18px; color: var(--google-text-secondary)">search</span> ${match}`);
+          const icon = document.createElement('span');
+          icon.className = 'material-symbols-outlined';
+          icon.style.cssText = 'font-size: 18px; color: var(--google-text-secondary)';
+          icon.textContent = 'search';
+          div.appendChild(icon);
+          div.appendChild(document.createTextNode(' ' + match));
           
           div.addEventListener('mouseenter', () => div.style.backgroundColor = 'var(--google-hover-bg)');
           div.addEventListener('mouseleave', () => div.style.backgroundColor = 'transparent');

@@ -20,7 +20,7 @@
           <time class="changelog-date">13 Sep 2026, 12:12 PM IST</time>
         </div>
         <ul class="changelog-list">
-          <li><strong>innerHTML Removal:</strong> Safely replaced all usages of <code>innerHTML</code> across all JavaScript and HTML files with safer DOM APIs to eliminate XSS risks and improve security posture.</li>
+          <li><strong>Inline HTML Removal:</strong> Eliminated all instances of <code>insertAdjacentHTML</code> and inline HTML string injection, moving entirely to safe DOM node creation APIs (<code>document.createElement</code>) and secure <code>DOMParser</code> implementations to thoroughly validate user-controlled content and harden security.</li>
         </ul>
       </article>
     </div>

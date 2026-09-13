@@ -50,10 +50,15 @@
       snackbar.id = 'md-snackbar';
       snackbar.className = 'md-snackbar';
       snackbar.textContent = '';
-      snackbar.insertAdjacentHTML('beforeend', `
-        <span class="md-snackbar__text"></span>
-        <button type="button" class="md-snackbar__action" aria-label="Close snackbar">DISMISS</button>
-      `);
+      const textSpan = document.createElement('span');
+      textSpan.className = 'md-snackbar__text';
+      const actionBtn = document.createElement('button');
+      actionBtn.type = 'button';
+      actionBtn.className = 'md-snackbar__action';
+      actionBtn.setAttribute('aria-label', 'Close snackbar');
+      actionBtn.textContent = 'DISMISS';
+      snackbar.appendChild(textSpan);
+      snackbar.appendChild(actionBtn);
       document.body.appendChild(snackbar);
 
       snackbar.querySelector('.md-snackbar__action').addEventListener('click', () => {
