@@ -1,3 +1,12 @@
+# [0.98.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.97.0...v0.98.0) (2026-09-13)
+
+
+### Features
+
+* add Google Dashboard minimalist CSS stylesheet and changelog page ([ab0489b](https://github.com/solomonrajan/solomonrajan.github.io/commit/ab0489b3116e4610bb03838acad87ba67e098943))
+
+
+
 # [0.97.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.96.0...v0.97.0) (2026-09-12)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add Google dashboard stylesheet, main script, and changelog page ([a40ac6e](https://github.com/solomonrajan/solomonrajan.github.io/commit/a40ac6e284518335ee9bf8bef8784b7400151468))
-
-
-
-# [0.93.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.92.0...v0.93.0) (2026-09-12)
-
-
-### Features
-
-* add changelog component and main JavaScript script for tracking site updates ([2d86628](https://github.com/solomonrajan/solomonrajan.github.io/commit/2d866282e009908f5b14e3ef1025370f746c87e6))
 
 
 
