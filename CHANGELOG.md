@@ -1,8 +1,9 @@
-# [0.99.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.98.0...v0.99.0) (2026-09-13)
+# [0.100.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.99.0...v0.100.0) (2026-09-13)
 
 
 ### Features
 
+* add changelog asset and apply Caveat font styling to name in about page ([0a7bf4d](https://github.com/solomonrajan/solomonrajan.github.io/commit/0a7bf4df73cfcce941d7c91f48f76da8e6d73f65))
 * add core dashboard JavaScript functionality and changelog page ([12db6fd](https://github.com/solomonrajan/solomonrajan.github.io/commit/12db6fd9489f18272c771791883445bfc3c5568a))
 
 
@@ -31,15 +32,6 @@
 ### Features
 
 * add changelog page and stylesheet with index updates ([e8fc178](https://github.com/solomonrajan/solomonrajan.github.io/commit/e8fc178296492c296abc4b9b863a4f0a0e673446))
-
-
-
-# [0.95.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.94.0...v0.95.0) (2026-09-12)
-
-
-### Features
-
-* add changelog page, custom styling, and interactive UI elements ([06527dc](https://github.com/solomonrajan/solomonrajan.github.io/commit/06527dca22b8faa8e7747a59b9cf2341ac8af251))
 
 
 
