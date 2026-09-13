@@ -1,3 +1,12 @@
+# [0.107.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.106.0...v0.107.0) (2026-09-13)
+
+
+### Features
+
+* add core dashboard logic, changelog automation, and portfolio pages ([65f4329](https://github.com/solomonrajan/solomonrajan.github.io/commit/65f43292ebe27a08575c40770fb890caa92a813e))
+
+
+
 # [0.106.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.105.0...v0.106.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog page, custom stylesheet, and hand-drawn UI highlights across site pages ([fbabccb](https://github.com/solomonrajan/solomonrajan.github.io/commit/fbabccbd7250e279e6a06460f927c974bad9f5aa))
-
-
-
-# [0.102.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.101.0...v0.102.0) (2026-09-13)
-
-
-### Features
-
-* add site changelog and update about page ([3c2fe1e](https://github.com/solomonrajan/solomonrajan.github.io/commit/3c2fe1eb89533cddcebaecbe388891cf2f213397))
 
 
 
