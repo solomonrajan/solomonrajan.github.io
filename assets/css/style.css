@@ -1055,7 +1055,7 @@ a:hover {
   position: relative;
   display: inline-block;
   white-space: nowrap;
-  z-index: 1; /* Creates a stacking context so it doesn't hide behind page background */
+  background-color: transparent !important;
 }
 .highlight-wavy::after {
   content: "";
@@ -1068,7 +1068,7 @@ a:hover {
   background-repeat: repeat-x;
   background-size: 30px 12px;
   background-position: left bottom;
-  z-index: -1;
+  pointer-events: none;
 }
 [data-theme="dark"] .highlight-wavy::after {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Cpath d='M0 15 Q 25 25 50 15 T 100 15' fill='none' stroke='%238ab4f8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -1081,7 +1081,7 @@ a:hover {
   position: relative;
   display: inline-block;
   white-space: nowrap;
-  z-index: 1;
+  background-color: transparent !important;
 }
 .highlight-circle::after {
   content: "";
@@ -1093,7 +1093,7 @@ a:hover {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='9 6 82 28' preserveAspectRatio='none'%3E%3Cpath d='M 15 10 Q 50 5 85 10 Q 95 20 85 30 Q 50 35 15 30 Q 5 20 18 12' fill='none' stroke='%23ea4335' stroke-width='3' vector-effect='non-scaling-stroke' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
+  pointer-events: none;
 }
 [data-theme="dark"] .highlight-circle::after {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='9 6 82 28' preserveAspectRatio='none'%3E%3Cpath d='M 15 10 Q 50 5 85 10 Q 95 20 85 30 Q 50 35 15 30 Q 5 20 18 12' fill='none' stroke='%23f28b82' stroke-width='3' vector-effect='non-scaling-stroke' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
