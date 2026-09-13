@@ -1,3 +1,12 @@
+# [0.114.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.113.0...v0.114.0) (2026-09-13)
+
+
+### Features
+
+* add new blog posts and standardize workspace logo styling ([bb247e1](https://github.com/solomonrajan/solomonrajan.github.io/commit/bb247e1a31709f654fa406c95075ebca0d3471ba))
+
+
+
 # [0.113.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.112.0...v0.113.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog asset and update contact and updates pages with security and feature improvements ([7d17592](https://github.com/solomonrajan/solomonrajan.github.io/commit/7d17592079171fa3af2e9aa9ed6b2e6a91c74b60))
-
-
-
-# [0.109.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.108.0...v0.109.0) (2026-09-13)
-
-
-### Features
-
-* add new blog posts, changelog, and content security policy headers ([22ba73e](https://github.com/solomonrajan/solomonrajan.github.io/commit/22ba73e7ad9a1255e4885528bce3ca70f637a39f))
 
 
 
