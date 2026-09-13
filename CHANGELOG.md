@@ -1,3 +1,12 @@
+# [0.101.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.100.0...v0.101.0) (2026-09-13)
+
+
+### Features
+
+* add changelog asset and update signature font to Delicious Handrawn in about page ([549a72f](https://github.com/solomonrajan/solomonrajan.github.io/commit/549a72f29523d0d21baa67d212aafad5eda8c583))
+
+
+
 # [0.100.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.99.0...v0.100.0) (2026-09-13)
 
 
@@ -23,15 +32,6 @@
 ### Features
 
 * add changelog page and custom SVG favicon with site-wide UI updates ([90288c4](https://github.com/solomonrajan/solomonrajan.github.io/commit/90288c4f347f7f8de0891e18f7bc42d1f3562b3a))
-
-
-
-# [0.96.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.95.0...v0.96.0) (2026-09-12)
-
-
-### Features
-
-* add changelog page and stylesheet with index updates ([e8fc178](https://github.com/solomonrajan/solomonrajan.github.io/commit/e8fc178296492c296abc4b9b863a4f0a0e673446))
 
 
 
