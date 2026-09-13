@@ -1,3 +1,12 @@
+# [0.109.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.108.0...v0.109.0) (2026-09-13)
+
+
+### Features
+
+* add new blog posts, changelog, and content security policy headers ([22ba73e](https://github.com/solomonrajan/solomonrajan.github.io/commit/22ba73e7ad9a1255e4885528bce3ca70f637a39f))
+
+
+
 # [0.108.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.107.0...v0.108.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement AJAX contact form submission and add site changelog ([58a31ad](https://github.com/solomonrajan/solomonrajan.github.io/commit/58a31ade77276c65829783abc40d24f65d73e3cb))
-
-
-
-# [0.104.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.103.0...v0.104.0) (2026-09-13)
-
-
-### Features
-
-* add changelog asset and update page titles across site ([8a50ed0](https://github.com/solomonrajan/solomonrajan.github.io/commit/8a50ed04a6cd38ef962947fed51d1cb52d285be4))
 
 
 
