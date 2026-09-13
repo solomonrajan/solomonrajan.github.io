@@ -43,6 +43,27 @@
       color: var(--google-text-secondary);
       margin-bottom: 8px;
     }
+    .logo-primary {
+      color: #F9A825;
+      font-weight: 500;
+    }
+    .logo-secondary {
+      color: var(--google-text-secondary);
+      font-size: 20px;
+      margin-left: 4px;
+    }
+    .nav-divider {
+      border: 0;
+      border-top: 1px solid var(--google-border-color);
+      margin: 8px 0;
+    }
+    .contact-container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .contact-card-body {
+      padding: 24px;
+    }
   </style>
   <!-- Analytics -->
   <script defer src="assets/js/umami.js" data-website-id="681f1338-c995-4dde-b9fd-a738a5c5d55f" data-host-url="https://cloud.umami.is"></script>
@@ -54,18 +75,18 @@
   <!-- Top App Bar -->
   <header class="google-app-bar">
     <div class="google-app-bar__left">
-      <button class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
+      <button type="button" class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
         <span class="material-symbols-outlined">menu</span>
       </button>
       <a href="/" class="google-logo">
-        <span style="color: #F9A825; font-weight: 500;">Solomon Rajan</span>
-        <span style="color: var(--google-text-secondary); font-size: 20px; margin-left: 4px;">Account</span>
+        <span class="logo-primary">Solomon Rajan</span>
+        <span class="logo-secondary">Account</span>
       </a>
     </div>
-    
+
     <div class="google-app-bar__right">
       <div class="google-apps-container">
-        <button class="google-menu-btn" id="google-apps-toggle" aria-label="Google apps" title="Google apps">
+        <button type="button" class="google-menu-btn" id="google-apps-toggle" aria-label="Google apps" title="Google apps">
           <span class="material-symbols-outlined">apps</span>
         </button>
         <div class="google-apps-dropdown" id="google-apps-dropdown">
@@ -118,7 +139,7 @@
 
   <!-- Main Layout -->
   <div class="google-layout">
-    
+
     <!-- Sidebar -->
     <aside class="google-sidebar" id="google-sidebar">
       <ul class="google-nav-list">
@@ -158,16 +179,16 @@
             Changelog
           </a>
         </li>
-        <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 8px 0;">
+        <li class="google-nav-item nav-divider"></li>
         <li class="google-nav-item google-theme-control-container">
           <div class="google-theme-segmented-control" id="theme-toggle-group">
-            <button class="theme-btn" data-theme-value="system" aria-label="System theme" title="System Theme">
+            <button type="button" class="theme-btn" data-theme-value="system" aria-label="System theme" title="System Theme">
               <span class="material-symbols-outlined">monitor</span>
             </button>
-            <button class="theme-btn" data-theme-value="light" aria-label="Light theme" title="Light Theme">
+            <button type="button" class="theme-btn" data-theme-value="light" aria-label="Light theme" title="Light Theme">
               <span class="material-symbols-outlined">light_mode</span>
             </button>
-            <button class="theme-btn" data-theme-value="dark" aria-label="Dark theme" title="Dark Theme">
+            <button type="button" class="theme-btn" data-theme-value="dark" aria-label="Dark theme" title="Dark Theme">
               <span class="material-symbols-outlined">dark_mode</span>
             </button>
           </div>
@@ -178,39 +199,39 @@
     <!-- Content Area -->
     <main class="google-main-content">
       <div class="google-content-container">
-        
+
         <div class="google-page-header">
           <h1>Contact</h1>
           <p>Reach out for professional inquiries, consulting, or collaborations</p>
         </div>
 
-        <div style="max-width: 680px; margin: 0 auto;">
-          
+        <div class="contact-container">
+
           <!-- Contact Form Card -->
           <div class="google-card">
             <div class="google-card-header">
               <h2>Send a Message</h2>
               <p>I will get back to you as soon as possible</p>
             </div>
-            <div class="google-card-body" style="padding: 24px;">
+            <div class="google-card-body contact-card-body">
               <form action="https://formsubmit.co/77dss3dv@duck.com" method="POST">
                 <!-- FormSubmit Configuration -->
                 <input type="hidden" name="_subject" value="New Portfolio Contact Submission">
                 <input type="hidden" name="_captcha" value="true">
                 <input type="hidden" name="_template" value="table">
-                
+
                 <label class="google-label" for="name">Name</label>
                 <input type="text" id="name" name="name" class="google-input" required placeholder="Your name">
-                
+
                 <label class="google-label" for="email">Email</label>
                 <input type="email" id="email" name="email" class="google-input" required placeholder="Your email address">
-                
+
                 <label class="google-label" for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" class="google-input" required placeholder="What is this regarding?">
-                
+
                 <label class="google-label" for="message">Message</label>
                 <textarea id="message" name="message" class="google-input" required rows="4" placeholder="How can I help you?"></textarea>
-                
+
                 <button type="submit" class="google-btn google-btn--primary">Send Message</button>
               </form>
             </div>
