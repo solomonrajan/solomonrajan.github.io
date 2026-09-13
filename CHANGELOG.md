@@ -1,3 +1,12 @@
+# [0.108.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.107.0...v0.108.0) (2026-09-13)
+
+
+### Features
+
+* add core JavaScript functionality for portfolio dashboard ([69f5a5d](https://github.com/solomonrajan/solomonrajan.github.io/commit/69f5a5daff3654d226807e63e50e8e7c0a8cf1a1))
+
+
+
 # [0.107.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.106.0...v0.107.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog asset and update page titles across site ([8a50ed0](https://github.com/solomonrajan/solomonrajan.github.io/commit/8a50ed04a6cd38ef962947fed51d1cb52d285be4))
-
-
-
-# [0.103.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.102.0...v0.103.0) (2026-09-13)
-
-
-### Features
-
-* add changelog page, custom stylesheet, and hand-drawn UI highlights across site pages ([fbabccb](https://github.com/solomonrajan/solomonrajan.github.io/commit/fbabccbd7250e279e6a06460f927c974bad9f5aa))
 
 
 
