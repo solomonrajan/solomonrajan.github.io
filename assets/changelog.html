@@ -4,6 +4,48 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.3.23 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">undo</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.23</span>
+            <span class="changelog-tag changelog-tag--ui">UI Polish</span>
+          </div>
+          <time class="changelog-date">13 Sep 2026, 1:16 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Standardized Navbar Typography:</strong> Reverted the gradient styling on the navbar "Workspace" text to adhere to standard website design guidelines. It now seamlessly integrates with the existing text-secondary utility color for a cleaner, unified look.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.3.22 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">brush</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.22</span>
+            <span class="changelog-tag changelog-tag--feature">Design Update</span>
+          </div>
+          <time class="changelog-date">13 Sep 2026, 1:12 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Navbar Redesign:</strong> Replaced the generic "Account" text in the primary navbar with a beautifully stylized "Workspace" badge, featuring a sleek Google-esque purple-blue gradient and refined typography to make it pop!</li>
+        </ul>
+      </article>
+    </div>
+
     <!-- Version 4.3.21 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
@@ -63,27 +105,6 @@
           <li><strong>Form & API Data Sanitization:</strong> Added strict client-side regex and length validation protocols on the Contact Form and local Search APIs. Outbound form payloads are now strictly output-encoded (converting all HTML characters to entities) before transmission to prevent payload injection attacks.</li>
           <li><strong>Content Security Policy (CSP):</strong> Implemented a strict <code>Content-Security-Policy</code> meta tag across all HTML pages, enforcing origin restrictions for scripts, styles, images, and API connections to heavily mitigate injection vectors.</li>
           <li><strong>Inline HTML Removal:</strong> Eliminated all instances of <code>insertAdjacentHTML</code> and inline HTML string injection, moving entirely to safe DOM node creation APIs (<code>document.createElement</code>) and secure <code>DOMParser</code> implementations to thoroughly validate user-controlled content and harden security.</li>
-        </ul>
-      </article>
-    </div>
-
-    <!-- Version 4.3.19 -->
-    <div class="changelog-item">
-      <div class="changelog-node-wrapper">
-        <div class="changelog-node" aria-hidden="true">
-          <span class="material-symbols-outlined">brush</span>
-        </div>
-      </div>
-      <article class="changelog-entry">
-        <div class="changelog-header">
-          <div class="changelog-badge-group">
-            <span class="changelog-version">v4.3.19</span>
-            <span class="changelog-tag changelog-tag--feature">Design Update</span>
-          </div>
-          <time class="changelog-date">13 Sep 2026, 1:12 PM IST</time>
-        </div>
-        <ul class="changelog-list">
-          <li><strong>Navbar Redesign:</strong> Replaced the generic "Account" text in the primary navbar with a beautifully stylized "Workspace" badge, featuring a sleek Google-esque purple-blue gradient and refined typography to make it pop!</li>
         </ul>
       </article>
     </div>
