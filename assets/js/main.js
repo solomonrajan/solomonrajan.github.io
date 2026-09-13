@@ -2,6 +2,11 @@
  * Solomon Rajan Portfolio - Google Dashboard Core Logic
  */
 
+// Anti-Clickjacking Frame Buster
+if (window.self !== window.top) {
+  window.top.location.replace(window.self.location.href);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 

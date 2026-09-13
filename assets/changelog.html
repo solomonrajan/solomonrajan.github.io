@@ -4,6 +4,26 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.3.21 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">security</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.21</span>
+            <span class="changelog-tag changelog-tag--security">Security</span>
+          </div>
+          <time class="changelog-date">13 Sep 2026, 12:58 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Anti-Clickjacking Protection:</strong> Implemented a robust CSS/JS combo frame-busting architecture across all core HTML views. By default, the `body` element is set to `display: none !important`. An immediate client-side script validates `window.self === window.top`; if the site is securely isolated, the viewport is revealed. If it detects malicious framing or UI redressing, it immediately redirects the top-level window to the native URL, breaking out of the iframe embed entirely.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.3.20 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">

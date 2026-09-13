@@ -77,6 +77,16 @@
   <script defer src="assets/js/umami.js" data-website-id="681f1338-c995-4dde-b9fd-a738a5c5d55f" data-host-url="https://cloud.umami.is"></script>
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <!-- Anti-Clickjacking -->
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript">
+    if (self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
+    }
+  </script>
 </head>
 <body>
 
