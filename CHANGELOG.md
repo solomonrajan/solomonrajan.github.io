@@ -1,3 +1,12 @@
+# [0.110.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.109.0...v0.110.0) (2026-09-13)
+
+
+### Features
+
+* add changelog asset and update contact and updates pages with security and feature improvements ([7d17592](https://github.com/solomonrajan/solomonrajan.github.io/commit/7d17592079171fa3af2e9aa9ed6b2e6a91c74b60))
+
+
+
 # [0.109.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.108.0...v0.109.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add core dashboard logic, theme management, changelog, and blog pages ([4933b12](https://github.com/solomonrajan/solomonrajan.github.io/commit/4933b12cc4565fb5e201d9c8cdec3f6e94dd4d7c))
-
-
-
-# [0.105.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.104.0...v0.105.0) (2026-09-13)
-
-
-### Features
-
-* implement AJAX contact form submission and add site changelog ([58a31ad](https://github.com/solomonrajan/solomonrajan.github.io/commit/58a31ade77276c65829783abc40d24f65d73e3cb))
 
 
 
