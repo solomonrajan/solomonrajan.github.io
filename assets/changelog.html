@@ -20,6 +20,7 @@
           <time class="changelog-date">13 Sep 2026, 12:12 PM IST</time>
         </div>
         <ul class="changelog-list">
+          <li><strong>Content Security Policy (CSP):</strong> Implemented a strict <code>Content-Security-Policy</code> meta tag across all HTML pages, enforcing origin restrictions for scripts, styles, images, and API connections to heavily mitigate injection vectors.</li>
           <li><strong>Inline HTML Removal:</strong> Eliminated all instances of <code>insertAdjacentHTML</code> and inline HTML string injection, moving entirely to safe DOM node creation APIs (<code>document.createElement</code>) and secure <code>DOMParser</code> implementations to thoroughly validate user-controlled content and harden security.</li>
         </ul>
       </article>
