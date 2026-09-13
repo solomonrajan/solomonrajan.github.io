@@ -49,10 +49,11 @@
       snackbar = document.createElement('div');
       snackbar.id = 'md-snackbar';
       snackbar.className = 'md-snackbar';
-      snackbar.innerHTML = `
+      snackbar.textContent = '';
+      snackbar.insertAdjacentHTML('beforeend', `
         <span class="md-snackbar__text"></span>
         <button type="button" class="md-snackbar__action" aria-label="Close snackbar">DISMISS</button>
-      `;
+      `);
       document.body.appendChild(snackbar);
 
       snackbar.querySelector('.md-snackbar__action').addEventListener('click', () => {

@@ -388,7 +388,8 @@
           e.preventDefault();
           modalTitle.textContent = trigger.getAttribute('data-title');
           modalSubtitle.textContent = trigger.getAttribute('data-subtitle');
-          modalDesc.innerHTML = trigger.getAttribute('data-desc');
+          modalDesc.textContent = '';
+          modalDesc.insertAdjacentHTML('beforeend', trigger.getAttribute('data-desc'));
           
           modalOverlay.classList.add('active');
         });

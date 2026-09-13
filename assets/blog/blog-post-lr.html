@@ -206,10 +206,12 @@ print(f"Action Required: {next_step}")</code></pre>
       button.addEventListener('click', () => {
         const pre = button.nextElementSibling;
         navigator.clipboard.writeText(pre.innerText).then(() => {
-          const originalHTML = button.innerHTML;
-          button.innerHTML = '<span class="material-symbols-outlined">check</span> Copied!';
+          const originalNodes = Array.from(button.childNodes);
+          button.textContent = '';
+          button.insertAdjacentHTML('beforeend', '<span class="material-symbols-outlined">check</span> Copied!');
           setTimeout(() => {
-            button.innerHTML = originalHTML;
+            button.textContent = '';
+            originalNodes.forEach(node => button.appendChild(node));
           }, 2000);
         });
       });

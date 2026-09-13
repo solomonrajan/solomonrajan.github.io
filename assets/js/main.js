@@ -189,7 +189,8 @@ function initLiveISTClock() {
         const isDay = data.current.is_day === 1;
         const meta = getWeatherMetadata(code, isDay);
         
-        weatherEl.innerHTML = `<span style="display:flex; align-items:center; gap:8px;">${meta.desc}, ${temp}°C <span class="material-symbols-outlined" style="font-size: 18px;">${meta.icon}</span></span>`;
+        weatherEl.textContent = '';
+        weatherEl.insertAdjacentHTML('beforeend', `<span style="display:flex; align-items:center; gap:8px;">${meta.desc}, ${temp}°C <span class="material-symbols-outlined" style="font-size: 18px;">${meta.icon}</span></span>`);
       }
     } catch (err) {
       console.warn('Unable to load live Kottayam weather:', err);

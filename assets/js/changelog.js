@@ -11,7 +11,8 @@
     const dialogContent = document.getElementById('dialog-content');
     const backdrop = document.getElementById('dialog-backdrop');
     if (dialogContent && backdrop && backdrop.classList.contains('open')) {
-      dialogContent.innerHTML = html;
+      dialogContent.textContent = '';
+      dialogContent.insertAdjacentHTML('beforeend', html);
     }
   } catch (error) {
     console.error('Error in automated changelog updation:', error);
