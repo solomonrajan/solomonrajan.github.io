@@ -340,10 +340,11 @@
     }
 
     searchInput.addEventListener('input', function(e) {
-      const query = e.target.value.toLowerCase().trim();
+      let query = e.target.value.toLowerCase().trim();
       suggestionsBox.textContent = '';
       
-      if (!query) {
+      // Strict Input Validation
+      if (!query || query.length > 50 || /<|>|"|'|&/.test(query)) {
         suggestionsBox.style.display = 'none';
         return;
       }

@@ -270,11 +270,44 @@
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
           
+          const nameInput = document.getElementById('name').value.trim();
+          const emailInput = document.getElementById('email').value.trim();
+          const subjectInput = document.getElementById('subject').value.trim();
+          const messageInput = document.getElementById('message').value.trim();
+
+          // 1. Strict Input Validation
+          if (nameInput.length < 2 || nameInput.length > 50 || /<script|javascript:/i.test(nameInput)) {
+            alert('Please enter a valid name (2-50 characters, no code).');
+            return;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput)) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+          if (subjectInput.length < 3 || subjectInput.length > 100 || /<script|javascript:/i.test(subjectInput)) {
+            alert('Please enter a valid subject (3-100 characters).');
+            return;
+          }
+          if (messageInput.length < 10 || messageInput.length > 3000 || /<script|javascript:/i.test(messageInput)) {
+            alert('Please enter a valid message (10-3000 characters).');
+            return;
+          }
+          
           submitBtn.disabled = true;
           submitBtn.textContent = 'Sending...';
           statusDiv.style.display = 'none';
 
-          const formData = new FormData(form);
+          // 2. Output Encoding (Sanitize payload before API transmission)
+          const sanitize = (str) => str.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
+          
+          const formData = new FormData();
+          formData.append('_subject', 'New Portfolio Contact Submission');
+          formData.append('_captcha', 'false');
+          formData.append('_template', 'table');
+          formData.append('name', sanitize(nameInput));
+          formData.append('email', sanitize(emailInput));
+          formData.append('subject', sanitize(subjectInput));
+          formData.append('message', sanitize(messageInput));
 
           try {
             const response = await fetch(form.action, {
