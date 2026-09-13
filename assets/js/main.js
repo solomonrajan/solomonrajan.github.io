@@ -226,26 +226,50 @@ function initProfileModal() {
   const avatarImg = avatarRing.querySelector('img');
   if (!avatarImg) return;
 
-  const modalHTML = `
-    <div class="google-profile-modal-overlay" id="profile-modal" style="display: none;">
-      <div class="google-profile-modal">
-        <div class="google-profile-modal-header">
-          <h2 style="display: flex; align-items: center; justify-content: center; gap: 4px;">
-            Solomon Rajan
-            <span class="material-symbols-outlined" style="color: #0f9d58; font-size: 24px;">verified</span>
-          </h2>
-        </div>
-        <div class="google-profile-modal-body" style="display: flex; flex-direction: column; align-items: center;">
-          <img src="${avatarImg.src}" alt="Profile" class="google-profile-modal-img">
-          <p style="margin-top: 12px; color: var(--google-text-secondary); font-size: 14px; text-align: center; font-weight: 500;">Certified Labour Welfare Officer</p>
-        </div>
-      </div>
-    </div>
-  `;
+  const modal = document.createElement('div');
+  modal.className = 'google-profile-modal-overlay';
+  modal.id = 'profile-modal';
+  modal.style.display = 'none';
 
-  document.body.insertAdjacentHTML('beforeend', modalHTML);
+  const modalInner = document.createElement('div');
+  modalInner.className = 'google-profile-modal';
 
-  const modal = document.getElementById('profile-modal');
+  const header = document.createElement('div');
+  header.className = 'google-profile-modal-header';
+  
+  const h2 = document.createElement('h2');
+  h2.style.cssText = 'display: flex; align-items: center; justify-content: center; gap: 4px;';
+  h2.textContent = 'Solomon Rajan ';
+  
+  const icon = document.createElement('span');
+  icon.className = 'material-symbols-outlined';
+  icon.style.cssText = 'color: #0f9d58; font-size: 24px;';
+  icon.textContent = 'verified';
+  
+  h2.appendChild(icon);
+  header.appendChild(h2);
+
+  const body = document.createElement('div');
+  body.className = 'google-profile-modal-body';
+  body.style.cssText = 'display: flex; flex-direction: column; align-items: center;';
+  
+  const img = document.createElement('img');
+  img.src = avatarImg.src;
+  img.alt = 'Profile';
+  img.className = 'google-profile-modal-img';
+
+  const p = document.createElement('p');
+  p.style.cssText = 'margin-top: 12px; color: var(--google-text-secondary); font-size: 14px; text-align: center; font-weight: 500;';
+  p.textContent = 'Certified Labour Welfare Officer';
+
+  body.appendChild(img);
+  body.appendChild(p);
+
+  modalInner.appendChild(header);
+  modalInner.appendChild(body);
+  modal.appendChild(modalInner);
+
+  document.body.appendChild(modal);
 
   avatarRing.style.cursor = 'pointer';
   avatarRing.addEventListener('click', (e) => {
