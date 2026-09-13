@@ -1,3 +1,12 @@
+# [0.102.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.101.0...v0.102.0) (2026-09-13)
+
+
+### Features
+
+* add site changelog and update about page ([3c2fe1e](https://github.com/solomonrajan/solomonrajan.github.io/commit/3c2fe1eb89533cddcebaecbe388891cf2f213397))
+
+
+
 # [0.101.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.100.0...v0.101.0) (2026-09-13)
 
 
@@ -23,15 +32,6 @@
 ### Features
 
 * add Google Dashboard minimalist CSS stylesheet and changelog page ([ab0489b](https://github.com/solomonrajan/solomonrajan.github.io/commit/ab0489b3116e4610bb03838acad87ba67e098943))
-
-
-
-# [0.97.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.96.0...v0.97.0) (2026-09-12)
-
-
-### Features
-
-* add changelog page and custom SVG favicon with site-wide UI updates ([90288c4](https://github.com/solomonrajan/solomonrajan.github.io/commit/90288c4f347f7f8de0891e18f7bc42d1f3562b3a))
 
 
 
