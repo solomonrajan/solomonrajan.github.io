@@ -1,3 +1,12 @@
+# [0.99.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.98.0...v0.99.0) (2026-09-13)
+
+
+### Features
+
+* add core dashboard JavaScript functionality and changelog page ([12db6fd](https://github.com/solomonrajan/solomonrajan.github.io/commit/12db6fd9489f18272c771791883445bfc3c5568a))
+
+
+
 # [0.98.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.97.0...v0.98.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog page, custom styling, and interactive UI elements ([06527dc](https://github.com/solomonrajan/solomonrajan.github.io/commit/06527dca22b8faa8e7747a59b9cf2341ac8af251))
-
-
-
-# [0.94.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.93.0...v0.94.0) (2026-09-12)
-
-
-### Features
-
-* add Google dashboard stylesheet, main script, and changelog page ([a40ac6e](https://github.com/solomonrajan/solomonrajan.github.io/commit/a40ac6e284518335ee9bf8bef8784b7400151468))
 
 
 
