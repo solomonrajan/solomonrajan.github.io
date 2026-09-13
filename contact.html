@@ -57,6 +57,13 @@
       border-top: 1px solid var(--google-border-color);
       margin: 8px 0;
     }
+    .form-status {
+      margin-top: 16px;
+      display: none;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
     .contact-container {
       max-width: 680px;
       margin: 0 auto;
@@ -233,7 +240,7 @@
                 <textarea id="message" name="message" class="google-input" required rows="4" placeholder="How can I help you?"></textarea>
 
                 <button type="submit" class="google-btn google-btn--primary" id="submit-btn">Send Message</button>
-                <div id="form-status" style="margin-top: 16px; display: none; padding: 12px; border-radius: 4px; font-size: 14px;"></div>
+                <div id="form-status" class="form-status"></div>
               </form>
             </div>
           </div>
