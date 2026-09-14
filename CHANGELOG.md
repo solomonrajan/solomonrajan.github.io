@@ -1,3 +1,12 @@
+# [0.120.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.119.0...v0.120.0) (2026-09-14)
+
+
+### Features
+
+* add new blog posts and migrate GoatCounter analytics script to local asset ([8935713](https://github.com/solomonrajan/solomonrajan.github.io/commit/8935713e725931b4de32289a04e60128d89bad5d))
+
+
+
 # [0.119.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.118.0...v0.119.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement Google Dashboard minimalist design system and update site pages ([c8c81f5](https://github.com/solomonrajan/solomonrajan.github.io/commit/c8c81f565e19fcf491456dbdbbf5cc70662f6311))
-
-
-
-# [0.115.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.114.0...v0.115.0) (2026-09-14)
-
-
-### Features
-
-* add core dashboard logic, changelog page, and stylesheet ([0c0f3e1](https://github.com/solomonrajan/solomonrajan.github.io/commit/0c0f3e1ff97d1bc78fb7ef985bac5d1e4996059e))
 
 
 
