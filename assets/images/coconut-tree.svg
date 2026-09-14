@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" width="100" height="150" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Trunk -->
+  <path d="M45,140 Q50,90 40,30" />
+  <path d="M55,140 Q60,90 45,30" />
+  <!-- Leaves left -->
+  <path d="M40,30 Q10,20 0,40" />
+  <path d="M40,30 Q10,35 5,60" />
+  <path d="M40,30 Q15,45 15,70" />
+  <!-- Leaves right -->
+  <path d="M45,30 Q80,20 90,40" />
+  <path d="M45,30 Q80,35 85,60" />
+  <path d="M45,30 Q75,45 75,70" />
+  <!-- Leaves top -->
+  <path d="M42,30 Q40,10 25,0" />
+  <path d="M42,30 Q50,5 65,0" />
+  <!-- Coconuts -->
+  <circle cx="35" cy="40" r="5" />
+  <circle cx="48" cy="42" r="5" />
+  <circle cx="42" cy="48" r="5" />
+</svg>

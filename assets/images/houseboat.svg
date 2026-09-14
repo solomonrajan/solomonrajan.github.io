@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Boat hull -->
+  <path d="M10,70 C50,90 150,90 190,70 L170,50 L30,50 Z" />
+  <!-- Roof bottom layer -->
+  <path d="M40,50 C40,20 160,20 160,50" />
+  <!-- Roof top layer -->
+  <path d="M50,40 C50,10 150,10 150,40" />
+  <!-- Windows / details -->
+  <rect x="70" y="30" width="15" height="15" rx="2" />
+  <rect x="95" y="30" width="15" height="15" rx="2" />
+  <rect x="120" y="30" width="15" height="15" rx="2" />
+  <!-- Bamboo poles / lines -->
+  <line x1="45" y1="50" x2="45" y2="25" />
+  <line x1="155" y1="50" x2="155" y2="25" />
+  <!-- Water ripples -->
+  <path d="M20,85 Q40,95 60,85" />
+  <path d="M80,85 Q100,95 120,85" />
+  <path d="M140,85 Q160,95 180,85" />
+</svg>

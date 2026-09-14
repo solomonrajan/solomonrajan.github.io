@@ -401,6 +401,7 @@ a:hover {
   overflow-y: auto;
   padding: 32px 32px calc(32px + env(safe-area-inset-bottom, 0px)) 32px;
   background-color: var(--google-bg-color);
+  position: relative;
 }
 
 .google-content-container {
@@ -1089,3 +1090,220 @@ a:hover {
 [data-theme="dark"] .highlight-circle::after {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='9 6 82 28' preserveAspectRatio='none'%3E%3Cpath d='M 15 10 Q 50 5 85 10 Q 95 20 85 30 Q 50 35 15 30 Q 5 20 18 12' fill='none' stroke='%23f28b82' stroke-width='3' vector-effect='non-scaling-stroke' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
+
+/* ==========================================================================
+   Vintage Kerala Stickers
+   ========================================================================== */
+.vintage-sticker {
+  position: absolute;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  color: var(--google-text-primary);
+  transition: opacity 0.3s;
+}
+
+[data-theme="dark"] .vintage-sticker {
+  transition: transform 0.2s cubic-bezier(0, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+.google-modal-overlay.active .google-modal {
+  transform: translateY(0) scale(1);
+}
+.google-modal-header {
+  padding: 24px 24px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.google-modal-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--google-text-primary);
+}
+.google-modal-close {
+  background: none;
+  border: none;
+  color: var(--google-text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -8px -8px 0 0;
+}
+.google-modal-close:hover {
+  background-color: var(--google-hover-bg);
+}
+.google-modal-body {
+  padding: 0 24px 24px;
+  color: var(--google-text-secondary);
+  font-size: 16px;
+}
+.google-modal-body h3 {
+  font-size: 18px;
+  color: var(--google-text-primary);
+  margin: 16px 0 8px;
+  font-weight: 500;
+}
+.google-modal-body ul {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+.google-modal-body li {
+  margin-bottom: 8px;
+}
+
+/* Skills Progress Bars */
+.skill-item {
+  margin-bottom: 24px;
+}
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--google-text-primary);
+}
+.md3-linear-progress {
+  width: 100%;
+  height: 4px;
+  background-color: var(--google-border-color); /* fallback */
+  background-color: rgba(26, 115, 232, 0.12); /* md3 surface variant approximation for blue */
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.md3-linear-progress-bar {
+  height: 100%;
+  background-color: var(--google-blue);
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+.md3-linear-progress-bar.red {
+  background-color: var(--google-red);
+}
+.md3-linear-progress-bar.yellow {
+  background-color: var(--google-yellow);
+}
+.md3-linear-progress-bar.green {
+  background-color: var(--google-green);
+}
+
+/* Floating Action Button (FAB) */
+.google-fab {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background-color: var(--google-blue);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s, transform 0.3s, background-color 0.2s;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+.google-fab.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.google-fab:hover {
+  background-color: var(--google-blue-hover);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+[data-theme="dark"] .google-fab {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+[data-theme="dark"] .google-fab:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+}
+
+/* ==========================================================================
+   Highlight Wavy Underline
+   ========================================================================== */
+.highlight-wavy {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: transparent !important;
+}
+.highlight-wavy::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 12px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Cpath d='M0 15 Q 25 25 50 15 T 100 15' fill='none' stroke='%231a73e8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 30px 12px;
+  background-position: left bottom;
+  pointer-events: none;
+}
+[data-theme="dark"] .highlight-wavy::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Cpath d='M0 15 Q 25 25 50 15 T 100 15' fill='none' stroke='%238ab4f8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ==========================================================================
+   Highlight Hand-drawn Circle
+   ========================================================================== */
+.highlight-circle {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: transparent !important;
+}
+.highlight-circle::after {
+  content: "";
+  position: absolute;
+  left: -4%;
+  top: -20%;
+  width: 108%;
+  height: 140%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='9 6 82 28' preserveAspectRatio='none'%3E%3Cpath d='M 15 10 Q 50 5 85 10 Q 95 20 85 30 Q 50 35 15 30 Q 5 20 18 12' fill='none' stroke='%23ea4335' stroke-width='3' vector-effect='non-scaling-stroke' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+[data-theme="dark"] .highlight-circle::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='9 6 82 28' preserveAspectRatio='none'%3E%3Cpath d='M 15 10 Q 50 5 85 10 Q 95 20 85 30 Q 50 35 15 30 Q 5 20 18 12' fill='none' stroke='%23f28b82' stroke-width='3' vector-effect='non-scaling-stroke' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ==========================================================================
+   Vintage Kerala Stickers
+   ========================================================================== */
+.vintage-sticker {
+  position: absolute;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  color: var(--google-text-primary);
+  transition: opacity 0.3s;
+}
+
+[data-theme="dark"] .vintage-sticker {
+  opacity: 0.2;
+  filter: grayscale(100%) invert(1);
+  mix-blend-mode: screen;
+}
+
+

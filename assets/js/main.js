@@ -33,8 +33,70 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Force Uninstall PWA (Crucial for users with cached PWA)
   uninstallPWA();
 
-
+  // 8. Dynamic Vintage Doodles
+  initVintageDoodles();
 });
+
+function initVintageDoodles() {
+  const container = document.querySelector('.google-main-content');
+  if (!container) return;
+
+  const doodles = [
+    { src: 'assets/images/ksrtc-bus.jpg', alt: 'Vintage KSRTC Bus', sizeDesktop: 200 },
+    { src: 'assets/images/tea-stall.jpg', alt: 'Vintage Tea Stall', sizeDesktop: 180 },
+    { src: 'assets/images/coconut-tree.jpg', alt: 'Coconut Tree Doodle', sizeDesktop: 150 },
+    { src: 'assets/images/elephant.jpg', alt: 'Temple Elephant Doodle', sizeDesktop: 150 },
+    { src: 'assets/images/trees.jpg', alt: 'Tropical Trees Doodle', sizeDesktop: 180 }
+  ];
+
+  const shuffled = doodles.sort(() => 0.5 - Math.random());
+
+  // Small timeout to ensure DOM layout is complete for accurate scrollHeight
+  setTimeout(() => {
+    const containerHeight = container.scrollHeight;
+    
+    // Track the current Y position for both columns to mathematically prevent overlap
+    let leftY = 40; 
+    let rightY = 160; // Stagger the right side
+
+    shuffled.forEach((doodle) => {
+      const size = doodle.sizeDesktop;
+      
+      // Always place on the side that is highest up
+      const isLeft = leftY <= rightY;
+      const topPos = isLeft ? leftY : rightY;
+
+      // Prevent doodles from rendering past the bottom of the page content
+      if (topPos + size > containerHeight - 50) {
+        return; 
+      }
+
+      const img = document.createElement('img');
+      img.src = doodle.src;
+      img.alt = doodle.alt;
+      img.className = 'vintage-sticker';
+      img.setAttribute('aria-hidden', 'true');
+      img.style.width = `${size}px`;
+      img.style.top = `${topPos}px`;
+
+      const margin = Math.floor(Math.random() * 4) + 1; // 1% to 4% margin
+      
+      if (isLeft) {
+        img.style.left = `${margin}%`;
+        // Advance the left Y position by the image size + a strict minimum gap of 80px + random variance
+        leftY += size + 80 + (Math.random() * 80); 
+      } else {
+        img.style.right = `${margin}%`;
+        rightY += size + 80 + (Math.random() * 80);
+      }
+
+      const rotation = Math.floor(Math.random() * 30) - 15;
+      img.style.transform = `rotate(${rotation}deg)`;
+
+      container.appendChild(img);
+    });
+  }, 150);
+}
 
 function normalizePageName(url) {
   if (!url) return 'index';

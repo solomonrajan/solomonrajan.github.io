@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Base structure -->
+  <path d="M25,60 L125,60 L125,130 L25,130 Z" />
+  <!-- Roof -->
+  <path d="M10,60 L75,10 L140,60 Z" />
+  <path d="M25,60 L75,25 L125,60" />
+  <!-- Counter -->
+  <path d="M15,95 L135,95 L135,105 L15,105 Z" />
+  <!-- Pillars -->
+  <line x1="25" y1="60" x2="25" y2="95" />
+  <line x1="125" y1="60" x2="125" y2="95" />
+  <!-- Kettle -->
+  <path d="M40,95 C40,75 60,75 60,95 Z" />
+  <path d="M35,85 L40,90" />
+  <path d="M60,85 C65,80 70,85 60,90" />
+  <!-- Steam -->
+  <path d="M45,70 Q50,60 45,50" />
+  <path d="M55,65 Q60,55 55,45" />
+  <!-- Glass/Cups -->
+  <rect x="70" y="85" width="8" height="10" />
+  <rect x="85" y="85" width="8" height="10" />
+  <!-- Bananas -->
+  <path d="M100,60 Q105,75 95,85" />
+  <path d="M105,60 Q110,75 100,85" />
+  <path d="M110,60 Q115,75 105,85" />
+</svg>

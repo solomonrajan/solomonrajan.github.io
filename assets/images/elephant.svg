@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 120" width="150" height="120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Body and legs -->
+  <path d="M130,50 C140,50 145,60 145,70 C145,80 140,90 140,110 L120,110 L120,80 L100,80 L100,110 L80,110 L80,70 C70,70 50,70 40,80 L40,110 L20,110 C20,90 20,70 25,60 C30,40 50,30 80,30 C110,30 120,40 130,50 Z" />
+  <!-- Trunk -->
+  <path d="M25,60 C10,70 5,90 10,110 C15,115 20,110 15,100 C15,90 20,80 25,80" />
+  <!-- Ear -->
+  <path d="M50,40 C65,40 70,60 65,75 C55,85 40,70 45,55 Z" />
+  <!-- Tusk -->
+  <path d="M25,75 Q10,80 5,75 Q15,70 20,70" />
+  <!-- Eye -->
+  <circle cx="45" cy="45" r="2" />
+  <!-- Tail -->
+  <path d="M143,65 Q150,80 145,100" />
+  <!-- Nettipattam (Headpiece decoration) -->
+  <path d="M40,30 L25,60" />
+  <path d="M35,32 L20,62" />
+  <circle cx="30" cy="45" r="2" />
+  <circle cx="27" cy="52" r="2" />
+  <circle cx="24" cy="59" r="2" />
+</svg>

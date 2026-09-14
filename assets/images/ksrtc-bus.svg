@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Bus Body -->
+  <path d="M20,20 L180,20 Q190,20 190,30 L190,90 Q190,100 180,100 L20,100 Q10,100 10,90 L10,30 Q10,20 20,20 Z" />
+  <!-- Wheels -->
+  <circle cx="50" cy="100" r="15" />
+  <circle cx="50" cy="100" r="5" />
+  <circle cx="150" cy="100" r="15" />
+  <circle cx="150" cy="100" r="5" />
+  <!-- Windows -->
+  <rect x="20" y="30" width="30" height="25" rx="2" />
+  <rect x="60" y="30" width="30" height="25" rx="2" />
+  <rect x="100" y="30" width="30" height="25" rx="2" />
+  <rect x="140" y="30" width="30" height="25" rx="2" />
+  <!-- Stripes -->
+  <line x1="10" y1="65" x2="190" y2="65" />
+  <line x1="10" y1="75" x2="190" y2="75" />
+  <text x="100" y="72" font-family="monospace" font-size="8" font-weight="bold" stroke="none" fill="currentColor" text-anchor="middle">K S R T C</text>
+  <!-- Headlights -->
+  <rect x="175" y="80" width="10" height="10" rx="2" />
+  <!-- Door -->
+  <rect x="20" y="60" width="20" height="40" rx="1" />
+</svg>

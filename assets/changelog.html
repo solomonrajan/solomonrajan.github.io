@@ -4,6 +4,166 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.3.34 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">smartphone</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.34</span>
+            <span class="changelog-tag changelog-tag--ui">UI Polish</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:23 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Doodle Mobile Override:</strong> Overrode the responsive mobile downsizing for the background doodles, forcing them to render at their full-scale desktop sizes universally across all mobile devices based on user preference.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.33 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">bug_report</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.33</span>
+            <span class="changelog-tag changelog-tag--bugfix" style="background-color: var(--google-red); color: white;">Bugfix</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:22 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Doodle Overlap Resolution:</strong> Resolved an edge-case issue where dynamically spawned doodles could occasionally overlap on shorter pages. Completely refactored the spawning algorithm to utilize strict, staggered pixel tracking. This upgrade mathematically guarantees a generous visual buffer (minimum 80px) between every piece of artwork and prevents them from rendering beyond the natural footer boundary.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.32 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">shuffle</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.32</span>
+            <span class="changelog-tag changelog-tag--feature">Architecture</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:20 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Dynamic Global Doodles:</strong> Engineered a robust JavaScript injection module to dynamically spawn the background doodles across <em>all</em> pages on the website. The system perfectly randomizes their render order, rotation angles, and layout orientation on every page load. Dimensions are now smartly assigned based on their real-world scale hierarchy (e.g. buses render much larger than the tea stall), while still guaranteeing a completely collision-free layout!</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.31 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">zoom_out</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.31</span>
+            <span class="changelog-tag changelog-tag--ui">Revert</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:17 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Doodle Size Revert:</strong> Reverted the background doodle dimensions back to their original, more subtle sizes based on user preference, while maintaining the non-overlapping zig-zag layout placement.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.30 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">photo_size_select_large</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.30</span>
+            <span class="changelog-tag changelog-tag--ui">UI Polish</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:15 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Doodle Scaling & Layout:</strong> Significantly increased the dimensions of the realistic background doodles for improved visibility and visual impact. Re-engineered their absolute positioning into a distributed zig-zag layout (alternating left and right margins down the page) to guarantee they do not overlap with each other during scrolling.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.29 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">imagesmode</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.29</span>
+            <span class="changelog-tag changelog-tag--feature">Design Update</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:12 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Ultra-Realistic Sketches:</strong> Upgraded the Kerala-themed background elements to highly detailed, realistic pencil sketch doodles (KSRTC bus, Coconut tree, Elephant, Tea stall, and Tropical trees). Utilized CSS <code>mix-blend-mode</code> for seamless background integration of the detailed artwork.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.28 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">sailing</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.28</span>
+            <span class="changelog-tag changelog-tag--feature">Design Update</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:07 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>More Kerala Doodles:</strong> Expanded the vintage doodle collection with new custom SVGs for a coconut tree, houseboat, and temple elephant, enhancing the localized artistic flair of the portfolio.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.3.27 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">directions_bus</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.27</span>
+            <span class="changelog-tag changelog-tag--feature">Design Update</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:05 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Vintage Kerala Aesthetic:</strong> Added custom-drawn, minimal SVG graphics representing classic Kerala elements (a vintage KSRTC bus and a traditional tea stall) positioned playfully in the background to improve visual engagement and break up the white space, inspired by modern personal portfolio designs.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.3.26 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
