@@ -347,33 +347,32 @@ a:hover {
   overflow: hidden;
 }
 
-/* 4. Sidebar */
-.google-sidebar {
-  width: var(--google-sidebar-width);
-  height: 100%;
-  border-right: 1px solid var(--google-border-color);
-  background-color: var(--google-bg-color);
-  overflow-y: auto;
-  padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px)) 0;
-  transition: transform 0.2s ease;
-  flex-shrink: 0;
+/* 4. Top Nav */
+.google-top-nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .google-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   list-style: none;
 }
 
 .google-nav-item {
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 .google-nav-link {
   display: flex;
   align-items: center;
-  gap: 16px;
-  height: 48px;
+  gap: 8px;
+  height: 40px;
   padding: 0 16px;
-  margin: 0 12px;
+  margin: 0 4px;
   border-radius: 9999px;
   color: var(--google-text-secondary);
   font-weight: 500;
@@ -390,6 +389,10 @@ a:hover {
 .google-nav-link.active {
   background-color: var(--google-blue-bg);
   color: var(--google-blue);
+}
+
+.google-top-nav hr {
+  display: none;
 }
 
 /* 5. Main Content Area */
@@ -574,16 +577,40 @@ a:hover {
     display: block;
     overflow: visible;
   }
-  .google-sidebar {
+  .google-top-nav {
     position: fixed;
     top: var(--google-appbar-height);
+    left: 0;
+    width: var(--google-sidebar-width);
     height: calc(100vh - var(--google-appbar-height));
     z-index: 1000;
     transform: translateX(-100%);
     box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    background-color: var(--google-bg-color);
+    border-right: 1px solid var(--google-border-color);
+    transition: transform 0.2s ease;
+    overflow-y: auto;
+    padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px)) 0;
+    display: block;
   }
-  .google-sidebar.open {
+  .google-top-nav.open {
     transform: translateX(0);
+  }
+  .google-top-nav .google-nav-list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .google-top-nav .google-nav-item {
+    margin-bottom: 4px;
+  }
+  .google-top-nav .google-nav-link {
+    height: 48px;
+    padding: 0 16px;
+    margin: 0 12px;
+    gap: 16px;
+  }
+  .google-top-nav hr {
+    display: block;
   }
   .google-main-content {
     overflow-y: visible;
