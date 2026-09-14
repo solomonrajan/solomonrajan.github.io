@@ -1,3 +1,12 @@
+# [0.119.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.118.0...v0.119.0) (2026-09-14)
+
+
+### Features
+
+* add blog posts and migrate analytics from Umami to GoatCounter ([7761f5c](https://github.com/solomonrajan/solomonrajan.github.io/commit/7761f5c96efa037c7d536803a8c7189421c5f6dc))
+
+
+
 # [0.118.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.117.0...v0.118.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add core dashboard logic, changelog page, and stylesheet ([0c0f3e1](https://github.com/solomonrajan/solomonrajan.github.io/commit/0c0f3e1ff97d1bc78fb7ef985bac5d1e4996059e))
-
-
-
-# [0.114.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.113.0...v0.114.0) (2026-09-13)
-
-
-### Features
-
-* add new blog posts and standardize workspace logo styling ([bb247e1](https://github.com/solomonrajan/solomonrajan.github.io/commit/bb247e1a31709f654fa406c95075ebca0d3471ba))
 
 
 
