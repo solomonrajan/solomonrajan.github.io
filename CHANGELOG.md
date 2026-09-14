@@ -1,3 +1,12 @@
+# [0.115.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.114.0...v0.115.0) (2026-09-14)
+
+
+### Features
+
+* add core dashboard logic, changelog page, and stylesheet ([0c0f3e1](https://github.com/solomonrajan/solomonrajan.github.io/commit/0c0f3e1ff97d1bc78fb7ef985bac5d1e4996059e))
+
+
+
 # [0.114.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.113.0...v0.114.0) (2026-09-13)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog component and update updates page ([91de175](https://github.com/solomonrajan/solomonrajan.github.io/commit/91de175aa396aca984bb609f855406c89a435455))
-
-
-
-# [0.110.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.109.0...v0.110.0) (2026-09-13)
-
-
-### Features
-
-* add changelog asset and update contact and updates pages with security and feature improvements ([7d17592](https://github.com/solomonrajan/solomonrajan.github.io/commit/7d17592079171fa3af2e9aa9ed6b2e6a91c74b60))
 
 
 
