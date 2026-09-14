@@ -1,3 +1,12 @@
+# [0.121.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.120.0...v0.121.0) (2026-09-14)
+
+
+### Features
+
+* add changelog page and styles and fix about page flexbox layout ([c5502c1](https://github.com/solomonrajan/solomonrajan.github.io/commit/c5502c1603eb92abb660d0d35be21ea33cf79c4b))
+
+
+
 # [0.120.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.119.0...v0.120.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add vintage design assets, core stylesheet, javascript logic, and changelog page ([f16a50d](https://github.com/solomonrajan/solomonrajan.github.io/commit/f16a50d99da8afa902cd2d78186f916559404b92))
-
-
-
-# [0.116.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.115.0...v0.116.0) (2026-09-14)
-
-
-### Features
-
-* implement Google Dashboard minimalist design system and update site pages ([c8c81f5](https://github.com/solomonrajan/solomonrajan.github.io/commit/c8c81f565e19fcf491456dbdbbf5cc70662f6311))
 
 
 
