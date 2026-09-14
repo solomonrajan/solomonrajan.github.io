@@ -46,7 +46,12 @@ function initVintageDoodles() {
     { src: 'assets/images/tea-stall.jpg', alt: 'Vintage Tea Stall', sizeDesktop: 180 },
     { src: 'assets/images/coconut-tree.jpg', alt: 'Coconut Tree Doodle', sizeDesktop: 150 },
     { src: 'assets/images/elephant.jpg', alt: 'Temple Elephant Doodle', sizeDesktop: 150 },
-    { src: 'assets/images/trees.jpg', alt: 'Tropical Trees Doodle', sizeDesktop: 180 }
+    { src: 'assets/images/trees.jpg', alt: 'Tropical Trees Doodle', sizeDesktop: 180 },
+    { src: 'assets/images/houseboat-v2.jpg', alt: 'Kerala Houseboat', sizeDesktop: 200 },
+    { src: 'assets/images/kathakali.jpg', alt: 'Kathakali Face Mask', sizeDesktop: 180 },
+    { src: 'assets/images/snakeboat.jpg', alt: 'Chundan Vallam Snake Boat', sizeDesktop: 220 },
+    { src: 'assets/images/autorickshaw.jpg', alt: 'Indian Auto Rickshaw', sizeDesktop: 160 },
+    { src: 'assets/images/royal-enfield.jpg', alt: 'Vintage Royal Enfield', sizeDesktop: 160 }
   ];
 
   const shuffled = doodles.sort(() => 0.5 - Math.random());
