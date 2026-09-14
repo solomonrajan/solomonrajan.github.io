@@ -4,6 +4,28 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.3.38 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">bug_report</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.3.38</span>
+            <span class="changelog-tag changelog-tag--bugfix" style="background-color: var(--google-red); color: white;">Bugfix</span>
+          </div>
+          <time class="changelog-date">14 Sep 2026, 8:43 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Critical Layout Fix:</strong> Fixed a severe page rendering issue on the Personal Info (About) page caused by duplicated `&lt;/head&gt;`, `&lt;body&gt;`, and `&lt;header&gt;` tags that were breaking the browser's DOM parser and displacing the entire main layout.</li>
+          <li><strong>Layout Fix:</strong> Fixed a horizontal scrolling issue caused by the hand-drawn SVG donate arrow overflowing its container globally.</li>
+          <li><strong>Flexbox Structure:</strong> Corrected malformed DOM structure inside `.google-list-item-content` on the Personal Info (About) page where three flex children (Date, Role, and Location) were incorrectly positioned side-by-side on desktop. Wrapped the Role and Location elements within `.google-list-item-value` to restore the correct stacked flexbox original design layout.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.3.37 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">

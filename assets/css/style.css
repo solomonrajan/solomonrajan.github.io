@@ -1306,4 +1306,6 @@ a:hover {
   mix-blend-mode: screen;
 }
 
-
+.donate-arrow-svg {
+  display: none !important;
+}
