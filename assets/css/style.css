@@ -351,7 +351,7 @@ a:hover {
 .google-top-nav {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -360,6 +360,8 @@ a:hover {
   flex-direction: row;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .google-nav-item {
@@ -369,16 +371,17 @@ a:hover {
 .google-nav-link {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   height: 40px;
-  padding: 0 16px;
-  margin: 0 4px;
+  padding: 0 12px;
+  margin: 0 2px;
   border-radius: 9999px;
   color: var(--google-text-secondary);
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
 }
 
 .google-nav-link:hover {
