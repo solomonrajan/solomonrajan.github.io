@@ -86,7 +86,7 @@ This website operates without any heavy frameworks, build steps, or package bund
 
 - **Frontend Core:** Pure HTML5, CSS3, and Vanilla JavaScript (ES6+).
 - **Hosting:** GitHub Pages.
-- **Analytics:** Privacy-first tracking (Umami).
+- **Analytics:** Privacy-first tracking (GoatCounter).
 - **Development Tools & AI Apps:**
   - **Google Gemini & Google Antigravity IDE:** Used extensively for architectural planning, code generation, and iterative design refactoring.
   - **Microsoft VS Code:** The primary text editor for manual code adjustments.
