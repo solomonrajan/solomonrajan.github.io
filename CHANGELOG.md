@@ -1,3 +1,12 @@
+# [0.116.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.115.0...v0.116.0) (2026-09-14)
+
+
+### Features
+
+* implement Google Dashboard minimalist design system and update site pages ([c8c81f5](https://github.com/solomonrajan/solomonrajan.github.io/commit/c8c81f565e19fcf491456dbdbbf5cc70662f6311))
+
+
+
 # [0.115.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.114.0...v0.115.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * implement core dashboard JavaScript, anti-clickjacking protection script, and update site pages ([6b17431](https://github.com/solomonrajan/solomonrajan.github.io/commit/6b17431fbee24aa9886e0950223368b46708452e))
-
-
-
-# [0.111.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.110.0...v0.111.0) (2026-09-13)
-
-
-### Features
-
-* add changelog component and update updates page ([91de175](https://github.com/solomonrajan/solomonrajan.github.io/commit/91de175aa396aca984bb609f855406c89a435455))
 
 
 
