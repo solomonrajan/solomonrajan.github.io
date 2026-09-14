@@ -1,3 +1,12 @@
+# [0.117.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.116.0...v0.117.0) (2026-09-14)
+
+
+### Features
+
+* add vintage design assets, core stylesheet, javascript logic, and changelog page ([f16a50d](https://github.com/solomonrajan/solomonrajan.github.io/commit/f16a50d99da8afa902cd2d78186f916559404b92))
+
+
+
 # [0.116.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.115.0...v0.116.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add blog template, new blog posts, changelog page, and update workspace branding ([fb6e552](https://github.com/solomonrajan/solomonrajan.github.io/commit/fb6e552f4f4e3f363630567aebb057042d526d43))
-
-
-
-# [0.112.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.111.0...v0.112.0) (2026-09-13)
-
-
-### Features
-
-* implement core dashboard JavaScript, anti-clickjacking protection script, and update site pages ([6b17431](https://github.com/solomonrajan/solomonrajan.github.io/commit/6b17431fbee24aa9886e0950223368b46708452e))
 
 
 
