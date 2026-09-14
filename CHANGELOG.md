@@ -1,3 +1,12 @@
+# [0.122.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.121.0...v0.122.0) (2026-09-14)
+
+
+### Features
+
+* add changelog HTML page and CSS stylesheet ([9339328](https://github.com/solomonrajan/solomonrajan.github.io/commit/9339328cb81898db48ff0ea1393ca9828dbe8240))
+
+
+
 # [0.121.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.120.0...v0.121.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add Kerala-themed background doodle assets and dynamic injection logic ([cb2ee61](https://github.com/solomonrajan/solomonrajan.github.io/commit/cb2ee61b6b16695ab8fd656e3d901ce2441b5a97))
-
-
-
-# [0.117.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.116.0...v0.117.0) (2026-09-14)
-
-
-### Features
-
-* add vintage design assets, core stylesheet, javascript logic, and changelog page ([f16a50d](https://github.com/solomonrajan/solomonrajan.github.io/commit/f16a50d99da8afa902cd2d78186f916559404b92))
 
 
 
