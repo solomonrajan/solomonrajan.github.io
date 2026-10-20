@@ -1,3 +1,12 @@
+# [0.124.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.123.1...v0.124.0) (2026-10-20)
+
+
+### Features
+
+* **blog:** publish Cash Ledger deep dive with interactive rupee simulator and layout fixes ([d2e31f8](https://github.com/solomonrajan/solomonrajan.github.io/commit/d2e31f84a324205f45977dde563d436d15a7fc37))
+
+
+
 ## [0.123.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.123.0...v0.123.1) (2026-10-20)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog HTML page and CSS stylesheet ([9339328](https://github.com/solomonrajan/solomonrajan.github.io/commit/9339328cb81898db48ff0ea1393ca9828dbe8240))
-
-
-
-# [0.121.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.120.0...v0.121.0) (2026-09-14)
-
-
-### Features
-
-* add changelog page and styles and fix about page flexbox layout ([c5502c1](https://github.com/solomonrajan/solomonrajan.github.io/commit/c5502c1603eb92abb660d0d35be21ea33cf79c4b))
 
 
 
