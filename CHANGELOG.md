@@ -1,3 +1,12 @@
+## [0.123.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.123.0...v0.123.1) (2026-10-20)
+
+
+### Bug Fixes
+
+* **ui:** eliminate card transparency on mobile and showcase cashledger portfolio card ([3bc149e](https://github.com/solomonrajan/solomonrajan.github.io/commit/3bc149ecf2f539ae6e86a5f3762ab34fd06fab0c))
+
+
+
 # [0.123.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.122.1...v0.123.0) (2026-10-20)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add changelog page and styles and fix about page flexbox layout ([c5502c1](https://github.com/solomonrajan/solomonrajan.github.io/commit/c5502c1603eb92abb660d0d35be21ea33cf79c4b))
-
-
-
-# [0.120.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.119.0...v0.120.0) (2026-09-14)
-
-
-### Features
-
-* add new blog posts and migrate GoatCounter analytics script to local asset ([8935713](https://github.com/solomonrajan/solomonrajan.github.io/commit/8935713e725931b4de32289a04e60128d89bad5d))
 
 
 
