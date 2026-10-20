@@ -4,6 +4,49 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.4.3 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">format_align_center</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.3</span>
+            <span class="changelog-tag changelog-tag--ui" style="background-color: var(--google-blue); color: white;">UI Alignment</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 9:55 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Header Centering:</strong> Center-aligned the profile modal header container and heading element (<code>h2</code>) with <code>justify-content: center</code>, <code>width: 100%</code>, and <code>text-align: center</code> across desktop and mobile screens.</li>
+          <li><strong>Role &amp; Name Distinction:</strong> Updated the modal header title to "Certified Labour Welfare Officer" accompanied by the verified badge, and set the subtext caption to "Solomon Rajan".</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.2 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">layers</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.2</span>
+            <span class="changelog-tag changelog-tag--bugfix">Mobile Fix</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 9:35 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Mobile Card Opacity Fix:</strong> Enforced solid, opaque background colors (<code>background-color: var(--google-bg-color) !important</code>) and explicit stacking contexts (<code>z-index: 2</code>) on <code>.google-content-container</code>, <code>.google-card</code>, and card sub-sections.</li>
+          <li><strong>Mobile Ambient Doodles Suppression:</strong> Suppressed ambient background stickers on mobile and tablet viewports (<code>&lt;= 992px</code>) via CSS media query and JavaScript viewport guard in <code>initVintageDoodles()</code> to eliminate sticker bleed-through over cards.</li>
+          <li><strong>Stylesheet Optimization:</strong> Cleaned up redundant duplicate modal and highlight style blocks in <code>assets/css/style.css</code>.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.4.1 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
@@ -25,8 +68,6 @@
           <li><strong>Official App Branding:</strong> Replaced the generic wallet icon with the official multi-colored <code>cashledger</code> squircle application logo.</li>
           <li><strong>Active Development Status Indicator:</strong> Integrated an animated live pulsing badge ("Currently Going On &amp; Working • Active Development") featuring a hardware-accelerated dual-layer green radar pulse ring and breathing halo glow.</li>
           <li><strong>Interactive GitHub Star Button:</strong> Added a dedicated GitHub Star CTA button featuring the official GitHub brand mark and dynamic live star count synchronization via the GitHub REST API.</li>
-          <li><strong>Mobile Card Opacity Fix:</strong> Enforced solid, opaque background colors and explicit stacking contexts (`z-index: 2`) across all cards and sections, while suppressing ambient background stickers on mobile and tablet displays to eliminate bleed-through and perceived transparency.</li>
-          <li><strong>Profile Modal Header Centering:</strong> Center-aligned the modal header title and verification badge across the stylesheet and JavaScript constructor.</li>
         </ul>
       </article>
     </div>
