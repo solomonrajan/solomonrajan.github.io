@@ -1,3 +1,12 @@
+# [0.123.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.122.1...v0.123.0) (2026-10-20)
+
+
+### Features
+
+* **portfolio:** showcase cashledger as primary pinned project with live star button and branding ([6959bef](https://github.com/solomonrajan/solomonrajan.github.io/commit/6959bef251dae4f6feaa0cadbda228fe66021bbd))
+
+
+
 ## [0.122.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.122.0...v0.122.1) (2026-10-20)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add new blog posts and migrate GoatCounter analytics script to local asset ([8935713](https://github.com/solomonrajan/solomonrajan.github.io/commit/8935713e725931b4de32289a04e60128d89bad5d))
-
-
-
-# [0.119.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.118.0...v0.119.0) (2026-09-14)
-
-
-### Features
-
-* add blog posts and migrate analytics from Umami to GoatCounter ([7761f5c](https://github.com/solomonrajan/solomonrajan.github.io/commit/7761f5c96efa037c7d536803a8c7189421c5f6dc))
 
 
 
