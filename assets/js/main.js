@@ -312,8 +312,8 @@ function initProfileModal() {
   header.className = 'google-profile-modal-header';
   
   const h2 = document.createElement('h2');
-  h2.style.cssText = 'display: flex; align-items: center; justify-content: center; gap: 4px;';
-  h2.textContent = 'Solomon Rajan ';
+  h2.style.cssText = 'display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center; width: 100%;';
+  h2.textContent = 'Certified Labour Welfare Officer ';
   
   const icon = document.createElement('span');
   icon.className = 'material-symbols-outlined';
@@ -333,8 +333,8 @@ function initProfileModal() {
   img.className = 'google-profile-modal-img';
 
   const p = document.createElement('p');
-  p.style.cssText = 'margin-top: 12px; color: var(--google-text-secondary); font-size: 14px; text-align: center; font-weight: 500;';
-  p.textContent = 'Certified Labour Welfare Officer';
+  p.style.cssText = 'margin-top: 12px; color: var(--google-text-secondary); font-size: 18px; text-align: center; font-weight: 500;';
+  p.textContent = 'Solomon Rajan';
 
   body.appendChild(img);
   body.appendChild(p);
