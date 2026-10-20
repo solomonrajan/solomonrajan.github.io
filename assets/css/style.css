@@ -76,7 +76,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* 2. Top App Bar */
@@ -552,13 +552,16 @@ a:hover {
   border: none;
   background-color: var(--google-blue);
   color: #fff !important; /* Ensure link color doesn't override */
+  text-decoration: none !important;
   transition: background-color 0.2s, box-shadow 0.2s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
-.google-btn:hover {
+.google-btn:hover,
+.google-btn:focus,
+.google-btn:active {
   background-color: var(--google-blue-hover);
   color: #fff !important;
-  text-decoration: none;
+  text-decoration: none !important;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 .google-btn img {
@@ -742,18 +745,28 @@ a:hover {
 
 .google-markdown a {
   color: var(--google-blue);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: rgba(26, 115, 232, 0.4);
+  text-decoration: none;
   font-weight: 500;
-  transition: text-decoration-color 0.2s;
+  transition: color 0.2s;
 }
-.google-markdown a:hover { text-decoration-color: var(--google-blue); }
+.google-markdown a:hover {
+  text-decoration: none;
+  color: var(--google-blue-hover);
+}
 [data-theme="dark"] .google-markdown a {
-  text-decoration-color: rgba(138, 180, 248, 0.4);
+  color: #8ab4f8;
+  text-decoration: none;
 }
 [data-theme="dark"] .google-markdown a:hover {
-  text-decoration-color: var(--google-blue);
+  text-decoration: none;
+  color: var(--google-blue);
+}
+.google-markdown a.google-btn,
+.google-markdown a.google-btn:hover,
+.google-markdown a.google-btn:focus,
+.google-markdown a.google-btn:active,
+.google-markdown .google-btn {
+  text-decoration: none !important;
 }
 
 .google-markdown strong { font-weight: 600; color: var(--google-text-primary); }

@@ -4,6 +4,93 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.4.7 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">currency_rupee</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.7</span>
+            <span class="changelog-tag changelog-tag--content" style="background-color: var(--google-blue); color: white;">Currency Localization</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 10:28 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Rupee Symbol Localization (₹):</strong> Converted all currency indicators from dollars (<code>$</code>) to Indian Rupees (<code>₹</code>) across the Cash Ledger interactive budget widgets, summary metrics cards, transaction simulation buttons, and live journal entries.</li>
+          <li><strong>Reactive Script &amp; MDX Parity:</strong> Updated the client-side budget computation logic and synchronized the changes across both <code>assets/blog/content/blog-post-cashledger.mdx</code> and <code>assets/blog/blog-post-cashledger.html</code>.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.6 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">draw</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.6</span>
+            <span class="changelog-tag changelog-tag--bugfix">Visual Polish</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 10:24 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Doodle Path Resolution in Blog Posts:</strong> Fixed ambient vintage Kerala doodles failing to render on blog pages by dynamically resolving asset base paths (<code>../images/</code> for subdirectories vs <code>assets/images/</code> for root) in <code>assets/js/main.js</code>, with an automatic error fallback to prevent broken image badges.</li>
+          <li><strong>Universal Link Underline Removal:</strong> Eliminated unwanted underlines from buttons (<code>.google-btn</code>), copy buttons, action controls, and page links globally across <code>assets/css/style.css</code> and article templates to preserve sleek Google Workspace aesthetic typography.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.5 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">vertical_split</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.5</span>
+            <span class="changelog-tag changelog-tag--bugfix">Layout Fix</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 10:16 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Blog Layout Realignment:</strong> Corrected navigation positioning across <code>assets/blog/blog-post-cashledger.html</code>, <code>assets/blog/template.html</code>, and all blog post templates by migrating navigation out of the legacy <code>&lt;aside class="google-sidebar"&gt;</code> inside <code>.google-layout</code> into <code>&lt;nav class="google-top-nav"&gt;</code> within <code>&lt;header class="google-app-bar"&gt;</code>.</li>
+          <li><strong>Single Centered Column Layout:</strong> Eliminated horizontal squishing where the desktop flex layout was treating the navigation as a left column, restoring full-width centered card alignment for <code>.google-content-container</code>.</li>
+          <li><strong>Global Blog Consistency:</strong> Propagated the layout correction to all published blog articles (MSW, Employee Wellbeing, Labour Relations, and Case Management) for complete navigational and visual uniformity.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.4 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">menu_book</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.4</span>
+            <span class="changelog-tag changelog-tag--content" style="background-color: var(--google-blue); color: white;">Interactive Article</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 10:10 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Cash Ledger Deep Dive:</strong> Published an interactive architectural case study and blog post for <a href="https://github.com/solomonrajan/cashledger" target="_blank" rel="noopener noreferrer">Cash Ledger</a>—an offline-first, privacy-centric native Android finance management system.</li>
+          <li><strong>Interactive Budget Simulator:</strong> Embedded a reactive client-side simulation engine allowing visitors to test budget limits, simulate categorized spending events, view instant progress updates, and inspect visual threshold alerts.</li>
+          <li><strong>Kotlin Architecture &amp; Future Roadmap:</strong> Documented the reactive Flow-based budget computation engine and decentralized WebDAV sync protocol alongside current milestones and a 4-phase forward development roadmap.</li>
+          <li><strong>Dual Source &amp; Directory Integration:</strong> Authored content in both structured MDX (<code>assets/blog/content/blog-post-cashledger.mdx</code>) and standalone responsive HTML (<code>assets/blog/blog-post-cashledger.html</code>), and featured the article prominently on <code>blog.html</code>.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.4.3 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">

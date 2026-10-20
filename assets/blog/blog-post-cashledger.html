@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://ui-avatars.com; connect-src 'self' https://api.open-meteo.com https://solomonrajan.goatcounter.com https://formsubmit.co https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="A deep dive into Cash Ledger—the open-source native Android personal finance manager featuring offline-first Room persistence, zero trackers, hardware-backed security, and modern Kotlin architecture.">
+  <title>Inside Cash Ledger: Engineering an Offline-First, Privacy-Centric Android Finance Engine | Solomon Rajan</title>
+
+  <!-- Google Fonts (Strict Google Sans & Material Symbols) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block">
+
+  <!-- Core Google Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .google-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .blog-code-wrapper {
+      position: relative;
+      margin: 20px 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--google-border-color);
+      background-color: #0d1117;
+    }
+    .btn-copy-code {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #c9d1d9;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-copy-code:hover {
+      background: rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+    }
+    .google-markdown pre {
+      margin: 0;
+      padding: 16px;
+      overflow-x: auto;
+      background: transparent;
+    }
+    .google-markdown pre code {
+      color: #c9d1d9;
+      font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .sim-action-btn:hover {
+      background-color: var(--google-border-color) !important;
+    }
+    a,
+    a:hover,
+    a:focus,
+    .google-btn,
+    .google-btn:hover,
+    .google-markdown a,
+    .google-markdown a:hover,
+    .btn-copy-code,
+    .btn-copy-code:hover {
+      text-decoration: none !important;
+    }
+  </style>
+  <!-- Analytics -->
+  <script data-goatcounter="https://solomonrajan.goatcounter.com/count" async src="../js/count.js"></script>
+  <!-- Anti-Clickjacking -->
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript">
+    if (self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Top App Bar -->
+  <header class="google-app-bar">
+    <div class="google-app-bar__left">
+      <button class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="/" class="google-logo">
+        <span style="color: #F9A825; font-weight: 500;">Solomon Rajan</span>
+        <span style="color: var(--google-text-secondary); font-size: 20px; margin-left: 4px;">Workspace</span>
+      </a>
+    </div>
+    
+    <nav class="google-top-nav" id="google-sidebar">
+      <ul class="google-nav-list">
+        <li class="google-nav-item">
+          <a href="/" class="google-nav-link">
+            <span class="material-symbols-outlined">account_circle</span>
+            Home
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/about" class="google-nav-link">
+            <span class="material-symbols-outlined">badge</span>
+            Personal info
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/portfolio" class="google-nav-link">
+            <span class="material-symbols-outlined">work</span>
+            Portfolio
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/blog" class="google-nav-link active">
+            <span class="material-symbols-outlined">article</span>
+            Blog
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/contact" class="google-nav-link">
+            <span class="material-symbols-outlined">contact_page</span>
+            Contact
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/updates" class="google-nav-link">
+            <span class="material-symbols-outlined">update</span>
+            Changelog
+          </a>
+        </li>
+        <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 8px 0;">
+        <li class="google-nav-item google-theme-control-container">
+          <div class="google-theme-segmented-control" id="theme-toggle-group">
+            <button class="theme-btn" data-theme-value="system" aria-label="System theme" title="System Theme">
+              <span class="material-symbols-outlined">monitor</span>
+            </button>
+            <button class="theme-btn" data-theme-value="light" aria-label="Light theme" title="Light Theme">
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button class="theme-btn" data-theme-value="dark" aria-label="Dark theme" title="Dark Theme">
+              <span class="material-symbols-outlined">dark_mode</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="google-app-bar__right">
+      <div class="google-apps-container">
+        <button class="google-menu-btn" id="google-apps-toggle" aria-label="Google apps" title="Google apps">
+          <span class="material-symbols-outlined">apps</span>
+        </button>
+        <div class="google-apps-dropdown" id="google-apps-dropdown">
+          <div class="google-apps-header">
+            <span>Your favourites</span>
+          </div>
+          <div class="google-apps-grid">
+            <a href="https://github.com/solomonrajan" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/github.svg" alt="GitHub">
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/solomonrajan" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/linkedin.svg" alt="LinkedIn">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://liberapay.com/solomon.rajan" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/liberapay.svg" alt="Liberapay">
+              <span>Liberapay</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/kofi.svg" alt="Ko-fi">
+              <span>Ko-fi</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/buymeacoffee.svg" alt="Coffee">
+              <span>Coffee</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/gitlab.svg" alt="GitLab">
+              <span>GitLab</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/reddit.svg" alt="Reddit">
+              <span>Reddit</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/x.svg" alt="X">
+              <span>X</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="../logos/telegram.svg" alt="Telegram">
+              <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="google-avatar-ring"><img src="../images/profile.png" alt="Profile" class="google-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Solomon+Rajan&background=1a73e8&color=fff'"></div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="google-layout">
+    
+    <!-- Content Area -->
+    <main class="google-main-content">
+      <div class="google-content-container">
+        <div class="google-card">
+          <div class="google-card-header">
+            <h1 style="font-size: 28px; font-weight: 500; color: var(--google-text-primary); margin: 0 0 10px 0; line-height: 1.35;">Inside Cash Ledger: Engineering an Offline-First, Privacy-Centric Android Finance Engine</h1>
+            <p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: var(--google-text-secondary); font-size: 14px;">
+              <span>October 20, 2026</span>
+              <span style="font-size: 10px;">&bull;</span>
+              <span>9 min read</span>
+              <span style="font-size: 10px;">&bull;</span>
+              <span>Android &amp; Open Source</span>
+            </p>
+          </div>
+          <div class="google-card-body google-markdown" style="padding: 28px;">
+
+            <div class="blog-hero-highlight" style="background: var(--google-hover-bg); border: 1px solid var(--google-border-color); border-radius: 20px; padding: 24px; margin-bottom: 28px;">
+              <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 12px; flex-wrap: wrap;">
+                <img src="../images/cashledger-logo.png" alt="Cash Ledger Logo" style="width: 48px; height: 48px; border-radius: 12px; object-fit: contain; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+                <div>
+                  <h3 style="margin: 0; font-size: 20px; font-weight: 500; color: var(--google-text-primary);">Cash Ledger for Android</h3>
+                  <p style="margin: 0; font-size: 13px; color: var(--google-text-secondary);">Kotlin Native &bull; Offline-First Architecture &bull; GPL-3.0 License &bull; Zero Telemetry</p>
+                </div>
+              </div>
+              <p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; color: var(--google-text-secondary);">
+                Personal financial data is among the most sensitive information we produce every day. Yet, the vast majority of modern budgeting applications mandate cloud account creation, connect directly to commercial data aggregators, and harvest telemetry for ad-targeting networks. <strong>Cash Ledger</strong> was engineered on an uncompromising principle: <em>Your money stays on your phone, in your hands, under your complete control.</em>
+              </p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <a href="https://github.com/solomonrajan/cashledger" target="_blank" rel="noopener noreferrer" class="google-btn" style="padding: 8px 18px; font-size: 13px;">
+                  <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+                  Explore on GitHub
+                </a>
+                <a href="https://github.com/solomonrajan/cashledger/releases/latest" target="_blank" rel="noopener noreferrer" class="google-btn" style="padding: 8px 18px; font-size: 13px; background: var(--google-hover-bg); color: var(--google-text-primary) !important; border: 1px solid var(--google-border-color);">
+                  <span class="material-symbols-outlined" style="font-size: 16px;">download</span>
+                  Download Signed APK
+                </a>
+              </div>
+            </div>
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">1. The Core Philosophy: Why Offline-First?</h3>
+            <p>When managing personal finance, latency and reliability matter just as much as privacy. You should never be blocked from logging an expense because you are underground in a subway station, traveling internationally without roaming data, or experiencing an unexpected cloud server outage.</p>
+            <p>Cash Ledger adopts an <strong>uncompromising offline-first design</strong>:</p>
+            <ul style="padding-left: 24px; margin-bottom: 24px;">
+              <li style="margin-bottom: 8px;"><strong>Zero Telemetry &amp; Zero Cloud Accounts:</strong> No mandatory login forms, no Google Firebase Analytics, no Meta/Facebook SDKs, and no remote crash analytics reporting.</li>
+              <li style="margin-bottom: 8px;"><strong>Deterministic Local Persistence:</strong> All transactions, wallets, recurring rules, and custom categories are saved directly into an SQLite database managed via Android's Room abstraction layer.</li>
+              <li style="margin-bottom: 8px;"><strong>Complete Data Portability:</strong> Seamless export to CSV, Excel (XLS), and printable PDF formats, alongside backward migration compatibility with Tallybook.</li>
+            </ul>
+
+            <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 32px 0;">
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">2. Interactive Live Demo: Cash Ledger Budget Simulator</h3>
+            <p>Test Cash Ledger's real-time budgeting and category consumption engine directly in your browser below. Try adding transactions to see the safe spending velocity and color-shifting alerts adapt live:</p>
+
+            <!-- Simulator Widget -->
+            <div id="cashledger-simulator" style="border: 1px solid var(--google-border-color); border-radius: 20px; background: var(--google-bg-color); padding: 24px; margin: 24px 0; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--google-border-color); padding-bottom: 16px; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+                <div>
+                  <span style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--google-blue);">Interactive Widget</span>
+                  <h4 style="margin: 2px 0 0 0; font-size: 18px; font-weight: 500;">Monthly Spending &amp; Budget Engine</h4>
+                </div>
+                <button id="sim-reset-btn" style="background: transparent; border: 1px solid var(--google-border-color); padding: 6px 14px; border-radius: 16px; font-size: 12px; font-weight: 500; cursor: pointer; color: var(--google-text-secondary); display: flex; align-items: center; gap: 4px;">
+                  <span class="material-symbols-outlined" style="font-size: 15px;">refresh</span> Reset Simulator
+                </button>
+              </div>
+
+              <!-- Summary Metrics Cards -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; margin-bottom: 20px;">
+                <div style="background: var(--google-hover-bg); padding: 14px; border-radius: 14px; border: 1px solid var(--google-border-color);">
+                  <span style="font-size: 12px; color: var(--google-text-secondary);">Monthly Budget</span>
+                  <div id="sim-budget-display" style="font-size: 20px; font-weight: 600; color: var(--google-text-primary); margin-top: 4px;">₹1,500.00</div>
+                </div>
+                <div style="background: var(--google-hover-bg); padding: 14px; border-radius: 14px; border: 1px solid var(--google-border-color);">
+                  <span style="font-size: 12px; color: var(--google-text-secondary);">Total Spent</span>
+                  <div id="sim-spent-display" style="font-size: 20px; font-weight: 600; color: var(--google-text-primary); margin-top: 4px;">₹480.00</div>
+                </div>
+                <div style="background: var(--google-hover-bg); padding: 14px; border-radius: 14px; border: 1px solid var(--google-border-color);">
+                  <span style="font-size: 12px; color: var(--google-text-secondary);">Remaining Safe Buffer</span>
+                  <div id="sim-remaining-display" style="font-size: 20px; font-weight: 600; color: #1e8e3e; margin-top: 4px;">₹1,020.00</div>
+                </div>
+              </div>
+
+              <!-- Dynamic Budget Progress Bar -->
+              <div style="margin-bottom: 24px;">
+                <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 500; margin-bottom: 6px;">
+                  <span id="sim-progress-label">Budget Consumption: 32%</span>
+                  <span id="sim-status-chip" style="font-size: 11px; padding: 2px 8px; border-radius: 10px; background: #e6f4ea; color: #137333;">Healthy Status</span>
+                </div>
+                <div style="height: 10px; border-radius: 6px; background: var(--google-border-color); overflow: hidden; position: relative;">
+                  <div id="sim-progress-bar" style="height: 100%; width: 32%; background: #34a853; border-radius: 6px; transition: width 0.4s ease, background-color 0.4s ease;"></div>
+                </div>
+              </div>
+
+              <!-- Quick Action Buttons -->
+              <div style="margin-bottom: 20px;">
+                <span style="font-size: 13px; font-weight: 500; color: var(--google-text-secondary); display: block; margin-bottom: 8px;">Tap to simulate real-world transactions:</span>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <button class="sim-action-btn" data-amt="15" data-cat="Dining &amp; Coffee" style="cursor: pointer; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 8px 12px; border-radius: 12px; font-size: 13px; color: var(--google-text-primary); display: flex; align-items: center; gap: 6px;">
+                    ☕ Coffee &amp; Snack (+₹15)
+                  </button>
+                  <button class="sim-action-btn" data-amt="85" data-cat="Groceries" style="cursor: pointer; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 8px 12px; border-radius: 12px; font-size: 13px; color: var(--google-text-primary); display: flex; align-items: center; gap: 6px;">
+                    🛒 Supermarket (+₹85)
+                  </button>
+                  <button class="sim-action-btn" data-amt="140" data-cat="Utilities &amp; Wi-Fi" style="cursor: pointer; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 8px 12px; border-radius: 12px; font-size: 13px; color: var(--google-text-primary); display: flex; align-items: center; gap: 6px;">
+                    ⚡ Electric Bill (+₹140)
+                  </button>
+                  <button class="sim-action-btn" data-amt="450" data-cat="Hardware Upgrade" style="cursor: pointer; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 8px 12px; border-radius: 12px; font-size: 13px; color: var(--google-text-primary); display: flex; align-items: center; gap: 6px;">
+                    💻 New Display (+₹450)
+                  </button>
+                </div>
+              </div>
+
+              <!-- Transaction History Log -->
+              <div style="border-top: 1px solid var(--google-border-color); padding-top: 14px;">
+                <span style="font-size: 12px; font-weight: 500; color: var(--google-text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">Simulated Journal Entries</span>
+                <ul id="sim-log-list" style="list-style: none; padding: 0; margin: 10px 0 0 0; display: flex; flex-direction: column; gap: 8px; max-height: 160px; overflow-y: auto;">
+                  <li style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; padding: 6px 10px; background: var(--google-hover-bg); border-radius: 8px;">
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                      <span class="material-symbols-outlined" style="font-size: 16px; color: #1a73e8;">receipt_long</span>
+                      Initial Monthly Balance Roll-forward
+                    </span>
+                    <span style="font-weight: 600; color: var(--google-text-secondary);">₹480.00 spent</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 32px 0;">
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">3. Beautiful Code: Reactive Kotlin Architecture</h3>
+            <p>At the heart of Cash Ledger is a clean, modern Android architecture utilizing Kotlin Coroutines, reactive <code>StateFlow</code>, and Room Database DAO queries. Here is how Cash Ledger calculates budget health asynchronously without blocking UI interactions:</p>
+
+            <div class="blog-code-wrapper">
+              <button class="btn-copy-code" aria-label="Copy code snippet">
+                <span class="material-symbols-outlined">content_copy</span> Copy
+              </button>
+<pre><code>package com.oriondev.moneywallet.domain.engine
+
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.combine
+import java.math.BigDecimal
+import java.math.RoundingMode
+
+/**
+ * Real-time Budget Computation Engine
+ * Computes consumption percentage and safe spending velocity.
+ */
+data class BudgetStatus(
+    val totalLimit: BigDecimal,
+    val currentSpent: BigDecimal,
+    val remainingBuffer: BigDecimal,
+    val percentConsumed: Float,
+    val isOverBudget: Boolean
+)
+
+class BudgetEngine(
+    private val transactionDao: TransactionDao,
+    private val budgetDao: BudgetDao
+) {
+    /**
+     * Observes real-time budget status across one or more monitored categories.
+     */
+    fun observeBudgetHealth(budgetId: Long, startDateEpoch: Long, endDateEpoch: Long): Flow&lt;BudgetStatus&gt; {
+        return combine(
+            budgetDao.getBudgetByIdFlow(budgetId),
+            transactionDao.getExpensesSumForPeriod(startDateEpoch, endDateEpoch)
+        ) { budget, totalExpense -&gt;
+            val limit = budget.amount
+            val spent = totalExpense ?: BigDecimal.ZERO
+            val remaining = (limit - spent).max(BigDecimal.ZERO)
+            
+            val consumptionRatio = if (limit &gt; BigDecimal.ZERO) {
+                spent.divide(limit, 4, RoundingMode.HALF_UP).toFloat()
+            } else 0f
+
+            BudgetStatus(
+                totalLimit = limit,
+                currentSpent = spent,
+                remainingBuffer = remaining,
+                percentConsumed = (consumptionRatio * 100f).coerceAtMost(100f),
+                isOverBudget = spent &gt; limit
+            )
+        }
+    }
+}</code></pre>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 32px 0;">
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">4. Zero-Knowledge Private Backups: WebDAV &amp; Local Storage</h3>
+            <p>Users should never be forced to trust third-party servers with their financial ledgers. Cash Ledger supports user-controlled <strong>WebDAV sync</strong>, allowing automated backups directly to your own <strong>Nextcloud instance</strong>, Synology NAS, or any standard WebDAV endpoint:</p>
+
+            <div class="blog-code-wrapper">
+              <button class="btn-copy-code" aria-label="Copy code snippet">
+                <span class="material-symbols-outlined">content_copy</span> Copy
+              </button>
+<pre><code>package com.oriondev.moneywallet.data.backup
+
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.RequestBody.Companion.asRequestBody
+import java.io.File
+import java.io.IOException
+
+/**
+ * Decentralized WebDAV Synchronizer
+ * Enables zero-third-party backups to self-hosted cloud storage.
+ */
+class WebDavBackupManager(
+    private val client: OkHttpClient,
+    private val config: WebDavConfig
+) {
+    suspend fun uploadEncryptedSnapshot(localSnapshotFile: File): Result&lt;Unit&gt; {
+        val remoteUrl = "${config.serverUrl.trimEnd('/')}/cashledger-backup.zip"
+        
+        val request = Request.Builder()
+            .url(remoteUrl)
+            .put(localSnapshotFile.asRequestBody())
+            .header("Authorization", config.toBasicAuthHeader())
+            .header("Content-Type", "application/octet-stream")
+            .build()
+
+        return runCatching {
+            client.newCall(request).execute().use { response -&gt;
+                if (!response.isSuccessful) {
+                    throw IOException("WebDAV sync rejected with HTTP code ${response.code}")
+                }
+            }
+        }
+    }
+}</code></pre>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 32px 0;">
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">5. Current Project Status</h3>
+            <p>Cash Ledger is actively maintained and evolved. Here is a breakdown of what has been achieved so far:</p>
+            <ul style="padding-left: 24px; margin-bottom: 24px;">
+              <li style="margin-bottom: 8px;"><strong>Modern Kotlin Upgrade:</strong> Refactoring legacy Java utilities to idiomatic Kotlin classes, sealed interfaces, and extension functions.</li>
+              <li style="margin-bottom: 8px;"><strong>Reproducible GitHub Actions CI:</strong> Continuous integration builds that create signed, verifiable APKs automatically with zero closed-source build dependencies.</li>
+              <li style="margin-bottom: 8px;"><strong>Material Design 3 Polish:</strong> Seamless support for Google's dynamic light and dark theme palettes.</li>
+              <li style="margin-bottom: 8px;"><strong>Multi-Currency Wallets:</strong> High-precision monetary arithmetic preventing floating-point rounding errors across foreign currency transfers.</li>
+              <li style="margin-bottom: 8px;"><strong>Biometric &amp; Hardware KeyStore Auth:</strong> Fingerprint and PIN lock screen verification ensuring your ledger stays inaccessible if you hand your unlocked phone to a peer.</li>
+            </ul>
+
+            <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 32px 0;">
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">6. The Roadmap: Future Programs &amp; Vision</h3>
+            <p>Here is the strategic development roadmap planned for upcoming Cash Ledger releases:</p>
+
+            <div style="overflow-x: auto; margin-bottom: 24px;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 14px; text-align: left;">
+                <thead>
+                  <tr style="border-bottom: 2px solid var(--google-border-color);">
+                    <th style="padding: 10px 14px; font-weight: 600;">Phase</th>
+                    <th style="padding: 10px 14px; font-weight: 600;">Milestone</th>
+                    <th style="padding: 10px 14px; font-weight: 600;">Key Deliverables</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid var(--google-border-color);">
+                    <td style="padding: 10px 14px; font-weight: 600; color: var(--google-blue);">Phase 1</td>
+                    <td style="padding: 10px 14px;"><em>Jetpack Compose UI</em></td>
+                    <td style="padding: 10px 14px; color: var(--google-text-secondary);">Gradual migration of Android Activities and Fragments to pure Jetpack Compose with Material You dynamic color extraction.</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--google-border-color);">
+                    <td style="padding: 10px 14px; font-weight: 600; color: var(--google-blue);">Phase 2</td>
+                    <td style="padding: 10px 14px;"><em>End-to-End P2P Sync</em></td>
+                    <td style="padding: 10px 14px; color: var(--google-text-secondary);">Local Wi-Fi &amp; Syncthing peer-to-peer sync between phone and tablet without exposing unencrypted databases to the internet.</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--google-border-color);">
+                    <td style="padding: 10px 14px; font-weight: 600; color: var(--google-blue);">Phase 3</td>
+                    <td style="padding: 10px 14px;"><em>Predictive Burn-rate</em></td>
+                    <td style="padding: 10px 14px; color: var(--google-text-secondary);">On-device lightweight statistical models to forecast recurring monthly subscription spikes and warn against budget deficits.</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 14px; font-weight: 600; color: var(--google-blue);">Phase 4</td>
+                    <td style="padding: 10px 14px;"><em>F-Droid Inclusion</em></td>
+                    <td style="padding: 10px 14px; color: var(--google-text-secondary);">Official submission to the F-Droid open-source repository with reproducible build attestation.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 32px 0;">
+
+            <h3 style="font-size: 22px; font-weight: 500; margin: 32px 0 16px;">7. Join &amp; Star the Initiative</h3>
+            <p>Cash Ledger is free software published under the <strong>GNU General Public License v3.0</strong>. Open-source thrives on community feedback, bug reports, and code contributions.</p>
+
+            <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
+              <a href="https://github.com/solomonrajan/cashledger" target="_blank" rel="noopener noreferrer" class="google-btn" style="background: #24292e; color: #ffffff !important; border: 1px solid rgba(255,255,255,0.15);">
+                <img src="../logos/github.svg" alt="GitHub" style="width: 18px; height: 18px; filter: brightness(0) invert(1); margin-right: 4px;">
+                Star on GitHub
+              </a>
+              <a href="https://github.com/solomonrajan/cashledger/issues" target="_blank" rel="noopener noreferrer" class="google-btn" style="background: var(--google-hover-bg); color: var(--google-text-primary) !important; border: 1px solid var(--google-border-color);">
+                <span class="material-symbols-outlined" style="font-size: 18px;">bug_report</span>
+                Report an Issue
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Interactive Simulator Logic
+    (function initSimulator() {
+      const defaultBudget = 1500;
+      let initialSpent = 480;
+      let currentSpent = initialSpent;
+
+      const budgetDisplay = document.getElementById('sim-budget-display');
+      const spentDisplay = document.getElementById('sim-spent-display');
+      const remainingDisplay = document.getElementById('sim-remaining-display');
+      const progressBar = document.getElementById('sim-progress-bar');
+      const progressLabel = document.getElementById('sim-progress-label');
+      const statusChip = document.getElementById('sim-status-chip');
+      const logList = document.getElementById('sim-log-list');
+      const resetBtn = document.getElementById('sim-reset-btn');
+
+      function updateUI() {
+        if (!budgetDisplay) return;
+        const remaining = Math.max(0, defaultBudget - currentSpent);
+        const ratio = (currentSpent / defaultBudget) * 100;
+        const roundedPercent = Math.min(100, Math.round(ratio));
+
+        spentDisplay.textContent = `₹${currentSpent.toFixed(2)}`;
+        remainingDisplay.textContent = `₹${remaining.toFixed(2)}`;
+        progressLabel.textContent = `Budget Consumption: ${roundedPercent}%`;
+        progressBar.style.width = `${Math.min(100, ratio)}%`;
+
+        if (ratio < 75) {
+          progressBar.style.backgroundColor = '#34a853';
+          remainingDisplay.style.color = '#1e8e3e';
+          statusChip.style.background = '#e6f4ea';
+          statusChip.style.color = '#137333';
+          statusChip.textContent = 'Healthy Status';
+        } else if (ratio < 95) {
+          progressBar.style.backgroundColor = '#fbbc04';
+          remainingDisplay.style.color = '#b06000';
+          statusChip.style.background = '#fef7e0';
+          statusChip.style.color = '#b06000';
+          statusChip.textContent = 'Approaching Limit';
+        } else {
+          progressBar.style.backgroundColor = '#ea4335';
+          remainingDisplay.style.color = '#d93025';
+          statusChip.style.background = '#fce8e6';
+          statusChip.style.color = '#c5221f';
+          statusChip.textContent = ratio >= 100 ? 'Budget Exceeded!' : 'Critical Warning';
+        }
+      }
+
+      document.querySelectorAll('.sim-action-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const amt = parseFloat(btn.dataset.amt) || 0;
+          const cat = btn.dataset.cat || 'Expense';
+          currentSpent += amt;
+          updateUI();
+
+          if (logList) {
+            const li = document.createElement('li');
+            li.style.cssText = 'display: flex; justify-content: space-between; align-items: center; font-size: 13px; padding: 6px 10px; background: var(--google-hover-bg); border-radius: 8px; border-left: 3px solid #ea4335;';
+            li.innerHTML = `
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <span class="material-symbols-outlined" style="font-size: 16px; color: #ea4335;">shopping_cart</span>
+                ${cat}
+              </span>
+              <span style="font-weight: 600; color: #ea4335;">-₹${amt.toFixed(2)}</span>
+            `;
+            logList.insertBefore(li, logList.firstChild);
+          }
+        });
+      });
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          currentSpent = initialSpent;
+          if (logList) {
+            logList.innerHTML = `
+              <li style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; padding: 6px 10px; background: var(--google-hover-bg); border-radius: 8px;">
+                <span style="display: flex; align-items: center; gap: 6px;">
+                  <span class="material-symbols-outlined" style="font-size: 16px; color: #1a73e8;">receipt_long</span>
+                  Initial Monthly Balance Roll-forward
+                </span>
+                <span style="font-weight: 600; color: var(--google-text-secondary);">₹480.00 spent</span>
+              </li>
+            `;
+          }
+          updateUI();
+        });
+      }
+
+      // Code copy button listeners
+      document.querySelectorAll('.btn-copy-code').forEach(button => {
+        button.addEventListener('click', () => {
+          const pre = button.nextElementSibling;
+          if (pre) {
+            navigator.clipboard.writeText(pre.innerText).then(() => {
+              const originalContent = button.innerHTML;
+              button.innerHTML = '<span class="material-symbols-outlined">check</span> Copied!';
+              setTimeout(() => {
+                button.innerHTML = originalContent;
+              }, 2000);
+            });
+          }
+        });
+      });
+
+      updateUI();
+    })();
+  </script>
+</body>
+</html>
