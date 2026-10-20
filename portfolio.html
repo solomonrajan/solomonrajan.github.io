@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://ui-avatars.com; connect-src 'self' https://api.open-meteo.com https://solomonrajan.goatcounter.com https://formsubmit.co; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://ui-avatars.com; connect-src 'self' https://api.open-meteo.com https://solomonrajan.goatcounter.com https://formsubmit.co https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests;">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -21,6 +21,211 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 24px;
+    }
+    /* Featured Primary Portfolio Card */
+    .google-card--featured {
+      position: relative;
+      border: 2px solid var(--google-blue);
+      border-radius: 24px;
+      margin-bottom: 32px;
+      background: var(--google-bg-color);
+      box-shadow: 0 4px 24px rgba(26, 115, 232, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .google-card--featured:hover {
+      box-shadow: 0 8px 32px rgba(26, 115, 232, 0.16);
+    }
+    .featured-badge-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+      align-items: center;
+    }
+    .featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+    .featured-badge--pinned {
+      background: #fef7e0;
+      color: #b06000;
+      border: 1px solid #f9ab00;
+      font-weight: 600;
+      box-shadow: 0 1px 4px rgba(249, 171, 0, 0.2);
+    }
+    [data-theme="dark"] .featured-badge--pinned {
+      background: rgba(251, 188, 4, 0.15);
+      color: #fdd663;
+      border-color: rgba(251, 188, 4, 0.4);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    .pinned-icon {
+      font-size: 16px;
+      transform: rotate(35deg);
+      display: inline-block;
+      vertical-align: middle;
+      color: #e37400;
+      font-variation-settings: 'FILL' 1;
+    }
+    [data-theme="dark"] .pinned-icon {
+      color: #fdd663;
+    }
+    .featured-pin-corner {
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      pointer-events: none;
+    }
+    .featured-pin-corner .material-symbols-outlined {
+      font-size: 18px;
+      transform: rotate(35deg);
+      color: #e37400;
+      font-variation-settings: 'FILL' 1;
+    }
+    [data-theme="dark"] .featured-pin-corner {
+      background: #202124;
+      border-color: #3c4043;
+    }
+    [data-theme="dark"] .featured-pin-corner .material-symbols-outlined {
+      color: #fdd663;
+    }
+    .featured-badge--primary {
+      background: var(--google-blue-bg);
+      color: var(--google-blue);
+      border: 1px solid rgba(26, 115, 232, 0.25);
+    }
+    .featured-badge--active {
+      background: #e6f4ea;
+      color: #137333;
+      border: 1px solid #ceead6;
+    }
+    [data-theme="dark"] .featured-badge--active {
+      background: rgba(52, 168, 83, 0.15);
+      color: #81c995;
+      border-color: rgba(52, 168, 83, 0.35);
+    }
+    .pulse-dot {
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #1e8e3e;
+      display: inline-block;
+      flex-shrink: 0;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+    .pulse-dot::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 50%;
+      background-color: #34a853;
+      opacity: 0.35;
+      animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .pulse-dot::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #34a853;
+      animation: pulse-ring 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+      pointer-events: none;
+    }
+    @keyframes pulse-glow {
+      0%, 100% {
+        opacity: 0.25;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.7;
+        transform: scale(1.4);
+      }
+    }
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(1);
+        opacity: 0.85;
+      }
+      70%, 100% {
+        transform: scale(3);
+        opacity: 0;
+      }
+    }
+    [data-theme="dark"] .pulse-dot {
+      background-color: #81c995;
+    }
+    [data-theme="dark"] .pulse-dot::before,
+    [data-theme="dark"] .pulse-dot::after {
+      background-color: #81c995;
+    }
+    .google-btn--star {
+      background-color: #24292e !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: background-color 0.2s, transform 0.1s;
+    }
+    .google-btn--star:hover {
+      background-color: #030a16 !important;
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+    [data-theme="dark"] .google-btn--star {
+      background-color: #30363d !important;
+      border-color: #484f58;
+    }
+    [data-theme="dark"] .google-btn--star:hover {
+      background-color: #3c444d !important;
+    }
+    .cashledger-header-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      object-fit: contain;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      flex-shrink: 0;
+      background: #ffffff;
+    }
+    .google-btn--star img.github-btn-icon {
+      width: 18px;
+      height: 18px;
+      filter: brightness(0) invert(1);
+      display: inline-block;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+    .star-count-pill {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
     }
   </style>
   <!-- Analytics -->
@@ -168,7 +373,59 @@
         
         <div class="google-page-header">
           <h1>Portfolio</h1>
-          <p>Featured repositories, applications, and design systems</p>
+          <p>Featured repositories, applications, and open-source contributions</p>
+        </div>
+
+        <!-- Primary Featured Showcase: cashledger -->
+        <div class="google-card google-card--featured">
+          <div class="google-card-header" style="background: var(--google-hover-bg); border-bottom: 1px solid var(--google-border-color); position: relative;">
+            <div class="featured-pin-corner" title="Pinned Project" aria-label="Pinned Project">
+              <span class="material-symbols-outlined">push_pin</span>
+            </div>
+            <div class="featured-badge-group" style="padding-right: 44px;">
+              <span class="featured-badge featured-badge--pinned">
+                <span class="material-symbols-outlined pinned-icon">push_pin</span>
+                Pinned Project
+              </span>
+              <span class="featured-badge featured-badge--primary">
+                <span class="material-symbols-outlined" style="font-size: 16px; color: #fbbc04;">star</span>
+                Primary Portfolio Project
+              </span>
+              <span class="featured-badge featured-badge--active">
+                <span class="pulse-dot"></span>
+                Currently Going On &amp; Working • Active Development
+              </span>
+            </div>
+            <h2 style="font-size: 26px; font-weight: 500; display: flex; align-items: center; gap: 12px; margin-top: 4px;">
+              <img src="assets/images/cashledger-logo.png" alt="cashledger logo" class="cashledger-header-logo">
+              cashledger
+            </h2>
+            <p>Kotlin / Java &bull; Native Android Application &bull; Privacy-First Personal Finance</p>
+          </div>
+          <div class="google-card-body" style="padding: 24px;">
+            <p style="color: var(--google-text-secondary); margin-bottom: 20px; font-size: 15px; line-height: 1.6;">
+              An offline, privacy-first expense and budget tracker for Android. Manage accounts and multiple wallets, track daily spending, and configure intelligent financial budgets with <strong>zero accounts required, zero third-party trackers, and complete data ownership</strong>. Currently under active maintenance and ongoing feature evolution with native Kotlin performance, local database encryption, and seamless backup options.
+            </p>
+            <div style="display:flex; gap:8px; flex-wrap: wrap;">
+              <span style="font-size: 12px; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 4px 10px; border-radius: 6px; font-weight: 500;">Kotlin</span>
+              <span style="font-size: 12px; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 4px 10px; border-radius: 6px; font-weight: 500;">Android SDK</span>
+              <span style="font-size: 12px; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 4px 10px; border-radius: 6px; font-weight: 500;">Material Design 3</span>
+              <span style="font-size: 12px; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 4px 10px; border-radius: 6px; font-weight: 500;">Offline-First</span>
+              <span style="font-size: 12px; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 4px 10px; border-radius: 6px; font-weight: 500;">Privacy-Centric</span>
+              <span style="font-size: 12px; background: var(--google-hover-bg); border: 1px solid var(--google-border-color); padding: 4px 10px; border-radius: 6px; font-weight: 500;">Open Source</span>
+            </div>
+          </div>
+          <div class="google-card-footer" style="padding: 18px 24px; border-top: 1px solid var(--google-border-color); background: var(--google-hover-bg); display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+            <a href="https://github.com/solomonrajan/cashledger" target="_blank" rel="noopener noreferrer" class="google-btn">
+              <span class="material-symbols-outlined" style="font-size: 18px;">code</span>
+              View Repository
+            </a>
+            <a href="https://github.com/solomonrajan/cashledger" target="_blank" rel="noopener noreferrer" class="google-btn google-btn--star" id="cashledger-star-cta" title="Star solomonrajan/cashledger on GitHub">
+              <img src="assets/logos/github.svg" alt="GitHub" class="github-btn-icon">
+              <span>Star on GitHub</span>
+              <span class="star-count-pill" id="cashledger-stars-display">&#9733; Star</span>
+            </a>
+          </div>
         </div>
 
         <div class="google-grid-2">
@@ -228,24 +485,6 @@
             </div>
           </div>
 
-          <!-- Repo 4 -->
-          <div class="google-card" style="margin-bottom: 0;">
-            <div class="google-card-header">
-              <h2>Cash_Ledger</h2>
-              <p>Kotlin • Android Application</p>
-            </div>
-            <div class="google-card-body" style="padding: 24px;">
-              <p style="color: var(--google-text-secondary); margin-bottom: 16px;">A streamlined cash ledger application for personal finance management, written in Kotlin for the Android platform.</p>
-              <div style="display:flex; gap:8px;">
-                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Kotlin</span>
-                <span style="font-size: 12px; background: var(--google-hover-bg); padding: 4px 8px; border-radius: 4px;">Android</span>
-              </div>
-            </div>
-            <div class="google-card-footer">
-              <a href="https://github.com/solomonrajan/Cash_Ledger" target="_blank" rel="noopener noreferrer" class="google-btn">View Repository</a>
-            </div>
-          </div>
-
           <!-- Repo 5 -->
           <div class="google-card" style="margin-bottom: 0;">
             <div class="google-card-header">
@@ -289,5 +528,24 @@
   </div>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    // Live GitHub Star Count Fetch for cashledger
+    (async function fetchCashledgerStars() {
+      try {
+        const response = await fetch('https://api.github.com/repos/solomonrajan/cashledger');
+        if (response.ok) {
+          const repo = await response.json();
+          if (repo && typeof repo.stargazers_count === 'number') {
+            const countEl = document.getElementById('cashledger-stars-display');
+            if (countEl) {
+              countEl.textContent = `★ ${repo.stargazers_count}`;
+            }
+          }
+        }
+      } catch (err) {
+        // Fallback remains ★ Star
+      }
+    })();
+  </script>
 </body>
 </html>
