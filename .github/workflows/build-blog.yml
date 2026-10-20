@@ -27,7 +27,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
 
       - name: Build Blog Posts
         run: npm run build:blog
@@ -36,4 +41,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(blog): auto-build static HTML from MDX"
-          file_pattern: "assets/blog/*.html"
+          file_pattern: "assets/blog/*.html package-lock.json"

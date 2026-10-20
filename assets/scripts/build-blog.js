@@ -20,30 +20,44 @@ const files = fs.readdirSync(CONTENT_DIR).filter(file => file.endsWith('.mdx') |
 
 console.log(`Found ${files.length} markdown posts to build...`);
 
+const escapeHtml = (str) => {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+};
+
 files.forEach(file => {
   const filePath = path.join(CONTENT_DIR, file);
   const fileContent = fs.readFileSync(filePath, 'utf-8');
 
-  // Parse frontmatter and markdown
-  const { data, content } = matter(fileContent);
+  // Parse frontmatter and markdown with JS evaluation explicitly disabled for security
+  const { data, content } = matter(fileContent, {
+    engines: {
+      js: () => {
+        throw new Error(`JavaScript front-matter evaluation is disabled for security: ${file}`);
+      }
+    }
+  });
   const htmlContent = marked.parse(content);
 
-  // Fallbacks if frontmatter is missing
-  const title = data.title || 'Untitled Post';
-  const description = data.description || '';
-  const date = data.date || 'Unknown Date';
-  const readTime = data.readTime || '';
-  const category = data.category || 'Blog';
+  // Fallbacks with HTML escaping for metadata placeholders
+  const title = escapeHtml(data.title || 'Untitled Post');
+  const description = escapeHtml(data.description || '');
+  const date = escapeHtml(data.date || 'Unknown Date');
+  const readTime = escapeHtml(data.readTime || '');
+  const category = escapeHtml(data.category || 'Blog');
 
   // Replace placeholders in template
   let finalHtml = templateHtml
-    .replace('{{TITLE}}', title)
-    .replace('{{TITLE}}', title) // In case title appears twice (head and body)
-    .replace('{{DESCRIPTION}}', description)
-    .replace('{{DATE}}', date)
-    .replace('{{READ_TIME}}', readTime)
-    .replace('{{CATEGORY}}', category)
-    .replace('{{CONTENT}}', htmlContent);
+    .replaceAll('{{TITLE}}', title)
+    .replaceAll('{{DESCRIPTION}}', description)
+    .replaceAll('{{DATE}}', date)
+    .replaceAll('{{READ_TIME}}', readTime)
+    .replaceAll('{{CATEGORY}}', category)
+    .replaceAll('{{CONTENT}}', htmlContent);
 
   // Write the output file
   const outputFileName = file.replace('.mdx', '.html').replace('.md', '.html');

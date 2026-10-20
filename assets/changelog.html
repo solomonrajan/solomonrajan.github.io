@@ -4,6 +4,32 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.4.0 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true">
+          <span class="material-symbols-outlined">security</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.0</span>
+            <span class="changelog-tag changelog-tag--security">Security Hardening</span>
+          </div>
+          <time class="changelog-date">20 Oct 2026, 8:40 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Content Security Policy (CSP) Reinforcement:</strong> Hardened CSP policies across all pages and templates with <code>object-src 'none'</code>, <code>base-uri 'self'</code>, <code>form-action 'self' https://formsubmit.co</code>, and <code>upgrade-insecure-requests</code>.</li>
+          <li><strong>Referrer-Policy Protection:</strong> Added <code>&lt;meta name="referrer" content="strict-origin-when-cross-origin"&gt;</code> across all pages to prevent URL and query leakage on outgoing links.</li>
+          <li><strong>Reverse Tabnabbing Elimination:</strong> Appended <code>rel="noopener noreferrer"</code> to all external <code>target="_blank"</code> links across the entire workspace to prevent window.opener hijacking.</li>
+          <li><strong>Anti-Clickjacking Consistency:</strong> Integrated OWASP CSS/JS anti-clickjacking framebusters and viewport protections across all blog posts and the blog template.</li>
+          <li><strong>Blog Generator Hardening:</strong> Disabled JavaScript engine execution in gray-matter (defending against RCE / CVE-2021-23639), added HTML escaping for metadata injection, and fixed broken analytics script paths.</li>
+          <li><strong>Spam &amp; Honeypot Defense:</strong> Embedded honeypot verification on the contact form to deter automated spam bots.</li>
+          <li><strong>Supply Chain &amp; Repository Hygiene:</strong> Added <code>.gitignore</code> to block accidental commits of credentials and temporary files, cleaned up orphaned legacy scripts, and updated CI/CD workflow to support deterministic builds with <code>npm ci</code>.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.3.41 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
