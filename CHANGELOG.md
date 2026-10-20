@@ -1,3 +1,12 @@
+## [0.122.1](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.122.0...v0.122.1) (2026-10-20)
+
+
+### Bug Fixes
+
+* **ci:** remove cache configuration from setup-node step ([9ac2c92](https://github.com/solomonrajan/solomonrajan.github.io/commit/9ac2c9280ceede2f17f4de83392fc5714402d77b))
+
+
+
 # [0.122.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.121.0...v0.122.0) (2026-09-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add blog posts and migrate analytics from Umami to GoatCounter ([7761f5c](https://github.com/solomonrajan/solomonrajan.github.io/commit/7761f5c96efa037c7d536803a8c7189421c5f6dc))
-
-
-
-# [0.118.0](https://github.com/solomonrajan/solomonrajan.github.io/compare/v0.117.0...v0.118.0) (2026-09-14)
-
-
-### Features
-
-* add Kerala-themed background doodle assets and dynamic injection logic ([cb2ee61](https://github.com/solomonrajan/solomonrajan.github.io/commit/cb2ee61b6b16695ab8fd656e3d901ce2441b5a97))
 
 
 
