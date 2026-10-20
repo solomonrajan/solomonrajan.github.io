@@ -25,13 +25,33 @@
     /* Featured Primary Portfolio Card */
     .google-card--featured {
       position: relative;
+      z-index: 2;
       border: 2px solid var(--google-blue);
       border-radius: 24px;
       margin-bottom: 32px;
-      background: var(--google-bg-color);
+      background-color: var(--google-bg-color) !important;
       box-shadow: 0 4px 24px rgba(26, 115, 232, 0.1);
       overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .google-card--featured .google-card-header {
+      background-color: var(--google-hover-bg) !important;
+    }
+    .google-card--featured .google-card-body {
+      background-color: var(--google-bg-color) !important;
+    }
+    .google-card--featured .google-card-footer {
+      background-color: var(--google-hover-bg) !important;
+    }
+    .google-card {
+      position: relative;
+      z-index: 2;
+      background-color: var(--google-bg-color) !important;
+    }
+    .google-card .google-card-header,
+    .google-card .google-card-body,
+    .google-card .google-card-footer {
+      background-color: var(--google-bg-color);
     }
     .google-card--featured:hover {
       box-shadow: 0 8px 32px rgba(26, 115, 232, 0.16);

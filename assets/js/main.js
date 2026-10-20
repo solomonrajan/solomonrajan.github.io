@@ -41,6 +41,10 @@ function initVintageDoodles() {
   const container = document.querySelector('.google-main-content');
   if (!container) return;
 
+  // Vintage ambient doodles are strictly designed for wide desktop screens with outer margins (>992px)
+  // On mobile/tablet screens, cards take full width, so disable doodles to prevent card bleed and transparency
+  if (window.innerWidth <= 992) return;
+
   const doodles = [
     { src: 'assets/images/ksrtc-bus.jpg', alt: 'Vintage KSRTC Bus', sizeDesktop: 200 },
     { src: 'assets/images/tea-stall.jpg', alt: 'Vintage Tea Stall', sizeDesktop: 180 },
