@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://ui-avatars.com; connect-src 'self' https://api.open-meteo.com https://solomonrajan.goatcounter.com https://formsubmit.co; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Resume and Google Developer Profile of Solomon Rajan - Officer, Labour Relations, HR Operations Specialist, and Open Source Developer.">
+  <title>Resume &amp; Developer Profile | Solomon Rajan</title>
+
+  <!-- Google Fonts (Google Sans, Roboto, Roboto Mono, Delicious Handrawn & Material Symbols) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block">
+
+  <!-- Core Google Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/material-tokens.css">
+
+  <!-- Theme Script (Early execution to avoid FOUC) -->
+  <script src="assets/js/theme.js"></script>
+  <!-- Analytics -->
+  <script data-goatcounter="https://solomonrajan.goatcounter.com/count" async src="assets/js/count.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Anti-Clickjacking -->
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript">
+    if (self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      if (antiClickjack && antiClickjack.parentNode) {
+        antiClickjack.parentNode.removeChild(antiClickjack);
+      }
+    } else {
+      top.location = self.location;
+    }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       Google Developer Profile Specific Styles
+       ========================================================================== */
+
+    /* Sub-header / Breadcrumbs */
+    .gdev-breadcrumb-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 12px 0 20px 0;
+      border-bottom: 1px solid var(--google-border-color);
+      margin-bottom: 24px;
+    }
+    .gdev-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--google-text-secondary);
+    }
+    .gdev-breadcrumb a {
+      color: var(--google-text-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .gdev-breadcrumb a:hover {
+      color: var(--google-blue);
+    }
+    .gdev-breadcrumb-sep {
+      font-size: 14px;
+      color: var(--google-border-color);
+    }
+    .gdev-breadcrumb-current {
+      color: var(--google-text-primary);
+      font-weight: 500;
+    }
+    .gdev-actions-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    /* Google Developer Hero Card */
+    .gdev-hero-card {
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      border-radius: 24px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .gdev-hero-card__banner {
+      height: 120px;
+      background: linear-gradient(135deg, #1a73e8 0%, #4285f4 35%, #34a853 70%, #fbbc04 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    [data-theme="dark"] .gdev-hero-card__banner {
+      background: linear-gradient(135deg, #174ea6 0%, #1a73e8 40%, #0d652d 75%, #b06000 100%);
+      opacity: 0.9;
+    }
+    .gdev-hero-card__banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.25) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .gdev-hero-card__banner-badge {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.3px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .gdev-hero-card__body {
+      padding: 0 28px 28px 28px;
+      position: relative;
+    }
+    .gdev-hero-card__avatar-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: -54px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .gdev-hero-avatar-wrapper {
+      position: relative;
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(45deg, #1a73e8, #ea4335, #fbbc04, #34a853);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+    .gdev-hero-avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--google-bg-color);
+      display: block;
+      border: 3px solid var(--google-bg-color);
+    }
+    .gdev-hero-avatar-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--google-blue);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--google-bg-color);
+      font-size: 16px;
+    }
+    .gdev-hero-cta-btns {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .gdev-hero-name-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+    .gdev-hero-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--google-text-primary);
+      line-height: 1.2;
+    }
+    .gdev-verified-icon {
+      color: var(--google-blue);
+      font-size: 24px;
+      vertical-align: middle;
+    }
+    .gdev-dev-role-badge {
+      background: var(--google-blue-bg);
+      color: var(--google-blue);
+      border: 1px solid rgba(26, 115, 232, 0.25);
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .gdev-hero-title {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--google-text-primary);
+      margin-bottom: 6px;
+    }
+    .gdev-hero-tagline {
+      font-size: 14px;
+      color: var(--google-text-secondary);
+      margin-bottom: 16px;
+      max-width: 820px;
+    }
+    .gdev-hero-meta-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .gdev-meta-chip {
+      background: var(--google-hover-bg);
+      border: 1px solid var(--google-border-color);
+      border-radius: 16px;
+      padding: 6px 12px;
+      font-size: 13px;
+      color: var(--google-text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+    }
+    .gdev-meta-chip .material-symbols-outlined {
+      font-size: 16px;
+      color: var(--google-text-secondary);
+    }
+    .gdev-meta-chip--status {
+      background: rgba(52, 168, 83, 0.1);
+      border-color: rgba(52, 168, 83, 0.3);
+      color: #137333;
+    }
+    [data-theme="dark"] .gdev-meta-chip--status {
+      background: rgba(129, 201, 149, 0.15);
+      border-color: rgba(129, 201, 149, 0.35);
+      color: #81c995;
+    }
+    .gdev-status-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #34a853;
+      display: inline-block;
+      box-shadow: 0 0 0 2px rgba(52, 168, 83, 0.25);
+    }
+
+    /* Developer Metrics Strip */
+    .gdev-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .gdev-stat-card {
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      border-radius: 18px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .gdev-stat-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+    .gdev-stat-icon-wrap {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .gdev-stat-icon-wrap--blue {
+      background: var(--google-blue-bg);
+      color: var(--google-blue);
+    }
+    .gdev-stat-icon-wrap--green {
+      background: rgba(52, 168, 83, 0.12);
+      color: #1e8e3e;
+    }
+    [data-theme="dark"] .gdev-stat-icon-wrap--green {
+      color: #81c995;
+    }
+    .gdev-stat-icon-wrap--yellow {
+      background: rgba(251, 188, 4, 0.15);
+      color: #b06000;
+    }
+    [data-theme="dark"] .gdev-stat-icon-wrap--yellow {
+      color: #fde293;
+    }
+    .gdev-stat-icon-wrap--red {
+      background: rgba(234, 67, 53, 0.12);
+      color: #d93025;
+    }
+    [data-theme="dark"] .gdev-stat-icon-wrap--red {
+      color: #f28b82;
+    }
+    .gdev-stat-val {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--google-text-primary);
+      line-height: 1.1;
+    }
+    .gdev-stat-label {
+      font-size: 12px;
+      color: var(--google-text-secondary);
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    .google-main-content {
+      scroll-behavior: smooth;
+    }
+
+    /* Section Nav Filter Chips */
+    .gdev-nav-chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 6px 2px 18px 2px;
+      margin-bottom: 24px;
+      scrollbar-width: thin;
+      position: relative;
+    }
+    .gdev-nav-chips::-webkit-scrollbar {
+      height: 4px;
+    }
+    .gdev-nav-chip {
+      background: var(--google-hover-bg);
+      border: 1px solid var(--google-border-color);
+      color: var(--google-text-secondary);
+      padding: 6px 14px;
+      border-radius: 18px;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .gdev-nav-chip:hover {
+      background: var(--google-blue-bg);
+      color: var(--google-blue);
+      border-color: var(--google-blue);
+    }
+    .gdev-nav-chip .material-symbols-outlined {
+      font-size: 16px;
+    }
+
+    /* Developer Section Card Styling */
+    .gdev-section-card {
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      border-radius: 20px;
+      margin-bottom: 24px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      scroll-margin-top: 24px;
+    }
+    .gdev-section-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--google-border-color);
+      background: var(--google-hover-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .gdev-section-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .gdev-section-icon {
+      color: var(--google-blue);
+      font-size: 24px;
+    }
+    .gdev-section-header h2 {
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--google-text-primary);
+      margin: 0;
+    }
+    .gdev-section-badge {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      color: var(--google-text-secondary);
+    }
+    .gdev-section-body {
+      padding: 24px;
+    }
+
+    /* Experience Timeline Google Style */
+    .gdev-timeline {
+      position: relative;
+      padding-left: 32px;
+    }
+    .gdev-timeline::before {
+      content: "";
+      position: absolute;
+      left: 11px;
+      top: 10px;
+      bottom: 20px;
+      width: 2px;
+      background: var(--google-border-color);
+    }
+    .gdev-timeline-item {
+      position: relative;
+      margin-bottom: 32px;
+    }
+    .gdev-timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    .gdev-timeline-dot {
+      position: absolute;
+      left: -32px;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--google-bg-color);
+      border: 2px solid var(--google-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--google-blue);
+      font-size: 13px;
+      box-shadow: 0 0 0 3px var(--google-bg-color);
+    }
+    .gdev-timeline-item.active .gdev-timeline-dot {
+      background: var(--google-blue);
+      color: #ffffff;
+      border-color: var(--google-blue);
+      box-shadow: 0 0 0 3px var(--google-blue-bg);
+    }
+    .gdev-timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .gdev-role-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--google-text-primary);
+    }
+    .gdev-company-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--google-blue);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .gdev-timeline-date {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--google-text-secondary);
+      background: var(--google-hover-bg);
+      border: 1px solid var(--google-border-color);
+      padding: 3px 10px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+    .gdev-timeline-date--current {
+      background: rgba(52, 168, 83, 0.12);
+      border-color: rgba(52, 168, 83, 0.35);
+      color: #137333;
+      font-weight: 600;
+    }
+    [data-theme="dark"] .gdev-timeline-date--current {
+      color: #81c995;
+    }
+    .gdev-timeline-desc {
+      font-size: 14.5px;
+      color: var(--google-text-secondary);
+      line-height: 1.6;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .gdev-timeline-bullets {
+      margin: 8px 0 14px 18px;
+      padding: 0;
+      font-size: 14px;
+      color: var(--google-text-secondary);
+      line-height: 1.6;
+    }
+    .gdev-timeline-bullets li {
+      margin-bottom: 6px;
+    }
+    .gdev-timeline-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .gdev-timeline-tag {
+      font-size: 12px;
+      background: var(--google-hover-bg);
+      border: 1px solid var(--google-border-color);
+      border-radius: 6px;
+      padding: 2px 8px;
+      color: var(--google-text-primary);
+      font-weight: 500;
+    }
+
+    /* Education Cards Grid */
+    .gdev-edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .gdev-edu-card {
+      background: var(--google-hover-bg);
+      border: 1px solid var(--google-border-color);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      transition: border-color 0.15s ease;
+    }
+    .gdev-edu-card:hover {
+      border-color: var(--google-blue);
+    }
+    .gdev-edu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .gdev-edu-degree {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--google-text-primary);
+      line-height: 1.3;
+    }
+    .gdev-edu-inst {
+      font-size: 13.5px;
+      color: var(--google-blue);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+    .gdev-edu-year {
+      font-size: 12px;
+      color: var(--google-text-secondary);
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      padding: 2px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+      font-weight: 500;
+    }
+    .gdev-edu-desc {
+      font-size: 13.5px;
+      color: var(--google-text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Skills Matrix */
+    .gdev-skills-category {
+      margin-bottom: 24px;
+    }
+    .gdev-skills-category:last-child {
+      margin-bottom: 0;
+    }
+    .gdev-skills-cat-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--google-text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .gdev-skills-cat-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    .gdev-skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px 24px;
+    }
+    .gdev-skill-item {
+      margin-bottom: 6px;
+    }
+    .gdev-skill-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--google-text-primary);
+      margin-bottom: 6px;
+    }
+    .gdev-skill-pct {
+      color: var(--google-text-secondary);
+      font-family: var(--md-ref-typeface-code, monospace);
+      font-size: 12px;
+    }
+
+    /* Projects Developer Grid */
+    .gdev-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+    }
+    .gdev-project-card {
+      background: var(--google-hover-bg);
+      border: 1px solid var(--google-border-color);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .gdev-project-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--google-blue);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+    .gdev-project-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .gdev-project-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .gdev-project-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: contain;
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 2px;
+    }
+    .gdev-project-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--google-text-primary);
+    }
+    .gdev-project-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: rgba(26, 115, 232, 0.12);
+      color: var(--google-blue);
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .gdev-project-desc {
+      font-size: 13.5px;
+      color: var(--google-text-secondary);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .gdev-project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .gdev-project-tag {
+      font-size: 11.5px;
+      background: var(--google-bg-color);
+      border: 1px solid var(--google-border-color);
+      border-radius: 6px;
+      padding: 2px 7px;
+      font-weight: 500;
+      color: var(--google-text-primary);
+    }
+    .gdev-project-footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 12px;
+      border-top: 1px solid var(--google-border-color);
+    }
+
+    /* Print Only Header (Hidden on screen) */
+    .print-only-header {
+      display: none;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        height: auto !important;
+        overflow: visible !important;
+        font-size: 12pt;
+      }
+      .google-app-bar,
+      .gdev-breadcrumb-bar,
+      .gdev-nav-chips,
+      .gdev-hero-cta-btns,
+      .gdev-hero-card__banner-badge,
+      .google-apps-container,
+      .vintage-sticker,
+      #sidebar-toggle,
+      #theme-toggle-group,
+      .gdev-actions-group,
+      .no-print {
+        display: none !important;
+      }
+      .google-layout {
+        height: auto !important;
+        overflow: visible !important;
+        display: block !important;
+      }
+      .google-main-content {
+        height: auto !important;
+        overflow: visible !important;
+        padding: 0 !important;
+      }
+      .google-content-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .gdev-hero-card {
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        margin-bottom: 16px !important;
+      }
+      .gdev-hero-card__banner {
+        height: 8px !important;
+        background: #1a73e8 !important;
+      }
+      .gdev-hero-card__body {
+        padding: 12px 0 0 0 !important;
+      }
+      .gdev-hero-avatar-wrapper {
+        width: 72px !important;
+        height: 72px !important;
+        margin-top: -36px !important;
+      }
+      .gdev-section-card {
+        border: 1px solid #d0d0d0 !important;
+        box-shadow: none !important;
+        border-radius: 8px !important;
+        margin-bottom: 14px !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .gdev-section-header {
+        background: #f1f3f4 !important;
+        color: #000000 !important;
+        padding: 10px 14px !important;
+        border-bottom: 1px solid #d0d0d0 !important;
+      }
+      .gdev-section-header h2 {
+        color: #000000 !important;
+        font-size: 14pt !important;
+      }
+      .gdev-section-body {
+        padding: 12px 14px !important;
+      }
+      .gdev-timeline::before {
+        background: #c0c0c0 !important;
+      }
+      .gdev-timeline-dot {
+        border-color: #1a73e8 !important;
+      }
+      .gdev-timeline-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 16px !important;
+      }
+      .gdev-stat-card,
+      .gdev-edu-card,
+      .gdev-project-card {
+        background: #ffffff !important;
+        border: 1px solid #e0e0e0 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .print-only-header {
+        display: block !important;
+        margin-bottom: 16px;
+        border-bottom: 2px solid #1a73e8;
+        padding-bottom: 8px;
+      }
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+      .gdev-project-footer {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gdev-hero-card__body {
+        padding: 0 16px 20px 16px;
+      }
+      .gdev-hero-name {
+        font-size: 24px;
+      }
+      .gdev-hero-title {
+        font-size: 16px;
+      }
+      .gdev-section-body {
+        padding: 16px;
+      }
+      .gdev-edu-grid,
+      .gdev-projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Google Workspace / Developer App Bar -->
+  <header class="google-app-bar">
+    <div class="google-app-bar__left">
+      <a href="index.html" class="google-menu-btn" title="Back to Workspace Home" aria-label="Back to Workspace Home">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </a>
+      <a href="index.html" class="google-logo">
+        <span style="color: #F9A825; font-weight: 500;">Solomon Rajan</span>
+        <span style="color: var(--google-text-secondary); font-size: 18px; margin-left: 4px;">Workspace</span>
+      </a>
+    </div>
+
+    <!-- Navigation List (Standard for consistent UX) -->
+    <nav class="google-top-nav" id="google-sidebar">
+      <ul class="google-nav-list">
+        <li class="google-nav-item">
+          <a href="/" class="google-nav-link">
+            <span class="material-symbols-outlined">account_circle</span>
+            Home
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/resume" class="google-nav-link active">
+            <span class="material-symbols-outlined">description</span>
+            Resume
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/portfolio" class="google-nav-link">
+            <span class="material-symbols-outlined">work</span>
+            Portfolio
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/blog" class="google-nav-link">
+            <span class="material-symbols-outlined">article</span>
+            Blog
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/contact" class="google-nav-link">
+            <span class="material-symbols-outlined">contact_page</span>
+            Contact
+          </a>
+        </li>
+        <li class="google-nav-item">
+          <a href="/updates" class="google-nav-link">
+            <span class="material-symbols-outlined">update</span>
+            Changelog
+          </a>
+        </li>
+        <hr style="border: 0; border-top: 1px solid var(--google-border-color); margin: 8px 0;">
+        <li class="google-nav-item google-theme-control-container">
+          <div class="google-theme-segmented-control" id="theme-toggle-group">
+            <button class="theme-btn" data-theme-value="system" aria-label="System theme" title="System Theme">
+              <span class="material-symbols-outlined">monitor</span>
+            </button>
+            <button class="theme-btn" data-theme-value="light" aria-label="Light theme" title="Light Theme">
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button class="theme-btn" data-theme-value="dark" aria-label="Dark theme" title="Dark Theme">
+              <span class="material-symbols-outlined">dark_mode</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Top App Bar Right Actions -->
+    <div class="google-app-bar__right">
+      <!-- Quick Print Button -->
+      <button onclick="window.print()" class="google-btn google-btn--icon-only" title="Print or Save PDF" aria-label="Print or Save PDF" style="height: 38px; padding: 0 12px; gap: 6px;">
+        <span class="material-symbols-outlined" style="font-size: 19px;">print</span>
+        <span style="font-size: 13px; font-weight: 500;" class="hide-mobile">Print</span>
+      </button>
+
+      <!-- Apps Dropdown -->
+      <div class="google-apps-container">
+        <button class="google-menu-btn" id="google-apps-toggle" aria-label="Google apps" title="Google apps">
+          <span class="material-symbols-outlined">apps</span>
+        </button>
+        <div class="google-apps-dropdown" id="google-apps-dropdown">
+          <div class="google-apps-header">
+            <span>Your favourites</span>
+          </div>
+          <div class="google-apps-grid">
+            <a href="https://github.com/solomonrajan" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/github.svg" alt="GitHub">
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/solomonrajan" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/linkedin.svg" alt="LinkedIn">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://liberapay.com/solomon.rajan" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/liberapay.svg" alt="Liberapay">
+              <span>Liberapay</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/kofi.svg" alt="Ko-fi">
+              <span>Ko-fi</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/buymeacoffee.svg" alt="Coffee">
+              <span>Coffee</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/gitlab.svg" alt="GitLab">
+              <span>GitLab</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/reddit.svg" alt="Reddit">
+              <span>Reddit</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/x.svg" alt="X">
+              <span>X</span>
+            </a>
+            <a href="#" class="google-app-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/telegram.svg" alt="Telegram">
+              <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="google-avatar-ring">
+        <img src="assets/images/profile.png" alt="Solomon Rajan" class="google-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Solomon+Rajan&background=1a73e8&color=fff'">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="google-layout">
+    <main class="google-main-content">
+      <div class="google-content-container" style="max-width: 980px; margin: 0 auto;">
+
+        <!-- Print-only top banner -->
+        <div class="print-only-header">
+          <h1 style="font-size: 24pt; margin: 0; font-weight: 700;">Solomon Rajan</h1>
+          <p style="font-size: 13pt; margin: 4px 0 8px 0; color: #1a73e8; font-weight: 600;">Officer, Labour Relations &bull; Certified Labour Welfare Officer</p>
+          <p style="font-size: 10pt; color: #555; margin: 0;">Kottayam, Kerala, India &bull; Portfolio: solomonrajan.github.io &bull; LinkedIn: linkedin.com/in/solomonrajan &bull; GitHub: github.com/solomonrajan</p>
+        </div>
+
+        <!-- Breadcrumb & Top Actions Bar -->
+        <div class="gdev-breadcrumb-bar">
+          <nav class="gdev-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">
+              <span class="material-symbols-outlined" style="font-size: 16px;">home</span>
+              Workspace
+            </a>
+            <span class="gdev-breadcrumb-sep">/</span>
+            <a href="about.html">Profile</a>
+            <span class="gdev-breadcrumb-sep">/</span>
+            <span class="gdev-breadcrumb-current">Curriculum Vitae</span>
+          </nav>
+
+          <div class="gdev-actions-group">
+            <button onclick="window.print()" class="google-btn" style="height: 36px; padding: 0 14px; font-size: 13px;">
+              <span class="material-symbols-outlined" style="font-size: 18px;">print</span>
+              Print / Save PDF
+            </button>
+            <a href="assets/docs/resume.pdf" download="Solomon_Rajan_Resume.pdf" class="google-btn" style="height: 36px; padding: 0 14px; font-size: 13px;">
+              <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+              Download PDF
+            </a>
+            <a href="contact.html" class="google-btn google-btn--primary" style="height: 36px; padding: 0 14px; font-size: 13px;">
+              <span class="material-symbols-outlined" style="font-size: 18px;">mail</span>
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Developer Profile Hero Header -->
+        <section class="gdev-hero-card" id="profile-hero">
+          <div class="gdev-hero-card__banner">
+            <div class="gdev-hero-card__banner-badge">
+              <span class="material-symbols-outlined" style="font-size: 16px;">terminal</span>
+              Google Developer Profile
+            </div>
+          </div>
+          <div class="gdev-hero-card__body">
+            <div class="gdev-hero-card__avatar-row">
+              <div class="gdev-hero-avatar-wrapper">
+                <img src="assets/images/profile.png" alt="Solomon Rajan" class="gdev-hero-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Solomon+Rajan&background=1a73e8&color=fff'">
+                <div class="gdev-hero-avatar-badge" title="Verified Professional">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">verified</span>
+                </div>
+              </div>
+
+              <div class="gdev-hero-cta-btns">
+                <a href="https://linkedin.com/in/solomonrajan" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 36px; padding: 0 12px; font-size: 13px;">
+                  <img src="assets/logos/linkedin.svg" alt="LinkedIn" style="width: 16px; height: 16px;">
+                  LinkedIn
+                </a>
+                <a href="https://github.com/solomonrajan" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 36px; padding: 0 12px; font-size: 13px;">
+                  <img src="assets/logos/github.svg" alt="GitHub" style="width: 16px; height: 16px;">
+                  GitHub
+                </a>
+                <a href="https://liberapay.com/solomon.rajan" target="_blank" rel="noopener noreferrer" class="google-btn google-btn--yellow" style="height: 36px; padding: 0 12px; font-size: 13px;">
+                  <img src="assets/logos/liberapay.svg" alt="Liberapay" style="width: 16px; height: 16px;">
+                  Liberapay
+                </a>
+              </div>
+            </div>
+
+            <div class="gdev-hero-name-row">
+              <h1 class="gdev-hero-name">Solomon Rajan</h1>
+              <span class="material-symbols-outlined gdev-verified-icon" title="Verified Profile">verified</span>
+              <span class="gdev-dev-role-badge">
+                <span class="material-symbols-outlined" style="font-size: 15px;">gavel</span>
+                Labour Welfare Officer
+              </span>
+            </div>
+
+            <div class="gdev-hero-title">Officer, Labour Relations &amp; HR Operations Specialist</div>
+            <p class="gdev-hero-tagline">
+              Dedicated Human Resources professional and open-source software developer. Pioneering positive workplace culture, strict statutory labor compliance, end-to-end payroll governance, and modern privacy-first digital tools.
+            </p>
+
+            <div class="gdev-hero-meta-chips">
+              <div class="gdev-meta-chip gdev-meta-chip--status">
+                <span class="gdev-status-indicator"></span>
+                <span>Fully Employed (Open to selected freelance)</span>
+              </div>
+              <div class="gdev-meta-chip">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>Kottayam, Kerala, India</span>
+              </div>
+              <div class="gdev-meta-chip">
+                <span class="material-symbols-outlined">school</span>
+                <span>MSW &bull; PGDHRM &bull; PGD Counselling &bull; BSW</span>
+              </div>
+              <div class="gdev-meta-chip">
+                <span class="material-symbols-outlined">domain</span>
+                <span>Madura Coats, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Developer Metrics Strip -->
+        <section class="gdev-stats-grid" aria-label="Quick Highlights">
+          <div class="gdev-stat-card">
+            <div class="gdev-stat-icon-wrap gdev-stat-icon-wrap--blue">
+              <span class="material-symbols-outlined">badge</span>
+            </div>
+            <div>
+              <div class="gdev-stat-val">5+ Years</div>
+              <div class="gdev-stat-label">HR &amp; Labour Operations</div>
+            </div>
+          </div>
+
+          <div class="gdev-stat-card">
+            <div class="gdev-stat-icon-wrap gdev-stat-icon-wrap--green">
+              <span class="material-symbols-outlined">history_edu</span>
+            </div>
+            <div>
+              <div class="gdev-stat-val">4 Roles</div>
+              <div class="gdev-stat-label">Career Journey Progression</div>
+            </div>
+          </div>
+
+          <div class="gdev-stat-card">
+            <div class="gdev-stat-icon-wrap gdev-stat-icon-wrap--yellow">
+              <span class="material-symbols-outlined">verified_user</span>
+            </div>
+            <div>
+              <div class="gdev-stat-val">100%</div>
+              <div class="gdev-stat-label">Statutory Compliance Rigor</div>
+            </div>
+          </div>
+
+          <div class="gdev-stat-card">
+            <div class="gdev-stat-icon-wrap gdev-stat-icon-wrap--red">
+              <span class="material-symbols-outlined">code_blocks</span>
+            </div>
+            <div>
+              <div class="gdev-stat-val">5+ Projects</div>
+              <div class="gdev-stat-label">Open Source &amp; Android Apps</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quick Section Jump Chips -->
+        <nav class="gdev-nav-chips" aria-label="Resume Sections">
+          <a href="#summary" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">article</span>
+            Executive Summary
+          </a>
+          <a href="#experience" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">work</span>
+            Work Experience
+          </a>
+          <a href="#education" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">school</span>
+            Education
+          </a>
+          <a href="#skills" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">psychology</span>
+            Skills Matrix
+          </a>
+          <a href="#projects" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">code</span>
+            Open Source Projects
+          </a>
+          <a href="#credentials" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">card_membership</span>
+            Certifications &amp; Languages
+          </a>
+          <a href="#contact" class="gdev-nav-chip">
+            <span class="material-symbols-outlined">alternate_email</span>
+            Contact
+          </a>
+        </nav>
+
+        <!-- Section 1: Executive Summary & Philosophy -->
+        <section class="gdev-section-card" id="summary">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">format_quote</span>
+              <h2>Executive Summary &amp; Professional Philosophy</h2>
+            </div>
+            <span class="gdev-section-badge">Core Profile</span>
+          </div>
+          <div class="gdev-section-body">
+            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 14px;">
+              I am a seasoned <strong style="color: var(--google-text-primary);">Human Resources Professional &amp; Labour Welfare Officer</strong> whose career began in specialized clinical and medical social work. Over the past five years, my professional trajectory has evolved dynamically—advancing through positions as Medical Social Worker, Child Welfare Officer, Personnel Executive &amp; Welfare Officer, and currently, <strong style="color: var(--google-blue);">Officer, Labour Relations</strong> at Madura Coats.
+            </p>
+            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 14px;">
+              My foundational philosophy centers on <strong>fostering a cooperative, dignified workplace culture</strong> while driving bulletproof statutory compliance and operational excellence. I specialize in the complete lifecycle of industrial relations: from collective bargaining support, dispute resolution, and grievance arbitration, to end-to-end payroll administration and statutory inspections.
+            </p>
+            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 0;">
+              In parallel with human capital leadership, I possess a deep affinity for modern technology and software architecture. As an open-source Android developer and web technologist, I leverage software engineering principles to streamline HRMS platforms, automate data pipelines, and design privacy-first tools that enhance organizational efficiency.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 2: Work Experience (Timeline) -->
+        <section class="gdev-section-card" id="experience">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">work_history</span>
+              <h2>Professional Experience</h2>
+            </div>
+            <span class="gdev-section-badge">Timeline</span>
+          </div>
+          <div class="gdev-section-body">
+            <div class="gdev-timeline">
+
+              <!-- Role 1: Current -->
+              <div class="gdev-timeline-item active">
+                <div class="gdev-timeline-dot">
+                  <span class="material-symbols-outlined" style="font-size: 14px;">check</span>
+                </div>
+                <div class="gdev-timeline-header">
+                  <div>
+                    <h3 class="gdev-role-title">Officer, Labour Relations</h3>
+                    <div class="gdev-company-name">
+                      <span class="material-symbols-outlined" style="font-size: 16px;">business</span>
+                      Madura Coats &bull; Tamil Nadu, India
+                    </div>
+                  </div>
+                  <div class="gdev-timeline-date gdev-timeline-date--current">
+                    August 2026 &mdash; Present
+                  </div>
+                </div>
+                <p class="gdev-timeline-desc">
+                  Overseeing manufacturing site labour relations, statutory governance, worker welfare administration, and union alignment for industrial operations.
+                </p>
+                <ul class="gdev-timeline-bullets">
+                  <li>Directing comprehensive labour relations, bipartite meetings, and conflict mediation between factory workforce, union representatives, and plant management.</li>
+                  <li>Ensuring 100% compliance with the Factories Act, Industrial Disputes Act, Contract Labour (R&amp;A) Act, Payment of Wages, ESI, and EPF regulations.</li>
+                  <li>Administering welfare amenities including canteen committees, safety protocols, health centers, and creche facilities.</li>
+                  <li>Implementing structured grievance resolution procedures and standard operating procedures (SOPs) for workplace discipline and enquiry protocols.</li>
+                </ul>
+                <div class="gdev-timeline-tags">
+                  <span class="gdev-timeline-tag">Industrial Relations</span>
+                  <span class="gdev-timeline-tag">Statutory Compliance</span>
+                  <span class="gdev-timeline-tag">Labor Law</span>
+                  <span class="gdev-timeline-tag">Grievance Arbitration</span>
+                  <span class="gdev-timeline-tag">Welfare Governance</span>
+                  <span class="gdev-timeline-tag">Union Negotiations</span>
+                </div>
+              </div>
+
+              <!-- Role 2 -->
+              <div class="gdev-timeline-item">
+                <div class="gdev-timeline-dot">
+                  <span class="material-symbols-outlined" style="font-size: 14px;">work</span>
+                </div>
+                <div class="gdev-timeline-header">
+                  <div>
+                    <h3 class="gdev-role-title">Personnel Executive &amp; Welfare Officer</h3>
+                    <div class="gdev-company-name">
+                      <span class="material-symbols-outlined" style="font-size: 16px;">business</span>
+                      Poabs Enterprises Private Limited &bull; Kerala, India
+                    </div>
+                  </div>
+                  <div class="gdev-timeline-date">
+                    June 2023 &mdash; July 2026
+                  </div>
+                </div>
+                <p class="gdev-timeline-desc">
+                  Headed plant-level personnel administration, end-to-end recruitment pipelines, payroll disbursement workflows, and employee counseling.
+                </p>
+                <ul class="gdev-timeline-bullets">
+                  <li>Orchestrated talent acquisition, technical candidate screening, induction programs, and seamless onboarding across operational units.</li>
+                  <li>Administered automated biometric attendance tracking, leave reconciliations, and assisted in monthly payroll processing for over 500+ employees.</li>
+                  <li>Prepared and submitted statutory registers, annual returns, inspections documentation, and insurance claims.</li>
+                  <li>Conducted individual employee counseling, stress management interventions, and interpersonal communication training programs.</li>
+                </ul>
+                <div class="gdev-timeline-tags">
+                  <span class="gdev-timeline-tag">Payroll Processing</span>
+                  <span class="gdev-timeline-tag">Talent Acquisition</span>
+                  <span class="gdev-timeline-tag">HRMS Software</span>
+                  <span class="gdev-timeline-tag">Statutory Registers</span>
+                  <span class="gdev-timeline-tag">Employee Counseling</span>
+                </div>
+              </div>
+
+              <!-- Role 3 -->
+              <div class="gdev-timeline-item">
+                <div class="gdev-timeline-dot">
+                  <span class="material-symbols-outlined" style="font-size: 14px;">volunteer_activism</span>
+                </div>
+                <div class="gdev-timeline-header">
+                  <div>
+                    <h3 class="gdev-role-title">Child Welfare Officer</h3>
+                    <div class="gdev-company-name">
+                      <span class="material-symbols-outlined" style="font-size: 16px;">business</span>
+                      Reaching the Unreached &bull; Tamil Nadu, India
+                    </div>
+                  </div>
+                  <div class="gdev-timeline-date">
+                    December 2021 &mdash; March 2023
+                  </div>
+                </div>
+                <p class="gdev-timeline-desc">
+                  Directed child welfare advocacy, psychosocial rehabilitation programs, and interdisciplinary healthcare coordination.
+                </p>
+                <ul class="gdev-timeline-bullets">
+                  <li>Spearheaded social casework, rights advocacy, and psychological welfare programs for vulnerable children and families.</li>
+                  <li>Partnered with pediatric medical staff, clinical psychologists, and educators to construct personalized developmental roadmaps.</li>
+                  <li>Maintained thorough case records, regulatory documentation, and compliance with statutory child protection bodies.</li>
+                </ul>
+                <div class="gdev-timeline-tags">
+                  <span class="gdev-timeline-tag">Child Welfare</span>
+                  <span class="gdev-timeline-tag">Psychosocial Rehabilitation</span>
+                  <span class="gdev-timeline-tag">Case Documentation</span>
+                  <span class="gdev-timeline-tag">Community Outreach</span>
+                </div>
+              </div>
+
+              <!-- Role 4 -->
+              <div class="gdev-timeline-item">
+                <div class="gdev-timeline-dot">
+                  <span class="material-symbols-outlined" style="font-size: 14px;">medical_services</span>
+                </div>
+                <div class="gdev-timeline-header">
+                  <div>
+                    <h3 class="gdev-role-title">Medical Social Worker</h3>
+                    <div class="gdev-company-name">
+                      <span class="material-symbols-outlined" style="font-size: 16px;">business</span>
+                      Covai Care Centre &bull; Tamil Nadu, India
+                    </div>
+                  </div>
+                  <div class="gdev-timeline-date">
+                    September 2020 &mdash; December 2021
+                  </div>
+                </div>
+                <p class="gdev-timeline-desc">
+                  Delivered clinical psychiatric social work, patient counselling, and hospital healthcare community initiatives.
+                </p>
+                <ul class="gdev-timeline-bullets">
+                  <li>Provided clinical social work assessments, grief counselling, and crisis intervention for patients and caregivers.</li>
+                  <li>Facilitated supportive psycho-social therapy groups and coordinated public healthcare awareness campaigns.</li>
+                </ul>
+                <div class="gdev-timeline-tags">
+                  <span class="gdev-timeline-tag">Clinical Social Work</span>
+                  <span class="gdev-timeline-tag">Crisis Intervention</span>
+                  <span class="gdev-timeline-tag">Grief Counseling</span>
+                  <span class="gdev-timeline-tag">Healthcare Guidance</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Education & Academic Credentials -->
+        <section class="gdev-section-card" id="education">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">school</span>
+              <h2>Education &amp; Academic Qualifications</h2>
+            </div>
+            <span class="gdev-section-badge">Accredited Degrees</span>
+          </div>
+          <div class="gdev-section-body">
+            <div class="gdev-edu-grid">
+
+              <!-- Degree 1 -->
+              <div class="gdev-edu-card">
+                <div>
+                  <div class="gdev-edu-top">
+                    <div>
+                      <h3 class="gdev-edu-degree">PG Diploma in Human Resource Management (PGDHRM)</h3>
+                      <div class="gdev-edu-inst">IGNOU (Indira Gandhi National Open University)</div>
+                    </div>
+                    <span class="gdev-edu-year">June 2025</span>
+                  </div>
+                  <p class="gdev-edu-desc" style="margin-top: 10px;">
+                    Postgraduate specialization focusing on modern strategic HR, industrial relations framework, Indian labour legislations, talent management, compensation structuring, and organizational dynamics.
+                  </p>
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="gdev-timeline-tag">Strategic HRM</span>
+                  <span class="gdev-timeline-tag">Labour Legislation</span>
+                  <span class="gdev-timeline-tag">Compensation &amp; Benefits</span>
+                </div>
+              </div>
+
+              <!-- Degree 2 -->
+              <div class="gdev-edu-card">
+                <div>
+                  <div class="gdev-edu-top">
+                    <div>
+                      <h3 class="gdev-edu-degree">Master of Social Work (MSW)</h3>
+                      <div class="gdev-edu-inst">Madurai Kamaraj University</div>
+                    </div>
+                    <span class="gdev-edu-year">Sept 2020</span>
+                  </div>
+                  <p class="gdev-edu-desc" style="margin-top: 10px;">
+                    Postgraduate degree focused on medical &amp; psychiatric social work, community development, social research methodology, welfare administration, and human behavior.
+                  </p>
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="gdev-timeline-tag">Medical &amp; Psychiatric</span>
+                  <span class="gdev-timeline-tag">Community Welfare</span>
+                  <span class="gdev-timeline-tag">Social Research</span>
+                </div>
+              </div>
+
+              <!-- Degree 3 -->
+              <div class="gdev-edu-card">
+                <div>
+                  <div class="gdev-edu-top">
+                    <div>
+                      <h3 class="gdev-edu-degree">PG Diploma in Counselling</h3>
+                      <div class="gdev-edu-inst">Madurai Kamaraj University</div>
+                    </div>
+                    <span class="gdev-edu-year">Sept 2019</span>
+                  </div>
+                  <p class="gdev-edu-desc" style="margin-top: 10px;">
+                    Professional certification covering therapeutic counselling techniques, psychometric assessment, interpersonal conflict resolution, family therapy, and mental health counseling.
+                  </p>
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="gdev-timeline-tag">Psychological Counseling</span>
+                  <span class="gdev-timeline-tag">Assessment</span>
+                  <span class="gdev-timeline-tag">Conflict Mediation</span>
+                </div>
+              </div>
+
+              <!-- Degree 4 -->
+              <div class="gdev-edu-card">
+                <div>
+                  <div class="gdev-edu-top">
+                    <div>
+                      <h3 class="gdev-edu-degree">Bachelor of Social Work (BSW)</h3>
+                      <div class="gdev-edu-inst">Mahatma Gandhi University</div>
+                    </div>
+                    <span class="gdev-edu-year">March 2016</span>
+                  </div>
+                  <p class="gdev-edu-desc" style="margin-top: 10px;">
+                    Undergraduate foundational degree establishing expertise in social welfare policies, grassroots community organization, field work practicum, and institutional governance.
+                  </p>
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <span class="gdev-timeline-tag">Social Work Foundations</span>
+                  <span class="gdev-timeline-tag">Field Practicum</span>
+                  <span class="gdev-timeline-tag">Grassroots Welfare</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Skills Matrix (Google Developer Style) -->
+        <section class="gdev-section-card" id="skills">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">tune</span>
+              <h2>Core Competencies &amp; Skills Matrix</h2>
+            </div>
+            <span class="gdev-section-badge">Skill Badges &amp; Metrics</span>
+          </div>
+          <div class="gdev-section-body">
+
+            <!-- Category 1 -->
+            <div class="gdev-skills-category">
+              <div class="gdev-skills-cat-title">
+                <span class="gdev-skills-cat-dot" style="background: var(--google-blue);"></span>
+                <span>Labour Relations &amp; Statutory Compliance</span>
+              </div>
+              <div class="gdev-skills-grid">
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Statutory Compliance &amp; Labour Laws</span>
+                    <span class="gdev-skill-pct">95%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar" style="width: 95%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Employee &amp; Union Relations</span>
+                    <span class="gdev-skill-pct">95%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar" style="width: 95%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Welfare Administration &amp; Factory Governance</span>
+                    <span class="gdev-skill-pct">90%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Grievance Arbitration &amp; Disciplinary Inquiries</span>
+                    <span class="gdev-skill-pct">90%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar" style="width: 90%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="gdev-skills-category">
+              <div class="gdev-skills-cat-title">
+                <span class="gdev-skills-cat-dot" style="background: var(--google-red);"></span>
+                <span>HR Operations &amp; Administration</span>
+              </div>
+              <div class="gdev-skills-grid">
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Recruitment, Screening &amp; Onboarding</span>
+                    <span class="gdev-skill-pct">85%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar red" style="width: 85%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Attendance &amp; Leave Management</span>
+                    <span class="gdev-skill-pct">90%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar red" style="width: 90%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Payroll Computation &amp; Statutory Deductions</span>
+                    <span class="gdev-skill-pct">85%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar red" style="width: 85%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>HR Policy Formulation &amp; Audit Readiness</span>
+                    <span class="gdev-skill-pct">85%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar red" style="width: 85%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="gdev-skills-category">
+              <div class="gdev-skills-cat-title">
+                <span class="gdev-skills-cat-dot" style="background: var(--google-yellow);"></span>
+                <span>Interpersonal Leadership &amp; Welfare</span>
+              </div>
+              <div class="gdev-skills-grid">
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Individual &amp; Group Counseling</span>
+                    <span class="gdev-skill-pct">95%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar yellow" style="width: 95%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Crisis Intervention &amp; Conflict De-escalation</span>
+                    <span class="gdev-skill-pct">90%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar yellow" style="width: 90%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Training Coordination &amp; Development</span>
+                    <span class="gdev-skill-pct">85%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar yellow" style="width: 85%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="gdev-skills-category" style="margin-bottom: 0;">
+              <div class="gdev-skills-cat-title">
+                <span class="gdev-skills-cat-dot" style="background: var(--google-green);"></span>
+                <span>Technology, HRIS &amp; Software Development</span>
+              </div>
+              <div class="gdev-skills-grid">
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Modern HRMS &amp; ATS Platforms</span>
+                    <span class="gdev-skill-pct">85%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar green" style="width: 85%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Microsoft Office Suite (Advanced Excel, Word)</span>
+                    <span class="gdev-skill-pct">90%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar green" style="width: 90%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Android Development (Kotlin / Java)</span>
+                    <span class="gdev-skill-pct">80%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar green" style="width: 80%;"></div></div>
+                </div>
+                <div class="gdev-skill-item">
+                  <div class="gdev-skill-label-row">
+                    <span>Modern Web Tech (HTML5, CSS3, JS, Git)</span>
+                    <span class="gdev-skill-pct">85%</span>
+                  </div>
+                  <div class="md3-linear-progress"><div class="md3-linear-progress-bar green" style="width: 85%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Section 5: Technical Projects & Open Source (Developer Showcase) -->
+        <section class="gdev-section-card" id="projects">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">code</span>
+              <h2>Featured Developer Projects &amp; Open Source</h2>
+            </div>
+            <span class="gdev-section-badge">GitHub Portfolio</span>
+          </div>
+          <div class="gdev-section-body">
+            <div class="gdev-projects-grid">
+
+              <!-- Project 1: CashLedger -->
+              <div class="gdev-project-card">
+                <div>
+                  <div class="gdev-project-header">
+                    <div class="gdev-project-title-group">
+                      <img src="assets/images/cashledger-logo.png" alt="CashLedger logo" class="gdev-project-logo" onerror="this.style.display='none'">
+                      <div>
+                        <h3 class="gdev-project-name">cashledger</h3>
+                        <span style="font-size: 12px; color: var(--google-text-secondary);">Native Android Application</span>
+                      </div>
+                    </div>
+                    <span class="gdev-project-badge">
+                      <span class="material-symbols-outlined" style="font-size: 14px;">star</span>
+                      Featured
+                    </span>
+                  </div>
+                  <p class="gdev-project-desc">
+                    An offline-first, privacy-focused expense and budget management application for Android. Built with native Kotlin performance, local database encryption, Material Design 3 guidelines, zero third-party trackers, and complete user data ownership.
+                  </p>
+                  <div class="gdev-project-tags">
+                    <span class="gdev-project-tag">Kotlin</span>
+                    <span class="gdev-project-tag">Android SDK</span>
+                    <span class="gdev-project-tag">Material Design 3</span>
+                    <span class="gdev-project-tag">Offline-First</span>
+                    <span class="gdev-project-tag">SQLite</span>
+                  </div>
+                </div>
+                <div class="gdev-project-footer">
+                  <a href="https://github.com/solomonrajan/cashledger" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 32px; padding: 0 10px; font-size: 12px;">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">terminal</span>
+                    View Repository
+                  </a>
+                  <a href="blog.html" class="google-btn" style="height: 32px; padding: 0 10px; font-size: 12px;">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">article</span>
+                    Read Case Study
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 2: MoneyWallet -->
+              <div class="gdev-project-card">
+                <div>
+                  <div class="gdev-project-header">
+                    <div class="gdev-project-title-group">
+                      <span class="material-symbols-outlined" style="font-size: 26px; color: var(--google-blue);">account_balance_wallet</span>
+                      <div>
+                        <h3 class="gdev-project-name">moneywallet</h3>
+                        <span style="font-size: 12px; color: var(--google-text-secondary);">Open-Source Community Fork</span>
+                      </div>
+                    </div>
+                    <span class="gdev-project-badge">Maintained</span>
+                  </div>
+                  <p class="gdev-project-desc">
+                    Actively maintained community fork of MoneyWallet: an offline-first Android expense tracker supporting custom currency denominations, WebDAV cloud sync, and strict privacy isolation.
+                  </p>
+                  <div class="gdev-project-tags">
+                    <span class="gdev-project-tag">Java</span>
+                    <span class="gdev-project-tag">Android</span>
+                    <span class="gdev-project-tag">WebDAV Sync</span>
+                    <span class="gdev-project-tag">Open Source</span>
+                  </div>
+                </div>
+                <div class="gdev-project-footer">
+                  <a href="https://github.com/solomonrajan/moneywallet" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 32px; padding: 0 10px; font-size: 12px;">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">open_in_new</span>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 3: Expense Manager -->
+              <div class="gdev-project-card">
+                <div>
+                  <div class="gdev-project-header">
+                    <div class="gdev-project-title-group">
+                      <span class="material-symbols-outlined" style="font-size: 26px; color: var(--google-green);">receipt_long</span>
+                      <div>
+                        <h3 class="gdev-project-name">Expense-Manager</h3>
+                        <span style="font-size: 12px; color: var(--google-text-secondary);">Lightweight Mobile Tool</span>
+                      </div>
+                    </div>
+                    <span class="gdev-project-badge">Kotlin</span>
+                  </div>
+                  <p class="gdev-project-desc">
+                    A streamlined, lightweight personal expense tracking mobile application crafted in native Kotlin, focusing on rapid data entry and intuitive categorical analysis.
+                  </p>
+                  <div class="gdev-project-tags">
+                    <span class="gdev-project-tag">Kotlin</span>
+                    <span class="gdev-project-tag">Android</span>
+                    <span class="gdev-project-tag">Clean Architecture</span>
+                  </div>
+                </div>
+                <div class="gdev-project-footer">
+                  <a href="https://github.com/solomonrajan/Expense-Manager" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 32px; padding: 0 10px; font-size: 12px;">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">open_in_new</span>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 4: Developer Portfolio -->
+              <div class="gdev-project-card">
+                <div>
+                  <div class="gdev-project-header">
+                    <div class="gdev-project-title-group">
+                      <span class="material-symbols-outlined" style="font-size: 26px; color: var(--google-red);">dashboard</span>
+                      <div>
+                        <h3 class="gdev-project-name">solomonrajan.github.io</h3>
+                        <span style="font-size: 12px; color: var(--google-text-secondary);">Minimalist Google Dashboard</span>
+                      </div>
+                    </div>
+                    <span class="gdev-project-badge">Native Web</span>
+                  </div>
+                  <p class="gdev-project-desc">
+                    Strict Minimalist Google Dashboard website architecture utilizing Google Material Design 3 Expressive tokens, native ES6+ JavaScript, dynamic dark/light theme switching, and zero heavy build bundlers.
+                  </p>
+                  <div class="gdev-project-tags">
+                    <span class="gdev-project-tag">HTML5</span>
+                    <span class="gdev-project-tag">CSS3 (Tokens)</span>
+                    <span class="gdev-project-tag">Vanilla JS</span>
+                    <span class="gdev-project-tag">GitHub Pages</span>
+                  </div>
+                </div>
+                <div class="gdev-project-footer">
+                  <a href="https://github.com/solomonrajan/solomonrajan.github.io" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 32px; padding: 0 10px; font-size: 12px;">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">open_in_new</span>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6: Certifications, Languages & Personal Attributes -->
+        <section class="gdev-section-card" id="credentials">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">verified</span>
+              <h2>Certifications, Languages &amp; Professional Attributes</h2>
+            </div>
+            <span class="gdev-section-badge">Credentials</span>
+          </div>
+          <div class="gdev-section-body">
+            <div class="gdev-edu-grid">
+
+              <!-- Certifications -->
+              <div class="gdev-edu-card">
+                <div>
+                  <h3 class="gdev-edu-degree" style="display: flex; align-items: center; gap: 8px;">
+                    <span class="material-symbols-outlined" style="color: var(--google-blue);">card_membership</span>
+                    Professional Certifications
+                  </h3>
+                  <ul class="gdev-timeline-bullets" style="margin-top: 12px; margin-left: 20px;">
+                    <li><strong>Certified Labour Welfare Officer:</strong> Recognized qualification under statutory state factory rules and industrial welfare governance.</li>
+                    <li><strong>Industrial Relations &amp; Dispute Redressal:</strong> Advanced certification in domestic inquiries, charge sheets, and standing orders.</li>
+                    <li><strong>Occupational Safety &amp; Health Administration:</strong> Factory inspection protocols and worker safety standards.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="gdev-edu-card">
+                <div>
+                  <h3 class="gdev-edu-degree" style="display: flex; align-items: center; gap: 8px;">
+                    <span class="material-symbols-outlined" style="color: var(--google-green);">translate</span>
+                    Language Proficiencies
+                  </h3>
+                  <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+                      <span><strong>English</strong></span>
+                      <span class="gdev-timeline-tag">Professional Working Proficiency</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+                      <span><strong>Malayalam</strong></span>
+                      <span class="gdev-timeline-tag">Native / Mother Tongue</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+                      <span><strong>Tamil</strong></span>
+                      <span class="gdev-timeline-tag">Full Professional Proficiency</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 7: Contact & Inquiries -->
+        <section class="gdev-section-card" id="contact">
+          <div class="gdev-section-header">
+            <div class="gdev-section-title-wrap">
+              <span class="material-symbols-outlined gdev-section-icon">contact_mail</span>
+              <h2>Connect &amp; Contact Solomon</h2>
+            </div>
+            <span class="gdev-section-badge">Direct Inquiries</span>
+          </div>
+          <div class="gdev-section-body" style="text-align: center; padding: 32px 24px;">
+            <h3 style="font-size: 20px; font-weight: 600; color: var(--google-text-primary); margin-bottom: 8px;">
+              Let's Collaborate or Connect
+            </h3>
+            <p style="font-size: 14.5px; color: var(--google-text-secondary); max-width: 600px; margin: 0 auto 20px auto;">
+              Open for professional inquiries, industrial relations consultations, selected freelance projects, or tech discussions. Feel free to reach out directly.
+            </p>
+
+            <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+              <a href="contact.html" class="google-btn google-btn--primary" style="height: 40px; padding: 0 20px;">
+                <span class="material-symbols-outlined" style="font-size: 18px;">mail</span>
+                Send a Message via Contact Page
+              </a>
+              <button onclick="window.print()" class="google-btn" style="height: 40px; padding: 0 18px;">
+                <span class="material-symbols-outlined" style="font-size: 18px;">print</span>
+                Print Curriculum Vitae
+              </button>
+              <a href="assets/docs/resume.pdf" download="Solomon_Rajan_Resume.pdf" class="google-btn" style="height: 40px; padding: 0 18px;">
+                <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+                Download Original PDF
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Note -->
+        <footer style="text-align: center; padding: 24px 0 40px 0; color: var(--google-text-secondary); font-size: 13px;">
+          <p style="text-align: center; margin-bottom: 6px;">
+            Designed with Google Material Design 3 Expressive &bull; Verified Profile of Solomon Rajan
+          </p>
+          <p style="text-align: center; margin: 0;">
+            <a href="index.html" style="color: var(--google-blue);">Return to Workspace Home</a> &bull;
+            <a href="about.html" style="color: var(--google-blue);">About Page</a> &bull;
+            <a href="portfolio.html" style="color: var(--google-blue);">Portfolio</a>
+          </p>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
