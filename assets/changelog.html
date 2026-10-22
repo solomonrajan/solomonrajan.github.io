@@ -4,6 +4,120 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.4.15 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-green); color: white;">
+          <span class="material-symbols-outlined">verified</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.15</span>
+            <span class="changelog-tag changelog-tag--feature" style="background: var(--google-green); color: white;">Badge Accent</span>
+          </div>
+          <time class="changelog-date">22 Oct 2026, 09:30 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Google Green Verified Badge:</strong> Updated <code>.gdev-hero-avatar-badge</code> background to authentic Google Green (<code>var(--google-green)</code> / <code>#34a853</code>), presenting an unmistakable verification emblem on the profile picture.</li>
+          <li><strong>Dark Mode Tonal Accessibility:</strong> Paired the dark theme pastel green surface (<code>#81c995</code>) with high-contrast deep forest green icon styling (<code>#092c15</code>) for compliance with Material Design 3 tonal container guidelines.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.14 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">portrait</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.14</span>
+            <span class="changelog-tag changelog-tag--feature" style="background: var(--google-blue); color: white;">Avatar Backdrop</span>
+          </div>
+          <time class="changelog-date">22 Oct 2026, 09:25 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Studio Portrait Radial Backdrop:</strong> Added a soft photographic studio lighting backdrop (<code>radial-gradient(circle at 50% 35%, #ffffff 0%, #e8f0fe 55%, #c6daf9 100%)</code>) behind the transparent portrait cutout, providing authentic depth, luminosity, and sharp separation against both the hero banner and card body.</li>
+          <li><strong>Adaptive Dark Theme Studio Palette:</strong> Implemented a deep studio slate/navy radial gradient (<code>radial-gradient(circle at 50% 35%, #2d3e58 0%, #1a2538 65%, #141c28 100%)</code>) under <code>[data-theme="dark"]</code>, creating contrast and definition around hair and beard contours.</li>
+          <li><strong>Refined Portrait Crop Alignment:</strong> Configured <code>object-position: 50% 12%</code> for <code>.gdev-hero-avatar</code> and top-bar <code>.google-avatar</code> to maintain natural headroom and golden-ratio eye-line composition.</li>
+          <li><strong>Design Token Harmonization:</strong> Explicitly defined <code>--google-card-bg</code> in <code>style.css</code> (<code>#ffffff</code> light / <code>#202124</code> dark) to guarantee <code>4px</code> bezel borders and verified badge rings render crisply across all themes.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.13 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">account_circle</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.13</span>
+            <span class="changelog-tag changelog-tag--feature" style="background: var(--google-blue); color: white;">Profile Styling</span>
+          </div>
+          <time class="changelog-date">22 Oct 2026, 09:10 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Clean Profile Picture Architecture:</strong> Removed all artificial light rings, ambient aurora glows, and spinning gradient animations behind the avatar in favor of a clean, executive Material Design 3 profile photo presentation.</li>
+          <li><strong>Crisp Adaptive Framing:</strong> Styled the profile picture (<code>.gdev-hero-avatar</code>) with a crisp <code>4px solid var(--google-card-bg)</code> bezel and smooth elevation drop-shadow (<code>0 4px 20px rgba(0,0,0,0.14)</code>), cleanly cutting across the banner and card body in both light and dark themes.</li>
+          <li><strong>Official Verified Badge:</strong> Refined the verified status badge with authentic Google Blue (<code>var(--google-blue)</code>), a protective card-bg border, and subtle elevation shadow.</li>
+          <li><strong>Markup &amp; Print Sanitization:</strong> Streamlined the DOM structure by removing redundant decorative animation elements and simplified <code>@media print</code> rules for pristine document output.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.12 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: linear-gradient(135deg, #4285F4, #9B72CB); color: white;">
+          <span class="material-symbols-outlined">motion_photos_on</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.12</span>
+            <span class="changelog-tag changelog-tag--feature" style="background: linear-gradient(135deg, #4285F4, #9B72CB); color: white;">Animation Refinement</span>
+          </div>
+          <time class="changelog-date">22 Oct 2026, 09:05 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Fluid Orbital Gemini Stream:</strong> Resolved static circle appearance by introducing an asymmetric, directional conic gradient beam with a transparent trailing tail that flows into an intense White/Cyan/Coral/Purple/Blue head, creating clear, unmistakable circular orbital motion at <code>3.5s</code>.</li>
+          <li><strong>Natural Background Merging:</strong> Because the orbital stream begins at <code>transparent</code> and uses an outer <code>14px</code> blurred ambient aura (<code>.gdev-hero-avatar-ambient</code>), the animated light emerges and dissolves organically into the background banner and card surface without clipping or harsh edges.</li>
+          <li><strong>Hover Effect Decommissioning:</strong> Completely eradicated interactive displacement (scale, translateY, speed-up) so the avatar stays serene and grounded while the light loop orbits smoothly.</li>
+          <li><strong>Simplified GPU Architecture:</strong> Removed complex radial gradient masks in favor of concentric layer geometry and clean <code>3.5px</code> bezel framing, avoiding browser mask-caching and accessibility motion-cancellation bugs.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Version 4.4.11 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: linear-gradient(135deg, #4285F4, #9B72CB, #D96570); color: white;">
+          <span class="material-symbols-outlined">auto_awesome</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.11</span>
+            <span class="changelog-tag changelog-tag--feature" style="background: linear-gradient(135deg, #4285F4, #9B72CB); color: white;">Gemini Animation</span>
+          </div>
+          <time class="changelog-date">22 Oct 2026, 08:55 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Authentic Multi-Layer Gemini Aurora Engine (<code>resume.html</code>):</strong> Architected a high-fidelity, liquid-light aurora system with 4 mathematically decoupled GPU compositing layers: a wide counter-rotating deep nebula (<code>.gdev-hero-avatar-nebula</code>, <code>22px</code> blur, <code>14s</code> reverse spin), an active chromatic corona (<code>.gdev-hero-avatar-corona</code>, <code>9px</code> blur, <code>8s</code> clockwise spin), an ultra-sharp vector core ribbon (<code>.gdev-hero-avatar-stream</code>, <code>6s</code> spin), and a specular glass optical glint (<code>.gdev-hero-avatar-sheen</code>).</li>
+          <li><strong>Zero-Jitter Transform Decoupling:</strong> Completely eliminated CSS transform collisions by separating spatial rotation and opacity breathing into dedicated keyframes (<code>geminiStreamRotate</code>, <code>geminiNebulaFloat</code>, <code>geminiCoronaPulse</code>, <code>geminiNebulaBreathe</code>) backed by <code>transform: translateZ(0)</code> and <code>will-change</code> hardware acceleration for flawless 60/120fps fluidity.</li>
+          <li><strong>Organic Fluid Chromatic Blending:</strong> Utilized precise Google Gemini color anchors (Electric Blue <code>#4285F4</code>, Indigo <code>#7048E8</code>, Gemini Purple <code>#9B72CB</code>, Coral Pink <code>#D96570</code>, Rose <code>#FF758C</code>, and Celestial Cyan <code>#00E5FF</code>) whose counter-rotating speeds cause colors to organically morph, pulse, and interweave like living AI intelligence.</li>
+          <li><strong>Spring Physics &amp; Dynamic Shimmer:</strong> Refined hover physics with a fluid spring curve (<code>cubic-bezier(0.16, 1, 0.3, 1)</code>), doubling stream velocity, expanding the nebula aura to <code>26px</code> blur, and activating badge elevation.</li>
+          <li><strong>Print &amp; Accessibility Hardening:</strong> Configured clean suppression of heavy filters in <code>@media print</code> and automated animation cancellation under <code>prefers-reduced-motion</code>.</li>
+        </ul>
+      </article>
+    </div>
     <!-- Version 4.4.10 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
