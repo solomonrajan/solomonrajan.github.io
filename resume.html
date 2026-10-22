@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="Resume and Google Developer Profile of Solomon Rajan - Officer, Labour Relations, HR Operations Specialist, and Open Source Developer.">
-  <title>Resume &amp; Developer Profile | Solomon Rajan</title>
+  <meta name="description" content="Official Resume &amp; Professional Profile of Solomon Rajan - Officer, Labour Relations, HR Operations Specialist, and Open Source Developer.">
+  <title>Resume &amp; Professional Profile | Solomon Rajan</title>
 
   <!-- Google Fonts (Google Sans, Roboto, Roboto Mono, Delicious Handrawn & Material Symbols) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,49 +43,6 @@
        Google Developer Profile Specific Styles
        ========================================================================== */
 
-    /* Sub-header / Breadcrumbs */
-    .gdev-breadcrumb-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      padding: 12px 0 20px 0;
-      border-bottom: 1px solid var(--google-border-color);
-      margin-bottom: 24px;
-    }
-    .gdev-breadcrumb {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      color: var(--google-text-secondary);
-    }
-    .gdev-breadcrumb a {
-      color: var(--google-text-secondary);
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      text-decoration: none;
-      transition: color 0.15s ease;
-    }
-    .gdev-breadcrumb a:hover {
-      color: var(--google-blue);
-    }
-    .gdev-breadcrumb-sep {
-      font-size: 14px;
-      color: var(--google-border-color);
-    }
-    .gdev-breadcrumb-current {
-      color: var(--google-text-primary);
-      font-weight: 500;
-    }
-    .gdev-actions-group {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
 
     /* Google Developer Hero Card */
     .gdev-hero-card {
@@ -185,6 +142,27 @@
       align-items: center;
       gap: 10px;
       flex-wrap: wrap;
+    }
+    .google-btn--linkedin {
+      background-color: #0a66c2 !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .google-btn--linkedin:hover {
+      background-color: #084e96 !important;
+      color: #ffffff !important;
+    }
+    .google-btn--github {
+      background-color: #24292e !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .google-btn--github:hover {
+      background-color: #0f1419 !important;
+      color: #ffffff !important;
+    }
+    .google-btn--github img {
+      filter: brightness(0) invert(1);
     }
     .gdev-hero-name-row {
       display: flex;
@@ -739,7 +717,6 @@
         font-size: 12pt;
       }
       .google-app-bar,
-      .gdev-breadcrumb-bar,
       .gdev-nav-chips,
       .gdev-hero-cta-btns,
       .gdev-hero-card__banner-badge,
@@ -747,7 +724,6 @@
       .vintage-sticker,
       #sidebar-toggle,
       #theme-toggle-group,
-      .gdev-actions-group,
       .no-print {
         display: none !important;
       }
@@ -865,10 +841,10 @@
   <!-- Top Google Workspace / Developer App Bar -->
   <header class="google-app-bar">
     <div class="google-app-bar__left">
-      <a href="index.html" class="google-menu-btn" title="Back to Workspace Home" aria-label="Back to Workspace Home">
-        <span class="material-symbols-outlined">arrow_back</span>
-      </a>
-      <a href="index.html" class="google-logo">
+      <button class="google-menu-btn" id="sidebar-toggle" aria-label="Main menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="/" class="google-logo">
         <span style="color: #F9A825; font-weight: 500;">Solomon Rajan</span>
         <span style="color: var(--google-text-secondary); font-size: 18px; margin-left: 4px;">Workspace</span>
       </a>
@@ -1006,41 +982,13 @@
           <p style="font-size: 10pt; color: #555; margin: 0;">Kottayam, Kerala, India &bull; Portfolio: solomonrajan.github.io &bull; LinkedIn: linkedin.com/in/solomonrajan &bull; GitHub: github.com/solomonrajan</p>
         </div>
 
-        <!-- Breadcrumb & Top Actions Bar -->
-        <div class="gdev-breadcrumb-bar">
-          <nav class="gdev-breadcrumb" aria-label="Breadcrumb">
-            <a href="index.html">
-              <span class="material-symbols-outlined" style="font-size: 16px;">home</span>
-              Workspace
-            </a>
-            <span class="gdev-breadcrumb-sep">/</span>
-            <a href="about.html">Profile</a>
-            <span class="gdev-breadcrumb-sep">/</span>
-            <span class="gdev-breadcrumb-current">Curriculum Vitae</span>
-          </nav>
-
-          <div class="gdev-actions-group">
-            <button onclick="window.print()" class="google-btn" style="height: 36px; padding: 0 14px; font-size: 13px;">
-              <span class="material-symbols-outlined" style="font-size: 18px;">print</span>
-              Print / Save PDF
-            </button>
-            <a href="assets/docs/resume.pdf" download="Solomon_Rajan_Resume.pdf" class="google-btn" style="height: 36px; padding: 0 14px; font-size: 13px;">
-              <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
-              Download PDF
-            </a>
-            <a href="contact.html" class="google-btn google-btn--primary" style="height: 36px; padding: 0 14px; font-size: 13px;">
-              <span class="material-symbols-outlined" style="font-size: 18px;">mail</span>
-              Contact Me
-            </a>
-          </div>
-        </div>
 
         <!-- Google Developer Profile Hero Header -->
         <section class="gdev-hero-card" id="profile-hero">
           <div class="gdev-hero-card__banner">
             <div class="gdev-hero-card__banner-badge">
-              <span class="material-symbols-outlined" style="font-size: 16px;">terminal</span>
-              Google Developer Profile
+              <span class="material-symbols-outlined" style="font-size: 16px;">verified</span>
+              Verified Professional Profile
             </div>
           </div>
           <div class="gdev-hero-card__body">
@@ -1053,17 +1001,22 @@
               </div>
 
               <div class="gdev-hero-cta-btns">
-                <a href="https://linkedin.com/in/solomonrajan" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 36px; padding: 0 12px; font-size: 13px;">
-                  <img src="assets/logos/linkedin.svg" alt="LinkedIn" style="width: 16px; height: 16px;">
-                  LinkedIn
+                <a href="https://linkedin.com/in/solomonrajan" target="_blank" rel="noopener noreferrer" class="google-btn google-btn--linkedin" style="height: 36px; padding: 0 14px; font-size: 13px; gap: 8px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0; vertical-align: middle;" aria-hidden="true">
+                    <rect width="24" height="24" rx="4" fill="#ffffff"/>
+                    <path fill="#0A66C2" d="M19 19h-3.14v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V19H9.21V8.87h3.01v1.39h.04c.42-.8 1.45-1.64 2.99-1.64 3.2 0 3.79 2.11 3.79 4.85V19zM6.16 7.49A1.75 1.75 0 1 1 7.9 5.73a1.75 1.75 0 0 1-1.74 1.76zM7.73 19H4.6V8.87h3.13V19z"/>
+                  </svg>
+                  <span>LinkedIn</span>
                 </a>
-                <a href="https://github.com/solomonrajan" target="_blank" rel="noopener noreferrer" class="google-btn" style="height: 36px; padding: 0 12px; font-size: 13px;">
-                  <img src="assets/logos/github.svg" alt="GitHub" style="width: 16px; height: 16px;">
-                  GitHub
+                <a href="https://github.com/solomonrajan" target="_blank" rel="noopener noreferrer" class="google-btn google-btn--github" style="height: 36px; padding: 0 14px; font-size: 13px; gap: 8px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0; vertical-align: middle;" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
                 </a>
-                <a href="https://liberapay.com/solomon.rajan" target="_blank" rel="noopener noreferrer" class="google-btn google-btn--yellow" style="height: 36px; padding: 0 12px; font-size: 13px;">
+                <a href="https://liberapay.com/solomon.rajan" target="_blank" rel="noopener noreferrer" class="google-btn google-btn--yellow" style="height: 36px; padding: 0 14px; font-size: 13px; gap: 8px;">
                   <img src="assets/logos/liberapay.svg" alt="Liberapay" style="width: 16px; height: 16px;">
-                  Liberapay
+                  <span>Liberapay</span>
                 </a>
               </div>
             </div>
