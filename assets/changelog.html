@@ -4,6 +4,165 @@
   </div>
 
   <div class="changelog-timeline">
+    <!-- Version 4.4.24 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">straighten</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.24</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">Universal Print Margins</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:52 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Universal Executive Page Margins:</strong> Established universally accepted DIN/ISO executive resume margins in <code>resume.html</code> using <code>@page { size: A4 portrait; margin: 14mm 15mm; }</code>, ensuring reliable 14mm top/bottom and symmetrical 15mm left/right margins across every printed page.</li>
+          <li><strong>Margin Box Header/URL Suppression:</strong> Explicitly cleared CSS Paged Media margin boxes (<code>@top-left</code>, <code>@top-center</code>, <code>@top-right</code>, <code>@bottom-left</code>, <code>@bottom-center</code>, <code>@bottom-right</code> to <code>content: none !important</code>) to suppress browser-injected document titles, dates, URLs, and page numbers.</li>
+          <li><strong>Clean Geometry Delegation:</strong> Zeroed out body margins and padding (<code>html, body { margin: 0 !important; padding: 0 !important; }</code>), allowing the page-box margin model to control page boundaries without margin calculation conflicts or clipping on physical desktop printers.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.4.23 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">crop_free</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.23</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">A4 Print Alignment</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:46 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Browser Header &amp; URL Suppression:</strong> Configured <code>@page { margin: 0; size: A4 portrait; }</code> to automatically suppress browser-generated titles, dates, URLs, and page numbers. Recreated crisp, uniform page padding directly on <code>body { padding: 10mm 12mm; }</code>.</li>
+          <li><strong>Eliminated Blank Pages &amp; Trailing Space:</strong> Hid website footer elements (<code>footer { display: none !important; }</code>) and zeroed out bottom margin on the final section card (<code>.gdev-section-card:last-of-type</code>) to prevent accidental trailing blank pages.</li>
+          <li><strong>Flow &amp; Gap Normalization:</strong> Unconstrained <code>html</code> and <code>body</code> overflow/height, set cohesive <code>16px</code> section margins, and fine-tuned card break rules to eliminate gaps and render an exact 1:1 replica of the website.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.4.22 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">picture_as_pdf</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.22</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">A4 Print Layout</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:40 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>A4 Proportional Adaptation &amp; 1:1 Desktop Parity:</strong> Engineered strict 1:1 layout parity between the desktop screen and A4 paper output on <code>resume.html</code>. Locked multi-column desktop structures across A4: 4-column quick highlights (<code>repeat(4, 1fr)</code>), 2-column accredited degrees, 2-column developer showcase projects, and 2-column skills matrix.</li>
+          <li><strong>Mobile Query Print Isolation:</strong> Scoped the responsive mobile media query strictly to <code>@media screen and (max-width: 768px)</code>, permanently preventing the browser's print renderer from collapsing A4 prints into single-column mobile views.</li>
+          <li><strong>A4 Page Boundary &amp; Typography Tuning:</strong> Configured <code>@page { size: A4 portrait; margin: 8mm 10mm; }</code> with 100% printable container width, fluid navigation chips, and balanced <code>13.5px</code> typography to fit the A4 printable area with balanced margins.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.4.21 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">print</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.21</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">Print Styles</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:33 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>High-Fidelity WYSIWYG Print Stylesheet:</strong> Replaced the destructive legacy print styles on <code>resume.html</code> with a true 1:1 screen-matching print engine. Configured <code>print-color-adjust: exact</code> and <code>-webkit-print-color-adjust: exact</code> to faithfully retain all background gradients, Google brand colors, badge chips, and progress bars when printing or saving as PDF.</li>
+          <li><strong>Legacy Print Banner Removal:</strong> Deleted the unstyled <code>.print-only-header</code> fallback block that was previously replacing the Google Developer Hero header during print.</li>
+          <li><strong>Component &amp; Page Break Preservation:</strong> Retained original 20px/24px rounded card radii, full 120px hero banner gradient, verified profile badges, CTA buttons, and project links, while adding clean <code>break-inside: avoid</code> rules to prevent cards and timeline items from splitting across page breaks.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.4.20 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">mouse</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.20</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">UI Refinement</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:25 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Card Hover Effect Removal:</strong> Eliminated distracting, non-functional <code>:hover</code> states on static cards throughout <code>resume.html</code>, including <code>.gdev-stat-card:hover</code> (box-shadow expansion), <code>.gdev-edu-card:hover</code> (blue border highlighting on static degrees and credentials), and <code>.gdev-project-card:hover</code> (vertical lifting <code>translateY(-2px)</code>, border recoloring, and drop shadow).</li>
+          <li><strong>CSS Transition Cleanup:</strong> Removed obsolete CSS <code>transition</code> declarations from <code>.gdev-hero-card</code>, <code>.gdev-stat-card</code>, <code>.gdev-edu-card</code>, and <code>.gdev-project-card</code> to ensure a stable, distraction-free reading experience where only clickable links and buttons respond to pointer interactions.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.4.19 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">summarize</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.19</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">UI Refinement</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:18 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Executive Summary Iconography:</strong> Replaced the out-of-place quote icon (<code>format_quote</code>) in the "Executive Summary &amp; Professional Philosophy" section header on <code>resume.html</code> with <code>summarize</code>, aligning with Google Material Design conventions for executive overviews and profile summaries.</li>
+          <li><strong>Section Navigation Chip Synchronization:</strong> Updated the navigation chip for Executive Summary from <code>article</code> to <code>summarize</code> to ensure complete visual consistency across the page's navigation system.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Version 4.4.18 -->
+    <div class="changelog-item">
+      <div class="changelog-node-wrapper">
+        <div class="changelog-node" aria-hidden="true" style="background: var(--google-blue); color: white;">
+          <span class="material-symbols-outlined">timeline</span>
+        </div>
+      </div>
+      <article class="changelog-entry">
+        <div class="changelog-header">
+          <div class="changelog-badge-group">
+            <span class="changelog-version">v4.4.18</span>
+            <span class="changelog-tag changelog-tag--style" style="background: var(--google-blue); color: white;">UI Refinement</span>
+          </div>
+          <time class="changelog-date">04 Nov 2026, 08:10 PM IST</time>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Timeline Connector Termination:</strong> Removed the trailing timeline line beneath the final card on the resume page (<code>resume.html</code>). Refactored the connector line from a full-container pseudo-element (<code>.gdev-timeline::before</code>) to item-level linking (<code>.gdev-timeline-item:not(:last-child)::before</code>).</li>
+          <li><strong>Milestone Dot Alignment:</strong> Ensured the connecting line runs seamlessly between consecutive milestone dots and cleanly terminates at the final role entry without overshooting past the last card.</li>
+          <li><strong>Print Media Sync:</strong> Updated print styles (<code>@media print</code>) to target the item-level timeline connector with appropriate spacing offsets for exported documents.</li>
+        </ul>
+      </article>
+    </div>
+
     <!-- Version 4.4.17 -->
     <div class="changelog-item">
       <div class="changelog-node-wrapper">
