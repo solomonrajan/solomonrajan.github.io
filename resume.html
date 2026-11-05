@@ -44,62 +44,75 @@
        ========================================================================== */
 
 
-    p {
-      text-align: justify;
-      text-justify: inter-word;
-    }
+    .google-content-container p,
     .gdev-section-body p {
-      text-align: justify;
-      text-justify: inter-word;
+      text-align: left;
+      text-wrap: pretty;
+      line-height: 1.68;
+      letter-spacing: 0.05px;
     }
 
     /* Google Developer Hero Card */
     .gdev-hero-card {
-      background: var(--google-bg-color);
+      background: var(--google-card-bg, #ffffff);
       border: 1px solid var(--google-border-color);
       border-radius: 24px;
       position: relative;
       overflow: hidden;
       margin-bottom: 24px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 14px rgba(0, 0, 0, 0.02);
     }
     .gdev-hero-card__banner {
-      height: 120px;
-      background: linear-gradient(135deg, #1a73e8 0%, #4285f4 35%, #34a853 70%, #fbbc04 100%);
+      height: 130px;
+      background: linear-gradient(135deg, #1a73e8 0%, #3b8af5 38%, #1e8e3e 74%, #f9ab00 100%);
       position: relative;
       overflow: hidden;
     }
     [data-theme="dark"] .gdev-hero-card__banner {
-      background: linear-gradient(135deg, #174ea6 0%, #1a73e8 40%, #0d652d 75%, #b06000 100%);
-      opacity: 0.9;
+      background: linear-gradient(135deg, #134685 0%, #1a56a6 38%, #0d5427 74%, #8c5b05 100%);
+    }
+    .gdev-hero-card__banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 40%, rgba(255, 255, 255, 0.22) 0%, transparent 50%),
+                  radial-gradient(circle at 85% 25%, rgba(255, 255, 255, 0.25) 0%, transparent 60%);
+      pointer-events: none;
     }
     .gdev-hero-card__banner::after {
       content: "";
       position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.25) 0%, transparent 60%);
-      pointer-events: none;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
     }
     .gdev-hero-card__banner-badge {
       position: absolute;
-      top: 14px;
-      right: 18px;
-      background: rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      top: 16px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       color: #ffffff;
       padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 13px;
+      border-radius: 9999px;
+      font-size: 12.5px;
       font-weight: 500;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      letter-spacing: 0.3px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      letter-spacing: 0.2px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+    [data-theme="dark"] .gdev-hero-card__banner-badge {
+      background: rgba(0, 0, 0, 0.45);
+      border-color: rgba(255, 255, 255, 0.18);
     }
     .gdev-hero-card__body {
-      padding: 0 28px 28px 28px;
+      padding: 0 32px 30px 32px;
       position: relative;
     }
     .gdev-hero-card__avatar-row {
@@ -114,11 +127,11 @@
     /* Google Developer Profile Header Avatar */
     .gdev-hero-avatar-wrapper {
       position: relative;
-      width: 112px;
-      height: 112px;
+      width: 114px;
+      height: 114px;
       border-radius: 50%;
       flex-shrink: 0;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05);
       background: var(--google-card-bg, #ffffff);
     }
     .gdev-hero-avatar {
@@ -134,7 +147,7 @@
     }
     [data-theme="dark"] .gdev-hero-avatar-wrapper {
       background: var(--google-card-bg, #202124);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
     }
     [data-theme="dark"] .gdev-hero-avatar {
       border-color: var(--google-card-bg, #202124);
@@ -148,7 +161,7 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background: var(--google-green);
+      background: #34a853;
       color: #ffffff;
       display: flex;
       align-items: center;
@@ -159,14 +172,19 @@
     }
     [data-theme="dark"] .gdev-hero-avatar-badge {
       border-color: var(--google-card-bg, #202124);
-      background: var(--google-green);
-      color: #092c15;
+      background: #34a853;
+      color: #082612;
     }
     .gdev-hero-cta-btns {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       flex-wrap: wrap;
+    }
+    .gdev-hero-cta-btns .google-btn {
+      border-radius: 9999px !important;
+      font-weight: 500;
+      transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
     }
     .google-btn--linkedin {
       background-color: #0a66c2 !important;
@@ -192,15 +210,17 @@
     .gdev-hero-name-row {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 6px;
       flex-wrap: wrap;
     }
     .gdev-hero-name {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 700;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
       line-height: 1.2;
+      letter-spacing: -0.4px;
     }
     .gdev-verified-icon {
       color: var(--google-blue);
@@ -211,58 +231,65 @@
       background: var(--google-blue-bg);
       color: var(--google-blue);
       border: 1px solid rgba(26, 115, 232, 0.25);
-      padding: 4px 10px;
-      border-radius: 14px;
-      font-size: 12px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12.5px;
       font-weight: 600;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
     }
     .gdev-hero-title {
-      font-size: 18px;
+      font-size: 16.5px;
       font-weight: 500;
-      color: var(--google-text-primary);
-      margin-bottom: 6px;
+      color: var(--google-text-secondary);
+      margin-bottom: 10px;
+      letter-spacing: 0.1px;
     }
     .gdev-hero-tagline {
-      font-size: 14px;
+      font-size: 14.5px;
       color: var(--google-text-secondary);
-      margin-bottom: 16px;
-      max-width: 100%;
-      text-align: justify !important;
-      text-justify: inter-word !important;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      max-width: 860px;
+      text-align: left !important;
+      text-wrap: pretty;
     }
     .gdev-hero-meta-chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
+      gap: 8px;
+      margin-top: 16px;
     }
     .gdev-meta-chip {
       background: var(--google-hover-bg);
       border: 1px solid var(--google-border-color);
-      border-radius: 16px;
-      padding: 6px 12px;
-      font-size: 13px;
+      border-radius: 9999px;
+      padding: 6px 14px;
+      font-size: 12.5px;
       color: var(--google-text-primary);
       display: inline-flex;
       align-items: center;
       gap: 6px;
       font-weight: 500;
+      transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+    }
+    .gdev-meta-chip:hover {
+      background: var(--google-card-bg);
+      border-color: var(--google-blue);
     }
     .gdev-meta-chip .material-symbols-outlined {
       font-size: 16px;
       color: var(--google-text-secondary);
     }
     .gdev-meta-chip--status {
-      background: rgba(52, 168, 83, 0.1);
-      border-color: rgba(52, 168, 83, 0.3);
+      background: rgba(52, 168, 83, 0.08);
+      border-color: rgba(52, 168, 83, 0.28);
       color: #137333;
     }
     [data-theme="dark"] .gdev-meta-chip--status {
-      background: rgba(129, 201, 149, 0.15);
-      border-color: rgba(129, 201, 149, 0.35);
+      background: rgba(129, 201, 149, 0.12);
+      border-color: rgba(129, 201, 149, 0.3);
       color: #81c995;
     }
     .gdev-status-indicator {
@@ -272,23 +299,31 @@
       background: #34a853;
       display: inline-block;
       box-shadow: 0 0 0 2px rgba(52, 168, 83, 0.25);
+      animation: gdevPulse 2.5s infinite;
+    }
+    @keyframes gdevPulse {
+      0% { box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.4); }
+      70% { box-shadow: 0 0 0 5px rgba(52, 168, 83, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(52, 168, 83, 0); }
     }
 
     /* Developer Metrics Strip */
     .gdev-stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 16px;
+      gap: 14px;
       margin-bottom: 24px;
     }
     .gdev-stat-card {
-      background: var(--google-bg-color);
+      background: var(--google-card-bg, #ffffff);
       border: 1px solid var(--google-border-color);
       border-radius: 18px;
-      padding: 18px 20px;
+      padding: 18px 22px;
       display: flex;
       align-items: center;
       gap: 14px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+      transition: border-color 0.2s cubic-bezier(0.2, 0, 0, 1);
     }
     .gdev-stat-icon-wrap {
       width: 44px;
@@ -325,10 +360,12 @@
       color: #f28b82;
     }
     .gdev-stat-val {
-      font-size: 22px;
+      font-size: 23px;
       font-weight: 700;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
-      line-height: 1.1;
+      line-height: 1.15;
+      letter-spacing: -0.3px;
     }
     .gdev-stat-label {
       font-size: 12px;
@@ -346,50 +383,52 @@
       display: flex;
       gap: 8px;
       overflow-x: auto;
-      padding: 6px 2px 18px 2px;
+      padding: 4px 2px 18px 2px;
       margin-bottom: 24px;
       scrollbar-width: thin;
       position: relative;
+      -webkit-overflow-scrolling: touch;
     }
     .gdev-nav-chips::-webkit-scrollbar {
       height: 4px;
     }
     .gdev-nav-chip {
-      background: var(--google-hover-bg);
+      background: var(--google-card-bg, #ffffff);
       border: 1px solid var(--google-border-color);
       color: var(--google-text-secondary);
-      padding: 6px 14px;
-      border-radius: 18px;
+      padding: 7px 16px;
+      border-radius: 9999px;
       font-size: 13px;
       font-weight: 500;
       white-space: nowrap;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      transition: all 0.15s ease;
+      gap: 7px;
+      transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
     }
     .gdev-nav-chip:hover {
       background: var(--google-blue-bg);
       color: var(--google-blue);
-      border-color: var(--google-blue);
+      border-color: rgba(26, 115, 232, 0.35);
     }
     .gdev-nav-chip .material-symbols-outlined {
-      font-size: 16px;
+      font-size: 17px;
     }
 
     /* Developer Section Card Styling */
     .gdev-section-card {
-      background: var(--google-bg-color);
+      background: var(--google-card-bg, #ffffff);
       border: 1px solid var(--google-border-color);
       border-radius: 20px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
       scroll-margin-top: 24px;
     }
     .gdev-section-header {
-      padding: 20px 24px;
+      padding: 18px 26px;
       border-bottom: 1px solid var(--google-border-color);
       background: var(--google-hover-bg);
       display: flex;
@@ -401,29 +440,40 @@
     .gdev-section-title-wrap {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
     .gdev-section-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      background: var(--google-blue-bg);
       color: var(--google-blue);
-      font-size: 24px;
+      font-size: 20px;
+      flex-shrink: 0;
     }
     .gdev-section-header h2 {
-      font-size: 19px;
+      font-size: 18.5px;
       font-weight: 600;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
       margin: 0;
+      letter-spacing: -0.2px;
     }
     .gdev-section-badge {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 12px;
+      padding: 3.5px 12px;
+      border-radius: 9999px;
       background: var(--google-bg-color);
       border: 1px solid var(--google-border-color);
       color: var(--google-text-secondary);
+      letter-spacing: 0.1px;
     }
     .gdev-section-body {
-      padding: 24px;
+      padding: 26px 28px;
     }
 
     /* Experience Timeline Google Style */
@@ -433,7 +483,7 @@
     }
     .gdev-timeline-item {
       position: relative;
-      margin-bottom: 32px;
+      margin-bottom: 34px;
     }
     .gdev-timeline-item:last-child {
       margin-bottom: 0;
@@ -443,7 +493,7 @@
       position: absolute;
       left: -21px;
       top: 16px;
-      bottom: -40px;
+      bottom: -42px;
       width: 2px;
       background: var(--google-border-color);
       z-index: 0;
@@ -480,9 +530,11 @@
       margin-bottom: 6px;
     }
     .gdev-role-title {
-      font-size: 17px;
+      font-size: 17.5px;
       font-weight: 600;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
+      letter-spacing: -0.2px;
     }
     .gdev-company-name {
       font-size: 14px;
@@ -490,60 +542,66 @@
       color: var(--google-blue);
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
+      margin-top: 3px;
     }
     .gdev-timeline-date {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 500;
       color: var(--google-text-secondary);
       background: var(--google-hover-bg);
       border: 1px solid var(--google-border-color);
-      padding: 3px 10px;
-      border-radius: 12px;
+      padding: 3.5px 12px;
+      border-radius: 9999px;
       white-space: nowrap;
     }
     .gdev-timeline-date--current {
-      background: rgba(52, 168, 83, 0.12);
-      border-color: rgba(52, 168, 83, 0.35);
+      background: rgba(52, 168, 83, 0.1);
+      border-color: rgba(52, 168, 83, 0.3);
       color: #137333;
       font-weight: 600;
     }
     [data-theme="dark"] .gdev-timeline-date--current {
       color: #81c995;
+      background: rgba(129, 201, 149, 0.12);
+      border-color: rgba(129, 201, 149, 0.3);
     }
     .gdev-timeline-desc {
       font-size: 14.5px;
       color: var(--google-text-secondary);
-      line-height: 1.6;
-      margin-top: 8px;
+      line-height: 1.65;
+      margin-top: 10px;
       margin-bottom: 12px;
-      text-align: justify;
-      text-justify: inter-word;
+      text-align: left !important;
+      text-wrap: pretty;
     }
     .gdev-timeline-bullets {
-      margin: 8px 0 14px 18px;
+      margin: 10px 0 16px 20px;
       padding: 0;
       font-size: 14px;
       color: var(--google-text-secondary);
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .gdev-timeline-bullets li {
-      margin-bottom: 6px;
-      text-align: justify;
-      text-justify: inter-word;
+      margin-bottom: 7px;
+      text-align: left !important;
+      text-wrap: pretty;
+    }
+    .gdev-timeline-bullets li::marker {
+      color: var(--google-blue);
     }
     .gdev-timeline-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin-top: 10px;
+      margin-top: 12px;
     }
     .gdev-timeline-tag {
-      font-size: 12px;
+      font-size: 11.5px;
       background: var(--google-hover-bg);
       border: 1px solid var(--google-border-color);
-      border-radius: 6px;
-      padding: 2px 8px;
+      border-radius: 9999px;
+      padding: 3px 11px;
       color: var(--google-text-primary);
       font-weight: 500;
     }
@@ -558,23 +616,25 @@
       background: var(--google-hover-bg);
       border: 1px solid var(--google-border-color);
       border-radius: 16px;
-      padding: 20px;
+      padding: 22px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 12px;
+      gap: 14px;
     }
     .gdev-edu-top {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 10px;
+      gap: 12px;
     }
     .gdev-edu-degree {
       font-size: 16px;
       font-weight: 600;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
-      line-height: 1.3;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
     }
     .gdev-edu-inst {
       font-size: 13.5px;
@@ -587,17 +647,17 @@
       color: var(--google-text-secondary);
       background: var(--google-bg-color);
       border: 1px solid var(--google-border-color);
-      padding: 2px 8px;
-      border-radius: 10px;
+      padding: 3px 10px;
+      border-radius: 9999px;
       white-space: nowrap;
       font-weight: 500;
     }
     .gdev-edu-desc {
       font-size: 13.5px;
       color: var(--google-text-secondary);
-      line-height: 1.5;
-      text-align: justify;
-      text-justify: inter-word;
+      line-height: 1.6;
+      text-align: left !important;
+      text-wrap: pretty;
     }
 
     /* Skills Matrix */
@@ -610,8 +670,9 @@
     .gdev-skills-cat-title {
       font-size: 15px;
       font-weight: 600;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -624,10 +685,10 @@
     .gdev-skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 12px 24px;
+      gap: 14px 24px;
     }
     .gdev-skill-item {
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
     .gdev-skill-label-row {
       display: flex;
@@ -635,12 +696,35 @@
       font-size: 13.5px;
       font-weight: 500;
       color: var(--google-text-primary);
-      margin-bottom: 6px;
+      margin-bottom: 7px;
     }
     .gdev-skill-pct {
       color: var(--google-text-secondary);
       font-family: var(--md-ref-typeface-code, monospace);
       font-size: 12px;
+      font-weight: 600;
+    }
+    .md3-linear-progress {
+      height: 6px;
+      background: var(--google-border-color);
+      border-radius: 9999px;
+      overflow: hidden;
+      position: relative;
+    }
+    .md3-linear-progress-bar {
+      height: 100%;
+      border-radius: 9999px;
+      background: var(--google-blue);
+      transition: width 0.6s cubic-bezier(0.2, 0, 0, 1);
+    }
+    .md3-linear-progress-bar.red {
+      background: var(--google-red);
+    }
+    .md3-linear-progress-bar.yellow {
+      background: var(--google-yellow);
+    }
+    .md3-linear-progress-bar.green {
+      background: var(--google-green);
     }
 
     /* Projects Developer Grid */
@@ -653,7 +737,7 @@
       background: var(--google-hover-bg);
       border: 1px solid var(--google-border-color);
       border-radius: 16px;
-      padding: 20px;
+      padding: 22px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -662,32 +746,64 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .gdev-project-title-group {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
     .gdev-project-logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
       object-fit: contain;
       background: #ffffff;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      padding: 2px;
+      padding: 3px;
+    }
+    .gdev-project-icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .gdev-project-icon-box--blue {
+      background: var(--google-blue-bg);
+      color: var(--google-blue);
+    }
+    .gdev-project-icon-box--green {
+      background: rgba(52, 168, 83, 0.12);
+      color: #1e8e3e;
+    }
+    [data-theme="dark"] .gdev-project-icon-box--green {
+      color: #81c995;
+    }
+    .gdev-project-icon-box--red {
+      background: rgba(234, 67, 53, 0.12);
+      color: #d93025;
+    }
+    [data-theme="dark"] .gdev-project-icon-box--red {
+      color: #f28b82;
+    }
+    .gdev-project-icon-box .material-symbols-outlined {
+      font-size: 20px;
     }
     .gdev-project-name {
       font-size: 16px;
       font-weight: 600;
+      font-family: 'Google Sans', sans-serif;
       color: var(--google-text-primary);
+      letter-spacing: -0.2px;
     }
     .gdev-project-badge {
       font-size: 11px;
       font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 10px;
+      padding: 3px 9px;
+      border-radius: 9999px;
       background: rgba(26, 115, 232, 0.12);
       color: var(--google-blue);
       display: inline-flex;
@@ -697,10 +813,10 @@
     .gdev-project-desc {
       font-size: 13.5px;
       color: var(--google-text-secondary);
-      line-height: 1.55;
+      line-height: 1.6;
       margin-bottom: 14px;
-      text-align: justify;
-      text-justify: inter-word;
+      text-align: left !important;
+      text-wrap: pretty;
     }
     .gdev-project-tags {
       display: flex;
@@ -712,17 +828,21 @@
       font-size: 11.5px;
       background: var(--google-bg-color);
       border: 1px solid var(--google-border-color);
-      border-radius: 6px;
-      padding: 2px 7px;
+      border-radius: 9999px;
+      padding: 2.5px 9px;
       font-weight: 500;
       color: var(--google-text-primary);
     }
     .gdev-project-footer {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding-top: 12px;
+      gap: 8px;
+      padding-top: 14px;
       border-top: 1px solid var(--google-border-color);
+      flex-wrap: wrap;
+    }
+    .gdev-project-footer .google-btn {
+      border-radius: 9999px !important;
     }
 
     /* Print Stylesheet - Exact 1:1 Screen Fidelity Adapted to A4 (Universal Print Margins, No Headers/Footers) */
@@ -1120,7 +1240,7 @@
             </div>
 
             <div class="gdev-hero-title">Officer, Labour Relations &amp; HR Operations Specialist</div>
-            <p class="gdev-hero-tagline" style="text-align: justify; text-justify: inter-word;">
+            <p class="gdev-hero-tagline">
               Dedicated Human Resources professional and open-source software developer. Pioneering positive workplace culture, strict statutory labor compliance, end-to-end payroll governance, and modern privacy-first digital tools.
             </p>
 
@@ -1230,13 +1350,13 @@
             <span class="gdev-section-badge">Core Profile</span>
           </div>
           <div class="gdev-section-body">
-            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 14px; text-align: justify; text-justify: inter-word;">
+            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 14px;">
               I am a seasoned <strong style="color: var(--google-text-primary);">Human Resources Professional &amp; Labour Welfare Officer</strong> whose career began in specialized clinical and medical social work. Over the past five years, my professional trajectory has evolved dynamically—advancing through positions as Medical Social Worker, Child Welfare Officer, Personnel Executive &amp; Welfare Officer, and currently, <strong style="color: var(--google-blue);">Officer, Labour Relations</strong> at Madura Coats.
             </p>
-            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 14px; text-align: justify; text-justify: inter-word;">
+            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 14px;">
               My foundational philosophy centers on <strong>fostering a cooperative, dignified workplace culture</strong> while driving bulletproof statutory compliance and operational excellence. I specialize in the complete lifecycle of industrial relations: from collective bargaining support, dispute resolution, and grievance arbitration, to end-to-end payroll administration and statutory inspections.
             </p>
-            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 0; text-align: justify; text-justify: inter-word;">
+            <p style="font-size: 15px; line-height: 1.7; color: var(--google-text-secondary); margin-bottom: 0;">
               In parallel with human capital leadership, I possess a deep affinity for modern technology and software architecture. As an open-source Android developer and web technologist, I leverage software engineering principles to streamline HRMS platforms, automate data pipelines, and design privacy-first tools that enhance organizational efficiency.
             </p>
           </div>
@@ -1709,7 +1829,9 @@
                 <div>
                   <div class="gdev-project-header">
                     <div class="gdev-project-title-group">
-                      <span class="material-symbols-outlined" style="font-size: 26px; color: var(--google-blue);">account_balance_wallet</span>
+                      <div class="gdev-project-icon-box gdev-project-icon-box--blue">
+                        <span class="material-symbols-outlined">account_balance_wallet</span>
+                      </div>
                       <div>
                         <h3 class="gdev-project-name">moneywallet</h3>
                         <span style="font-size: 12px; color: var(--google-text-secondary);">Open-Source Community Fork</span>
@@ -1740,7 +1862,9 @@
                 <div>
                   <div class="gdev-project-header">
                     <div class="gdev-project-title-group">
-                      <span class="material-symbols-outlined" style="font-size: 26px; color: var(--google-green);">receipt_long</span>
+                      <div class="gdev-project-icon-box gdev-project-icon-box--green">
+                        <span class="material-symbols-outlined">receipt_long</span>
+                      </div>
                       <div>
                         <h3 class="gdev-project-name">Expense-Manager</h3>
                         <span style="font-size: 12px; color: var(--google-text-secondary);">Lightweight Mobile Tool</span>
@@ -1770,7 +1894,9 @@
                 <div>
                   <div class="gdev-project-header">
                     <div class="gdev-project-title-group">
-                      <span class="material-symbols-outlined" style="font-size: 26px; color: var(--google-red);">dashboard</span>
+                      <div class="gdev-project-icon-box gdev-project-icon-box--red">
+                        <span class="material-symbols-outlined">dashboard</span>
+                      </div>
                       <div>
                         <h3 class="gdev-project-name">solomonrajan.github.io</h3>
                         <span style="font-size: 12px; color: var(--google-text-secondary);">Minimalist Google Dashboard</span>
@@ -1864,24 +1990,24 @@
             </div>
             <span class="gdev-section-badge">Direct Inquiries</span>
           </div>
-          <div class="gdev-section-body" style="text-align: center; padding: 32px 24px;">
-            <h3 style="font-size: 20px; font-weight: 600; color: var(--google-text-primary); margin-bottom: 8px;">
+          <div class="gdev-section-body" style="text-align: center; padding: 36px 24px;">
+            <h3 style="font-size: 20px; font-weight: 600; font-family: 'Google Sans', sans-serif; color: var(--google-text-primary); margin-bottom: 8px;">
               Let's Collaborate or Connect
             </h3>
-            <p style="font-size: 14.5px; color: var(--google-text-secondary); max-width: 600px; margin: 0 auto 20px auto; text-align: justify; text-justify: inter-word;">
+            <p style="font-size: 14.5px; color: var(--google-text-secondary); max-width: 580px; margin: 0 auto 24px auto; text-align: center; line-height: 1.65;">
               Open for professional inquiries, industrial relations consultations, selected freelance projects, or tech discussions. Feel free to reach out directly.
             </p>
 
             <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-              <a href="contact.html" class="google-btn google-btn--primary" style="height: 40px; padding: 0 20px;">
+              <a href="contact.html" class="google-btn google-btn--primary" style="height: 40px; padding: 0 20px; border-radius: 9999px;">
                 <span class="material-symbols-outlined" style="font-size: 18px;">mail</span>
                 Send a Message via Contact Page
               </a>
-              <button onclick="window.print()" class="google-btn no-print" style="height: 40px; padding: 0 18px;">
+              <button onclick="window.print()" class="google-btn no-print" style="height: 40px; padding: 0 18px; border-radius: 9999px;">
                 <span class="material-symbols-outlined" style="font-size: 18px;">print</span>
                 Print Curriculum Vitae
               </button>
-              <a href="assets/docs/resume.pdf" download="Solomon_Rajan_Resume.pdf" class="google-btn" style="height: 40px; padding: 0 18px;">
+              <a href="assets/docs/resume.pdf" download="Solomon_Rajan_Resume.pdf" class="google-btn" style="height: 40px; padding: 0 18px; border-radius: 9999px;">
                 <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
                 Download Original PDF
               </a>
